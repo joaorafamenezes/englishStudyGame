@@ -2,1001 +2,1212 @@ import type { ConnectorItem } from "../types.js";
 
 export const CONNECTORS_CATALOG: ConnectorItem[] = [
   {
-    number: 1,
-    id: "above-all",
-    connector: "Above all",
-    translation: "Acima de tudo",
-    family: "emphasis",
-    grammarRule: "Usado para destacar a prioridade máxima ou o ponto mais importante.",
-    examples: [
+    "number": 1,
+    "id": "above-all",
+    "connector": "Above all",
+    "translation": "Acima de tudo",
+    "family": "emphasis",
+    "grammarRule": "Usado para destacar a prioridade máxima ou o ponto mais importante de uma argumentação.",
+    "notes": "Muito comum em liderança técnica e decisões estratégicas de arquitetura.",
+    "examples": [
       "Above all, we must ensure the safety and reliability of our production servers.",
-      "He values honesty above all else in any partnership.",
-    ],
+      "Above all, keep the user data protected and compliant with privacy regulations.",
+      "He values honesty above all else in any partnership."
+    ]
   },
   {
-    number: 2,
-    id: "actually",
-    connector: "Actually",
-    translation: "Na verdade",
-    family: "emphasis",
-    grammarRule: "Usado para corrigir uma falsa impressão, esclarecer a realidade ou introduzir surpresa.",
-    examples: [
+    "number": 2,
+    "id": "actually",
+    "connector": "Actually",
+    "translation": "Na verdade",
+    "family": "emphasis",
+    "grammarRule": "Usado para corrigir uma falsa impressão, esclarecer a realidade dos fatos ou introduzir um dado surpreendente.",
+    "notes": "Muito utilizado em reuniões de status quando a realidade difere da estimativa inicial.",
+    "examples": [
       "Actually the truth is worse than you can imagine.",
       "Actually our budget is almost done.",
       "You said that your project was on time. But, actually, your project is running out of time.",
-      "Yesterday I needed to go to the office by car. Actually, I didn't want to take the bus; I prefer driving.",
-    ],
+      "When you said that you love me, actually it’s not totally true.",
+      "Yesterday I needed to go to the office by car, because the bus had already left. Actually, I didn't want to take the bus; I prefer driving."
+    ]
   },
   {
-    number: 3,
-    id: "afterwards",
-    connector: "Afterwards",
-    translation: "Posteriormente / Depois",
-    family: "time",
-    grammarRule: "Advérbio de tempo que se refere a um momento subsequente ao evento mencionado.",
-    examples: [
-      "We will conduct the daily standup first; afterwards, we can discuss the blocker.",
+    "number": 3,
+    "id": "afterwards",
+    "connector": "Afterwards",
+    "translation": "Posteriormente / Depois",
+    "family": "time",
+    "grammarRule": "Advérbio de tempo que se refere a um momento subsequente ao evento mencionado na oração anterior.",
+    "notes": "Pode ser usado no início ou no fim da oração seguinte.",
+    "examples": [
+      "We will conduct the Daily Standup first; afterwards, we can discuss the blocker in a breakout room.",
       "They deployed the hotfix and checked the monitoring metrics immediately afterwards.",
-    ],
+      "Let's review the pull request now and test the endpoints afterwards."
+    ]
   },
   {
-    number: 4,
-    id: "all-in-all",
-    connector: "All in all",
-    translation: "De tudo em tudo / Em suma",
-    family: "summary",
-    grammarRule: "Usado para fazer uma avaliação geral após considerar todos os fatores.",
-    examples: [
+    "number": 4,
+    "id": "all-in-all",
+    "connector": "All in all",
+    "translation": "De tudo em tudo / Em suma",
+    "family": "summary",
+    "grammarRule": "Usado para fazer uma avaliação geral equilibrada após considerar aspectos positivos e negativos.",
+    "notes": "Perfeito para retrospectivas de Sprint e fechamento de trimestre (QBR).",
+    "examples": [
       "All in all, the sprint was successful despite the mid-week outage.",
-      "It was a challenging release, but all in all, the client was satisfied.",
-    ],
+      "It was a challenging release, but all in all, the client was satisfied with the performance.",
+      "All in all, the migration to microservices brought significant scalability improvements."
+    ]
   },
   {
-    number: 5,
-    id: "along-with",
-    connector: "Along with",
-    translation: "Junto com",
-    family: "addition",
-    grammarRule: "Indica companhia, inclusão ou anexo a outro item.",
-    examples: [
-      "I can walk along with you if you want.",
-      "When you send your project report, along with it you can share your graphics.",
+    "number": 5,
+    "id": "along-with",
+    "connector": "Along with",
+    "translation": "Junto com",
+    "family": "addition",
+    "grammarRule": "Indica companhia, inclusão ou anexo de um elemento a outro.",
+    "notes": "Frequentemente usado para anexos de relatórios, acompanhantes e colaboração entre squads.",
+    "examples": [
+      "A: Hello my friend, it’s good to see you. But I need to go home now. B: I can walk along with you if you want.",
+      "I made an appointment in a restaurant, and Cinthia will go along with me.",
+      "When you send your project report, along with it you can share your graphics for me.",
       "The Scrum Master made the Retrospective along with the developers and the QAs.",
-      "When you buy a new iPhone, the charger won't come along with the phone.",
-    ],
+      "When you buy a new iPhone, you need to buy the charger separately. It won't come along with the phone."
+    ]
   },
   {
-    number: 6,
-    id: "although",
-    connector: "Although",
-    translation: "Embora",
-    family: "contrast",
-    grammarRule: "Requer oração completa (sujeito + verbo). Nunca use seguido diretamente de substantivo puro.",
-    examples: [
+    "number": 6,
+    "id": "although",
+    "connector": "Although",
+    "translation": "Embora",
+    "family": "contrast",
+    "grammarRule": "Conjunção subordinativa concessiva. Requer obrigatoriamente oração completa (sujeito + verbo). Nunca usar seguido de substantivo direto.",
+    "notes": "Ex: 'Although it's raining' (certo) vs 'Although the rain' (errado; use 'Despite the rain').",
+    "examples": [
       "Although it’s raining, I’m going to the beach.",
       "Although it’s harder than I thought, I will make it by myself.",
+      "Although you are a hard person, I still love you.",
+      "Although the day isn’t so good, we need to go out and see the clouds.",
       "Although you didn’t come to the party, it was good.",
-      "Although the day isn't so good, we need to go out and see the clouds.",
-    ],
+      "Although the release deadline was tight, the engineering team delivered zero critical bugs."
+    ]
   },
   {
-    number: 7,
-    id: "apart-from",
-    connector: "Apart from",
-    translation: "Excetuando / Excluindo",
-    family: "substitution",
-    grammarRule: "Equivale a 'except for'. Indica exclusão de algo do restante.",
-    examples: [
+    "number": 7,
+    "id": "apart-from",
+    "connector": "Apart from",
+    "translation": "Excetuando / Excluindo",
+    "family": "substitution",
+    "grammarRule": "Equivale a 'except for' ou 'other than'. Indica a exclusão deliberada de um elemento do restante do conjunto.",
+    "notes": "Usado para isolar exceções em relatórios de testes e listas de requisitos.",
+    "examples": [
       "Apart from a few minor CSS bugs, the application is ready for deploy.",
-      "Apart from John, the whole backend squad attended the planning meeting.",
-    ],
+      "Apart from the database migration, all deployment steps were automated.",
+      "Apart from John, the whole backend squad attended the architectural planning session."
+    ]
   },
   {
-    number: 8,
-    id: "as-a-result",
-    connector: "As a result",
-    translation: "Como resultado",
-    family: "cause",
-    grammarRule: "Liga uma causa ao seu efeito ou consequência direta.",
-    examples: [
-      "You didn't do your job correctly. As a result, our clients are calling us with many problems.",
-      "I read the book you lent me and, as a result, I can discover many different things.",
+    "number": 8,
+    "id": "as-a-result",
+    "connector": "As a result",
+    "translation": "Como resultado",
+    "family": "cause",
+    "grammarRule": "Conector de transição que introduz o efeito direto ou a consequência lógica de uma causa antecedente.",
+    "notes": "Geralmente aparece no início de uma oração após ponto final ou ponto e vírgula, seguido de vírgula.",
+    "examples": [
+      "You didn’t do your job correctly. As a result, our clients are calling us with many problems.",
+      "I read the book that you lent me and, as a result, I can discover many different things.",
       "As a result of your question, we could find the right answer.",
       "Grêmio lost one more match on Saturday, and as a result, the manager was fired.",
-    ],
+      "The squad automated the regression suite. As a result, release cycle time dropped by 50%."
+    ]
   },
   {
-    number: 9,
-    id: "as-far-as",
-    connector: "As far as",
-    translation: "Pelo que...",
-    family: "emphasis",
-    grammarRule: "Geralmente combinado: 'As far as I know' (Pelo que eu sei), delimitando o conhecimento.",
-    examples: [
+    "number": 9,
+    "id": "as-far-as",
+    "connector": "As far as",
+    "translation": "Pelo que / Até onde",
+    "family": "condition",
+    "grammarRule": "Locução conjuntiva que delimita o alcance do conhecimento ou informação disponível ('as far as I know').",
+    "notes": "Essencial para reuniões de alinhamento quando não se quer prometer certeza absoluta.",
+    "examples": [
       "As far as I know, Rebeca delivered the project on time.",
+      "As far as he told me, Michael Jackson bought that house when he was alive.",
       "As far as Carlos said, the enterprise will cancel the project and everyone will be reallocated.",
-      "As far as the client said to me, the problem is its screen that doesn't work.",
-    ],
+      "As far as the client said to me, the problem is it's screen that doesn't work. It had been working the day before yesterday, and yesterday didn't work either.",
+      "As far as the infrastructure metrics show, the cluster is operating within normal memory limits."
+    ]
   },
   {
-    number: 10,
-    id: "as-long-as",
-    connector: "As long as",
-    translation: "Contanto que",
-    family: "condition",
-    grammarRule: "Estabelece uma condição contínua necessária para que algo ocorra.",
-    examples: [
+    "number": 10,
+    "id": "as-long-as",
+    "connector": "As long as",
+    "translation": "Contanto que / Desde que",
+    "family": "condition",
+    "grammarRule": "Expressa uma condição contínua indispensável. Equivale a 'provided that'.",
+    "notes": "Muito usado em acordos de nível de serviço (SLA) e definições de pronto (DoD).",
+    "examples": [
       "As long as you do your homework, you will pass the exam.",
       "Things will be easier as long as you do your job.",
-      "We can hit our release deadline as long as no critical bugs appear.",
-    ],
+      "You can work remotely as long as you attend the daily standup and deliver your Sprint goals."
+    ]
   },
   {
-    number: 11,
-    id: "as-well",
-    connector: "As well",
-    translation: "Também",
-    family: "addition",
-    grammarRule: "Significa 'também' e posiciona-se quase invariavelmente no final da frase.",
-    examples: [
+    "number": 11,
+    "id": "as-well",
+    "connector": "As well",
+    "translation": "Também (no fim da frase)",
+    "family": "addition",
+    "grammarRule": "Advérbio aditivo colocado tradicionalmente no final da oração para adicionar um elemento.",
+    "notes": "Equivale a 'too', soando ligeiramente mais polido.",
+    "examples": [
       "I know that's a hard subject, I need to study more as well.",
       "Can I go with you to the mall as well?",
-      "I like this plate. I would like to order it as well.",
-      "I was invited to the tech talk as well.",
-    ],
+      "A: Hi. I would like to order the daily plate, please. B: Oh nice, I like this plate. I would like to as well.",
+      "I was invited to the party as well.",
+      "The backend needs an update, and we should upgrade the frontend dependencies as well."
+    ]
   },
   {
-    number: 12,
-    id: "as-well-as",
-    connector: "As well as",
-    translation: "Assim como",
-    family: "addition",
-    grammarRule: "Liga dois elementos paralelos ou complementares na mesma frase.",
-    examples: [
+    "number": 12,
+    "id": "as-well-as",
+    "connector": "As well as",
+    "translation": "Assim como / Bem como",
+    "family": "addition",
+    "grammarRule": "Liga dois elementos em paralelo. Quando liga sujeitos, o verbo concorda com o primeiro sujeito.",
+    "notes": "Comum na descrição de responsabilidades de papéis ágeis e squads interdisciplinares.",
+    "examples": [
+      "As well as the moon is bright, your eyes are the light that bright my side.",
+      "You need to come down and take a breath, as well as me.",
       "The team needs a software developer as well as a QA.",
       "He is responsible for Sprint Planning as well as Backlog Refinement.",
-      "You need to calm down and take a breath, as well as me.",
-    ],
+      "Our CI pipeline executes unit tests as well as security vulnerability scans."
+    ]
   },
   {
-    number: 13,
-    id: "at-all",
-    connector: "At all",
-    translation: "Mesmo / De maneira alguma",
-    family: "emphasis",
-    grammarRule: "Usado no fim da frase para dar ênfase total em frases afirmativas ou negativas (nem um pouco).",
-    examples: [
+    "number": 13,
+    "id": "at-all",
+    "connector": "At all",
+    "translation": "Mesmo (enfatizar no fim da frase) / De forma alguma",
+    "family": "emphasis",
+    "grammarRule": "Expressão intensificadora comumente posicionada no final de frases negativas ou afirmativas enfáticas.",
+    "notes": "Em frases negativas significa 'de jeito nenhum / absolutamente nada'; em linguagem coloquial enfática reforça o sentimento geral.",
+    "examples": [
       "I really need this job, at all.",
       "My job is harder nowadays. I need a vacation soon, at all.",
-      "I don't know the answer at all.",
-      "It’s the best place I ever had before, at all.",
-    ],
+      "Sometimes you only need to stop and look at the flowers. It’s pretty good, at all.",
+      "You need to know London, I loved going there last year. It’s the best place I ever had before, at all.",
+      "The legacy API is not scalable at all, so we decided to rewrite it in Go."
+    ]
   },
   {
-    number: 14,
-    id: "at-last",
-    connector: "At last",
-    translation: "Por fim / Por último",
-    family: "time",
-    grammarRule: "Indica que algo finalmente aconteceu após longa espera ou esforço.",
-    examples: [
-      "It’s late, but we found the problem at last.",
+    "number": 14,
+    "id": "at-last",
+    "connector": "At last",
+    "translation": "Por fim / Finalmente",
+    "family": "time",
+    "grammarRule": "Expressa a ocorrência de algo muito esperado após demora, esforço ou ansiedade.",
+    "notes": "Carrega alívio emocional. Diferente de 'lastly' (que apenas enumera o último item de uma lista).",
+    "examples": [
+      "Like I said, this year was hard for us. At last I would like to inform you that no one will be fired because of this.",
       "Renato Gaúcho signed with Grêmio at last.",
+      "A: Houston we have a problem… B: few minutes later… C: It’s late, but we found the problem at last.",
       "The meeting ended at last.",
-      "At last I would like to inform you that no one will be fired.",
-    ],
+      "After three hours of deep debugging, we resolved the race condition at last."
+    ]
   },
   {
-    number: 15,
-    id: "at-least",
-    connector: "At least",
-    translation: "Pelo menos / No mínimo",
-    family: "emphasis",
-    grammarRule: "Destaca um ponto positivo mínimo ou quantidade mínima num cenário adverso.",
-    examples: [
-      "Although I didn’t study enough, at least I studied Math, the hardest one.",
-      "Hey John, you are late! Don't you shame? — No! I came at least.",
-      "The ship is sinking, but at least they launched the lifeboats.",
-      "At least we made some progress during this sprint.",
-    ],
+    "number": 15,
+    "id": "at-least",
+    "connector": "At least",
+    "translation": "Pelo menos",
+    "family": "emphasis",
+    "grammarRule": "Indica uma quantidade mínima satisfatória ou um aspecto consolador diante de uma dificuldade.",
+    "notes": "Excelente para destacar avanços parciais em retrospectivas.",
+    "examples": [
+      "Oh my gosh! The ship is sinking. At least they let the men in the end, probably we're gonna save ourselves.",
+      "A: Hey John, you are very late. Don’t you have shame? B: No! I came at least.",
+      "A: The final exams will be tomorrow. B: Really! Did you study enough? C: Although I didn’t study enough, at least I studied Math, the hardest one.",
+      "I don’t know which more sentences I can write using AT LEAST. At least I made some.",
+      "We didn't complete all user stories, but at least we finished the core payment feature."
+    ]
   },
   {
-    number: 16,
-    id: "because",
-    connector: "Because",
-    translation: "Porque",
-    family: "cause",
-    grammarRule: "Conjunção subordinativa seguida de oração completa (sujeito + verbo).",
-    examples: [
+    "number": 16,
+    "id": "because",
+    "connector": "Because",
+    "translation": "Porque (introduz oração)",
+    "family": "cause",
+    "grammarRule": "Conjunção explicativa/causal seguida obrigatoriamente de uma oração completa (sujeito + verbo).",
+    "notes": "Responde diretamente à pergunta 'Why?'. Não confundir com 'Because of' (que exige substantivo).",
+    "examples": [
+      "I hate you, because you are so childish.",
       "The developer will be late today because the traffic is awful.",
-      "I hate you, because you are behaving like children.",
-      "We delayed the release because the automated tests failed.",
-    ],
+      "We rolled back the deployment because the database connection timed out."
+    ]
   },
   {
-    number: 17,
-    id: "because-of",
-    connector: "Because of",
-    translation: "Por causa de",
-    family: "cause",
-    grammarRule: "Preposição seguida de substantivo ou pronome, nunca de verbo conjugado direto.",
-    examples: [
-      "I’m crying because of what you said.",
+    "number": 17,
+    "id": "because-of",
+    "connector": "Because of",
+    "translation": "Por causa de (seguido de substantivo)",
+    "family": "cause",
+    "grammarRule": "Preposição composta causal. Deve ser seguida diretamente de substantivo, pronome ou gerúndio. Nunca de oração com verbo conjugado.",
+    "notes": "Ex: 'Because of the rain' (correto) vs 'Because of it is raining' (errado).",
+    "examples": [
       "The doctor said you are better now because of physical activity.",
-      "The server crashed because of an unexpected memory leak.",
-    ],
+      "I’m crying because of what you said.",
+      "Sometimes the rain falls because of your lies.",
+      "The release was delayed because of unexpected network latency."
+    ]
   },
   {
-    number: 18,
-    id: "beforehand",
-    connector: "Beforehand",
-    translation: "De antemão / Previamente",
-    family: "time",
-    grammarRule: "Advérbio que significa 'in advance' ou antes de um acontecimento planejado.",
-    examples: [
-      "Please review the PR beforehand so our call can be brief.",
-      "We tested all edge cases beforehand to avoid surprises in production.",
-    ],
+    "number": 18,
+    "id": "beforehand",
+    "connector": "Beforehand",
+    "translation": "De antemão / Previamente",
+    "family": "time",
+    "grammarRule": "Advérbio de tempo que indica antecipação em relação a um evento futuro.",
+    "notes": "Indispensável no planejamento ágil: refinar histórias de antemão evita bloqueios na Sprint.",
+    "examples": [
+      "Please review the architectural design document beforehand.",
+      "Setting up test databases beforehand ensures smooth automated testing.",
+      "We prepared all configuration secrets beforehand so deployment took under two minutes."
+    ]
   },
   {
-    number: 19,
-    id: "besides",
-    connector: "Besides",
-    translation: "Além disso",
-    family: "addition",
-    grammarRule: "Adiciona um argumento extra para reforçar o que já foi dito.",
-    examples: [
-      "You need to clean the kitchen. Besides, clean the room too.",
-      "I don’t really want to go out tonight; it’s freezing outside. Besides, I have an early meeting tomorrow.",
-      "The manager wants us to work late. Besides, he ordered some pizzas for everyone.",
-    ],
+    "number": 19,
+    "id": "besides",
+    "connector": "Besides",
+    "translation": "Além disso",
+    "family": "addition",
+    "grammarRule": "Conector aditivo e argumentativo. Introduz uma razão suplementar de peso.",
+    "notes": "Cuidado: 'beside' (sem 's') significa 'ao lado de'; 'besides' (com 's') significa 'além disso'.",
+    "examples": [
+      "A: You need to clean the kitchen at all. B: OK. I gonna do that. A: Besides, clean the room too.",
+      "A: The manager said to work late today. B: Besides, he said he will buy some pizzas when we need to work late.",
+      "I don’t really want to go out tonight; It’s freezing outside. Besides, I have an early meeting tomorrow.",
+      "This cache layer reduces database load; besides, it cuts down API response time to under 50ms."
+    ]
   },
   {
-    number: 20,
-    id: "but",
-    connector: "But",
-    translation: "Mas / Porém",
-    family: "contrast",
-    grammarRule: "Conjunção coordenativa básica para contrapor duas ideias na mesma frase.",
-    examples: [
+    "number": 20,
+    "id": "but",
+    "connector": "But",
+    "translation": "Mas / Porém",
+    "family": "contrast",
+    "grammarRule": "Conjunção coordenativa adversativa fundamental que liga duas orações de ideias contrastantes.",
+    "notes": "O conector de oposição mais universal da língua inglesa.",
+    "examples": [
       "He is my friend. He has a beautiful house on the beach, but he doesn’t go there so much.",
-      "It was hard to fix that bug, but I could manage it.",
-      "The street is dark, but we need to go through this way.",
-    ],
+      "It was hard to fix that problem, but I could handle it.",
+      "It was hard to fix that problem, but I could manage it.",
+      "A: Hey John, It’s so dark in this street, don’t you think? B: Yeh, but we need to go through this way.",
+      "The refactoring was complex, but the code is much cleaner now."
+    ]
   },
   {
-    number: 21,
-    id: "consequently",
-    connector: "Consequently",
-    translation: "Consequentemente",
-    family: "cause",
-    grammarRule: "Transição formal para expressar a consequência lógica do fato anterior.",
-    examples: [
-      "The build pipeline was broken; consequently, no deploys could be completed.",
-      "We missed the deadline and consequently had to renegotiate the contract.",
-    ],
+    "number": 21,
+    "id": "consequently",
+    "connector": "Consequently",
+    "translation": "Consequentemente",
+    "family": "cause",
+    "grammarRule": "Conector formal que estabelece uma relação causal direta de causa e efeito.",
+    "notes": "Tom formal, muito valorizado em documentações de arquitetura (ADR) e relatórios de post-mortem.",
+    "examples": [
+      "The third-party payment gateway went down; consequently, checkout transactions failed.",
+      "We optimized our Docker build stages; consequently, image sizes dropped from 1.2GB to 85MB.",
+      "He missed several project deadlines and, consequently, lost the client's trust."
+    ]
   },
   {
-    number: 22,
-    id: "currently",
-    connector: "Currently",
-    translation: "Atualmente",
-    family: "time",
-    grammarRule: "Indica uma situação presente ou momentânea.",
-    examples: [
+    "number": 22,
+    "id": "currently",
+    "connector": "Currently",
+    "translation": "Atualmente",
+    "family": "time",
+    "grammarRule": "Falso amigo clássico! 'Currently' significa 'atualmente / no momento presente'. 'Actually' significa 'na verdade'.",
+    "notes": "Nunca use 'actually' querendo dizer 'atualmente'. Use 'currently'!",
+    "examples": [
       "Currently, our clients are satisfied with our products.",
       "Currently, we need to find a new market to explore.",
-      "Our company is currently focused on serverless architecture.",
-    ],
+      "Our company is currently worried about forest deforestation.",
+      "We are currently migrating our monolithic services to a Kubernetes cluster."
+    ]
   },
   {
-    number: 23,
-    id: "definitely",
-    connector: "Definitely",
-    translation: "Definitivamente",
-    family: "emphasis",
-    grammarRule: "Expressa certeza absoluta e convicção.",
-    examples: [
-      "Definitely, we can learn English with regular practice.",
+    "number": 23,
+    "id": "definitely",
+    "connector": "Definitely",
+    "translation": "Definitivamente / Com certeza",
+    "family": "emphasis",
+    "grammarRule": "Advérbio de modo e certeza que confirma categoricamente uma declaração sem margem para dúvida.",
+    "notes": "Atenção à grafia em inglês: D-E-F-I-N-I-T-E-L-Y (com 'i', nunca com 'a').",
+    "examples": [
+      "Definitely, we can learn English with teacher Michele.",
       "My team made a POC (Proof of Concept) and, definitely, we can build the program.",
-    ],
+      "We should definitely write integration tests before releasing this feature to production."
+    ]
   },
   {
-    number: 24,
-    id: "despite",
-    connector: "Despite",
-    translation: "Apesar de",
-    family: "contrast",
-    grammarRule: "Exige substantivo ou forma -ing (sem verbo conjugado). Não use 'despite of'.",
-    examples: [
-      "Despite the rain, we went to the beach.",
-      "Despite working overtime, the developers remained enthusiastic.",
-    ],
+    "number": 24,
+    "id": "despite",
+    "connector": "Despite",
+    "translation": "Apesar de (sem verbo)",
+    "family": "contrast",
+    "grammarRule": "Preposição concessiva. Seguido obrigatoriamente de substantivo, pronome ou gerúndio (-ing). Nunca use 'despite of' — o 'of' não existe aqui!",
+    "notes": "Correto: 'Despite the delay' ou 'In spite of the delay'. Errado: 'Despite of'.",
+    "examples": [
+      "Despite the tight deadline, the squad delivered all sprint commitments.",
+      "Despite having limited cloud resources, the microservice handled high traffic smoothly.",
+      "The team kept high morale despite several unexpected production bugs."
+    ]
   },
   {
-    number: 25,
-    id: "due-to",
-    connector: "Due to",
-    translation: "Devido a / ao",
-    family: "cause",
-    grammarRule: "Seguido de substantivo (due to the problem). Não recebe oração direta sem 'the fact that'.",
-    examples: [
-      "Due to an outage, all the internal programs were stopped.",
-      "The game was postponed due to severe weather.",
-    ],
+    "number": 25,
+    "id": "due-to",
+    "connector": "Due to",
+    "translation": "Devido a",
+    "family": "cause",
+    "grammarRule": "Locução prepositiva causal sinônima de 'caused by' ou 'because of'. Seguido de substantivo.",
+    "notes": "Muito frequente em comunicações de status de incidentes e sustentação.",
+    "examples": [
+      "Due to an outage, all the programs were stopped.",
+      "The deployment was postponed due to unexpected database migration issues.",
+      "Due to high user concurrency on Black Friday, we auto-scaled our server pods."
+    ]
   },
   {
-    number: 26,
-    id: "equally",
-    connector: "Equally",
-    translation: "Igualmente",
-    family: "addition",
-    grammarRule: "Expressa equivalência ou proporção idêntica entre fatores.",
-    examples: [
-      "Backend stability and frontend responsiveness are equally important.",
-      "Both candidates performed equally well in the technical interview.",
-    ],
+    "number": 26,
+    "id": "equally",
+    "connector": "Equally",
+    "translation": "Igualmente / Do mesmo modo",
+    "family": "addition",
+    "grammarRule": "Advérbio que estabelece equivalência ou peso proporcional entre dois fatores.",
+    "notes": "Útil ao priorizar histórias de usuário ou requisitos não-funcionais.",
+    "examples": [
+      "System security and performance are equally important for our enterprise clients.",
+      "Both frontend responsiveness and backend reliability are equally valued by the team.",
+      "Junior developers and senior architects are equally encouraged to propose improvements."
+    ]
   },
   {
-    number: 27,
-    id: "even",
-    connector: "Even",
-    translation: "Mesmo / Até mesmo",
-    family: "emphasis",
-    grammarRule: "Usado para realçar algo inesperado, extremo ou surpreendente.",
-    examples: [
+    "number": 27,
+    "id": "even",
+    "connector": "Even",
+    "translation": "Mesmo / Até mesmo / Ainda que",
+    "family": "emphasis",
+    "grammarRule": "Advérbio intensificador que expressa surpresa ou um caso extremo.",
+    "notes": "Pode ser posicionado antes de verbos, adjetivos ou substantivos para realçar algo inesperado.",
+    "examples": [
       "We couldn’t fix the bug, not even me.",
       "You should go to England, even alone.",
-      "Even the senior architect didn't spot the concurrency race condition.",
-    ],
+      "Even a small syntax typo can break the entire deployment build pipeline."
+    ]
   },
   {
-    number: 28,
-    id: "even-if",
-    connector: "Even if",
-    translation: "Mesmo se",
-    family: "condition",
-    grammarRule: "Introduz uma condição hipotética que não impede o resultado final.",
-    examples: [
+    "number": 28,
+    "id": "even-if",
+    "connector": "Even if",
+    "translation": "Mesmo se / Ainda que (hipotético)",
+    "family": "condition",
+    "grammarRule": "Introduz uma condição extrema ou hipotética que não altera o desfecho da oração principal.",
+    "notes": "'Even if' trata de possibilidade futura/hipotética; 'Even though' trata de um fato concreto real.",
+    "examples": [
       "I will go to the party, even if you won’t go.",
       "Even if you can’t finish your job until next Friday, I can help you next week.",
-    ],
+      "Even if the client requests changes at the last minute, our CI/CD pipeline allows safe rollbacks."
+    ]
   },
   {
-    number: 29,
-    id: "even-though",
-    connector: "Even though",
-    translation: "Embora / Apesar de que",
-    family: "contrast",
-    grammarRule: "Mais forte e enfático que 'although'. Exige oração completa com sujeito e verbo.",
-    examples: [
-      "Even though I don't like vegetables, I eat them.",
-      "Even though I don't have much money, I will go out tonight.",
+    "number": 29,
+    "id": "even-though",
+    "connector": "Even though",
+    "translation": "Embora / Apesar de que (fato real)",
+    "family": "contrast",
+    "grammarRule": "Conjunção concessiva enfática que introduz um fato real que contrasta com a oração principal.",
+    "notes": "Mais forte e enfático que 'although'. Exige oração completa (sujeito + verbo).",
+    "examples": [
+      "Even though I don’t like vegetables, I eat them.",
+      "Even though I don’t have much money, I will go out tonight.",
+      "Even though you don’t like me, I respect you, at all, because you are a good person.",
       "Even though we married a long time ago, I still love you as the first day we met.",
-    ],
+      "Even though the codebase was legacy, we managed to add modern automated tests."
+    ]
   },
   {
-    number: 30,
-    id: "for",
-    connector: "For",
-    translation: "Pois / Visto que",
-    family: "cause",
-    grammarRule: "Conjunção coordenativa formal que introduz explicação ou razão.",
-    examples: [
+    "number": 30,
+    "id": "for",
+    "connector": "For",
+    "translation": "Pois / Visto que (conector coordenativo)",
+    "family": "cause",
+    "grammarRule": "Conjunção coordenativa formal (uma das FANBOYS: For, And, Nor, But, Or, Yet, So). Introduz o motivo explicativo.",
+    "notes": "Soa literário e formal. É sempre precedido por vírgula quando liga orações independentes.",
+    "examples": [
       "He took an umbrella, for dark clouds were gathering.",
       "We stopped testing, for the server was down.",
-      "I will put on my jacket, for the weather is cold.",
-    ],
+      "The architect paused the migration, for high data inconsistency was detected."
+    ]
   },
   {
-    number: 31,
-    id: "for-instance",
-    connector: "For instance",
-    translation: "Por exemplo",
-    family: "example",
-    grammarRule: "Sinônimo direto de 'for example'. Introduz casos práticos ou amostras.",
-    examples: [
-      "For instance, when the developer finishes the program, he can review other pull requests.",
-      "Many cloud providers, for instance AWS and GCP, offer managed database services.",
-    ],
+    "number": 31,
+    "id": "for-instance",
+    "connector": "For instance",
+    "translation": "Por exemplo",
+    "family": "example",
+    "grammarRule": "Locução conectiva usada para exemplificar ou ilustrar uma afirmação anterior. Sinônimo exato de 'for example'.",
+    "notes": "Pode vir no início, no meio entre vírgulas, ou no fim da oração.",
+    "examples": [
+      "A: I don’t understand what you are saying. B: Let me explain again, for instance: ...",
+      "For instance, if you vote for that candidate, you won’t eat rump steak.",
+      "For instance, when the developer finishes the program, he could do other things.",
+      "You can configure multiple caching strategies; for instance, Redis for sessions and CloudFront for assets."
+    ]
   },
   {
-    number: 32,
-    id: "furthermore",
-    connector: "Furthermore",
-    translation: "Além do mais / De mais a mais",
-    family: "addition",
-    grammarRule: "Conector formal que adiciona um argumento relevante ao discurso.",
-    examples: [
-      "The new design is more intuitive; furthermore, it loads 40% faster.",
-      "He is a talented programmer; furthermore, his communication skills are exceptional.",
-    ],
+    "number": 32,
+    "id": "furthermore",
+    "connector": "Furthermore",
+    "translation": "Além disso / De mais a mais",
+    "family": "addition",
+    "grammarRule": "Conector aditivo formal que adiciona um argumento relevante para reforçar uma tese.",
+    "notes": "Muito usado em propostas comerciais, relatórios técnicos e apresentações executivas.",
+    "examples": [
+      "The new database engine reduces query latency; furthermore, it offers built-in multi-region replication.",
+      "Our team completed all user stories on time; furthermore, we improved overall unit test coverage by 15%."
+    ]
   },
   {
-    number: 33,
-    id: "hence",
-    connector: "Hence",
-    translation: "Portanto / Por isso",
-    family: "cause",
-    grammarRule: "Significa 'por essa razão' ou 'daí decorre'. Muito usado em lógica e conclusões formais.",
-    examples: [
-      "I was working and not feeling well, hence I needed to go home.",
-      "The feature wasn’t done in time, hence we need to reschedule the sprint.",
-      "My son didn’t do the homework, hence he will not play video games today.",
-    ],
+    "number": 33,
+    "id": "hence",
+    "connector": "Hence",
+    "translation": "Portanto / Por isso / Daí",
+    "family": "cause",
+    "grammarRule": "Advérbio conectivo formal que indica decorrência lógica e direta de uma causa explicada antes.",
+    "notes": "Muito comum em documentação de engenharia e matemática. Equivale a 'therefore'.",
+    "examples": [
+      "A: Hey John, what happened to you? B: Well, I was working and not feeling well, hence I needed to go home.",
+      "The feature wasn’t done in time, hence we need to reschedule the project.",
+      "My son Nícolas didn’t do the homework, hence he will not play video games today.",
+      "The legacy library has unpatched security vulnerabilities, hence we must upgrade immediately."
+    ]
   },
   {
-    number: 34,
-    id: "however",
-    connector: "However",
-    translation: "Contudo / Todavia / Entretanto",
-    family: "contrast",
-    grammarRule: "Liga ideias opostas com tom formal, frequentemente pontuado com ponto-e-vírgula ou vírgula.",
-    examples: [
+    "number": 34,
+    "id": "however",
+    "connector": "However",
+    "translation": "Contudo / Todavia / Entretanto",
+    "family": "contrast",
+    "grammarRule": "Advérbio de transição adversativo. Quando inicia uma oração independente, deve ser seguido de vírgula.",
+    "notes": "Mais formal que 'but'. Frequentemente separado por ponto e vírgula ou ponto final.",
+    "examples": [
       "There's heavy traffic ahead; however, I don’t have another way.",
-      "The government updated the delivery date; however, we can finish earlier than that.",
-      "We found the root cause of the bug; however, fixing it will take two days.",
-    ],
+      "The government updated the delivery date, however we can finish earlier than that.",
+      "Look at that graphic; It’s so bad. We need to do better in the next Sprint. However, we have found the root cause and can be better now.",
+      "The load test showed high memory usage; however, cpu throttling remained within acceptable thresholds."
+    ]
   },
   {
-    number: 35,
-    id: "if",
-    connector: "If",
-    translation: "Se",
-    family: "condition",
-    grammarRule: "Conjunção condicional básica para uma hipótese simples.",
-    examples: [
-      "If you go to the party, I’ll go too.",
-      "If the unit tests pass, we can merge the branch.",
-      "If Batman sees the Penguin doing something wrong, he will catch him.",
-    ],
+    "number": 35,
+    "id": "if",
+    "connector": "If",
+    "translation": "Se (uma condição direta)",
+    "family": "condition",
+    "grammarRule": "Conjunção condicional básica para orações condicionais (Zero, First, Second, Third Conditionals).",
+    "notes": "Usa-se 'if' para condições de causa-efeito; use 'whether' quando há duas opções explícitas em escolha.",
+    "examples": [
+      "If you do that, I will never talk to you again.",
+      "A: Hey Nick, will you go to the party? B: Hey dad, if you go there I’ll go too.",
+      "A: Hey Batman, how will you save Gotham? Penguin is so clever. B: I don’t know, at all; however, if he does something wrong, I will catch him.",
+      "If the pull request passes all automated CI checks, the tech lead will merge it."
+    ]
   },
   {
-    number: 36,
-    id: "in-advance",
-    connector: "In advance",
-    translation: "Antecipadamente / Com antecedência",
-    family: "time",
-    grammarRule: "Expressa que uma ação deve ser tomada antes do momento previsto.",
-    examples: [
-      "Please let me know in advance if you can’t attend the daily.",
-      "Thank you in advance for your help with the code review.",
-      "You need to pay in advance if you want to book that workshop.",
-    ],
+    "number": 36,
+    "id": "in-advance",
+    "connector": "In advance",
+    "translation": "Antecipadamente / Com antecedência",
+    "family": "time",
+    "grammarRule": "Locução adverbial temporal que indica ação prévia ou preparatória antes de um evento futuro.",
+    "notes": "Comum na etiqueta de e-mails corporativos ('Thank you in advance for your assistance').",
+    "examples": [
+      "Please let me know in advance if you can’t attend the sprint review.",
+      "Thank you in advance for your help.",
+      "Please inform me in advance about any architectural changes.",
+      "You need to pay in advance if you want to have a consulting meeting with him."
+    ]
   },
   {
-    number: 37,
-    id: "in-case",
-    connector: "In case",
-    translation: "No caso de / Por precaução",
-    family: "condition",
-    grammarRule: "Usado para precauções diante de eventos futuros incertos.",
-    examples: [
-      "Take this backup drive, just in case.",
-      "In case the server crashes, the secondary instance will automatically take over.",
-      "Take an umbrella in case it rains later.",
-    ],
+    "number": 37,
+    "id": "in-case",
+    "connector": "In case",
+    "translation": "No caso de / Para o caso de",
+    "family": "condition",
+    "grammarRule": "Expressa precaução diante de uma possibilidade que pode ou não acontecer no futuro.",
+    "notes": "'In case' difere de 'if': fazemos algo 'in case' por precaução ANTES do evento acontecer.",
+    "examples": [
+      "In case the airplane falls, we need to take the parachute and jump out of the plane.",
+      "Take this shotgun, it's for your protection, in case someone invades your home.",
+      "Here, take this exam to your doctor, just in case.",
+      "We configured automated database snapshots every hour, in case we need disaster recovery."
+    ]
   },
   {
-    number: 38,
-    id: "in-contrast",
-    connector: "In contrast",
-    translation: "Em contraste / Ao contrário de",
-    family: "contrast",
-    grammarRule: "Destaca uma oposição direta e evidente entre dois sujeitos ou situações.",
-    examples: [
-      "In contrast to legacy systems, modern microservices are much easier to scale.",
-      "The frontend team was cheerful; in contrast, the backend team was struggling with the migration.",
-    ],
+    "number": 38,
+    "id": "in-contrast",
+    "connector": "In contrast",
+    "translation": "Ao contrário de / Em contraste",
+    "family": "contrast",
+    "grammarRule": "Expressão conectiva que estabelece uma comparação frontal entre duas entidades com características opostas.",
+    "notes": "Pode ser usado isolado com vírgula ou como 'in contrast to/with + substantivo'.",
+    "examples": [
+      "In contrast to the old SQL database, the new document store scales horizontally with ease.",
+      "Sprint velocity was low last month. In contrast, this sprint the squad surpassed all story point targets."
+    ]
   },
   {
-    number: 39,
-    id: "in-fact",
-    connector: "In fact",
-    translation: "Na verdade / De fato",
-    family: "emphasis",
-    grammarRule: "Reforça ou corrige o que acabou de ser falado com uma verdade incontestável.",
-    examples: [
-      "In fact, Brazil is the only country that is a five-time World Cup champion.",
-      "He looks quiet, but in fact, he is the most vocal member during architectural debates.",
-    ],
+    "number": 39,
+    "id": "in-fact",
+    "connector": "In fact",
+    "translation": "Na verdade / De fato",
+    "family": "emphasis",
+    "grammarRule": "Conector de esclarecimento e ênfase. Usado para confirmar a verdade ou retificar uma suposição.",
+    "notes": "Muito natural tanto no início de frase quanto no final como termo conclusivo.",
+    "examples": [
+      "In fact, I’m not Paola Bracho; I’m an Usurpadora.",
+      "Carlos Daniel Bracho is a liar, in fact.",
+      "In fact, Brazil is the only country five-time champion of football.",
+      "In fact, refactoring this legacy code will save hundreds of server hours each month."
+    ]
   },
   {
-    number: 40,
-    id: "in-order-to",
-    connector: "In order to",
-    translation: "A fim de",
-    family: "purpose",
-    grammarRule: "Indica finalidade ou objetivo, seguido obrigatoriamente de verbo no infinitivo.",
-    examples: [
+    "number": 40,
+    "id": "in-order-to",
+    "connector": "In order to",
+    "translation": "A fim de / Para",
+    "family": "purpose",
+    "grammarRule": "Locução que expressa finalidade ou propósito deliberado. Seguido obrigatoriamente de verbo no infinitivo (base form).",
+    "notes": "Para oração com sujeito próprio, use 'in order that' ou 'so that'.",
+    "examples": [
       "I came to work in person in order to finish the project.",
-      "You are being hired in order to improve our development process.",
-      "I wake up early in order to study English.",
-    ],
+      "You are being hired in order to improve the deployment process.",
+      "I’m here in order to help you.",
+      "I helped my son in order to pass the exam.",
+      "We implemented Redis caching in order to reduce response latency."
+    ]
   },
   {
-    number: 41,
-    id: "in-short",
-    connector: "In short",
-    translation: "Para resumir / Em suma",
-    family: "summary",
-    grammarRule: "Sintetiza uma explicação longa em uma conclusão direta.",
-    examples: [
-      "In short, the database migration succeeded without data loss.",
-      "The client loved the prototype. In short, we got the contract.",
-    ],
+    "number": 41,
+    "id": "in-short",
+    "connector": "In short",
+    "translation": "Para resumir / Em suma",
+    "family": "summary",
+    "grammarRule": "Conector conclusivo curto que condensa uma explicação longa em poucas palavras.",
+    "notes": "Ideal para resumos executivos de atas de reunião e pull requests.",
+    "examples": [
+      "In short, the database migration succeeded without downtime.",
+      "The server crashed, the backup failed, and the DNS was down. In short, it was a rough day."
+    ]
   },
   {
-    number: 42,
-    id: "in-spite-of",
-    connector: "In spite of",
-    translation: "Apesar de",
-    family: "contrast",
-    grammarRule: "Sinônimo exato de 'despite'. Exige substantivo, pronome ou verbo com -ing.",
-    examples: [
+    "number": 42,
+    "id": "in-spite-of",
+    "connector": "In spite of",
+    "translation": "Apesar de (com 'of')",
+    "family": "contrast",
+    "grammarRule": "Locução prepositiva concessiva idêntica a 'despite'. Seguido de substantivo, pronome ou verbo no gerúndio (-ing).",
+    "notes": "Lembrete: 'In spite OF' tem 'of'; 'Despite' NUNCA tem 'of'!",
+    "examples": [
       "In spite of what you said, he could understand.",
-      "In spite of the tight schedule, we delivered quality code.",
-    ],
+      "In spite of the bad weather, the outdoor company event was enjoyable.",
+      "The squad delivered the milestone on time in spite of unexpected team reallocations."
+    ]
   },
   {
-    number: 43,
-    id: "indeed",
-    connector: "Indeed",
-    translation: "De fato",
-    family: "emphasis",
-    grammarRule: "Confirma e amplia a veracidade de uma afirmação prévia.",
-    examples: [
-      "The team made significant progress this sprint. Indeed, they completed all items ahead of schedule.",
-      "Indeed, the Product Owner canceled the project due to new regulations.",
-    ],
+    "number": 43,
+    "id": "indeed",
+    "connector": "Indeed",
+    "translation": "De fato / Realmente",
+    "family": "emphasis",
+    "grammarRule": "Advérbio de confirmação e reforço positivo de uma ideia já expressa anteriormente.",
+    "notes": "Usado tanto no início quanto no fim da frase para validar uma afirmação factual.",
+    "examples": [
+      "The team made significant progress this sprint. Indeed, they completed all high-priority backlog items ahead of schedule.",
+      "Indeed the Product Owner canceled the project, because of the new regulations.",
+      "The performance metrics are impressive indeed."
+    ]
   },
   {
-    number: 44,
-    id: "instead-of",
-    connector: "Instead of",
-    translation: "Em vez de",
-    family: "substitution",
-    grammarRule: "Requer substantivo ou verbo no gerúndio (-ing). Representa escolha ou troca.",
-    examples: [
+    "number": 44,
+    "id": "instead-of",
+    "connector": "Instead of",
+    "translation": "Em vez de / Ao invés de",
+    "family": "substitution",
+    "grammarRule": "Preposição de substituição ou escolha alternativa. Exige verbo no gerúndio (-ing) ou substantivo.",
+    "notes": "Correto: 'Instead of going' (com -ing). Errado: 'Instead of go'.",
+    "examples": [
       "Maybe you should stay home instead of going out tonight.",
+      "You should agree with me instead of what she said, it’s unfair.",
       "We can hire one more backend developer instead of a frontend developer.",
-      "Use automated tests instead of manual QA validation.",
-    ],
+      "The squad chose to implement automated end-to-end tests instead of manual QA testing."
+    ]
   },
   {
-    number: 45,
-    id: "likewise",
-    connector: "Likewise",
-    translation: "Da mesma forma / Igualmente a",
-    family: "addition",
-    grammarRule: "Mostra semelhança, paralelismo ou reciprocidade entre ações.",
-    examples: [
-      "Senior engineers must review pull requests. Likewise, junior developers are expected to follow the standards.",
-      "Thank you for helping me, your team is incredible. — Likewise! Let's keep in touch.",
-      "Improving test coverage reduces bugs. Likewise, clear documentation speeds up onboarding.",
-    ],
+    "number": 45,
+    "id": "likewise",
+    "connector": "Likewise",
+    "translation": "Semelhante a / Igualmente / Da mesma forma",
+    "family": "addition",
+    "grammarRule": "Advérbio e conector que denota paralelismo, reciprocidade ou ação análoga ('in the same way').",
+    "notes": "Muito usado em respostas educadas ('Nice to meet you' -> 'Likewise') e em padrões técnicos comparados.",
+    "examples": [
+      "Senior engineers must review their pull requests. Likewise, junior developers are expected to follow the same testing standards.",
+      "A: Thank you for helping me, your team is incredible. B: Likewise. Let’s keep in touch and work together in other opportunities.",
+      "Improving test coverage reduces bugs in production. Likewise, clear documentation speeds up developer onboarding."
+    ]
   },
   {
-    number: 46,
-    id: "meanwhile",
-    connector: "Meanwhile",
-    translation: "Enquanto isso / Nesse meio tempo",
-    family: "time",
-    grammarRule: "Mostra dois acontecimentos que ocorrem ao mesmo tempo em paralelo.",
-    examples: [
-      "The frontend engineers started building the UI. Meanwhile, the backend team set up database schemas.",
-      "The Grêmio team is training now; meanwhile, coach Renato Portalupi is at the press conference.",
-      "You are asleep; meanwhile, I cleaned the kitchen.",
-    ],
+    "number": 46,
+    "id": "meanwhile",
+    "connector": "Meanwhile",
+    "translation": "Enquanto isso / Nesse meio tempo",
+    "family": "time",
+    "grammarRule": "Advérbio de transição escrito em uma única palavra. Indica ações simultâneas ocorrendo em lugares ou equipes diferentes.",
+    "notes": "Perfeito para coordenar trabalhos paralelos de frontend e backend.",
+    "examples": [
+      "The frontend engineers started building the user interface. Meanwhile, the backend team set up the database schemas and authentication endpoints.",
+      "The Grêmio team are training now, meanwhile the coach Renato Portalupi is in his official presentation in the Training Center.",
+      "You are asleep, meanwhile I cleaned the kitchen.",
+      "The QA squad ran manual smoke tests. Meanwhile, the DevOps engineer provisioned the staging server."
+    ]
   },
   {
-    number: 48,
-    id: "mostly",
-    connector: "Mostly",
-    translation: "Na maioria / Em grande parte",
-    family: "emphasis",
-    grammarRule: "Advérbio que quantifica predominância de algo.",
-    examples: [
+    "number": 48,
+    "id": "mostly",
+    "connector": "Mostly",
+    "translation": "Na maioria / Em grande parte",
+    "family": "emphasis",
+    "grammarRule": "Advérbio de proporção predominante. Equivale a 'mainly' ou 'largely'.",
+    "notes": "Usado para caracterizar a composição de squads, linguagens do stack ou hábitos.",
+    "examples": [
+      "Mostly I study until late.",
       "The team is mostly composed of backend developers, with only two UI specialists.",
-      "Mostly, I study until late in the evening.",
-      "Our microservices are mostly written in TypeScript.",
-    ],
+      "Most of our backend microservices are written in TypeScript and Node.js."
+    ]
   },
   {
-    number: 49,
-    id: "nevertheless",
-    connector: "Nevertheless",
-    translation: "Contudo / Todavia / Não obstante",
-    family: "contrast",
-    grammarRule: "Conector formal de contraste forte entre duas realidades.",
-    examples: [
-      "The task seemed impossible; nevertheless, our engineering team found a clever solution.",
-      "He was exhausted; nevertheless, he stayed until the deployment was completed.",
-    ],
+    "number": 49,
+    "id": "nevertheless",
+    "connector": "Nevertheless",
+    "translation": "Contudo / Não obstante (muito formal)",
+    "family": "contrast",
+    "grammarRule": "Conector adversativo de alta formalidade. Sinaliza concessão forte ('despite what has just been said').",
+    "notes": "Comum em relatórios executivos e auditorias de conformidade.",
+    "examples": [
+      "The architectural migration carried high risks; nevertheless, the leadership team approved the investment.",
+      "We encountered several network timeouts; nevertheless, the batch job completed successfully."
+    ]
   },
   {
-    number: 50,
-    id: "no-longer",
-    connector: "No longer",
-    translation: "Não mais",
-    family: "emphasis",
-    grammarRule: "Indica que um estado, hábito ou condição do passado deixou de existir. Posiciona-se antes do verbo principal.",
-    examples: [
+    "number": 50,
+    "id": "no-longer",
+    "connector": "No longer",
+    "translation": "Não mais",
+    "family": "time",
+    "grammarRule": "Locução adverbial temporal que expressa cessação definitiva de um estado, hábito ou condição passada.",
+    "notes": "Posiciona-se geralmente antes do verbo principal ou após o verbo 'to be'.",
+    "examples": [
       "He no longer works at the consultancy.",
-      "That deprecated feature is no longer available in the latest release.",
-      "The tech lead said the QA is no longer available for manual testing, only for automation.",
-    ],
+      "I no longer eat junk food.",
+      "That feature is no longer available in the latest release.",
+      "The tech lead said the QA is no longer available for manual testing tasks, only for automated tests."
+    ]
   },
   {
-    number: 51,
-    id: "nonetheless",
-    connector: "Nonetheless",
-    translation: "Não obstante / Ainda assim",
-    family: "contrast",
-    grammarRule: "Conector formal equivalente a 'even so' ou 'nevertheless'.",
-    examples: [
-      "The forecast predicted rain; nonetheless, we went hiking.",
-      "The refactoring was risky; nonetheless, it reduced technical debt substantially.",
-    ],
+    "number": 51,
+    "id": "nonetheless",
+    "connector": "Nonetheless",
+    "translation": "Ainda assim / Não obstante",
+    "family": "contrast",
+    "grammarRule": "Advérbio de concessão formal idêntico a 'nevertheless'. Indica que uma dificuldade não impediu o resultado.",
+    "notes": "Sempre escrito como uma única palavra sem espaços.",
+    "examples": [
+      "The refactoring was demanding; nonetheless, it yielded a 40% improvement in code readability.",
+      "Cloud expenses were higher this quarter; nonetheless, customer acquisition grew exponentially."
+    ]
   },
   {
-    number: 52,
-    id: "nor",
-    connector: "Nor",
-    translation: "Nem",
-    family: "addition",
-    grammarRule: "Conjunção aditiva negativa que causa inversão do sujeito e verbo auxiliar.",
-    examples: [
-      "The system did not crash, nor did it lose any user data.",
-      "He doesn't like coffee, nor does he drink tea.",
-    ],
+    "number": 52,
+    "id": "nor",
+    "connector": "Nor",
+    "translation": "Nem (conecta ideias negativas)",
+    "family": "contrast",
+    "grammarRule": "Conjunção coordenativa que conecta duas ideias negativas. Frequentemente forma o par correlativo 'neither... nor'.",
+    "notes": "Quando 'nor' inicia uma oração independente, provoca inversão sujeito-verbo (ex: 'nor do I').",
+    "examples": [
+      "I like neither coffee nor tea.",
+      "I like neither vegetables nor fruit.",
+      "We like neither Java nor Spring frameworks.",
+      "The server did not respond to ping requests, nor did it write any crash logs to the disk."
+    ]
   },
   {
-    number: 53,
-    id: "on-the-other-hand",
-    connector: "On the other hand",
-    translation: "Por outro lado",
-    family: "contrast",
-    grammarRule: "Apresenta o contraponto ou a segunda perspectiva de um argumento.",
-    examples: [
-      "The monolithic architecture is simple to deploy; on the other hand, it scales less independently.",
-      "The cloud plan is cheaper; on the other hand, it offers less dedicated support.",
-    ],
+    "number": 53,
+    "id": "on-the-other-hand",
+    "connector": "On the other hand",
+    "translation": "Por outro lado",
+    "family": "contrast",
+    "grammarRule": "Locução conectiva de contraste usada para ponderar uma perspectiva oposta ou um contraponto.",
+    "notes": "Frequentemente usada em conjunto com 'on the one hand' para avaliar trade-offs arquiteturais.",
+    "examples": [
+      "The car is cheap. On the other hand, it uses a lot of fuel.",
+      "I didn’t like this house. On the other hand, I liked the kitchen.",
+      "Monoliths are simpler to deploy initially. On the other hand, microservices scale teams more independently."
+    ]
   },
   {
-    number: 54,
-    id: "on-the-whole",
-    connector: "On the whole",
-    translation: "No todo / Em geral",
-    family: "summary",
-    grammarRule: "Resume uma impressão geral sobre uma situação.",
-    examples: [
-      "On the whole, the team adapted very well to the new agile methodology.",
-      "There were some minor flaws, but on the whole, the product is outstanding.",
-    ],
+    "number": 54,
+    "id": "on-the-whole",
+    "connector": "On the whole",
+    "translation": "No todo / Em geral / Em linhas gerais",
+    "family": "summary",
+    "grammarRule": "Expressão avaliativa que sintetiza o julgamento global após ponderar prós e contras.",
+    "notes": "Significa 'generally speaking' ou 'all things considered'.",
+    "examples": [
+      "On the whole, the project was a success, despite a few delays.",
+      "There were minor bugs, but on the whole, the sprint went well.",
+      "The team is performing well, on the whole.",
+      "On the whole, our quarter is doing great. We’ll deliver everything we planned at the beginning."
+    ]
   },
   {
-    number: 55,
-    id: "only-if",
-    connector: "Only if",
-    translation: "Apenas se",
-    family: "condition",
-    grammarRule: "Estabelece uma condição restritiva e indispensável.",
-    examples: [
-      "We will deploy to production only if all end-to-end tests are green.",
-      "You can access the admin dashboard only if you enable two-factor authentication.",
-    ],
+    "number": 55,
+    "id": "only-if",
+    "connector": "Only if",
+    "translation": "Apenas se / Só se (condição estrita)",
+    "family": "condition",
+    "grammarRule": "Introduz uma condição estrita e exclusiva: a ação principal ocorre sob aquela condição e sob nenhuma outra.",
+    "notes": "Se 'Only if' iniciar a frase, a oração principal sofre inversão (ex: 'Only if tests pass will we deploy').",
+    "examples": [
+      "We will deploy the release only if all tests pass.",
+      "I will take the role only if it allows remote work.",
+      "You can speak to the client only if the manager approves.",
+      "I’m going to the party, only if Cinthia goes too."
+    ]
   },
   {
-    number: 56,
-    id: "or",
-    connector: "Or",
-    translation: "Ou",
-    family: "substitution",
-    grammarRule: "Apresenta alternativas mútuas ou opções disponíveis.",
-    examples: [
-      "You can submit the form by clicking the button or pressing enter.",
-      "We can migrate to PostgreSQL or stick with MySQL.",
-    ],
+    "number": 56,
+    "id": "or",
+    "connector": "Or",
+    "translation": "Ou (alternativa)",
+    "family": "condition",
+    "grammarRule": "Conjunção coordenativa de disjunção que liga termos ou orações indicando alternativa ou escolha.",
+    "notes": "Pode formar o par 'either... or' para indicar alternativas exclusivas.",
+    "examples": [
+      "Do you prefer coffee or tea?",
+      "Both are good for me, coffee or tea.",
+      "We can store application sessions in Redis or in encrypted cookies.",
+      "You should submit the pull request today, or the release manager will hold it until next week."
+    ]
   },
   {
-    number: 57,
-    id: "otherwise",
-    connector: "Otherwise",
-    translation: "Senão / Caso contrário",
-    family: "condition",
-    grammarRule: "Aponta a consequência indesejada caso uma ação não seja tomada.",
-    examples: [
-      "Submit the bug report today; otherwise, it won't be triaged in this sprint.",
-      "Please save your work frequently; otherwise, you may lose unsaved changes.",
-    ],
+    "number": 57,
+    "id": "otherwise",
+    "connector": "Otherwise",
+    "translation": "Senão / Caso contrário",
+    "family": "condition",
+    "grammarRule": "Advérbio conectivo que introduz a consequência negativa caso a condição anterior não seja cumprida.",
+    "notes": "Equivale a 'or else' ou 'if not'. Muito comum em avisos de prazos e bloqueios.",
+    "examples": [
+      "We need to fix this blocker today; otherwise, the sprint deadline will slip.",
+      "Write down the credentials; otherwise, you might forget them.",
+      "Hurry up, otherwise we'll miss the daily meeting.",
+      "A: We are going to Spain next week. B: Cool! What do you do if your luggage disappears on the plane? A: First, I’ll call the flight attendant, otherwise I will call 911 and they fight (eles que lutem) HAHAHAHA its a joke.",
+      "Make sure to commit your changes; otherwise, you may lose work during branch checkout."
+    ]
   },
   {
-    number: 58,
-    id: "particularly",
-    connector: "Particularly",
-    translation: "Particularmente / Especialmente",
-    family: "emphasis",
-    grammarRule: "Destaca um caso específico dentre um grupo maior.",
-    examples: [
-      "We need to test the payment flow, particularly on mobile browsers.",
-      "He loves programming, particularly working on distributed algorithms.",
-    ],
+    "number": 58,
+    "id": "particularly",
+    "connector": "Particularly",
+    "translation": "Particularmente / Em especial",
+    "family": "emphasis",
+    "grammarRule": "Advérbio de especificação que destaca um item dentro de uma categoria mais ampla.",
+    "notes": "Sinônimo exato de 'especially'.",
+    "examples": [
+      "The engineering leadership was impressed by the team, particularly the junior developer who solved the memory leak.",
+      "Database query optimization is crucial, particularly for high-traffic e-commerce checkout endpoints."
+    ]
   },
   {
-    number: 59,
-    id: "rather-than",
-    connector: "Rather (than)",
-    translation: "Preferível a / Em vez de",
-    family: "substitution",
-    grammarRule: "Indica preferência ou escolha de uma alternativa em detrimento de outra.",
-    examples: [
-      "We prefer writing automated tests rather than relying solely on manual validation.",
-      "He decided to study backend engineering rather than design.",
-    ],
+    "number": 59,
+    "id": "rather-than",
+    "connector": "Rather (than)",
+    "translation": "Preferível do que / Em vez de",
+    "family": "substitution",
+    "grammarRule": "Locução conjuntiva de preferência que contrasta duas opções, favorecendo uma em detrimento da outra.",
+    "notes": "Expressa escolha consciente baseada em valor ou prioridade.",
+    "examples": [
+      "I prefer coffee rather than tea. But I like tea too.",
+      "When I was younger, I preferred to play soccer rather than hide and seek.",
+      "Friday is a day that I like cleaning at home. I prefer to start in the office rather than the kitchen.",
+      "We decided to use asynchronous message queues rather than direct HTTP coupling between microservices."
+    ]
   },
   {
-    number: 60,
-    id: "since",
-    connector: "Since",
-    translation: "Desde / Visto que",
-    family: "cause",
-    grammarRule: "Pode indicar tempo (a partir de) ou causa (uma vez que / já que).",
-    examples: [
-      "Since you are already familiar with React, learning Next.js will be straightforward.",
-      "He has been working on this architecture since January.",
-    ],
+    "number": 60,
+    "id": "since",
+    "connector": "Since",
+    "translation": "Desde (tempo) / Visto que (causa)",
+    "family": "cause",
+    "grammarRule": "Possui duas funções vitais: 1) Marcador temporal de ponto de partida com Present Perfect; 2) Conjunção causal ('visto que / já que').",
+    "notes": "No início da oração frequentemente significa 'já que / visto que'; com anos e datas indica tempo.",
+    "examples": [
+      "Since I was born, I have known myself.",
+      "I have known Cinthia since 2024.",
+      "I have been working at GFT since 2022.",
+      "Since the database credentials expired, the backend could not establish connections.",
+      "Since we already met our sprint goal early, we started researching the next architectural POC."
+    ]
   },
   {
-    number: 61,
-    id: "so",
-    connector: "So",
-    translation: "Assim / Então / Portanto",
-    family: "cause",
-    grammarRule: "Conjunção de consequência e conclusão rápida muito frequente na conversação.",
-    examples: [
-      "The server crashed, so we restarted the cluster.",
-      "I was really tired, so I went to bed early.",
-    ],
+    "number": 61,
+    "id": "so",
+    "connector": "So",
+    "translation": "Assim / Por isso / Então",
+    "family": "cause",
+    "grammarRule": "Conjunção coordenativa de resultado direto (uma das FANBOYS). Liga uma razão ao seu resultado.",
+    "notes": "É o conector de resultado mais comum e coloquial do inglês.",
+    "examples": [
+      "It was raining heavily, so we decided to stay indoors.",
+      "I woke up late, so I missed the morning bus.",
+      "She studied consistently every day, so she passed the exam.",
+      "My son was at a party and decided to come home earlier, so I decided to pick him up and bring him home.",
+      "Actually, I’m not working as a software developer, so I don’t code anymore.",
+      "I can’t come in advance, so I called Leo Messi to inform you. Do you know him?",
+      "The server CPU reached 95%, so the auto-scaler launched two additional instances."
+    ]
   },
   {
-    number: 62,
-    id: "so-that",
-    connector: "So that",
-    translation: "A fim de que / Para que",
-    family: "purpose",
-    grammarRule: "Seguido de oração completa frequentemente com verbo modal (can, could, will).",
-    examples: [
-      "I'm here so that I can study English connectors.",
-      "We optimized the query so that the page loads in under 200 milliseconds.",
-    ],
+    "number": 62,
+    "id": "so-that",
+    "connector": "So that",
+    "translation": "A fim de que / De modo que",
+    "family": "purpose",
+    "grammarRule": "Conjunção de finalidade seguida de oração completa com verbo modal (can, could, may, might, will, would).",
+    "notes": "Diferente de 'in order to' (que recebe verbo no infinitivo), 'so that' recebe oração com sujeito e modal.",
+    "examples": [
+      "We are here now, so that we can cook.",
+      "I am taking detailed notes so that I can remember the action items later.",
+      "The DevOps engineer automated the test pipeline so that developers can deploy with confidence.",
+      "We added comprehensive logging so that we can diagnose production errors quickly."
+    ]
   },
   {
-    number: 63,
-    id: "such",
-    connector: "Such",
-    translation: "Tal / Tão",
-    family: "emphasis",
-    grammarRule: "Usado antes de substantivos ou adjetivo + substantivo para enfatizar intensidade.",
-    examples: [
-      "It was such a complicated bug that we needed three senior devs to solve it.",
-      "We have never seen such dedication in a junior developer.",
-    ],
+    "number": 63,
+    "id": "such",
+    "connector": "Such",
+    "translation": "Tal / Tão (enfático antes de substantivo)",
+    "family": "emphasis",
+    "grammarRule": "Modificador enfático usado antes de [artigo + adjetivo + substantivo] ('such a good day').",
+    "notes": "Cuidado: 'so' modifica adjetivos puros ('so good'); 'such' modifica expressões nominais ('such a good team').",
+    "examples": [
+      "It was such a good movie that I watched it twice.",
+      "She is such a talented developer.",
+      "They faced such difficult challenges during the project.",
+      "Yesterday was such a good day, so that we could go out and have fun with our friends.",
+      "You said to me that the company was such an amazing place to work. Actually, it isn't a good place to work, it’s awful."
+    ]
   },
   {
-    number: 64,
-    id: "such-as",
-    connector: "Such as",
-    translation: "Tal como / Como por exemplo",
-    family: "example",
-    grammarRule: "Introduz itens ilustrativos de uma categoria.",
-    examples: [
-      "Modern frontend frameworks, such as React, Vue, and Angular, use component architecture.",
-      "You should practice common connectors such as 'although', 'however', and 'meanwhile'.",
-    ],
+    "number": 64,
+    "id": "such-as",
+    "connector": "Such as",
+    "translation": "Tal como / Como por exemplo",
+    "family": "example",
+    "grammarRule": "Locução prepositiva usada para introduzir exemplos específicos de uma categoria ampla. Equivale a 'for example' ou 'including'.",
+    "notes": "Pode ser dividida em construções como 'such frameworks as Scrum', embora 'frameworks such as Scrum' seja mais frequente.",
+    "examples": [
+      "I enjoy outdoor activities, such as hiking and cycling.",
+      "We use agile tools, such as Jira and Confluence.",
+      "Many programming languages, such as Python and JavaScript, are popular today.",
+      "When we manage projects, it’s necessary to use some frameworks such as Scrum and SAFe.",
+      "People are afraid of dealing with wild animals such as Tigers, Lions and Snakes. Although they are wild, you can raise one of them in your own home... It's a joke!"
+    ]
   },
   {
-    number: 65,
-    id: "summing-up",
-    connector: "Summing up",
-    translation: "Resumindo",
-    family: "summary",
-    grammarRule: "Abrevia e sumariza os pontos principais de uma apresentação ou texto.",
-    examples: [
-      "Summing up, the feature is ready for QA verification.",
-      "Summing up our findings, caching improved database latency by 80%.",
-    ],
+    "number": 65,
+    "id": "summing-up",
+    "connector": "Summing up",
+    "translation": "Resumindo / Em suma",
+    "family": "summary",
+    "grammarRule": "Locução participial que introduz a síntese de ideias debatidas anteriormente.",
+    "notes": "Excelente para fechamentos de reuniões de alinhamento com clientes.",
+    "examples": [
+      "Summing up, the team has successfully resolved all high-priority blockers for this sprint.",
+      "Summing up our architectural review, migrating to GraphQL will solve client-side over-fetching."
+    ]
   },
   {
-    number: 66,
-    id: "thats-why",
-    connector: "That's why",
-    translation: "Por isso / É por isso",
-    family: "cause",
-    grammarRule: "Conecta uma razão exposta anteriormente com o seu desfecho direto.",
-    examples: [
-      "The traffic was awful; that's why the developer was late.",
-      "We didn't run tests before deploying; that's why the production server went down.",
-    ],
+    "number": 66,
+    "id": "thats-why",
+    "connector": "That's why",
+    "translation": "Por isso / É por isso que",
+    "family": "cause",
+    "grammarRule": "Conector de causa e explicação que liga um fato anterior ao seu efeito direto. Equivale a 'that is the reason why'.",
+    "notes": "Muito coloquial e natural na fala diária e reuniões técnicas.",
+    "examples": [
+      "I was tired. That's why I went to bed early.",
+      "Yesterday was a bad day, Grêmio lost the match. That’s why I drank a lot.",
+      "You didn’t fix the table on MongoDB. That's why the problem wasn’t solved.",
+      "Our automated tests caught the breaking change early; that's why nothing broke in production."
+    ]
   },
   {
-    number: 67,
-    id: "then",
-    connector: "Then",
-    translation: "Então / Depois / Assim",
-    family: "time",
-    grammarRule: "Expressa sequência cronológica imediata ou consequência lógica.",
-    examples: [
-      "Run the migrations first, and then start the web server.",
-      "If the condition is met, then trigger the notification webhook.",
-    ],
+    "number": 67,
+    "id": "then",
+    "connector": "Then",
+    "translation": "Então / Em seguida / Assim",
+    "family": "time",
+    "grammarRule": "Advérbio que estabelece sequência cronológica ou consequência lógica de passos encadeados.",
+    "notes": "Padrão clássico: 'First..., Then...'. Indispensável para documentar pipelines e fluxos de usuário.",
+    "examples": [
+      "First, I reviewed the requirements. Then, I started development.",
+      "We held the Sprint Planning meeting. Then, the team began working on the user stories.",
+      "I was talking to my colleague and then you called me.",
+      "First run the database migrations; then restart the application server pods."
+    ]
   },
   {
-    number: 68,
-    id: "therefore",
-    connector: "Therefore",
-    translation: "Por esta razão / Portanto",
-    family: "cause",
-    grammarRule: "Transição formal para conclusões lógicas incontestáveis.",
-    examples: [
-      "The server was down; therefore, we stopped testing.",
-      "We have satisfied all client requirements; therefore, the sprint is officially closed.",
-    ],
+    "number": 68,
+    "id": "therefore",
+    "connector": "Therefore",
+    "translation": "Portanto / Por esta razão",
+    "family": "cause",
+    "grammarRule": "Advérbio conjuntivo formal que expressa uma dedução lógica irrefutável ou resultado formal.",
+    "notes": "Muito empregado em atas de reuniões corporativas e decisões de design arquitetural.",
+    "examples": [
+      "The client requested new scope; therefore, the sprint deadline was renegotiated.",
+      "Automated test coverage is under 30%; therefore, we cannot approve production deployment yet."
+    ]
   },
   {
-    number: 69,
-    id: "though",
-    connector: "Though",
-    translation: "Embora (comum no final)",
-    family: "contrast",
-    grammarRule: "Muito usado coloquialmente no final da oração para relativizar a frase anterior.",
-    examples: [
-      "I'm tired. I'll go to the party, though.",
-      "The salary is great. The commute is long, though.",
-    ],
+    "number": 69,
+    "id": "though",
+    "connector": "Though",
+    "translation": "Embora / No entanto (comum no final da frase)",
+    "family": "contrast",
+    "grammarRule": "No início de frase equivale a 'although'. No inglês falado natural, é muito frequentemente colocado NO FINAL da frase com sentido de 'however / but'.",
+    "notes": "A posição final é extremamente comum no dia a dia: 'It was tough. I did it, though'.",
+    "examples": [
+      "Though it was raining, we went for a walk.",
+      "The meeting was long. It was productive, though.",
+      "I don't usually drink coffee. I had one this morning, though.",
+      "It was a very tough day. I did everything that I needed to, though.",
+      "When I go to my friend Samuel Eto'o, I’ll tell him what you said. I don’t like to go there, though.",
+      "Next Sunday Grêmio will play with Palmeiras. We're gonna win, though.",
+      "I didn’t like this house. I liked the garden, though."
+    ]
   },
   {
-    number: 70,
-    id: "thus",
-    connector: "Thus",
-    translation: "Dessa forma / Desta maneira / Portanto",
-    family: "cause",
-    grammarRule: "Conector formal que explica a metodologia ou a consequência técnica.",
-    examples: [
-      "We enabled gzip compression on the server, thus decreasing bandwidth consumption.",
-      "The API response was cached; thus, subsequent requests loaded instantly.",
-    ],
+    "number": 70,
+    "id": "thus",
+    "connector": "Thus",
+    "translation": "Dessa forma / Desta maneira / Portanto",
+    "family": "cause",
+    "grammarRule": "Advérbio formal de causa e consequência. Muito comum na redação de relatórios técnicos e documentos acadêmicos.",
+    "notes": "Pode ser seguido de oração completa ou de gerúndio ('thus reducing...').",
+    "examples": [
+      "The system was upgraded. Thus, performance improved.",
+      "The squad increased automation coverage. Thus, manual effort was reduced.",
+      "The team improved backlog refinement, thus reducing the number of blocked stories.",
+      "We introduced edge caching, thus decreasing round-trip latency for global users."
+    ]
   },
   {
-    number: 71,
-    id: "to-sum-up",
-    connector: "To sum up",
-    translation: "Para resumir",
-    family: "summary",
-    grammarRule: "Fórmula clássica de transição para conclusão de discursos e artigos.",
-    examples: [
-      "To sum up, our company is positioned for strong growth this fiscal year.",
-      "To sum up, mastering connectors is essential for fluent business English.",
-    ],
+    "number": 71,
+    "id": "to-sum-up",
+    "connector": "To sum up",
+    "translation": "Para resumir / Em resumo / Em suma",
+    "family": "summary",
+    "grammarRule": "Locução conectiva no infinitivo usada para recapitular os pontos centrais de uma argumentação.",
+    "notes": "Usada no início da oração final, seguida de vírgula.",
+    "examples": [
+      "To sum up, we need to reduce our cloud infrastructure costs.",
+      "To sum up, the project was successful despite the difficulties.",
+      "To sum up, there are three main reasons for this architectural decision.",
+      "To sum up, I think we need more time to finish the project.",
+      "To sum up, after all that you said, you finished the deployment in production."
+    ]
   },
   {
-    number: 72,
-    id: "towards",
-    connector: "Towards",
-    translation: "Em direção a / Para com",
-    family: "purpose",
-    grammarRule: "Indica movimento físico ou atitude em relação a algo/alguém.",
-    examples: [
-      "The team made great strides towards completing the MVP.",
-      "He showed genuine respect towards his colleagues during the code review.",
-    ],
+    "number": 72,
+    "id": "towards",
+    "connector": "Towards",
+    "translation": "Em direção a / Rumo a",
+    "family": "purpose",
+    "grammarRule": "Preposição de movimento, direção física ou progresso orientado a um objetivo.",
+    "notes": "Muito comum no inglês britânico ('towards'); em inglês americano usa-se frequentemente 'toward' sem o 's'.",
+    "examples": [
+      "He walked towards the door.",
+      "She was driving towards London.",
+      "We arrived towards the end of the meeting.",
+      "We are working towards our quarterly sprint goal.",
+      "Let’s build a new software toward the next generation of clients."
+    ]
   },
   {
-    number: 73,
-    id: "unless",
-    connector: "Unless",
-    translation: "A menos que",
-    family: "condition",
-    grammarRule: "Significa 'if not'. Introduz a única condição que alterará a regra geral.",
-    examples: [
-      "You will not pass the exam unless you study tonight.",
-      "Don't merge to the main branch unless your pull request is approved.",
-    ],
+    "number": 73,
+    "id": "unless",
+    "connector": "Unless",
+    "translation": "A menos que / A não ser que",
+    "family": "condition",
+    "grammarRule": "Conjunção condicional negativa equivalente a 'IF NOT'. Nunca use negação dupla dentro da oração com unless.",
+    "notes": "Regra de ouro: 'Unless you study' = 'If you do not study'.",
+    "examples": [
+      "Unless you study, you won't pass the exam.",
+      "Unless you hurry, you'll miss the bus.",
+      "You can't enter unless you have a ticket.",
+      "Do not merge code into the master branch unless all CI automated pipeline checks pass."
+    ]
   },
   {
-    number: 74,
-    id: "unlike",
-    connector: "Unlike",
-    translation: "Diferentemente de",
-    family: "contrast",
-    grammarRule: "Compara dois elementos realçando sua dessemelhança.",
-    examples: [
-      "Unlike JavaScript, TypeScript provides compile-time static type checking.",
-      "Unlike his previous manager, the new Tech Lead is very open to feedback.",
-    ],
+    "number": 74,
+    "id": "unlike",
+    "connector": "Unlike",
+    "translation": "Diferentemente de / Ao contrário de",
+    "family": "contrast",
+    "grammarRule": "Preposição que expressa distinção ou contraste entre duas entidades ('UNLIKE = different from'). Seguido de substantivo ou pronome.",
+    "notes": "Excelente para contrastar empregos anteriores, paradigmas de linguagens ou arquiteturas.",
+    "examples": [
+      "Unlike my brother, I enjoy cooking.",
+      "Unlike other cars, this one is very economical.",
+      "Unlike my father, I don't like working on weekends.",
+      "Unlike John, Mary likes coffee.",
+      "Unlike most people, I prefer working at night.",
+      "Unlike my previous job, my current job is fully remote.",
+      "Unlike relational SQL databases, MongoDB stores records as flexible JSON-like documents."
+    ]
   },
   {
-    number: 75,
-    id: "whatever",
-    connector: "Whatever",
-    translation: "O que quer que seja / Seja o que for",
-    family: "emphasis",
-    grammarRule: "Pronome relativo composto que denota universalidade indiferente.",
-    examples: [
-      "Whatever happens in the meeting, stay calm and professional.",
-      "You can choose whatever framework best suits the project requirements.",
-    ],
+    "number": 75,
+    "id": "whatever",
+    "connector": "Whatever",
+    "translation": "O que quer que seja / Seja o que for / Tanto faz",
+    "family": "emphasis",
+    "grammarRule": "Pronome ou determinante relativo indefinido que expressa indiferença ou amplitude irrestrita de escolhas.",
+    "notes": "Em respostas curtas informais ('Whatever'), denota 'tanto faz / você decide'.",
+    "examples": [
+      "Choose whatever you want.",
+      "Whatever happens, I'll be there.",
+      "A: What do you want to eat? B: — Whatever.",
+      "Take whatever book you want.",
+      "Deploy whatever version has been approved by QA."
+    ]
   },
   {
-    number: 76,
-    id: "whenever",
-    connector: "Whenever",
-    translation: "Quando quer que seja / Sempre que",
-    family: "time",
-    grammarRule: "Indica repetição ou qualquer momento temporal arbitrário.",
-    examples: [
-      "Whenever you push new code to GitHub, the CI pipeline automatically runs tests.",
-      "Whenever you have a doubt about connectors, check your study flashcards.",
-    ],
+    "number": 76,
+    "id": "whenever",
+    "connector": "Whenever",
+    "translation": "Quando quer que seja / Sempre que",
+    "family": "time",
+    "grammarRule": "Conjunção temporal que indica repetição contínua ('every time that') ou qualquer momento temporal arbitrário.",
+    "notes": "Muito comum em regras de automação (webhooks, CI pipelines, gatilhos de eventos).",
+    "examples": [
+      "Whenever I drink coffee, I can't sleep.",
+      "Whenever I go to London, I visit the British Museum.",
+      "Call me whenever you need help.",
+      "Whenever I arrive home late, I'm tired.",
+      "Whenever a developer pushes code to GitHub, the automated tests run in the background."
+    ]
   },
   {
-    number: 77,
-    id: "whereas",
-    connector: "Whereas",
-    translation: "Ao passo que / Enquanto",
-    family: "contrast",
-    grammarRule: "Confronta duas realidades simultâneas e divergentes na mesma oração.",
-    examples: [
-      "The backend is already ready, whereas the frontend is still in progress.",
-      "Some developers prefer working remotely, whereas others thrive in an office.",
-    ],
+    "number": 77,
+    "id": "whereas",
+    "connector": "Whereas",
+    "translation": "Ao passo que / Enquanto que",
+    "family": "contrast",
+    "grammarRule": "Conjunção subordinativa formal que contrapõe dois fatos, métodos ou características simultâneas na mesma oração.",
+    "notes": "Diferente de 'while' (que pode indicar tempo cronológico), 'whereas' é 100% focado em contraste analítico.",
+    "examples": [
+      "John likes working from home, whereas Mary prefers working in the office.",
+      "I like coffee, whereas my brother prefers tea.",
+      "Some people like working alone, whereas others prefer teamwork.",
+      "The old system was slow, whereas the new system is much faster.",
+      "Scrum focuses on short iterations, whereas Kanban focuses on continuous flow.",
+      "I prefer British English, whereas my friend prefers American English."
+    ]
   },
   {
-    number: 78,
-    id: "wherever",
-    connector: "Wherever",
-    translation: "Onde quer que seja / Onde for",
-    family: "emphasis",
-    grammarRule: "Expressa ausência de restrição espacial ou geográfica.",
-    examples: [
-      "With cloud workstations, developers can code wherever there is internet access.",
-      "Wherever you go in London, you will find historic architecture.",
-    ],
+    "number": 78,
+    "id": "wherever",
+    "connector": "Wherever",
+    "translation": "Onde quer que seja / Seja onde for",
+    "family": "emphasis",
+    "grammarRule": "Conjunção ou advérbio que denota ausência total de restrição espacial ou geográfica.",
+    "notes": "Ideal para descrever flexibilidade de trabalho remoto e cloud computing.",
+    "examples": [
+      "Wherever you go, I'll be there.",
+      "Wherever he lives, he'll need a car.",
+      "You can sit wherever you want.",
+      "Wherever you go, be careful.",
+      "I'll meet you wherever you are.",
+      "With a cloud workstation, you can code securely from wherever you are in the world."
+    ]
   },
   {
-    number: 79,
-    id: "whether",
-    connector: "Whether",
-    translation: "Se (duas ou mais opções)",
-    family: "condition",
-    grammarRule: "Usado para indicar alternativas explícitas (whether X or Y) ou em discursos indiretos.",
-    examples: [
-      "I don’t know whether it is true or not.",
-      "We must decide whether to refactor the legacy module or rebuild it from scratch.",
-    ],
+    "number": 79,
+    "id": "whether",
+    "connector": "Whether",
+    "translation": "Se (duas opções ou mais alternativas)",
+    "family": "condition",
+    "grammarRule": "Conjunção usada para introduzir alternativas explícitas ou dúvidas entre duas ou mais possibilidades ('whether X or Y').",
+    "notes": "Regra clássica: use 'whether' (e não 'if') após preposições, antes de infinitivos com 'to', ou com 'or not' explícito.",
+    "examples": [
+      "I don't know whether he'll come or not.",
+      "We need to decide whether to stay or leave.",
+      "I don't know whether to stay or leave.",
+      "I don't know whether to go.",
+      "She can't decide whether to accept the offer.",
+      "The engineering squad must decide whether to refactor the legacy codebase or rebuild it using Go microservices."
+    ]
   },
   {
-    number: 80,
-    id: "while",
-    connector: "While",
-    translation: "Enquanto",
-    family: "time",
-    grammarRule: "Expressa ações que transcorrem em simultâneo ou introduz contraste.",
-    examples: [
-      "While the QA team tested the API, the developers fixed the UI bugs.",
-      "While I understand your point, we must still respect the architectural guidelines.",
-    ],
+    "number": 80,
+    "id": "while",
+    "connector": "While",
+    "translation": "Enquanto (tempo) / Embora (contraste)",
+    "family": "time",
+    "grammarRule": "Conector versátil com 3 usos: 1) Ações simultâneas de mesma duração; 2) 'Durante o tempo em que'; 3) Concessão/contraste ('embora').",
+    "notes": "Quando usado no sentido temporal, requer tempos contínuos (Past/Present Continuous).",
+    "examples": [
+      "I was studying while my son was watching TV.",
+      "I listen to podcasts while I'm working.",
+      "I like coffee, while my brother prefers tea.",
+      "I was cooking while my wife was watching TV.",
+      "I prefer working remotely, while my colleague prefers the office.",
+      "While I understand your point, I disagree.",
+      "While the project was successful, it was very expensive.",
+      "I fell asleep while I was watching TV.",
+      "While the QA team tested the API endpoints, developers fixed the CSS styling bugs."
+    ]
   },
   {
-    number: 81,
-    id: "yet",
-    connector: "Yet",
-    translation: "Ainda / Contudo",
-    family: "contrast",
-    grammarRule: "Como conjunção adversativa, equivale a 'but' ou 'nevertheless' com tom refinado.",
-    examples: [
-      "The design is simple, yet extremely powerful.",
-      "We encountered several roadblocks, yet we completed the project on time.",
-    ],
-  },
+    "number": 81,
+    "id": "yet",
+    "connector": "Yet",
+    "translation": "Ainda (tempo) / Contudo / No entanto (contraste)",
+    "family": "contrast",
+    "grammarRule": "Dois usos cruciais: 1) Advérbio temporal no fim de frases negativas/interrogativas com Present Perfect ('ainda/já'); 2) Conjunção adversativa ('mas/contudo').",
+    "notes": "Como conector adversativo (FANBOYS), une orações com elegância: 'simple, yet powerful'.",
+    "examples": [
+      "I haven't finished yet.",
+      "She hasn't arrived yet.",
+      "Have you finished yet?",
+      "I haven't eaten yet.",
+      "He is very young, yet he is extremely experienced.",
+      "The task was difficult, yet we managed to finish it.",
+      "The microservice design was simple, yet resilient to high database spikes."
+    ]
+  }
 ];
