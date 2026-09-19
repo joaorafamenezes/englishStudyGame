@@ -1,8 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { fetchSummary, startSession, submitAnswer } from "./api";
 import { FlashcardsDeck } from "./components/FlashcardsDeck";
+import { LeaderboardModal } from "./components/LeaderboardModal";
 import { MatchMode } from "./components/MatchMode";
 import { TeacherFeedback } from "./components/TeacherFeedback";
+import {
+  getLeaderboard,
+  qualifiesForTop5,
+  saveScore,
+  type LeaderboardEntry,
+} from "./leaderboard";
 import {
   isSoundMuted,
   playClickSound,
@@ -74,6 +81,19 @@ export function App() {
   const [error, setError] = useState<string | null>(null);
   const answering = useRef(false);
 
+  // Ranking Local (Top 5)
+  const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
+  const [top5List, setTop5List] = useState<LeaderboardEntry[]>(() => getLeaderboard());
+  const [playerName, setPlayerName] = useState(() => {
+    try {
+      return localStorage.getItem("gap_runner_player_name") || "";
+    } catch {
+      return "";
+    }
+  });
+  const [savedSessionId, setSavedSessionId] = useState<string | null>(null);
+  const [highlightRecordId, setHighlightRecordId] = useState<string | null>(null);
+
   const isZen = gameMode === "zen";
 
   const timerPercent = useMemo(
@@ -96,6 +116,8 @@ export function App() {
       setQuestion(next.question);
       setFeedback(null);
       setSummary(null);
+      setSavedSessionId(null);
+      setHighlightRecordId(null);
       setSecondsLeft(QUESTION_SECONDS);
       setScreen("play");
     } catch (err) {
@@ -103,6 +125,29 @@ export function App() {
     } finally {
       setBusy(false);
     }
+  }
+
+  function handleSaveHighScore(e: React.FormEvent) {
+    e.preventDefault();
+    if (!summary || !session) return;
+    const nameToSave = playerName.trim() || "Estudante Anônimo";
+    try {
+      localStorage.setItem("gap_runner_player_name", nameToSave);
+    } catch {}
+
+    const updated = saveScore({
+      name: nameToSave,
+      score: summary.score,
+      streak: summary.bestStreak,
+      mode: session.mode || gameMode,
+    });
+    setTop5List(updated);
+    setSavedSessionId(session.sessionId);
+    const found = updated.find((r) => r.name === nameToSave && r.score === summary.score);
+    if (found) {
+      setHighlightRecordId(found.id);
+    }
+    playSuccessSound();
   }
 
   async function answer(optionId?: string, timedOut = false) {
@@ -158,6 +203,8 @@ export function App() {
       try {
         const data = await fetchSummary(session.sessionId);
         setSummary(data);
+        setTop5List(getLeaderboard());
+        setHighlightRecordId(null);
         setScreen("result");
         playVictoryFanfare();
       } catch (err) {
@@ -254,6 +301,19 @@ export function App() {
               {isZen ? "🧘 Modo Estudo Zen" : "⚡ Modo Desafio Arcade"}
             </span>
           ) : null}
+
+          <button
+            type="button"
+            className="leaderboard-toggle-btn"
+            onClick={() => {
+              playClickSound();
+              setIsLeaderboardOpen(true);
+            }}
+            title="Ver o Hall da Fama dos 5 maiores recordes"
+            aria-label="Ver ranking"
+          >
+            🏆 Ranking
+          </button>
 
           <button
             type="button"
@@ -523,6 +583,71 @@ export function App() {
             </div>
           </div>
 
+          {/* BANNER DE NOVO RECORDE TOP 5 */}
+          {qualifiesForTop5(summary.score) && savedSessionId !== session?.sessionId ? (
+            <div className="new-record-banner">
+              <div className="record-header">
+                <span className="record-icon">🎉</span>
+                <div>
+                  <h4>Novo Recorde no Top 5!</h4>
+                  <p>
+                    Você atingiu <strong>{summary.score.toLocaleString("pt-BR")} pontos</strong>! Registre seu nome no Hall da Fama:
+                  </p>
+                </div>
+              </div>
+              <form onSubmit={handleSaveHighScore} className="record-form">
+                <input
+                  type="text"
+                  maxLength={24}
+                  placeholder="Digite seu nome ou apelido (ex: Rafael)"
+                  value={playerName}
+                  onChange={(e) => setPlayerName(e.target.value)}
+                  className="record-name-input"
+                  required
+                  autoFocus
+                />
+                <button type="submit" className="btn btn-primary save-record-btn">
+                  Salvar no Ranking 🏅
+                </button>
+              </form>
+            </div>
+          ) : null}
+
+          {/* CARD DO TOP 5 ATUALIZADO */}
+          <div className="result-top5-card">
+            <div className="result-top5-header">
+              <span>🏆 Hall da Fama (Top 5 Local)</span>
+              <button
+                type="button"
+                className="btn btn-ghost"
+                style={{ padding: "4px 10px", fontSize: 13 }}
+                onClick={() => setIsLeaderboardOpen(true)}
+              >
+                Ver Ranking Completo ↗
+              </button>
+            </div>
+            <div className="result-top5-chips">
+              {top5List.length === 0 ? (
+                <span className="muted" style={{ fontSize: 13 }}>
+                  Nenhum recorde registrado ainda.
+                </span>
+              ) : (
+                top5List.map((entry, idx) => (
+                  <div
+                    key={entry.id}
+                    className={`top5-chip ${entry.id === highlightRecordId ? "highlight" : ""}`}
+                  >
+                    <span className="chip-medal">
+                      {idx === 0 ? "🥇" : idx === 1 ? "🥈" : idx === 2 ? "🥉" : `${idx + 1}º`}
+                    </span>
+                    <span className="chip-name">{entry.name}</span>
+                    <strong className="chip-score">{entry.score.toLocaleString("pt-BR")} pts</strong>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+
           <div className="review">
             <h3>Revisão de Aprendizado:</h3>
             {summary.review.map((item, index) => (
@@ -596,6 +721,13 @@ export function App() {
 
       {/* MODO 3: MATCH RÁPIDO */}
       {activeTab === "match" ? <MatchMode /> : null}
+
+      {/* MODAL DO HALL DA FAMA (RANKING LOCAL) */}
+      <LeaderboardModal
+        isOpen={isLeaderboardOpen}
+        onClose={() => setIsLeaderboardOpen(false)}
+        highlightId={highlightRecordId}
+      />
     </div>
   );
 }
