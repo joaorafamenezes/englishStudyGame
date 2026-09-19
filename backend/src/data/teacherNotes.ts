@@ -460,10 +460,10 @@ export const TEACHER_NOTES: Record<string, TeacherNote> = {
     "proTip": "No inglês falado e escrito natural, 'as well' no final substitui 'also' com muita elegância: 'I like coffee as well!'."
   },
   "q-at-last-1": {
-    "sentenceTranslation": "Está tarde, mas nós encontramos o problema por fim.",
-    "whyCorrect": "'At last' expressa alívio por algo finalmente ter sido resolvido ou alcançado após demora ou dificuldade.",
-    "whyOthersFail": "'At least' significa 'pelo menos / no mínimo'. 'In case' significa 'no caso de'. 'Due to' significa 'devido a'.",
-    "proTip": "Cuidado com os falsos cognatos auditivos: 'At last' = finalmente (tempo). 'At least' = pelo menos (quantidade ou aspecto positivo)."
+    "sentenceTranslation": "O Renato Gaúcho assinou com o Grêmio finalmente / por fim.",
+    "whyCorrect": "'At last' indica que algo muito esperado finalmente se concretizou após longa negociação e espera.",
+    "whyOthersFail": "'At all' é usado para ênfase negativa ('not at all'). 'At least' significa 'pelo menos'. 'In advance' significa 'com antecedência'.",
+    "proTip": "Diferença do Professor: 'At last' = Finalmente! (com emoção e alívio). 'Lastly' = Em último lugar numa lista."
   },
   "q-at-least-1": {
     "sentenceTranslation": "Embora eu não tenha estudado o suficiente, pelo menos estudei Matemática, a matéria mais difícil.",
@@ -646,190 +646,190 @@ export const TEACHER_NOTES: Record<string, TeacherNote> = {
     "proTip": "Use 'rather than' para expor escolhas arquiteturais ponderadas: 'We chose TypeScript rather than plain JavaScript'."
   },
   "q-gremio-portalupi-1": {
-    "sentenceTranslation": "Tradução: \"The Grêmio squad is training now; meanwhile, coach Renato Portalupi is at the press conference.\"",
-    "whyCorrect": "Meanwhile highlights two events happening in parallel at the same time.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'meanwhile' expressa time. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "O elenco do Grêmio está treinando agora; enquanto isso, o técnico Renato Portalupi está na entrevista coletiva.",
+    "whyCorrect": "'Meanwhile' destaca duas ações que estão acontecendo em paralelo exatamente ao mesmo tempo.",
+    "whyOthersFail": "'Unless' introduz condição negativa ('a menos que'). 'Because' introduz causa. 'Despite' exige substantivo direto.",
+    "proTip": "Escreve-se 'meanwhile' em uma única palavra. Sempre use vírgula após ele quando iniciar uma nova oração!"
   },
   "q-scrum-master-1": {
-    "sentenceTranslation": "Tradução: \"The Scrum Master conducted the Retrospective along with the developers and the QAs.\"",
-    "whyCorrect": "Along with expresses togetherness, inclusion, or company.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'along with' expressa addition. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "O Scrum Master conduziu a Retrospectiva junto com os desenvolvedores e os QAs.",
+    "whyCorrect": "'Along with' expressa companhia, união e colaboração entre os participantes da cerimônia ágil.",
+    "whyOthersFail": "'Apart from' excluiria os profissionais ('exceto os devs'). 'Instead of' indicaria substituição. 'Due to' expressa causa.",
+    "proTip": "Use 'along with' no ambiente corporativo para enfatizar o trabalho conjunto e colaborativo entre squads!"
   },
   "q-iphone-1": {
-    "sentenceTranslation": "Tradução: \"When you buy a new iPhone, the charger won't come along with the phone.\"",
-    "whyCorrect": "Along with indicates something accompanying or bundled with another item.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'along with' expressa addition. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Quando você compra um novo iPhone, o carregador não vem junto com o aparelho.",
+    "whyCorrect": "'Along with' indica que um item não acompanha fisicamente ou não está incluído no pacote do produto.",
+    "whyOthersFail": "'Instead of' significa 'em vez de'. 'Because of' indica motivo. 'In order to' expressa finalidade com verbo infinitivo.",
+    "proTip": "'Come along with' é o phrasal verb padrão para dizer que algo vem incluso no produto!"
   },
   "q-above-all-1": {
-    "sentenceTranslation": "Tradução: \"Above all, we must ensure our production databases are secured against unauthorized access.\"",
-    "whyCorrect": "Above all stresses the top priority or most crucial element.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'Above all' expressa emphasis. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Acima de tudo, devemos garantir que nossos bancos de dados de produção estejam protegidos contra acessos não autorizados.",
+    "whyCorrect": "'Above all' destaca a prioridade máxima e o requisito número um na arquitetura de segurança.",
+    "whyOthersFail": "'Afterwards' indica tempo posterior. 'Instead of' indica substituição. 'Due to' expressa causa.",
+    "proTip": "Em alinhamentos executivos de arquitetura, abra com 'Above all, ...' para focar no requisito prioritário."
   },
   "q-afterwards-1": {
-    "sentenceTranslation": "Tradução: \"We will conduct the daily standup first; afterwards, we can pair program on the critical bug.\"",
-    "whyCorrect": "Afterwards points to a subsequent point in time after the prior action.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'afterwards' expressa time. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Faremos a daily standup primeiro; depois / posteriormente, podemos parear no bug crítico.",
+    "whyCorrect": "'Afterwards' indica o momento temporal imediatamente subsequente à reunião.",
+    "whyOthersFail": "'Meanwhile' indicaria simultaneidade (impossível parear durante a daily). 'Unless' é condicional. 'Because' é causal.",
+    "proTip": "Estrutura ágil clássica: '[Ação 1] first; afterwards, [Ação 2]'."
   },
   "q-all-in-all-1": {
-    "sentenceTranslation": "Tradução: \"All in all, the sprint was a success despite the unexpected infrastructure downtime.\"",
-    "whyCorrect": "All in all expresses an overall judgment when taking everything into consideration.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'All in all' expressa summary. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Em suma / No geral, a sprint foi um sucesso, apesar da indisponibilidade inesperada de infraestrutura.",
+    "whyCorrect": "'All in all' introduz uma avaliação global que pesa pontos positivos e negativos de forma equilibrada.",
+    "whyOthersFail": "'Above all' enfatizaria a prioridade. 'Instead of' exigiria substituição. 'Because of' indicaria causa.",
+    "proTip": "Excelente para a abertura da Retrospectiva: reconhece o problema de infraestrutura, mas celebra o sucesso global!"
   },
   "q-apart-from-1": {
-    "sentenceTranslation": "Tradução: \"Apart from a few minor styling quirks on mobile, the web application is ready for deploy.\"",
-    "whyCorrect": "Apart from excludes something specific from a general statement.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'Apart from' expressa substitution. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Exceto por alguns pequenos detalhes visuais no celular, a aplicação web está pronta para deploy.",
+    "whyCorrect": "'Apart from' isola a única exceção irrelevante em um sistema pronto para entrar em produção.",
+    "whyOthersFail": "'Instead of' significa 'ao invés de'. 'Due to' expressa motivo. 'Although' exigiria verbo conjugado.",
+    "proTip": "No Code Review: 'Apart from [detalhe], everything looks great!' é elegante e construtivo."
   },
   "q-beforehand-1": {
-    "sentenceTranslation": "Tradução: \"Please review the pull request beforehand so our sync call can be fast and productive.\"",
-    "whyCorrect": "Beforehand means prior to an agreed event or meeting.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'beforehand' expressa time. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Por favor revise o pull request de antemão para que nossa conversa de alinhamento seja rápida e produtiva.",
+    "whyCorrect": "'Beforehand' denota antecedência e preparação prévia para evitar reuniões improdutivas.",
+    "whyOthersFail": "'Afterwards' significaria depois da reunião (tarde demais). 'Meanwhile' indicaria durante. 'Instead' indicaria substituição.",
+    "proTip": "No trabalho remoto assíncrono: 'Reading documentation beforehand saves hours of synchronous meetings'."
   },
   "q-consequently-1": {
-    "sentenceTranslation": "Tradução: \"The build pipeline failed; consequently, no new artifacts were deployed to staging.\"",
-    "whyCorrect": "Consequently is a formal transitional connector indicating a logical outcome.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'consequently' expressa cause. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "A pipeline de build falhou; consequentemente, nenhum novo artefato foi implantado em staging.",
+    "whyCorrect": "'Consequently' expressa a decorrência causal lógica e direta da falha da esteira automatizada.",
+    "whyOthersFail": "'However' expressaria oposição. 'Unless' expressa condição negativa. 'Instead of' requer substantivo/gerúndio.",
+    "proTip": "'Consequently' é a palavra de transição formal ideal para post-mortems e relatórios de incidentes."
   },
   "q-definitely-1": {
-    "sentenceTranslation": "Tradução: \"My team built a POC (Proof of Concept) and, definitely, we can deliver the program.\"",
-    "whyCorrect": "Definitely expresses absolute certainty and confidence.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'definitely' expressa emphasis. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Meu time construiu uma POC (Prova de Conceito) e, com certeza / definitivamente, conseguimos entregar o programa.",
+    "whyCorrect": "'Definitely' expressa segurança técnica e validação prática comprovada pela POC.",
+    "whyOthersFail": "'Hardly' significaria 'quase não'. 'Unless' expressa condição negativa. 'Instead' indicaria alternativa.",
+    "proTip": "Atenção à ortografia: D-E-F-I-N-I-T-E-L-Y. Sílaba tônica no início: DE-fi-nit-ly."
   },
   "q-equally-1": {
-    "sentenceTranslation": "Tradução: \"Writing clean code and writing comprehensive automated tests are equally important.\"",
-    "whyCorrect": "Equally indicates identical value or parity between two components.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'equally' expressa addition. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Escrever código limpo e escrever testes automatizados abrangentes são igualmente importantes.",
+    "whyCorrect": "'Equally' estabelece o mesmo nível de relevância e prioridade entre os dois pilares da engenharia.",
+    "whyOthersFail": "'Instead' indicaria que um substitui o outro. 'Unlike' expressaria dessemelhança. 'Unless' é condicional.",
+    "proTip": "Use 'equally important' ao definir a cultura de engenharia e a Definição de Pronto (DoD)."
   },
   "q-furthermore-1": {
-    "sentenceTranslation": "Tradução: \"The new component architecture is cleaner; furthermore, it renders twice as fast.\"",
-    "whyCorrect": "Furthermore adds another strong supporting argument to the topic.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'furthermore' expressa addition. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "A nova arquitetura de componentes é mais limpa; além disso, ela renderiza duas vezes mais rápido.",
+    "whyCorrect": "'Furthermore' adiciona um argumento de performance expressivo para reforçar a escolha da arquitetura.",
+    "whyOthersFail": "'However' indicaria contradição. 'Unless' indicaria condição negativa. 'Rather than' expressa preferência.",
+    "proTip": "'Furthermore' e 'Moreover' são os conectores formais de ouro para documentação de arquitetura (ADRs)."
   },
   "q-in-contrast-1": {
-    "sentenceTranslation": "Tradução: \"In contrast to legacy monolithic applications, microservices scale independently.\"",
-    "whyCorrect": "In contrast to explicitly contrasts two opposite architectural paradigms.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'In contrast to' expressa contrast. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Em contraste com aplicações monolíticas legadas, microsserviços escalam de forma independente.",
+    "whyCorrect": "'In contrast to' contrapõe frontalmente as características operacionais dos dois modelos de arquitetura.",
+    "whyOthersFail": "'Due to' expressaria causa. 'In spite of' expressaria concessão. 'Instead of' exigiria opção de escolha.",
+    "proTip": "Brilhe em entrevistas de arquitetura comparando paradigmas com 'In contrast to [abordagem A], [abordagem B]...'!"
   },
   "q-in-short-1": {
-    "sentenceTranslation": "Tradução: \"The security audit was thorough. In short, all vulnerability tests passed without issue.\"",
-    "whyCorrect": "In short condenses detailed information into a brief bottom line.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'In short' expressa summary. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "A auditoria de segurança foi minuciosa. Em suma / Em resumo, todos os testes de vulnerabilidade passaram sem problemas.",
+    "whyCorrect": "'In short' resume em poucas palavras o resultado favorável de um processo de auditoria longo.",
+    "whyOthersFail": "'Above all' indicaria prioridade máxima. 'Because of' exigiria substantivo causal. 'Instead of' indicaria substituição.",
+    "proTip": "'In short' é perfeito para o primeiro parágrafo do relatório executivo de auditoria."
   },
   "q-nevertheless-1": {
-    "sentenceTranslation": "Tradução: \"The performance bottleneck was tricky to isolate; nevertheless, our team resolved it before release.\"",
-    "whyCorrect": "Nevertheless introduces a contrast with a formal tone.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'nevertheless' expressa contrast. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "O gargalo de performance foi difícil de isolar; contudo / não obstante, nossa equipe o resolveu antes do lançamento.",
+    "whyCorrect": "'Nevertheless' sinaliza que a alta dificuldade não impediu a vitória e entrega técnica do time.",
+    "whyOthersFail": "'Because' diria que a dificuldade causou a resolução. 'Unless' é condicional. 'So that' expressa objetivo.",
+    "proTip": "'Nevertheless' traz um tom formal e sofisticado de superação técnica diante de imprevistos."
   },
   "q-nonetheless-1": {
-    "sentenceTranslation": "Tradução: \"The refactoring was risky; nonetheless, it decreased technical debt substantially.\"",
-    "whyCorrect": "Nonetheless signals that a positive result happened despite high difficulty.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'nonetheless' expressa contrast. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "A refatoração era arriscada; ainda assim / não obstante, ela reduziu a dívida técnica substancialmente.",
+    "whyCorrect": "'Nonetheless' reconhece o risco inicial mas valida o impacto técnico altamente positivo alcançado.",
+    "whyOthersFail": "'Unless' é condicional. 'Because' indicaria causa direta. 'Rather than' expressa preferência.",
+    "proTip": "Escreve-se 'nonetheless' tudo junto, em uma única palavra!"
   },
   "q-nor-1": {
-    "sentenceTranslation": "Tradução: \"The database cluster did not crash, nor did it lose any user transactions.\"",
-    "whyCorrect": "Nor coordinates two negative ideas, triggering subject-auxiliary inversion (nor did it...).",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'nor' expressa addition. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "O cluster de banco de dados não caiu, nem perdeu quaisquer transações de usuários.",
+    "whyCorrect": "'Nor' conecta duas ideias negativas e provoca a inversão sintática ('nor did it lose').",
+    "whyOthersFail": "'Or' não mantém o paralelismo negativo formal. 'Although' e 'because' têm funções diferentes.",
+    "proTip": "Regra clássica de inglês avançado: Após 'nor' no início de oração, o verbo auxiliar vem antes do sujeito ('nor did it...')."
   },
   "q-on-the-whole-1": {
-    "sentenceTranslation": "Tradução: \"There were minor bumps during onboarding, but on the whole, the new developers are performing brilliantly.\"",
-    "whyCorrect": "On the whole expresses an overall assessment overlooking minor exceptions.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'on the whole' expressa summary. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Houve pequenos percalços durante a integração, mas no geral / no todo, os novos desenvolvedores estão tendo um desempenho brilhante.",
+    "whyCorrect": "'On the whole' faz uma avaliação global madura desconsiderando deslizes pontuais de adaptação.",
+    "whyOthersFail": "'Instead of' exigiria gerúndio. 'Unless' expressaria condição negativa. 'Due to' expressa causa.",
+    "proTip": "Excelente para feedbacks de 1:1 e avaliações de desempenho: 'On the whole, your progress has been outstanding!'"
   },
   "q-only-if-1": {
-    "sentenceTranslation": "Tradução: \"We will trigger the production release only if all automated end-to-end checks succeed.\"",
-    "whyCorrect": "Only if enforces an essential, strict condition.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'only if' expressa condition. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Dispararemos o lançamento em produção apenas se todas as checagens automatizadas de ponta a ponta forem bem-sucedidas.",
+    "whyCorrect": "'Only if' estabelece a barreira de aprovação estrita sem nenhuma exceção.",
+    "whyOthersFail": "'Rather than' expressa preferência. 'In spite of' expressa concessão. 'Meanwhile' indica tempo.",
+    "proTip": "Critério estrito de CI/CD: 'Deploy occurs ONLY IF tests pass'."
   },
   "q-particularly-1": {
-    "sentenceTranslation": "Tradução: \"We need to optimize memory usage, particularly when processing large CSV files.\"",
-    "whyCorrect": "Particularly isolates and highlights a noteworthy specific instance.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'particularly' expressa emphasis. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Precisamos otimizar o uso de memória, particularmente / especialmente ao processar grandes arquivos CSV.",
+    "whyCorrect": "'Particularly' destaca o cenário mais crítico que exige otimização profunda de recursos.",
+    "whyOthersFail": "'Otherwise' indicaria consequência negativa. 'Unless' é condicional. 'Instead' indicaria substituição.",
+    "proTip": "'Particularly' é sinônimo exato de 'especially'."
   },
   "q-since-1": {
-    "sentenceTranslation": "Tradução: \"Since you are already proficient in TypeScript, learning React 19 will be very fast.\"",
-    "whyCorrect": "Since can express causality ('given that / because') when placed at the clause start.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'Since' expressa cause. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Já que / Visto que você já é proficiente em TypeScript, aprender React 19 será muito rápido.",
+    "whyCorrect": "'Since' no início de oração atua como conector causal equivalente a 'visto que / já que'.",
+    "whyOthersFail": "'Unless' inverteria o sentido para 'a menos que você seja proficiente'. 'Despite' e 'Instead of' exigem substantivo direto.",
+    "proTip": "Dica do Professor: 'Since' no início da frase quase sempre significa 'Visto que / Como'."
   },
   "q-such-as-1": {
-    "sentenceTranslation": "Tradução: \"Modern frontend libraries, such as React and Vue, utilize virtual DOM or fine-grained reactivity.\"",
-    "whyCorrect": "Such as introduces concrete examples belonging to a group.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'such as' expressa example. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Bibliotecas modernas de frontend, tais como React e Vue, utilizam virtual DOM ou reatividade refinada.",
+    "whyCorrect": "'Such as' introduz exemplos concretos dentro de uma classe ampla de tecnologias frontend.",
+    "whyOthersFail": "'So that' expressa objetivo. 'Whereas' expressa contraste. 'Nevertheless' expressa concessão.",
+    "proTip": "Use 'such as' ao invés de apenas 'like' para enriquecer documentações técnicas."
   },
   "q-summing-up-1": {
-    "sentenceTranslation": "Tradução: \"Summing up, our unit test coverage hit 90% and all sprint goals were reached.\"",
-    "whyCorrect": "Summing up introduces a concise wrap-up of preceding points.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'Summing up' expressa summary. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Resumindo / Em suma, nossa cobertura de testes unitários atingiu 90% e todas as metas da sprint foram alcançadas.",
+    "whyCorrect": "'Summing up' abre a síntese final com energia positiva e celebração de resultados.",
+    "whyOthersFail": "'Because of' exigiria causa direta. 'Even if' é condicional. 'Rather than' expressa preferência.",
+    "proTip": "Ótimo conector para finalizar a apresentação da Sprint Review diante dos stakeholders."
   },
   "q-thus-1": {
-    "sentenceTranslation": "Tradução: \"We enabled response caching on the reverse proxy, thus cutting API latency by half.\"",
-    "whyCorrect": "Thus shows the manner or direct technical consequence of an action.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'thus' expressa cause. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Habilitamos o cache de respostas no proxy reverso, cortando assim a latência da API pela metade.",
+    "whyCorrect": "'Thus' conecta a ação técnica diretamente à sua consequência medida com gerúndio ('thus cutting').",
+    "whyOthersFail": "'Unless' é condicional. 'Although' e 'whereas' indicam oposição e contradição.",
+    "proTip": "Padrão de engenharia: '[Ação técnica], thus [gerúndio com resultado]'."
   },
   "q-to-sum-up-1": {
-    "sentenceTranslation": "Tradução: \"To sum up, mastering English connectors is critical for clear international engineering collaboration.\"",
-    "whyCorrect": "To sum up introduces a formal final takeaway.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'To sum up' expressa summary. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Para resumir, dominar os conectivos em inglês é fundamental para uma colaboração clara na engenharia internacional.",
+    "whyCorrect": "'To sum up' é a locução conectiva formal de encerramento e síntese de uma argumentação.",
+    "whyOthersFail": "'Due to' exige substantivo de causa. 'Unless' e 'Even if' são condicionais.",
+    "proTip": "Use 'To sum up...' para fechar artigos técnicos, e-mails executivos e reuniões."
   },
   "q-towards-1": {
-    "sentenceTranslation": "Tradução: \"The engineering squad made major strides towards shipping the new microservice.\"",
-    "whyCorrect": "Towards indicates direction or progress heading toward a goal.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'towards' expressa purpose. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "A squad de engenharia deu grandes passos rumo a / em direção a lançar o novo microsserviço.",
+    "whyCorrect": "'Towards' indica progresso direcionado a uma meta ou entrega de produto.",
+    "whyOthersFail": "'Instead of' diria que não lançaram. 'Although' e 'because' exigem orações completas.",
+    "proTip": "'Making strides towards [goal]' é uma expressão consagrada do mundo corporativo!"
   },
   "q-unlike-1": {
-    "sentenceTranslation": "Tradução: \"Unlike dynamic languages, TypeScript catches typos and type mismatches at compile time.\"",
-    "whyCorrect": "Unlike points out the key contrast or differentiation between two subjects.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'Unlike' expressa contrast. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Diferentemente de / Ao contrário de linguagens dinâmicas, o TypeScript captura erros de digitação e incompatibilidades de tipo em tempo de compilação.",
+    "whyCorrect": "'Unlike' recebe o substantivo ('dynamic languages') para estabelecer o contraste inicial com o TypeScript.",
+    "whyOthersFail": "'In order to' expressa objetivo. 'Because' e 'so that' exigem orações completas com verbos.",
+    "proTip": "Lembre-se: UNLIKE = Different from. Fundamental para entrevistas de emprego!"
   },
   "q-whatever-1": {
-    "sentenceTranslation": "Tradução: \"Whatever occurs during the live demonstration, maintain your focus and note any edge cases.\"",
-    "whyCorrect": "Whatever covers any arbitrary condition or scenario without restriction.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'Whatever' expressa emphasis. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "O que quer que aconteça durante a demonstração ao vivo, mantenha o foco e anote quaisquer casos de borda.",
+    "whyCorrect": "'Whatever' expressa qualquer eventualidade imprevista que possa surgir durante a apresentação.",
+    "whyOthersFail": "'Because' expressaria motivo. 'Rather' expressa preferência. 'Unless' expressa exceção.",
+    "proTip": "'Whatever happens, stay calm' é o lema de qualquer demonstração ao vivo para clientes!"
   },
   "q-whenever-1": {
-    "sentenceTranslation": "Tradução: \"Whenever you push new commits to GitHub, GitHub Actions runs the automated test suite.\"",
-    "whyCorrect": "Whenever refers to every time an action or event occurs.",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'Whenever' expressa time. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "Sempre que / Toda vez que você envia novos commits para o GitHub, o GitHub Actions executa a suíte de testes automatizados.",
+    "whyCorrect": "'Whenever' estabelece a regra de automação que dispara a cada novo envio de código.",
+    "whyOthersFail": "'Despite', 'Rather than' e 'Instead of' não expressam gatilhos temporais.",
+    "proTip": "'Whenever' = 'Every time that'. Conector indispensável para descrever pipelines de CI/CD."
   },
   "q-whether-1": {
-    "sentenceTranslation": "Tradução: \"The architect must decide whether to optimize the existing database schema or migrate to NoSQL.\"",
-    "whyCorrect": "Whether is used when presenting alternatives (whether X or Y).",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'whether' expressa condition. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "O arquiteto deve decidir se otimiza o esquema de banco de dados existente ou migra para NoSQL.",
+    "whyCorrect": "'Whether' introduz a escolha entre duas alternativas explícitas com infinitivo ('whether to optimize... or migrate').",
+    "whyOthersFail": "'Despite', 'meanwhile' e 'along with' não são conectores de alternativa/escolha.",
+    "proTip": "Com 'to + verbo' ou 'or', o conector correto é sempre 'WHETHER' (nunca use 'if to optimize')!"
   },
   "q-yet-1": {
-    "sentenceTranslation": "Tradução: \"The code structure is minimal and simple, yet remarkably resilient under heavy load.\"",
-    "whyCorrect": "Yet contrasts two properties in a concise, refined manner (simple yet resilient).",
-    "whyOthersFail": "As outras alternativas alteram o sentido pretendido ou violam a regência gramatical exigida nesta oração.",
-    "proTip": "Dica do Professor: O conector 'yet' expressa contrast. Preste atenção na relação lógica entre as orações para acertar sempre!"
+    "sentenceTranslation": "A estrutura do código é minimalista e simples, contudo incrivelmente resiliente sob carga pesada.",
+    "whyCorrect": "'Yet' une dois adjetivos contrastantes com elegância concisa ('simple, yet resilient').",
+    "whyOthersFail": "'Because of', 'in order to' e 'due to' exigem complementação sintática diferente.",
+    "proTip": "'Simple yet powerful' é o maior elogio de arquitetura de software!"
   }
 };
 

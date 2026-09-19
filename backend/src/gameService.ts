@@ -42,8 +42,13 @@ function getQuestion(id: string): Question {
 function buildTeacherFeedback(question: Question) {
   const custom = getTeacherNote(question.id);
   const fullSentence = question.fullSentence ?? question.prompt.replace("_____", question.connector);
-  const sentenceTranslation =
-    custom?.sentenceTranslation ?? question.sentenceTranslation ?? `Frase contextual: "${fullSentence}"`;
+  
+  // Garante que a tradução seja sempre em português genuíno
+  let sentenceTranslation = custom?.sentenceTranslation ?? question.sentenceTranslation;
+  if (!sentenceTranslation || sentenceTranslation.startsWith("Frase contextual:") || sentenceTranslation.startsWith("Tradução:")) {
+    sentenceTranslation = `O conectivo '${question.connector}' significa '${question.translation}' e conecta as ideias com sentido de ${question.family}.`;
+  }
+
   const whyCorrect = custom?.whyCorrect ?? question.whyCorrect ?? question.explanation;
   const whyOthersFail =
     custom?.whyOthersFail ??
