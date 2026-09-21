@@ -66,6 +66,7 @@ export type SessionResponse = Hud & {
 };
 
 export type AnswerResponse = Hud & {
+  questionId?: string;
   correct: boolean;
   timedOut: boolean;
   selectedOptionId: string | null;
@@ -84,6 +85,7 @@ export type AnswerResponse = Hud & {
 };
 
 export type ReviewItem = {
+  questionId?: string;
   prompt: string;
   fullSentence?: string;
   sentenceTranslation?: string;
@@ -93,6 +95,7 @@ export type ReviewItem = {
   translation: string;
   explanation: string;
   whyCorrect?: string;
+  whyOthersFail?: string;
   proTip?: string;
 };
 

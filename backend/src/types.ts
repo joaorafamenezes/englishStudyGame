@@ -98,6 +98,7 @@ export type MatchPair = {
 };
 
 export type ReviewItem = {
+  questionId?: string;
   prompt: string;
   fullSentence?: string;
   sentenceTranslation?: string;
@@ -107,6 +108,7 @@ export type ReviewItem = {
   translation: string;
   explanation: string;
   whyCorrect?: string;
+  whyOthersFail?: string;
   proTip?: string;
 };
 

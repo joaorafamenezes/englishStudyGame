@@ -4,6 +4,7 @@ import { FlashcardsDeck } from "./components/FlashcardsDeck";
 import { LeaderboardModal } from "./components/LeaderboardModal";
 import { MatchMode } from "./components/MatchMode";
 import { TeacherFeedback } from "./components/TeacherFeedback";
+import { resolveTeacherNote } from "./data/teacherNotes";
 import {
   getLeaderboard,
   qualifiesForTop5,
@@ -154,11 +155,30 @@ export function App() {
     if (!session || answering.current || feedback) {
       return;
     }
+    const currentQuestion = question;
     answering.current = true;
     setBusy(true);
     setError(null);
     try {
-      const result = await submitAnswer(session.sessionId, { optionId, timedOut });
+      const rawResult = await submitAnswer(session.sessionId, { optionId, timedOut });
+      const fullSentence =
+        rawResult.fullSentence ||
+        (currentQuestion ? currentQuestion.prompt.replace("_____", rawResult.connector) : undefined);
+      const note = resolveTeacherNote({
+        id: rawResult.questionId || currentQuestion?.id,
+        prompt: currentQuestion?.prompt,
+        fullSentence,
+      });
+
+      const result: AnswerResponse = {
+        ...rawResult,
+        fullSentence: fullSentence || rawResult.fullSentence,
+        sentenceTranslation: note?.sentenceTranslation || rawResult.sentenceTranslation,
+        whyCorrect: note?.whyCorrect || rawResult.whyCorrect,
+        whyOthersFail: note?.whyOthersFail || rawResult.whyOthersFail,
+        proTip: note?.proTip || rawResult.proTip,
+      };
+
       setFeedback(result);
 
       if (result.correct) {
@@ -202,7 +222,21 @@ export function App() {
       setBusy(true);
       try {
         const data = await fetchSummary(session.sessionId);
-        setSummary(data);
+        const enrichedReview = data.review.map((item) => {
+          const note = resolveTeacherNote({
+            id: item.questionId,
+            prompt: item.prompt,
+            fullSentence: item.fullSentence,
+          });
+          return {
+            ...item,
+            sentenceTranslation: note?.sentenceTranslation || item.sentenceTranslation,
+            whyCorrect: note?.whyCorrect || item.whyCorrect,
+            whyOthersFail: note?.whyOthersFail || item.whyOthersFail,
+            proTip: note?.proTip || item.proTip,
+          };
+        });
+        setSummary({ ...data, review: enrichedReview });
         setTop5List(getLeaderboard());
         setHighlightRecordId(null);
         setScreen("result");
@@ -692,6 +726,18 @@ export function App() {
                 ) : (
                   <div className="muted review-tip">{item.explanation}</div>
                 )}
+
+                {item.whyOthersFail ? (
+                  <div className="review-teacher-tip" style={{ marginTop: 6, opacity: 0.9 }}>
+                    <span>⚖️ Por que não as outras:</span> {item.whyOthersFail}
+                  </div>
+                ) : null}
+
+                {item.proTip ? (
+                  <div className="review-teacher-tip" style={{ marginTop: 6, opacity: 0.9 }}>
+                    <span>✨ Dica de Ouro:</span> {item.proTip}
+                  </div>
+                ) : null}
               </article>
             ))}
           </div>

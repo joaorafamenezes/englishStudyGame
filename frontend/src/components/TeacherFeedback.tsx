@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { speakEnglish } from "../tts";
 import type { AnswerResponse } from "../types";
+import { resolveTeacherNote } from "../data/teacherNotes";
 
 type TeacherFeedbackProps = {
   feedback: AnswerResponse;
@@ -21,6 +22,42 @@ export function TeacherFeedback({
     feedback.fullSentence ||
     feedback.question?.prompt.replace("_____", feedback.connector) ||
     feedback.connector;
+
+  // Resolve anotação pedagógica específica da questão (garantia absoluta de português)
+  const note = resolveTeacherNote({
+    id: feedback.questionId || feedback.question?.id,
+    fullSentence,
+    prompt: feedback.question?.prompt,
+  });
+
+  const displayTranslation =
+    note?.sentenceTranslation ||
+    (feedback.sentenceTranslation &&
+    !feedback.sentenceTranslation.startsWith("Frase contextual:") &&
+    !feedback.sentenceTranslation.startsWith("O conectivo '")
+      ? feedback.sentenceTranslation
+      : `O conectivo '${feedback.connector}' significa '${feedback.translation}' e conecta as ideias com sentido de ${feedback.family}.`);
+
+  const displayWhyCorrect =
+    note?.whyCorrect ||
+    (feedback.whyCorrect &&
+    !/^[A-Z][a-z]+ (covers|is used|means|indicates|expresses|shows|connects|refers)/i.test(feedback.whyCorrect)
+      ? feedback.whyCorrect
+      : `'${feedback.connector}' expressa ${feedback.family} e conecta perfeitamente as ideias desta frase.`);
+
+  const displayWhyOthersFail =
+    note?.whyOthersFail ||
+    (feedback.whyOthersFail &&
+    !feedback.whyOthersFail.includes("não atendem à regência sintática necessária")
+      ? feedback.whyOthersFail
+      : "As outras alternativas alteram o sentido pretendido ou não atendem à regência gramatical desta frase.");
+
+  const displayProTip =
+    note?.proTip ||
+    (feedback.proTip &&
+    !feedback.proTip.includes("Identifique a função de ligação entre as ideias para acertar com confiança!")
+      ? feedback.proTip
+      : `Dica de Ouro: O conectivo '${feedback.connector}' expressa ${feedback.family}. Observe a correlação entre as orações para fixar o uso!`);
 
   function handlePronounce() {
     setIsPlayingAudio(true);
@@ -66,47 +103,28 @@ export function TeacherFeedback({
           </button>
         </div>
 
-        {(() => {
-          const rawTranslation = feedback.sentenceTranslation;
-          const isContextualFallback =
-            !rawTranslation ||
-            rawTranslation.startsWith("Frase contextual:") ||
-            rawTranslation.includes("Frase contextual:");
-          const displayTranslation = isContextualFallback
-            ? `O conectivo '${feedback.connector}' significa '${feedback.translation}' e conecta as ideias com sentido de ${feedback.family}.`
-            : rawTranslation;
-
-          return (
-            <div className="sentence-translation-pt">
-              <span className="pt-label">Tradução em Português:</span>
-              <p>"{displayTranslation}"</p>
-            </div>
-          );
-        })()}
+        <div className="sentence-translation-pt">
+          <span className="pt-label">Tradução em Português:</span>
+          <p>"{displayTranslation}"</p>
+        </div>
       </div>
 
-      {/* Blocos Didáticos: Regra, Contraste e Dica de Ouro */}
+      {/* Blocos Didáticos: Regra, Contraste e Dica de Ouro - 100% em Português */}
       <div className="teacher-insights-grid">
-        {feedback.whyCorrect ? (
-          <div className="teacher-insight-box insight-rule">
-            <div className="insight-title">🧠 Por que é essa resposta?</div>
-            <p>{feedback.whyCorrect}</p>
-          </div>
-        ) : null}
+        <div className="teacher-insight-box insight-rule">
+          <div className="insight-title">🧠 Por que é essa resposta?</div>
+          <p>{displayWhyCorrect}</p>
+        </div>
 
-        {feedback.whyOthersFail ? (
-          <div className="teacher-insight-box insight-contrast">
-            <div className="insight-title">⚖️ Por que não as outras?</div>
-            <p>{feedback.whyOthersFail}</p>
-          </div>
-        ) : null}
+        <div className="teacher-insight-box insight-contrast">
+          <div className="insight-title">⚖️ Por que não as outras?</div>
+          <p>{displayWhyOthersFail}</p>
+        </div>
 
-        {feedback.proTip ? (
-          <div className="teacher-insight-box insight-tip">
-            <div className="insight-title">💡 Dica de Ouro do Professor</div>
-            <p>{feedback.proTip}</p>
-          </div>
-        ) : null}
+        <div className="teacher-insight-box insight-tip">
+          <div className="insight-title">💡 Dica de Ouro do Professor</div>
+          <p>{displayProTip}</p>
+        </div>
       </div>
 
       {/* Botão de Avanço Encorajador */}

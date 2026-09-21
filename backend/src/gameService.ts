@@ -219,6 +219,7 @@ export function answerQuestion(sessionId: string, body: AnswerBody) {
   return {
     status: 200 as const,
     result: {
+      questionId: question.id,
       correct,
       timedOut,
       selectedOptionId,
@@ -252,6 +253,7 @@ export function getSummary(sessionId: string) {
     const teacher = buildTeacherFeedback(question);
 
     return {
+      questionId: question.id,
       prompt: question.prompt,
       fullSentence: teacher.fullSentence,
       sentenceTranslation: teacher.sentenceTranslation,
@@ -261,6 +263,7 @@ export function getSummary(sessionId: string) {
       translation: question.translation,
       explanation: question.explanation,
       whyCorrect: teacher.whyCorrect,
+      whyOthersFail: teacher.whyOthersFail,
       proTip: teacher.proTip,
     };
   });
