@@ -931,23 +931,23 @@ export const QUESTIONS: Question[] = [
   },
   {
     "id": "q-tech-above-all-security",
-    "prompt": "_____ all, the engineering squad must ensure that customer data is securely encrypted at rest.",
+    "prompt": "_____, the engineering squad must ensure that customer data is securely encrypted at rest.",
     "options": [
       {
         "id": "a",
-        "text": "Above"
+        "text": "Above all"
       },
       {
         "id": "b",
-        "text": "Over"
+        "text": "After all"
       },
       {
         "id": "c",
-        "text": "Beyond"
+        "text": "Due to"
       },
       {
         "id": "d",
-        "text": "Beside"
+        "text": "Besides"
       }
     ],
     "correctOptionId": "a",
@@ -958,7 +958,7 @@ export const QUESTIONS: Question[] = [
     "fullSentence": "Above all, the engineering squad must ensure that customer data is securely encrypted at rest.",
     "sentenceTranslation": "Acima de tudo, a squad de engenharia deve garantir que os dados dos clientes estejam criptografados com segurança em repouso.",
     "whyCorrect": "'Above all' é a locução idiomática de maior ênfase para estabelecer o requisito prioritário.",
-    "whyOthersFail": "'Over all' (ou overall) significa 'em geral / no cômputo geral'. 'Beyond all' e 'Beside all' não são locuções válidas neste contexto.",
+    "whyOthersFail": "'After all' significa 'afinal de contas'. 'Due to' exige substantivo de causa. 'Besides' adiciona itens ('além disso').",
     "proTip": "Em alinhamentos executivos de segurança e conformidade, abra com 'Above all, ...' para capturar total atenção!"
   },
   {
@@ -995,23 +995,23 @@ export const QUESTIONS: Question[] = [
   },
   {
     "id": "q-tech-all-in-all-sprint",
-    "prompt": "We faced two flaky automated tests, but _____ in all, the squad met every single sprint goal.",
+    "prompt": "We faced two flaky automated tests, but _____, the squad met every single sprint goal.",
     "options": [
       {
         "id": "a",
-        "text": "all"
+        "text": "all in all"
       },
       {
         "id": "b",
-        "text": "most"
+        "text": "first of all"
       },
       {
         "id": "c",
-        "text": "overall"
+        "text": "above all"
       },
       {
         "id": "d",
-        "text": "at"
+        "text": "after all"
       }
     ],
     "correctOptionId": "a",
@@ -1022,20 +1022,20 @@ export const QUESTIONS: Question[] = [
     "fullSentence": "We faced two flaky automated tests, but all in all, the squad met every single sprint goal.",
     "sentenceTranslation": "Enfrentamos dois testes automatizados instáveis, mas no geral, a squad atingiu cada uma das metas da sprint.",
     "whyCorrect": "A locução idiomática fixa é 'all in all'.",
-    "whyOthersFail": "'Most in all' não existe. 'Overall in all' é redundante. 'At in all' é agramatical.",
+    "whyOthersFail": "'First of all' introduz o primeiro item de uma enumeração. 'Above all' enfatiza prioridade máxima. 'After all' significa 'afinal de contas' como justificativa.",
     "proTip": "Use 'All in all' na abertura da Retrospectiva para reconhecer os desafios antes de celebrar as entregas!"
   },
   {
     "id": "q-tech-apart-from-pr",
-    "prompt": "_____ from a minor CSS formatting issue on the navbar, the pull request looks clean and ready to merge.",
+    "prompt": "_____ a minor CSS formatting issue on the navbar, the pull request looks clean and ready to merge.",
     "options": [
       {
         "id": "a",
-        "text": "Apart"
+        "text": "Apart from"
       },
       {
         "id": "b",
-        "text": "Instead"
+        "text": "Instead of"
       },
       {
         "id": "c",
@@ -1054,28 +1054,28 @@ export const QUESTIONS: Question[] = [
     "fullSentence": "Apart from a minor CSS formatting issue on the navbar, the pull request looks clean and ready to merge.",
     "sentenceTranslation": "Excetuando uma pequena questão de formatação CSS na barra de navegação, o pull request está limpo e pronto para o merge.",
     "whyCorrect": "'Apart from' é a locução consagrada para indicar exceção pontual antes de aprovar um PR.",
-    "whyOthersFail": "'Instead from' não existe (é 'instead of'). 'Unlike' compara diferenças entre entidades. 'Despite' não leva preposição 'from'.",
+    "whyOthersFail": "'Instead of' indicaria substituição ('em vez de'). 'Unlike' compara diferenças entre entidades. 'Despite' exige oração de superação de adversidade.",
     "proTip": "Ao fazer Code Review no GitHub, use 'Apart from [detalhe], LGTM (Looks Good To Me)!' para dar feedback construtivo e rápido."
   },
   {
     "id": "q-tech-as-long-as-deploy",
-    "prompt": "You can push your hotfix to staging, _____ as all automated smoke tests pass successfully.",
+    "prompt": "You can push your hotfix to staging, _____ all automated smoke tests pass successfully.",
     "options": [
       {
         "id": "a",
-        "text": "as far"
+        "text": "as far as"
       },
       {
         "id": "b",
-        "text": "as long"
+        "text": "as long as"
       },
       {
         "id": "c",
-        "text": "as well"
+        "text": "as well as"
       },
       {
         "id": "d",
-        "text": "so far"
+        "text": "so that"
       }
     ],
     "correctOptionId": "b",
@@ -1086,7 +1086,7 @@ export const QUESTIONS: Question[] = [
     "fullSentence": "You can push your hotfix to staging, as long as all automated smoke tests pass successfully.",
     "sentenceTranslation": "Você pode subir seu hotfix para staging, contanto que todos os testes de fumaça automatizados passem com sucesso.",
     "whyCorrect": "'As long as' expressa a condição prévia mantida ativa durante todo o processo.",
-    "whyOthersFail": "'As far as' limita conhecimento ('as far as I know'). 'As well as' significa 'assim como'. 'So far as' não é o padrão condicional aqui.",
+    "whyOthersFail": "'As far as' limita conhecimento ('as far as I know'). 'As well as' significa 'assim como'. 'So that' expressa finalidade ('para que').",
     "proTip": "Definição de Pronto (Definition of Done): 'Features can be merged as long as code coverage stays above 80%'."
   },
   {
@@ -1283,11 +1283,11 @@ export const QUESTIONS: Question[] = [
   },
   {
     "id": "q-tech-even-if-auth",
-    "prompt": "_____ if the primary authentication provider goes down, our service maintains session validation via JWT signatures.",
+    "prompt": "_____ the primary authentication provider goes down, our service maintains session validation via JWT signatures.",
     "options": [
       {
         "id": "a",
-        "text": "Even"
+        "text": "Even if"
       },
       {
         "id": "b",
@@ -1310,16 +1310,16 @@ export const QUESTIONS: Question[] = [
     "fullSentence": "Even if the primary authentication provider goes down, our service maintains session validation via JWT signatures.",
     "sentenceTranslation": "Mesmo se o provedor primário de autenticação cair, nosso serviço mantém a validação de sessão por meio de assinaturas JWT.",
     "whyCorrect": "'Even if' é a locução condicional perfeita para cenários de resiliência e alta disponibilidade.",
-    "whyOthersFail": "'Despite if' não existe na gramática inglesa. 'Unless if' é redundante e incorreto. 'Because if' geraria sentido confuso.",
+    "whyOthersFail": "'Despite' requer substantivo sem oração. 'Unless' inverteria a lógica ('a não ser que o provedor caia'). 'Because' afirmaria que a queda do provedor é a causa da validação.",
     "proTip": "Ao desenhar arquiteturas tolerantes a falhas: use 'Even if [componente] fails, our system still [comportamento seguro]'."
   },
   {
     "id": "q-tech-even-though-legacy",
-    "prompt": "_____ though the codebase was written in legacy PHP, the developers succeeded in building automated CI tests.",
+    "prompt": "_____ the codebase was written in legacy PHP, the developers succeeded in building automated CI tests.",
     "options": [
       {
         "id": "a",
-        "text": "Even"
+        "text": "Even though"
       },
       {
         "id": "b",
@@ -1327,7 +1327,7 @@ export const QUESTIONS: Question[] = [
       },
       {
         "id": "c",
-        "text": "Instead"
+        "text": "Instead of"
       },
       {
         "id": "d",
@@ -1342,7 +1342,7 @@ export const QUESTIONS: Question[] = [
     "fullSentence": "Even though the codebase was written in legacy PHP, the developers succeeded in building automated CI tests.",
     "sentenceTranslation": "Embora a base de código tenha sido escrita em PHP legado, os desenvolvedores tiveram sucesso em criar testes automatizados de CI.",
     "whyCorrect": "'Even though' é o par consagrado de concessão enfática seguido de sujeito e verbo.",
-    "whyOthersFail": "'Despite though' é agramatical. 'Instead though' não existe. 'Unless though' é incorreto.",
+    "whyOthersFail": "'Despite' e 'Instead of' exigem substantivo ou gerúndio. 'Unless' expressa condição negativa ('a não ser que').",
     "proTip": "Diferença vital: 'Even though' trata de um fato real conhecido ('o código ERA legado'). 'Even if' trata de uma hipótese futura incerta."
   },
   {
@@ -1603,23 +1603,23 @@ export const QUESTIONS: Question[] = [
   },
   {
     "id": "q-tech-on-the-other-hand-monolith",
-    "prompt": "Monolithic architectures are simpler to set up initially. On the _____ hand, microservices allow decoupled team deployments.",
+    "prompt": "Monolithic architectures are simpler to set up initially. _____, microservices allow decoupled team deployments.",
     "options": [
       {
         "id": "a",
-        "text": "other"
+        "text": "On the other hand"
       },
       {
         "id": "b",
-        "text": "second"
+        "text": "In addition"
       },
       {
         "id": "c",
-        "text": "different"
+        "text": "For example"
       },
       {
         "id": "d",
-        "text": "next"
+        "text": "As a result"
       }
     ],
     "correctOptionId": "a",
@@ -1630,28 +1630,28 @@ export const QUESTIONS: Question[] = [
     "fullSentence": "Monolithic architectures are simpler to set up initially. On the other hand, microservices allow decoupled team deployments.",
     "sentenceTranslation": "Arquiteturas monolíticas são mais simples de configurar inicialmente. Por outro lado, microsserviços permitem deploys desacoplados entre equipes.",
     "whyCorrect": "A locução fixa de contraposição de perspectivas é 'On the other hand'.",
-    "whyOthersFail": "'On the second hand', 'On the different hand' e 'On the next hand' não existem em inglês.",
+    "whyOthersFail": "'In addition' adicionaria outra vantagem do monólito. 'For example' introduziria um exemplo ilustrativo. 'As a result' indicaria falsamente que microsserviços decorrem da simplicidade inicial do monólito.",
     "proTip": "Em discussões técnicas de arquitetura: pondere primeiro as vantagens ('On the one hand...'), e em seguida os trade-offs ('On the other hand...')."
   },
   {
     "id": "q-tech-only-if-production",
-    "prompt": "The pipeline will trigger the production release _____ if all SonarQube quality gates pass with zero vulnerabilities.",
+    "prompt": "The pipeline will trigger the production release _____ all SonarQube quality gates pass with zero vulnerabilities.",
     "options": [
       {
         "id": "a",
-        "text": "only"
+        "text": "only if"
       },
       {
         "id": "b",
-        "text": "just"
+        "text": "even though"
       },
       {
         "id": "c",
-        "text": "merely"
+        "text": "unless"
       },
       {
         "id": "d",
-        "text": "mostly"
+        "text": "although"
       }
     ],
     "correctOptionId": "a",
@@ -1662,7 +1662,7 @@ export const QUESTIONS: Question[] = [
     "fullSentence": "The pipeline will trigger the production release only if all SonarQube quality gates pass with zero vulnerabilities.",
     "sentenceTranslation": "A pipeline disparará a release de produção apenas se todos os quality gates do SonarQube passarem com zero vulnerabilidades.",
     "whyCorrect": "'Only if' define a barreira de aprovação obrigatória sem exceções.",
-    "whyOthersFail": "'Just if' e 'merely if' não formam locuções condicionais estritas na gramática padrão. 'Mostly if' não faz sentido lógico aqui.",
+    "whyOthersFail": "'Even though' e 'although' expressam concessão ('embora os gates passem'). 'Unless' inverteria a condição de segurança ('a não ser que os gates passem').",
     "proTip": "CI/CD Guardrails: 'Production deployment occurs only if test coverage is >= 85% and security scans are green'."
   },
   {

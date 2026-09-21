@@ -67,6 +67,7 @@ export type SessionResponse = Hud & {
 
 export type AnswerResponse = Hud & {
   questionId?: string;
+  prompt?: string;
   correct: boolean;
   timedOut: boolean;
   selectedOptionId: string | null;

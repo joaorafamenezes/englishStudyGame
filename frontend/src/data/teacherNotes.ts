@@ -186,7 +186,7 @@ export const TEACHER_NOTES: Record<string, TeacherNote> = {
   "q-tech-above-all-security": {
     "sentenceTranslation": "Acima de tudo, a squad de engenharia deve garantir que os dados dos clientes estejam criptografados com segurança em repouso.",
     "whyCorrect": "'Above all' é a locução idiomática de maior ênfase para estabelecer o requisito prioritário.",
-    "whyOthersFail": "'Over all' (ou overall) significa 'em geral / no cômputo geral'. 'Beyond all' e 'Beside all' não são locuções válidas neste contexto.",
+    "whyOthersFail": "'After all' significa 'afinal de contas'. 'Due to' exige substantivo de causa. 'Besides' adiciona itens ('além disso').",
     "proTip": "Em alinhamentos executivos de segurança e conformidade, abra com 'Above all, ...' para capturar total atenção!"
   },
   "q-tech-afterwards-migration": {
@@ -198,19 +198,19 @@ export const TEACHER_NOTES: Record<string, TeacherNote> = {
   "q-tech-all-in-all-sprint": {
     "sentenceTranslation": "Enfrentamos dois testes automatizados instáveis, mas no geral, a squad atingiu cada uma das metas da sprint.",
     "whyCorrect": "A locução idiomática fixa é 'all in all'.",
-    "whyOthersFail": "'Most in all' não existe. 'Overall in all' é redundante. 'At in all' é agramatical.",
+    "whyOthersFail": "'First of all' introduz o primeiro item de uma enumeração. 'Above all' enfatiza prioridade máxima. 'After all' significa 'afinal de contas' como justificativa.",
     "proTip": "Use 'All in all' na abertura da Retrospectiva para reconhecer os desafios antes de celebrar as entregas!"
   },
   "q-tech-apart-from-pr": {
     "sentenceTranslation": "Excetuando uma pequena questão de formatação CSS na barra de navegação, o pull request está limpo e pronto para o merge.",
     "whyCorrect": "'Apart from' é a locução consagrada para indicar exceção pontual antes de aprovar um PR.",
-    "whyOthersFail": "'Instead from' não existe (é 'instead of'). 'Unlike' compara diferenças entre entidades. 'Despite' não leva preposição 'from'.",
+    "whyOthersFail": "'Instead of' indicaria substituição ('em vez de'). 'Unlike' compara diferenças entre entidades. 'Despite' exige oração de superação de adversidade.",
     "proTip": "Ao fazer Code Review no GitHub, use 'Apart from [detalhe], LGTM (Looks Good To Me)!' para dar feedback construtivo e rápido."
   },
   "q-tech-as-long-as-deploy": {
     "sentenceTranslation": "Você pode subir seu hotfix para staging, contanto que todos os testes de fumaça automatizados passem com sucesso.",
     "whyCorrect": "'As long as' expressa a condição prévia mantida ativa durante todo o processo.",
-    "whyOthersFail": "'As far as' limita conhecimento ('as far as I know'). 'As well as' significa 'assim como'. 'So far as' não é o padrão condicional aqui.",
+    "whyOthersFail": "'As far as' limita conhecimento ('as far as I know'). 'As well as' significa 'assim como'. 'So that' expressa finalidade ('para que').",
     "proTip": "Definição de Pronto (Definition of Done): 'Features can be merged as long as code coverage stays above 80%'."
   },
   "q-tech-because-of-env": {
@@ -252,13 +252,13 @@ export const TEACHER_NOTES: Record<string, TeacherNote> = {
   "q-tech-even-if-auth": {
     "sentenceTranslation": "Mesmo se o provedor primário de autenticação cair, nosso serviço mantém a validação de sessão por meio de assinaturas JWT.",
     "whyCorrect": "'Even if' é a locução condicional perfeita para cenários de resiliência e alta disponibilidade.",
-    "whyOthersFail": "'Despite if' não existe na gramática inglesa. 'Unless if' é redundante e incorreto. 'Because if' geraria sentido confuso.",
+    "whyOthersFail": "'Despite' requer substantivo sem oração. 'Unless' inverteria a lógica ('a não ser que o provedor caia'). 'Because' afirmaria que a queda do provedor é a causa da validação.",
     "proTip": "Ao desenhar arquiteturas tolerantes a falhas: use 'Even if [componente] fails, our system still [comportamento seguro]'."
   },
   "q-tech-even-though-legacy": {
     "sentenceTranslation": "Embora a base de código tenha sido escrita em PHP legado, os desenvolvedores tiveram sucesso em criar testes automatizados de CI.",
     "whyCorrect": "'Even though' é o par consagrado de concessão enfática seguido de sujeito e verbo.",
-    "whyOthersFail": "'Despite though' é agramatical. 'Instead though' não existe. 'Unless though' é incorreto.",
+    "whyOthersFail": "'Despite' e 'Instead of' exigem substantivo ou gerúndio. 'Unless' expressa condição negativa ('a não ser que').",
     "proTip": "Diferença vital: 'Even though' trata de um fato real conhecido ('o código ERA legado'). 'Even if' trata de uma hipótese futura incerta."
   },
   "q-tech-furthermore-cluster": {
@@ -312,13 +312,13 @@ export const TEACHER_NOTES: Record<string, TeacherNote> = {
   "q-tech-on-the-other-hand-monolith": {
     "sentenceTranslation": "Arquiteturas monolíticas são mais simples de configurar inicialmente. Por outro lado, microsserviços permitem deploys desacoplados entre equipes.",
     "whyCorrect": "A locução fixa de contraposição de perspectivas é 'On the other hand'.",
-    "whyOthersFail": "'On the second hand', 'On the different hand' e 'On the next hand' não existem em inglês.",
+    "whyOthersFail": "'In addition' adicionaria outra vantagem do monólito. 'For example' introduziria um exemplo ilustrativo. 'As a result' indicaria falsamente que microsserviços decorrem da simplicidade inicial do monólito.",
     "proTip": "Em discussões técnicas de arquitetura: pondere primeiro as vantagens ('On the one hand...'), e em seguida os trade-offs ('On the other hand...')."
   },
   "q-tech-only-if-production": {
     "sentenceTranslation": "A pipeline disparará a release de produção apenas se todos os quality gates do SonarQube passarem com zero vulnerabilidades.",
     "whyCorrect": "'Only if' define a barreira de aprovação obrigatória sem exceções.",
-    "whyOthersFail": "'Just if' e 'merely if' não formam locuções condicionais estritas na gramática padrão. 'Mostly if' não faz sentido lógico aqui.",
+    "whyOthersFail": "'Even though' e 'although' expressam concessão ('embora os gates passem'). 'Unless' inverteria a condição de segurança ('a não ser que os gates passem').",
     "proTip": "CI/CD Guardrails: 'Production deployment occurs only if test coverage is >= 85% and security scans are green'."
   },
   "q-tech-otherwise-credentials": {
@@ -2899,10 +2899,14 @@ export const PROMPT_TO_ID_MAP: Record<string, string> = {
   "imnotpaolabrachoimanusurpadora": "q-user-in-fact-paola",
   "icantcomeinadvanceicalledleomessitoinformyoudoyouknowhim": "q-user-so-messi",
   "alltheengineeringsquadmustensurethatcustomerdataissecurelyencryptedatrest": "q-tech-above-all-security",
+  "theengineeringsquadmustensurethatcustomerdataissecurelyencryptedatrest": "q-tech-above-all-security",
   "wewillexecutethedatabasemigrationscriptfirstwewillverifytableindexesandcacheconsistency": "q-tech-afterwards-migration",
   "wefacedtwoflakyautomatedtestsbutinallthesquadmeteverysinglesprintgoal": "q-tech-all-in-all-sprint",
+  "wefacedtwoflakyautomatedtestsbutthesquadmeteverysinglesprintgoal": "q-tech-all-in-all-sprint",
   "fromaminorcssformattingissueonthenavbarthepullrequestlookscleanandreadytomerge": "q-tech-apart-from-pr",
+  "aminorcssformattingissueonthenavbarthepullrequestlookscleanandreadytomerge": "q-tech-apart-from-pr",
   "youcanpushyourhotfixtostagingasallautomatedsmoketestspasssuccessfully": "q-tech-as-long-as-deploy",
+  "youcanpushyourhotfixtostagingallautomatedsmoketestspasssuccessfully": "q-tech-as-long-as-deploy",
   "thedockercontainerfailedtostartamissingenvironmentvariableintheproductionconfig": "q-tech-because-of-env",
   "theproductownerrefinescomplexuserstoriessothatdevelopersfacezeroambiguityduringsprintplanning": "q-tech-beforehand-backlog",
   "thisrediscachinglayerreducesdatabaseloaditslashesapiresponsetimesfrom400msdownto18ms": "q-tech-besides-cache",
@@ -2910,7 +2914,9 @@ export const PROMPT_TO_ID_MAP: Record<string, string> = {
   "ourengineeringorganizationismigratingallonpremisemicroservicestoamanagedkubernetescluster": "q-tech-currently-cloud",
   "thereleasefreezewasenforcedhightrafficvolumeexpectedduringblackfridayweek": "q-tech-due-to-black-friday",
   "iftheprimaryauthenticationprovidergoesdownourservicemaintainssessionvalidationviajwtsignatures": "q-tech-even-if-auth",
+  "theprimaryauthenticationprovidergoesdownourservicemaintainssessionvalidationviajwtsignatures": "q-tech-even-if-auth",
   "thoughthecodebasewaswritteninlegacyphpthedeveloperssucceededinbuildingautomatedcitests": "q-tech-even-though-legacy",
+  "thecodebasewaswritteninlegacyphpthedeveloperssucceededinbuildingautomatedcitests": "q-tech-even-though-legacy",
   "thenewcloudclusterautomaticallyscalespodsondemanditisolatessensitivetenantdatainseparatenamespaces": "q-tech-furthermore-cluster",
   "themonolithicbackendreacheditshorizontalscalinglimitthearchitectureteamdecidedtosplititintodomainservices": "q-tech-hence-legacy",
   "pleaseinformtheoncalldevopssquadifyouplantoexecuteabulkdatabaseschemamigration": "q-tech-in-advance-migration",
@@ -2920,7 +2926,9 @@ export const PROMPT_TO_ID_MAP: Record<string, string> = {
   "seniorsoftwareengineersmustwritecleanunittestsjuniordevelopersareexpectedtomaintainthesamequalitystandards": "q-tech-likewise-standards",
   "ourplatformsupportslegacytls10protocolsduetocriticalsecuritydeprecations": "q-tech-no-longer-legacy",
   "monolithicarchitecturesaresimplertosetupinitiallyonthehandmicroservicesallowdecoupledteamdeployments": "q-tech-on-the-other-hand-monolith",
+  "monolithicarchitecturesaresimplertosetupinitiallymicroservicesallowdecoupledteamdeployments": "q-tech-on-the-other-hand-monolith",
   "thepipelinewilltriggertheproductionreleaseifallsonarqubequalitygatespasswithzerovulnerabilities": "q-tech-only-if-production",
+  "thepipelinewilltriggertheproductionreleaseallsonarqubequalitygatespasswithzerovulnerabilities": "q-tech-only-if-production",
   "storetheawssecretkeysinasecuresecretsmanageryourcredentialsmightbeexposedinpublicrepositories": "q-tech-otherwise-credentials",
   "weconfiguredapigatewayratelimitingtheserverscanhandleunexpectedtrafficspikeswithoutcrashing": "q-tech-so-that-ddos",
   "ourdevopsengineersleverageobservabilitytoolsgrafanaprometheusanddatadogtomonitorclusterlatency": "q-tech-such-as-observability",

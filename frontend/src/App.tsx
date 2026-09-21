@@ -172,6 +172,7 @@ export function App() {
 
       const result: AnswerResponse = {
         ...rawResult,
+        prompt: rawResult.prompt || currentQuestion?.prompt,
         fullSentence: fullSentence || rawResult.fullSentence,
         sentenceTranslation: note?.sentenceTranslation || rawResult.sentenceTranslation,
         whyCorrect: note?.whyCorrect || rawResult.whyCorrect,
@@ -589,6 +590,7 @@ export function App() {
           {feedback ? (
             <TeacherFeedback
               feedback={feedback}
+              currentPrompt={question.prompt}
               onContinue={() => void goNext()}
               busy={busy}
               isLastQuestion={session.status !== "playing" || !session.question}

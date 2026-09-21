@@ -5,6 +5,7 @@ import { resolveTeacherNote } from "../data/teacherNotes";
 
 type TeacherFeedbackProps = {
   feedback: AnswerResponse;
+  currentPrompt?: string;
   onContinue: () => void;
   busy: boolean;
   isLastQuestion: boolean;
@@ -12,22 +13,24 @@ type TeacherFeedbackProps = {
 
 export function TeacherFeedback({
   feedback,
+  currentPrompt,
   onContinue,
   busy,
   isLastQuestion,
 }: TeacherFeedbackProps) {
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
+  const answeredPrompt = currentPrompt || feedback.prompt;
+
   const fullSentence =
     feedback.fullSentence ||
-    feedback.question?.prompt.replace("_____", feedback.connector) ||
-    feedback.connector;
+    (answeredPrompt ? answeredPrompt.replace("_____", feedback.connector) : feedback.connector);
 
-  // Resolve anotação pedagógica específica da questão (garantia absoluta de português)
+  // Resolve anotação pedagógica específica estritamente da questão respondida (NUNCA da próxima questão)
   const note = resolveTeacherNote({
-    id: feedback.questionId || feedback.question?.id,
+    id: feedback.questionId,
     fullSentence,
-    prompt: feedback.question?.prompt,
+    prompt: answeredPrompt,
   });
 
   const displayTranslation =

@@ -220,6 +220,7 @@ export function answerQuestion(sessionId: string, body: AnswerBody) {
     status: 200 as const,
     result: {
       questionId: question.id,
+      prompt: question.prompt,
       correct,
       timedOut,
       selectedOptionId,
