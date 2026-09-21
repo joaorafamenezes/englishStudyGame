@@ -66,12 +66,23 @@ export function TeacherFeedback({
           </button>
         </div>
 
-        {feedback.sentenceTranslation ? (
-          <div className="sentence-translation-pt">
-            <span className="pt-label">Tradução em Português:</span>
-            <p>"{feedback.sentenceTranslation}"</p>
-          </div>
-        ) : null}
+        {(() => {
+          const rawTranslation = feedback.sentenceTranslation;
+          const isContextualFallback =
+            !rawTranslation ||
+            rawTranslation.startsWith("Frase contextual:") ||
+            rawTranslation.includes("Frase contextual:");
+          const displayTranslation = isContextualFallback
+            ? `O conectivo '${feedback.connector}' significa '${feedback.translation}' e conecta as ideias com sentido de ${feedback.family}.`
+            : rawTranslation;
+
+          return (
+            <div className="sentence-translation-pt">
+              <span className="pt-label">Tradução em Português:</span>
+              <p>"{displayTranslation}"</p>
+            </div>
+          );
+        })()}
       </div>
 
       {/* Blocos Didáticos: Regra, Contraste e Dica de Ouro */}
