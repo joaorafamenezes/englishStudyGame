@@ -35,14 +35,20 @@ export const CONNECTORS_CATALOG: ConnectorItem[] = [
     "number": 3,
     "id": "afterwards",
     "connector": "Afterwards",
-    "translation": "Posteriormente / Depois",
+    "translation": "Posteriormente / Depois / Depois disso",
     "family": "time",
-    "grammarRule": "Advérbio de tempo que se refere a um momento subsequente ao evento mencionado na oração anterior.",
-    "notes": "Pode ser usado no início ou no fim da oração seguinte.",
+    "grammarRule": "Advérbio de tempo que se refere a um momento subsequente. Costuma aparecer no início, no meio com conectivo ou no fim da oração.",
+    "notes": "Frequentemente usado como advérbio no início ou no fim de sentenças: 'I'll call you afterwards', 'We had dinner and went for a walk afterwards'.",
     "examples": [
+      "I went to the gym and afterwards I went home.",
+      "We had dinner and went for a walk afterwards.",
+      "She apologized afterwards.",
+      "I'll call you afterwards.",
+      "Afterwards you finish your tasks, call me.",
+      "I want to go home, afterwards go to bed and fall asleep.",
+      "I'll finish my English class and call you afterwards.",
       "We will conduct the Daily Standup first; afterwards, we can discuss the blocker in a breakout room.",
-      "They deployed the hotfix and checked the monitoring metrics immediately afterwards.",
-      "Let's review the pull request now and test the endpoints afterwards."
+      "They deployed the hotfix and checked the monitoring metrics immediately afterwards."
     ]
   },
   {

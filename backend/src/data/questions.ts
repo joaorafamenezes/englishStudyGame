@@ -4384,5 +4384,8581 @@ export const QUESTIONS: Question[] = [
     "whyCorrect": "'Yet' une dois adjetivos contrastantes com elegância concisa ('simple, yet resilient').",
     "whyOthersFail": "'Because of', 'in order to' e 'due to' exigem complementação sintática diferente.",
     "proTip": "'Simple yet powerful' é o maior elogio de arquitetura de software!"
+  },
+  {
+    "id": "q-above-all-security",
+    "prompt": "_____ , we must guarantee that user passwords and personal data are encrypted before launching the new payment feature.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Above all"
+      },
+      {
+        "id": "b",
+        "text": "Instead of"
+      },
+      {
+        "id": "c",
+        "text": "Due to"
+      },
+      {
+        "id": "d",
+        "text": "Unless"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "Above all",
+    "family": "emphasis",
+    "translation": "Acima de tudo",
+    "explanation": "'Above all' destaca o requisito mais prioritário e inegociável em uma tomada de decisão.",
+    "fullSentence": "Above all, we must guarantee that user passwords and personal data are encrypted before launching the new payment feature.",
+    "sentenceTranslation": "Acima de tudo, devemos garantir que as senhas e os dados pessoais dos usuários sejam criptografados antes de lançar o novo recurso de pagamento.",
+    "whyCorrect": "'Above all' é o conector enfático perfeito para posicionar a segurança como prioridade número um sobre todos os outros itens da sprint.",
+    "whyOthersFail": "'Instead of' exigiria gerúndio ou substantivo de substituição. 'Due to' introduz causa e exige substantivo. 'Unless' estabelece condição negativa.",
+    "proTip": "Use 'Above all' em aberturas de reuniões de alinhamento ou revisões de arquitetura para definir o norte inegociável da entrega."
+  },
+  {
+    "id": "q-above-all-gremio",
+    "prompt": "Grêmio has many tactical adjustments to make, but _____ , the players need to show passion and determination on the pitch.",
+    "options": [
+      {
+        "id": "a",
+        "text": "apart from"
+      },
+      {
+        "id": "b",
+        "text": "above all"
+      },
+      {
+        "id": "c",
+        "text": "so that"
+      },
+      {
+        "id": "d",
+        "text": "in contrast"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "above all",
+    "family": "emphasis",
+    "translation": "Acima de tudo",
+    "explanation": "'Above all' enfatiza o valor mais relevante em meio a múltiplos aspectos avaliados.",
+    "fullSentence": "Grêmio has many tactical adjustments to make, but above all, the players need to show passion and determination on the pitch.",
+    "sentenceTranslation": "O Grêmio tem muitos ajustes táticos a fazer, mas acima de tudo, os jogadores precisam demonstrar paixão e determinação em campo.",
+    "whyCorrect": "'Above all' enfatiza a exigência primordial da torcida e do treinador antes de qualquer detalhe tático.",
+    "whyOthersFail": "'Apart from' excluiria a determinação em vez de priorizá-la. 'So that' expressa finalidade com oração subordinada. 'In contrast' requer termo de comparação direta.",
+    "proTip": "Quando quiser destacar o fator emocional ou o diferencial decisivo em uma análise, 'above all' soa muito natural."
+  },
+  {
+    "id": "q-above-all-code-clarity",
+    "prompt": "Senior engineers know that performance is important, but _____ , clean and readable code ensures long-term system maintainability.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "above all"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "above all",
+    "family": "emphasis",
+    "translation": "Acima de tudo",
+    "explanation": "'Above all' coloca a legibilidade do código no topo da hierarquia de valores da equipe.",
+    "fullSentence": "Senior engineers know that performance is important, but above all, clean and readable code ensures long-term system maintainability.",
+    "sentenceTranslation": "Engenheiros seniores sabem que o desempenho é importante, mas acima de tudo, um código limpo e legível garante a manutenibilidade do sistema a longo prazo.",
+    "whyCorrect": "'Above all' realça a legibilidade como a virtude máxima sobre outras métricas de engenharia.",
+    "whyOthersFail": "'Because of' exige substantivo direto de causa sem oração completa. 'Nor' exige correlação negativa com neither. 'Rather than' expressa preferência pontual.",
+    "proTip": "Em code reviews e guias de boas práticas, use 'above all' para destacar convenções prioritárias da equipe."
+  },
+  {
+    "id": "q-above-all-cinthia",
+    "prompt": "When planning our vacation, Cinthia and I considered budget and flights, but _____ , we wanted a quiet place to relax.",
+    "options": [
+      {
+        "id": "a",
+        "text": "despite"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "meanwhile"
+      },
+      {
+        "id": "d",
+        "text": "above all"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "above all",
+    "family": "emphasis",
+    "translation": "Acima de tudo",
+    "explanation": "'Above all' expressa a motivação principal e dominante por trás de uma escolha pessoal.",
+    "fullSentence": "When planning our vacation, Cinthia and I considered budget and flights, but above all, we wanted a quiet place to relax.",
+    "sentenceTranslation": "Ao planejar nossas férias, a Cinthia e eu consideramos orçamento e voos, mas acima de tudo, queríamos um lugar calmo para descansar.",
+    "whyCorrect": "'Above all' introduz o objetivo soberano do descanso em relação às variáveis de orçamento e transporte.",
+    "whyOthersFail": "'Despite' exigiria substantivo ou gerúndio. 'Unless' criaria uma condição hipotética que não se encaixa. 'Meanwhile' indica eventos simultâneos no tempo.",
+    "proTip": "Ao narrar planos familiares ou pessoais, 'above all' expressa o desejo central da conversa de forma elegante."
+  },
+  {
+    "id": "q-above-all-daily-respect",
+    "prompt": "In an agile squad, technical skills matter, but _____ , empathy and active listening during daily meetings build real collaboration.",
+    "options": [
+      {
+        "id": "a",
+        "text": "above all"
+      },
+      {
+        "id": "b",
+        "text": "otherwise"
+      },
+      {
+        "id": "c",
+        "text": "because"
+      },
+      {
+        "id": "d",
+        "text": "equally"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "above all",
+    "family": "emphasis",
+    "translation": "Acima de tudo",
+    "explanation": "'Above all' destaca a habilidade comportamental (soft skill) mais indispensável.",
+    "fullSentence": "In an agile squad, technical skills matter, but above all, empathy and active listening during daily meetings build real collaboration.",
+    "sentenceTranslation": "Em uma squad ágil, habilidades técnicas importam, mas acima de tudo, empatia e escuta ativa durante as reuniões diárias constroem uma colaboração real.",
+    "whyCorrect": "'Above all' posiciona a empatia no ápice dos comportamentos esperados do time ágil.",
+    "whyOthersFail": "'Otherwise' introduz consequência negativa de condição não atendida. 'Because' exige oração explicativa de causa imediata. 'Equally' colocaria no mesmo peso em vez de destacar como superior.",
+    "proTip": "Excelente expressão para retrospectivas e feedbacks quando você deseja elevar o valor do respeito mútuo."
+  },
+  {
+    "id": "q-actually-budget-done",
+    "prompt": "The project manager thought we still had plenty of funds left. _____ , our budget is almost done.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Currently"
+      },
+      {
+        "id": "b",
+        "text": "Actually"
+      },
+      {
+        "id": "c",
+        "text": "Summing up"
+      },
+      {
+        "id": "d",
+        "text": "Nor"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Actually",
+    "family": "emphasis",
+    "translation": "Na verdade",
+    "explanation": "'Actually' é usado para corrigir uma impressão equivocada e apresentar a realidade dos números.",
+    "fullSentence": "The project manager thought we still had plenty of funds left. Actually, our budget is almost done.",
+    "sentenceTranslation": "O gerente de projetos pensou que ainda tínhamos bastante verba disponível. Na verdade, nosso orçamento está quase no fim.",
+    "whyCorrect": "'Actually' revela o fato verdadeiro (orçamento acabando) em contraste com a suposição incorreta do PM.",
+    "whyOthersFail": "'Currently' indicaria apenas tempo presente sem a nuance de retificação. 'Summing up' resumiria sem retificar. 'Nor' é conjunção correlativa negativa.",
+    "proTip": "'Actually' é o clássico 'na verdade' do inglês. Cuidado com o falso cognato: 'actually' NÃO significa 'atualmente' (que é 'currently')."
+  },
+  {
+    "id": "q-actually-time-running-out",
+    "prompt": "You said that your project was on time. But, _____ , your project is running out of time.",
+    "options": [
+      {
+        "id": "a",
+        "text": "besides"
+      },
+      {
+        "id": "b",
+        "text": "in order to"
+      },
+      {
+        "id": "c",
+        "text": "actually"
+      },
+      {
+        "id": "d",
+        "text": "whereas"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "actually",
+    "family": "emphasis",
+    "translation": "Na verdade",
+    "explanation": "'Actually' pontua um choque de realidade entre o que foi dito e a realidade do cronograma.",
+    "fullSentence": "You said that your project was on time. But, actually, your project is running out of time.",
+    "sentenceTranslation": "Você disse que seu projeto estava no prazo. Mas, na verdade, o seu projeto está ficando sem tempo.",
+    "whyCorrect": "'Actually' confirma que a alegação de estar no prazo não condiz com a realidade das entregas.",
+    "whyOthersFail": "'Besides' adicionaria um ponto novo sem retificar o anterior. 'In order to' expressa finalidade. 'Whereas' conecta duas cláusulas de contraste direto.",
+    "proTip": "Use 'But actually...' em conversas difíceis de alinhamento para apontar desvios de prazo com clareza e profissionalismo."
+  },
+  {
+    "id": "q-actually-drive-to-office",
+    "prompt": "Yesterday I needed to go to the office by car because the bus had already left. _____ , I didn't want to take the bus; I prefer driving.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Therefore"
+      },
+      {
+        "id": "b",
+        "text": "Unless"
+      },
+      {
+        "id": "c",
+        "text": "While"
+      },
+      {
+        "id": "d",
+        "text": "Actually"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "Actually",
+    "family": "emphasis",
+    "translation": "Na verdade",
+    "explanation": "'Actually' confessa a preferência real e sincera que estava por trás da escolha aparente.",
+    "fullSentence": "Yesterday I needed to go to the office by car because the bus had already left. Actually, I didn't want to take the bus; I prefer driving.",
+    "sentenceTranslation": "Ontem precisei ir ao escritório de carro porque o ônibus já havia passado. Na verdade, eu não queria pegar o ônibus; prefiro dirigir.",
+    "whyCorrect": "'Actually' expõe a verdade íntima do falante, desconstruindo a desculpa inicial do ônibus.",
+    "whyOthersFail": "'Therefore' indicaria conclusão lógica que não corresponde à confissão pessoal. 'Unless' estabelece condição restritiva. 'While' indica tempo simultâneo.",
+    "proTip": "'Actually' é ótimo para confessar gostos e preferências pessoais de maneira natural e amigável."
+  },
+  {
+    "id": "q-actually-truth-worse",
+    "prompt": "Don't try to sugarcoat the outage report; _____ , the truth is worse than you can imagine.",
+    "options": [
+      {
+        "id": "a",
+        "text": "actually"
+      },
+      {
+        "id": "b",
+        "text": "likewise"
+      },
+      {
+        "id": "c",
+        "text": "beforehand"
+      },
+      {
+        "id": "d",
+        "text": "equally"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "actually",
+    "family": "emphasis",
+    "translation": "Na verdade",
+    "explanation": "'Actually' enfatiza uma realidade dura ou surpreendente que supera as expectativas.",
+    "fullSentence": "Don't try to sugarcoat the outage report; actually, the truth is worse than you can imagine.",
+    "sentenceTranslation": "Não tente suavizar o relatório do incidente; na verdade, a verdade é pior do que você imagina.",
+    "whyCorrect": "'Actually' alerta o ouvinte para a gravidade real do ocorrido sem meias palavras.",
+    "whyOthersFail": "'Likewise' expressaria similaridade. 'Beforehand' indicaria algo feito previamente. 'Equally' expressaria equivalência.",
+    "proTip": "Frase clássica do seu documento! Use 'Actually, the truth is...' para trazer fatos à tona com autoridade."
+  },
+  {
+    "id": "q-afterwards-gym-home",
+    "prompt": "I had an intense workout at the gym and _____ I went home to take a shower and rest.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in case"
+      },
+      {
+        "id": "b",
+        "text": "afterwards"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "although"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "afterwards",
+    "family": "time",
+    "translation": "Depois / Posteriormente",
+    "explanation": "'Afterwards' indica a ação subsequente cronológica ocorrida após o treino na academia.",
+    "fullSentence": "I had an intense workout at the gym and afterwards I went home to take a shower and rest.",
+    "sentenceTranslation": "Tive um treino intenso na academia e depois fui para casa tomar banho e descansar.",
+    "whyCorrect": "'Afterwards' é o advérbio perfeito para indicar o passo seguinte na rotina.",
+    "whyOthersFail": "'In case' expressa hipótese preventiva. 'Rather than' expressa preferência entre opções. 'Although' introduz oração concessiva.",
+    "proTip": "'Afterwards' funciona como 'later' ou 'after that'. Pode vir no meio com 'and afterwards' ou no final da frase."
+  },
+  {
+    "id": "q-afterwards-dinner-walk",
+    "prompt": "Cinthia and I had dinner at a lovely Italian restaurant and went for a walk _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "at all"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "afterwards"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "afterwards",
+    "family": "time",
+    "translation": "Depois / Depois disso",
+    "explanation": "'Afterwards' no fim da oração fecha a sequência cronológica da noite.",
+    "fullSentence": "Cinthia and I had dinner at a lovely Italian restaurant and went for a walk afterwards.",
+    "sentenceTranslation": "A Cinthia e eu jantamos em um ótimo restaurante italiano e fomos caminhar depois disso.",
+    "whyCorrect": "'Afterwards' posicionado no fim da frase modifica toda a ação anterior, marcando o momento posterior.",
+    "whyOthersFail": "'At all' é usado para ênfase negativa. 'Unless' exige oração condicional seguinte. 'Instead of' precisa de objeto ou gerúndio.",
+    "proTip": "Posicionar 'afterwards' no fim da frase ('...went for a walk afterwards') é super natural no inglês cotidiano!"
+  },
+  {
+    "id": "q-afterwards-call-you",
+    "prompt": "I'll finish my English grammar lesson now and I'll call you _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "for instance"
+      },
+      {
+        "id": "d",
+        "text": "afterwards"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "afterwards",
+    "family": "time",
+    "translation": "Depois",
+    "explanation": "'Afterwards' expressa que a ligação telefônica acontecerá logo após o término da aula de inglês.",
+    "fullSentence": "I'll finish my English grammar lesson now and I'll call you afterwards.",
+    "sentenceTranslation": "Vou terminar minha aula de gramática de inglês agora e te ligo depois.",
+    "whyCorrect": "'Afterwards' fixa a ordem cronológica do compromisso telefônico de forma coloquial e fluida.",
+    "whyOthersFail": "'Nor' exige estrutura negativa correlativa. 'Due to' exige substantivo de causa. 'For instance' introduz exemplos ilustrativos.",
+    "proTip": "'I'll call you afterwards' é uma das frases mais úteis do inglês para gerenciar seu tempo durante reuniões!"
+  },
+  {
+    "id": "q-all-in-all-sprint-success",
+    "prompt": "We faced two unexpected production bugs and a cloud outage, but _____ , the sprint was a major success.",
+    "options": [
+      {
+        "id": "a",
+        "text": "all in all"
+      },
+      {
+        "id": "b",
+        "text": "in case"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "unlike"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "all in all",
+    "family": "summary",
+    "translation": "Em suma / De tudo em tudo",
+    "explanation": "'All in all' resume a impressão geral ponderando os desafios superados e o saldo positivo final.",
+    "fullSentence": "We faced two unexpected production bugs and a cloud outage, but all in all, the sprint was a major success.",
+    "sentenceTranslation": "Enfrentamos dois bugs inesperados em produção e uma queda na nuvem, mas em suma, a sprint foi um grande sucesso.",
+    "whyCorrect": "'All in all' introduz o veredito ponderado após pesar pontos negativos e conquistas.",
+    "whyOthersFail": "'In case' expressa precaução condicional. 'Nor' exige negativa anterior. 'Unlike' faz comparação de distinção.",
+    "proTip": "Em retrospectivas de sprint, use 'All in all...' para dar um fechamento construtivo e motivador à squad."
+  },
+  {
+    "id": "q-all-in-all-trip-cinthia",
+    "prompt": "Our flight was delayed by two hours and the weather was rainy, but _____ , the trip with Cinthia was wonderful.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "all in all"
+      },
+      {
+        "id": "c",
+        "text": "otherwise"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "all in all",
+    "family": "summary",
+    "translation": "Afinal de contas / De modo geral",
+    "explanation": "'All in all' resume a experiência como altamente compensadora apesar dos contratempos.",
+    "fullSentence": "Our flight was delayed by two hours and the weather was rainy, but all in all, the trip with Cinthia was wonderful.",
+    "sentenceTranslation": "Nosso voo atrasou duas horas e o clima estava chuvoso, mas afinal de contas, a viagem com a Cinthia foi maravilhosa.",
+    "whyCorrect": "'All in all' fecha a narrativa valorizando a experiência como um todo acima dos percalços.",
+    "whyOthersFail": "'Because of' exige sintagma nominal causal imediato. 'Otherwise' projeta consequência hipotética. 'So that' expressa finalidade.",
+    "proTip": "'All in all' é o equivalente a 'tudo somado' ou 'considerando tudo'. Perfeito para relatos pessoais e profissionais."
+  },
+  {
+    "id": "q-all-in-all-client-qbr",
+    "prompt": "_____ , our consultancy delivered 95% of the deliverables within the agreed budget and SLA.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apart from"
+      },
+      {
+        "id": "b",
+        "text": "Even if"
+      },
+      {
+        "id": "c",
+        "text": "All in all"
+      },
+      {
+        "id": "d",
+        "text": "Instead of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "All in all",
+    "family": "summary",
+    "translation": "Em suma / De modo geral",
+    "explanation": "'All in all' sintetiza o balanço global da entrega no fechamento de trimestre com o cliente.",
+    "fullSentence": "All in all, our consultancy delivered 95% of the deliverables within the agreed budget and SLA.",
+    "sentenceTranslation": "Em suma, nossa consultoria entregou 95% dos entregáveis dentro do orçamento e SLA combinados.",
+    "whyCorrect": "'All in all' abre a oração conclusiva trazendo uma visão macro consolidada dos resultados.",
+    "whyOthersFail": "'Apart from' excluiria um item sem concluir. 'Even if' é concessivo condicional. 'Instead of' pede substituição.",
+    "proTip": "Use 'All in all' no slide de encerramento da sua apresentação executiva para cravar a mensagem principal."
+  },
+  {
+    "id": "q-all-in-all-gremio-season",
+    "prompt": "Grêmio had tactical ups and downs during the championship, but _____ , qualifying for the Libertadores was achieved.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "until"
+      },
+      {
+        "id": "c",
+        "text": "whenever"
+      },
+      {
+        "id": "d",
+        "text": "all in all"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "all in all",
+    "family": "summary",
+    "translation": "No cômputo geral / De modo geral",
+    "explanation": "'All in all' resume a temporada destacando o alcance do objetivo estratégico maior.",
+    "fullSentence": "Grêmio had tactical ups and downs during the championship, but all in all, qualifying for the Libertadores was achieved.",
+    "sentenceTranslation": "O Grêmio teve altos e baixos táticos durante o campeonato, mas no cômputo geral, a classificação para a Libertadores foi alcançada.",
+    "whyCorrect": "'All in all' encerra a discussão ressaltando o saldo positivo alcançado pela equipe.",
+    "whyOthersFail": "'Rather than' expressa preferência. 'Until' indica limite temporal estrito. 'Whenever' expressa tempo reiterado.",
+    "proTip": "Quando debater futebol ou projetos com amigos, use 'all in all' para definir o saldo final da discussão."
+  },
+  {
+    "id": "q-although-harder-than-thought",
+    "prompt": "_____ it’s harder than I thought, I will make it by myself and deliver this microservice on schedule.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Although"
+      },
+      {
+        "id": "b",
+        "text": "Despite"
+      },
+      {
+        "id": "c",
+        "text": "Because"
+      },
+      {
+        "id": "d",
+        "text": "In order to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "Although",
+    "family": "contrast",
+    "translation": "Embora",
+    "explanation": "'Although' introduz uma concessão subordinada seguida de oração completa (sujeito + verbo).",
+    "fullSentence": "Although it’s harder than I thought, I will make it by myself and deliver this microservice on schedule.",
+    "sentenceTranslation": "Embora seja mais difícil do que pensei, farei isso sozinho e entregarei este microsserviço no prazo.",
+    "whyCorrect": "'Although' é uma conjunção subordinativa concessiva perfeita que introduz 'it's harder than I thought'.",
+    "whyOthersFail": "'Despite' exigiria substantivo ou gerúndio ('Despite being harder'). 'Because' inverteria o sentido causal. 'In order to' exige verbo no infinitivo.",
+    "proTip": "Regra de ouro: 'Although' + [sujeito + verbo]; 'Despite' + [substantivo / -ing]. Nunca misture os dois!"
+  },
+  {
+    "id": "q-although-hard-person",
+    "prompt": "_____ you are a hard person to deal with sometimes, I still love and respect your honesty.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In spite of"
+      },
+      {
+        "id": "b",
+        "text": "Although"
+      },
+      {
+        "id": "c",
+        "text": "So that"
+      },
+      {
+        "id": "d",
+        "text": "Unless"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Although",
+    "family": "contrast",
+    "translation": "Embora",
+    "explanation": "'Although' estabelece o contraste afetivo com elegância e maturidade emocional.",
+    "fullSentence": "Although you are a hard person to deal with sometimes, I still love and respect your honesty.",
+    "sentenceTranslation": "Embora você seja uma pessoa difícil de lidar às vezes, ainda amo e respeito a sua sinceridade.",
+    "whyCorrect": "'Although' introduz a oração concessiva completa com sujeito ('you') e verbo ('are').",
+    "whyOthersFail": "'In spite of' exigiria 'In spite of your difficult personality' (substantivo). 'So that' expressa objetivo. 'Unless' introduz condição negativa.",
+    "proTip": "Frase autêntica do seu material! Mostra como o 'Although' equilibra duas realidades aparentemente contraditórias."
+  },
+  {
+    "id": "q-although-party-missed",
+    "prompt": "_____ you didn't come to the party last night, it was good and everyone asked about you.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Despite"
+      },
+      {
+        "id": "b",
+        "text": "Hence"
+      },
+      {
+        "id": "c",
+        "text": "Although"
+      },
+      {
+        "id": "d",
+        "text": "Nor"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "Although",
+    "family": "contrast",
+    "translation": "Embora",
+    "explanation": "'Although' contrasta a ausência de uma pessoa importante com o fato de a festa ter sido agradável.",
+    "fullSentence": "Although you didn't come to the party last night, it was good and everyone asked about you.",
+    "sentenceTranslation": "Embora você não tenha vindo à festa ontem à noite, foi muito boa e todos perguntaram por você.",
+    "whyCorrect": "'Although' encabeça a oração com sujeito e verbo no passado ('you didn't come').",
+    "whyOthersFail": "'Despite' não aceita oração direta com sujeito e verbo sem a expressão 'the fact that'. 'Hence' indica conclusão. 'Nor' é conjunção correlativa.",
+    "proTip": "Para usar 'despite' com oração completa, você precisaria dizer: 'Despite the fact that you didn't come'. Com 'Although', a frase fica mais leve e direta."
+  },
+  {
+    "id": "q-although-day-clouds-walk",
+    "prompt": "_____ the day isn't so good and the sky is overcast, we need to go out, take a walk, and see the clouds.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Despite"
+      },
+      {
+        "id": "b",
+        "text": "Because of"
+      },
+      {
+        "id": "c",
+        "text": "Unless"
+      },
+      {
+        "id": "d",
+        "text": "Although"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "Although",
+    "family": "contrast",
+    "translation": "Embora",
+    "explanation": "'Although' contrasta o tempo nublado com a decisão saudável de sair e caminhar.",
+    "fullSentence": "Although the day isn't so good and the sky is overcast, we need to go out, take a walk, and see the clouds.",
+    "sentenceTranslation": "Embora o dia não esteja tão bom e o céu esteja nublado, precisamos sair, dar uma caminhada e ver as nuvens.",
+    "whyCorrect": "'Although' introduz a oração concessiva completa ('the day isn't so good') inspirada diretamente no seu caderno.",
+    "whyOthersFail": "'Despite' exigiria substantivo ou gerúndio ('Despite the overcast day'). 'Because of' exigiria causa nominal. 'Unless' impõe condição.",
+    "proTip": "Frase autêntica do seu material: 'Although the day isn’t so good, we need to go out and see the clouds.' Pura poesia cotidiana!"
+  },
+  {
+    "id": "q-apart-from-login-bug",
+    "prompt": "_____ the minor CSS glitch on the mobile login screen, the whole application passed all automated QA checks.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apart from"
+      },
+      {
+        "id": "b",
+        "text": "Because of"
+      },
+      {
+        "id": "c",
+        "text": "In order to"
+      },
+      {
+        "id": "d",
+        "text": "Even though"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "Apart from",
+    "family": "substitution",
+    "translation": "Excetuando-se / Além de",
+    "explanation": "'Apart from' isola a única exceção da lista de verificações de qualidade.",
+    "fullSentence": "Apart from the minor CSS glitch on the mobile login screen, the whole application passed all automated QA checks.",
+    "sentenceTranslation": "Excetuando-se a pequena falha de CSS na tela de login móvel, o aplicativo inteiro passou em todas as verificações automatizadas de QA.",
+    "whyCorrect": "'Apart from' funciona como 'except for', isolando a falha visual do sucesso geral dos testes.",
+    "whyOthersFail": "'Because of' transformaria a falha em causa do sucesso. 'In order to' expressa objetivo. 'Even though' exige oração completa com verbo.",
+    "proTip": "'Apart from' = 'Except for'. Indispensável em relatórios de homologação para separar o único blocker do restante que está 100%."
+  },
+  {
+    "id": "q-apart-from-cinthia-surprise",
+    "prompt": "_____ Cinthia, nobody in the family knew that we had booked tickets for our anniversary trip to Europe.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rather than"
+      },
+      {
+        "id": "b",
+        "text": "Apart from"
+      },
+      {
+        "id": "c",
+        "text": "So that"
+      },
+      {
+        "id": "d",
+        "text": "Whereas"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Apart from",
+    "family": "substitution",
+    "translation": "Além de / À exceção de",
+    "explanation": "'Apart from' delimita que apenas a Cinthia detinha a informação confidencial.",
+    "fullSentence": "Apart from Cinthia, nobody in the family knew that we had booked tickets for our anniversary trip to Europe.",
+    "sentenceTranslation": "Além da Cinthia, ninguém na família sabia que tínhamos comprado passagens para nossa viagem de aniversário à Europa.",
+    "whyCorrect": "'Apart from' exclui a Cinthia da negação geral 'nobody knew'.",
+    "whyOthersFail": "'Rather than' expressa preferência de escolha. 'So that' expressa finalidade. 'Whereas' conecta contraste entre duas frases independentes.",
+    "proTip": "Use 'Apart from + nome/pessoa' para indicar quem era a única pessoa ciente de uma surpresa ou decisão importante."
+  },
+  {
+    "id": "q-apart-from-database-latency",
+    "prompt": "The new microservices deployment was fast and reliable, _____ a slight latency spike on the MongoDB cluster.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "apart from"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "apart from",
+    "family": "substitution",
+    "translation": "exceto por / com exceção de",
+    "explanation": "'Apart from' ressalva a única ocorrência de lentidão durante o deploy.",
+    "fullSentence": "The new microservices deployment was fast and reliable, apart from a slight latency spike on the MongoDB cluster.",
+    "sentenceTranslation": "O deploy dos novos microsserviços foi rápido e confiável, exceto por um leve pico de latência no cluster do MongoDB.",
+    "whyCorrect": "'Apart from' introduz o substantivo causal secundário como ressalva ao sucesso geral do deploy.",
+    "whyOthersFail": "'Unless' exige oração condicional com verbo. 'Due to' atribuiria o sucesso do deploy à lentidão do MongoDB. 'Instead of' indicaria troca intencional.",
+    "proTip": "No post-mortem de infraestrutura, 'apart from...' é perfeito para reportar métricas quase perfeitas com precisão cirúrgica."
+  },
+  {
+    "id": "q-apart-from-gremio-match",
+    "prompt": "I had a productive weekend studying English and resting, _____ the heartbreak of watching Grêmio lose in the final minutes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "therefore"
+      },
+      {
+        "id": "c",
+        "text": "equally"
+      },
+      {
+        "id": "d",
+        "text": "apart from"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "apart from",
+    "family": "substitution",
+    "translation": "à exceção de / fora",
+    "explanation": "'Apart from' destaca o único evento negativo que quebrou a tranquilidade do fim de semana.",
+    "fullSentence": "I had a productive weekend studying English and resting, apart from the heartbreak of watching Grêmio lose in the final minutes.",
+    "sentenceTranslation": "Tive um fim de semana produtivo estudando inglês e descansando, à exceção do desgosto de ver o Grêmio perder nos acréscimos.",
+    "whyCorrect": "'Apart from' isola a derrota do Grêmio como a única exceção ao fim de semana agradável.",
+    "whyOthersFail": "'So that' expressa meta/finalidade. 'Therefore' expressa conclusão lógica. 'Equally' expressa equivalência positiva.",
+    "proTip": "Use 'apart from' para criar relatos divertidos de fim de semana contrastando bons momentos com frustrações futebolísticas!"
+  },
+  {
+    "id": "q-as-a-result-client-calls",
+    "prompt": "The developer pushed unreviewed code directly to production without testing. _____ , hundreds of angry clients started calling support.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a result"
+      },
+      {
+        "id": "b",
+        "text": "However"
+      },
+      {
+        "id": "c",
+        "text": "Unless"
+      },
+      {
+        "id": "d",
+        "text": "In spite of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "As a result",
+    "family": "cause",
+    "translation": "Como resultado",
+    "explanation": "'As a result' demonstra a consequência imediata e incontestável do erro cometido.",
+    "fullSentence": "The developer pushed unreviewed code directly to production without testing. As a result, hundreds of angry clients started calling support.",
+    "sentenceTranslation": "O desenvolvedor subiu código não revisado direto para produção sem testar. Como resultado, centenas de clientes irritados começaram a ligar para o suporte.",
+    "whyCorrect": "'As a result' inicia a frase seguinte expressando a consequência lógica e factual da causa anterior.",
+    "whyOthersFail": "'However' expressaria contraste ou oposição. 'Unless' expressaria condição negativa. 'In spite of' exige substantivo de concessão.",
+    "proTip": "Estrutura essencial em incidentes: [Ação desastrosa no passado]. 'As a result,' [Consequência sofrida pelo cliente]."
+  },
+  {
+    "id": "q-as-a-result-study-book",
+    "prompt": "I read the software architecture book that you lent me and, _____ , I discovered many innovative patterns for microservices.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "as a result"
+      },
+      {
+        "id": "c",
+        "text": "otherwise"
+      },
+      {
+        "id": "d",
+        "text": "even if"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "as a result",
+    "family": "cause",
+    "translation": "como resultado",
+    "explanation": "'As a result' liga o hábito da leitura aos novos conhecimentos técnicos adquiridos.",
+    "fullSentence": "I read the software architecture book that you lent me and, as a result, I discovered many innovative patterns for microservices.",
+    "sentenceTranslation": "Li o livro de arquitetura de software que você me emprestou e, como resultado, descobri muitos padrões inovadores para microsserviços.",
+    "whyCorrect": "'As a result' estabelece a relação de ganho de conhecimento decorrente do ato de ler o livro.",
+    "whyOthersFail": "'Instead of' indicaria que você não leu. 'Otherwise' indicaria advertência. 'Even if' criaria incerteza condicional.",
+    "proTip": "Frase do seu documento! Pode vir no meio da oração entre vírgulas: 'and, as a result, I discovered...'"
+  },
+  {
+    "id": "q-as-a-result-question-right-answer",
+    "prompt": "The junior developer asked a very thoughtful question during refinement and, _____ , the team could find the right architecture answer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "as a result"
+      },
+      {
+        "id": "d",
+        "text": "although"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "as a result",
+    "family": "cause",
+    "translation": "como resultado",
+    "explanation": "'As a result' conecta a pergunta perspicaz à solução correta encontrada pela equipe.",
+    "fullSentence": "The junior developer asked a very thoughtful question during refinement and, as a result, the team could find the right architecture answer.",
+    "sentenceTranslation": "O desenvolvedor júnior fez uma pergunta muito perspicaz durante o refinamento e, como resultado, a equipe conseguiu encontrar a resposta arquitetural correta.",
+    "whyCorrect": "'As a result' articula a consequência direta e positiva da pergunta feita na reunião.",
+    "whyOthersFail": "'Instead of' indicaria que não fizeram a pergunta. 'Unless' impõe condição restritiva. 'Although' expressaria concessão.",
+    "proTip": "Frase autêntica do seu material: 'As a result of your question, we could find the right answer.' Encoraje seus colegas a perguntarem sempre!"
+  },
+  {
+    "id": "q-as-far-as-carlos-reallocation",
+    "prompt": "_____ Carlos told me this morning, the leadership will cancel the legacy project and everyone will be reallocated to new squads.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In order to"
+      },
+      {
+        "id": "b",
+        "text": "Because of"
+      },
+      {
+        "id": "c",
+        "text": "Unless"
+      },
+      {
+        "id": "d",
+        "text": "As far as"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "As far as",
+    "family": "condition",
+    "translation": "Pelo que / Até onde",
+    "explanation": "'As far as' limita a afirmação às palavras ditas por Carlos, sem assumir garantia oficial da diretoria.",
+    "fullSentence": "As far as Carlos told me this morning, the leadership will cancel the legacy project and everyone will be reallocated to new squads.",
+    "sentenceTranslation": "Pelo que o Carlos me disse hoje de manhã, a liderança vai cancelar o projeto legado e todos serão realocados para novas squads.",
+    "whyCorrect": "'As far as Carlos told me' expressa com precisão o alcance das informações recebidas por via informal.",
+    "whyOthersFail": "'In order to' exige verbo infinitivo de objetivo. 'Because of' exige causa substantiva direta. 'Unless' é condicional negativa.",
+    "proTip": "Frase autêntica do seu material! Em consultorias e empresas de TI, 'As far as [pessoa] said...' evita espalhar boatos como certezas absolutas."
+  },
+  {
+    "id": "q-as-far-as-devops-healthy",
+    "prompt": "_____ the DevOps team is aware, the AWS infrastructure has been running smoothly without any alarms.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As far as"
+      },
+      {
+        "id": "b",
+        "text": "Rather than"
+      },
+      {
+        "id": "c",
+        "text": "Due to"
+      },
+      {
+        "id": "d",
+        "text": "Although"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "As far as",
+    "family": "condition",
+    "translation": "Até onde / Pelo que",
+    "explanation": "'As far as' restringe a declaração de estabilidade ao monitoramento atual do time de operações.",
+    "fullSentence": "As far as the DevOps team is aware, the AWS infrastructure has been running smoothly without any alarms.",
+    "sentenceTranslation": "Até onde a equipe de DevOps tem ciência, a infraestrutura da AWS está rodando perfeitamente sem nenhum alarme.",
+    "whyCorrect": "'As far as [sujeito] is aware' é a locução padrão para ressalvar o limite do monitoramento técnico.",
+    "whyOthersFail": "'Rather than' expressa preferência. 'Due to' exige substantivo de causa. 'Although' pede contraste concessivo.",
+    "proTip": "Mémorize a expressão: 'As far as I know' (até onde sei) ou 'As far as the team is aware' (até onde o time sabe). Muito refinada e segura!"
+  },
+  {
+    "id": "q-as-far-as-michael-jackson-house",
+    "prompt": "_____ our tour guide told us in California, Michael Jackson bought that famous estate when he was alive.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In order to"
+      },
+      {
+        "id": "b",
+        "text": "As far as"
+      },
+      {
+        "id": "c",
+        "text": "Because of"
+      },
+      {
+        "id": "d",
+        "text": "Rather than"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "As far as",
+    "family": "condition",
+    "translation": "Pelo que / Até onde",
+    "explanation": "'As far as' delimita o alcance da informação transmitida pelo guia de turismo.",
+    "fullSentence": "As far as our tour guide told us in California, Michael Jackson bought that famous estate when he was alive.",
+    "sentenceTranslation": "Pelo que nosso guia de turismo nos contou na Califórnia, Michael Jackson comprou aquela propriedade famosa quando era vivo.",
+    "whyCorrect": "'As far as [sujeito] told us' é a locução padrão para relatar dados de terceiros.",
+    "whyOthersFail": "'In order to' exige infinitivo de propósito. 'Because of' exige causa nominal. 'Rather than' expressa opção comparativa.",
+    "proTip": "Frase autêntica do seu material: 'As far as he told me, Michael Jackson bought that house when he was alive.' Excelente exemplo da vida real!"
+  },
+  {
+    "id": "q-as-long-as-homework-pass",
+    "prompt": "You will achieve fluent communication and pass your technical interview _____ you practice speaking every single day.",
+    "options": [
+      {
+        "id": "a",
+        "text": "although"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "as long as"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "as long as",
+    "family": "condition",
+    "translation": "contanto que / desde que",
+    "explanation": "'As long as' impõe a prática diária como condição necessária e suficiente para o sucesso.",
+    "fullSentence": "You will achieve fluent communication and pass your technical interview as long as you practice speaking every single day.",
+    "sentenceTranslation": "Você alcançará comunicação fluente e passará na sua entrevista técnica contanto que pratique conversação todo santo dia.",
+    "whyCorrect": "'As long as' expressa a condição prévia essencial para que o resultado positivo ocorra.",
+    "whyOthersFail": "'Although' expressaria concessão incompatível com o incentivo. 'Unless' inverteria o sentido ('a menos que pratique, você passará'). 'Instead of' exige gerúndio ou substantivo.",
+    "proTip": "'As long as' equivale a 'provided that' ou 'only if'. Transmite segurança e compromisso mútuo."
+  },
+  {
+    "id": "q-as-long-as-remote-daily",
+    "prompt": "The tech lead told the team that remote work is completely flexible _____ everyone attends the Daily Standup on time.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in spite of"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "as long as"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "as long as",
+    "family": "condition",
+    "translation": "contanto que / desde que",
+    "explanation": "'As long as' estabelece a pontualidade na Daily como o acordo de convivência para o home office.",
+    "fullSentence": "The tech lead told the team that remote work is completely flexible as long as everyone attends the Daily Standup on time.",
+    "sentenceTranslation": "O líder técnico disse ao time que o trabalho remoto é totalmente flexível contanto que todos compareçam à Daily Standup no horário.",
+    "whyCorrect": "'As long as' introduz o critério contratual e de confiança entre a liderança e os desenvolvedores.",
+    "whyOthersFail": "'In spite of' exige substantivo. 'Nor' exige negativa anterior. 'Because of' indicaria causa já consumada.",
+    "proTip": "Expressão clássica de contratos de trabalho ágil: 'You have full autonomy as long as you deliver value.'"
+  },
+  {
+    "id": "q-as-long-as-pizza-office",
+    "prompt": "I don't mind staying at the office until late to finish this release _____ we order some good pizza with Cinthia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "as long as"
+      },
+      {
+        "id": "b",
+        "text": "whereas"
+      },
+      {
+        "id": "c",
+        "text": "therefore"
+      },
+      {
+        "id": "d",
+        "text": "apart from"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "as long as",
+    "family": "condition",
+    "translation": "contanto que / desde que",
+    "explanation": "'As long as' expressa a condição bem-humorada para estender o horário de trabalho.",
+    "fullSentence": "I don't mind staying at the office until late to finish this release as long as we order some good pizza with Cinthia.",
+    "sentenceTranslation": "Não me importo de ficar no escritório até tarde para terminar este release contanto que peçamos uma boa pizza com a Cinthia.",
+    "whyCorrect": "'As long as' condiciona a disposição em fazer serão à presença da pizza e da companhia agradável.",
+    "whyOthersFail": "'Whereas' estabelece comparação contrastante. 'Therefore' expressa dedução. 'Apart from' exclui elementos.",
+    "proTip": "Use 'as long as' para negociar acordos amigáveis com seus colegas de equipe de forma leve e assertiva."
+  },
+  {
+    "id": "q-as-well-study-more",
+    "prompt": "Microservices architecture is a complex topic, and our junior engineers need to study cloud patterns _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "at all"
+      },
+      {
+        "id": "b",
+        "text": "as well"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "as well",
+    "family": "addition",
+    "translation": "também",
+    "explanation": "'As well' no final da frase adiciona o aprendizado de cloud ao estudo de microsserviços.",
+    "fullSentence": "Microservices architecture is a complex topic, and our junior engineers need to study cloud patterns as well.",
+    "sentenceTranslation": "A arquitetura de microsserviços é um tema complexo, e nossos engenheiros juniores precisam estudar padrões de nuvem também.",
+    "whyCorrect": "'As well' posicionado no fim da sentença funciona exatamente como 'too', adicionando outro tópico de estudo.",
+    "whyOthersFail": "'At all' é usado para ênfase negativa. 'Unless' pede oração condicional. 'Rather than' requer elemento comparativo.",
+    "proTip": "Dica do Professor: 'As well' fica sempre no final da oração ('...study cloud patterns as well'), assim como 'too'!"
+  },
+  {
+    "id": "q-as-well-daily-plate-restaurant",
+    "prompt": "A: I will order the steak with French fries. B: That looks delicious; I think I would like to order that _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "because"
+      },
+      {
+        "id": "c",
+        "text": "as well"
+      },
+      {
+        "id": "d",
+        "text": "in contrast"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "as well",
+    "family": "addition",
+    "translation": "também",
+    "explanation": "'As well' expressa que o ouvinte deseja pedir o mesmo prato do colega.",
+    "fullSentence": "A: I will order the steak with French fries. B: That looks delicious; I think I would like to order that as well.",
+    "sentenceTranslation": "A: Vou pedir o bife com batatas fritas. B: Parece delicioso; acho que gostaria de pedir isso também.",
+    "whyCorrect": "'As well' conclui o pedido concordando com a escolha da outra pessoa.",
+    "whyOthersFail": "'Nor' é usado exclusivamente em sentenças negativas ('neither... nor'). 'Because' pede justificativa. 'In contrast' opõe coisas.",
+    "proTip": "Diálogo do seu material! Em restaurantes, 'I would like that as well' é super polido e natural."
+  },
+  {
+    "id": "q-as-well-party-invite",
+    "prompt": "Cinthia told me you bought tickets to the music concert, and she told me that I was invited _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "otherwise"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "summing up"
+      },
+      {
+        "id": "d",
+        "text": "as well"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "as well",
+    "family": "addition",
+    "translation": "também",
+    "explanation": "'As well' celebra a inclusão do convite para o show.",
+    "fullSentence": "Cinthia told me you bought tickets to the music concert, and she told me that I was invited as well.",
+    "sentenceTranslation": "A Cinthia me disse que você comprou ingressos para o festival de música, e me contou que eu fui convidado também.",
+    "whyCorrect": "'As well' encerra a frase adicionando o falante à lista de convidados felizes.",
+    "whyOthersFail": "'Otherwise' traz ameaça/condição ('caso contrário'). 'Due to' exige causa nominal. 'Summing up' introduz resumo.",
+    "proTip": "Frase autêntica do seu material: 'I was invited to the party as well'. Guarde essa fórmula simples e eficiente!"
+  },
+  {
+    "id": "q-as-well-backend-docker",
+    "prompt": "The backend REST API has already been dockerized, and we configured the frontend container _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "as well"
+      },
+      {
+        "id": "b",
+        "text": "instead of"
+      },
+      {
+        "id": "c",
+        "text": "even if"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "as well",
+    "family": "addition",
+    "translation": "também",
+    "explanation": "'As well' indica que o frontend recebeu a mesma conteinerização que o backend.",
+    "fullSentence": "The backend REST API has already been dockerized, and we configured the frontend container as well.",
+    "sentenceTranslation": "A API REST do backend já foi conteinerizada, e nós configuramos o contêiner do frontend também.",
+    "whyCorrect": "'As well' pontua a adição do frontend à esteira de conteinerização.",
+    "whyOthersFail": "'Instead of' indicaria que trocamos um pelo outro. 'Even if' é condicional concessiva. 'Unless' nega condição.",
+    "proTip": "No Daily Standup, quando você concluiu duas tarefas correlatas, diga: 'I worked on X, and I completed Y as well.'"
+  },
+  {
+    "id": "q-as-well-as-eyes-bright",
+    "prompt": "_____ the moon is bright in the night sky, your smile illuminates my entire world.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In order to"
+      },
+      {
+        "id": "b",
+        "text": "As well as"
+      },
+      {
+        "id": "c",
+        "text": "Rather than"
+      },
+      {
+        "id": "d",
+        "text": "In spite of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "As well as",
+    "family": "addition",
+    "translation": "Assim como",
+    "explanation": "'As well as' no início de frases poéticas estabelece um paralelismo de beleza e intensidade.",
+    "fullSentence": "As well as the moon is bright in the night sky, your smile illuminates my entire world.",
+    "sentenceTranslation": "Assim como a lua brilha no céu noturno, o seu sorriso ilumina todo o meu mundo.",
+    "whyCorrect": "'As well as' estabelece a comparação poética direta inspirada na frase do seu documento.",
+    "whyOthersFail": "'In order to' expressa finalidade com infinitivo. 'Rather than' estabelece escolha excludente. 'In spite of' expressa oposição concessiva.",
+    "proTip": "Frase autêntica do seu material! Embora no dia a dia 'as well as' signifique 'bem como', em construções clássicas pode equivaler a 'just as' (assim como)."
+  },
+  {
+    "id": "q-as-well-as-planning-refinement",
+    "prompt": "The Product Owner is actively involved in Sprint Planning _____ Backlog Refinement.",
+    "options": [
+      {
+        "id": "a",
+        "text": "even though"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "as well as"
+      },
+      {
+        "id": "d",
+        "text": "in case"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "as well as",
+    "family": "addition",
+    "translation": "bem como / assim como",
+    "explanation": "'As well as' conecta as duas cerimônias ágeis de responsabilidade do Product Owner.",
+    "fullSentence": "The Product Owner is actively involved in Sprint Planning as well as Backlog Refinement.",
+    "sentenceTranslation": "O Product Owner está ativamente envolvido no Planejamento da Sprint bem como no Refinamento do Backlog.",
+    "whyCorrect": "'As well as' conecta dois substantivos próprios com elegância superior ao simples 'and'.",
+    "whyOthersFail": "'Even though' exige oração completa com verbo próprio. 'Unless' é condicional negativa. 'In case' previne risco.",
+    "proTip": "Frase do seu documento! Em descrições de papéis e escopo de projetos, 'X as well as Y' soa muito mais profissional e maduro."
+  },
+  {
+    "id": "q-as-well-as-ios-android",
+    "prompt": "Our cross-platform Flutter application seamlessly supports iOS _____ Android devices.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "as well as"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "as well as",
+    "family": "addition",
+    "translation": "bem como / tanto quanto",
+    "explanation": "'As well as' atesta o suporte igualitário a ambos os sistemas operacionais móveis.",
+    "fullSentence": "Our cross-platform Flutter application seamlessly supports iOS as well as Android devices.",
+    "sentenceTranslation": "Nosso aplicativo Flutter multiplataforma oferece suporte perfeito a dispositivos iOS bem como Android.",
+    "whyCorrect": "'As well as' soma os dois ecossistemas móveis de forma harmoniosa.",
+    "whyOthersFail": "'Instead of' excluiria o Android. 'Due to' indicaria relação de causa e efeito sem sentido aqui. 'Nor' exige negativa correlativa.",
+    "proTip": "Use 'as well as' em documentações de arquitetura para listar tecnologias compatíveis com clareza."
+  },
+  {
+    "id": "q-as-well-as-calm-down",
+    "prompt": "The deadline is demanding, but you need to calm down and take a deep breath, _____ me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "as well as"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "as well as",
+    "family": "addition",
+    "translation": "assim como / bem como",
+    "explanation": "'As well as' inclui o interlocutor na mesma necessidade de manter a calma sob pressão.",
+    "fullSentence": "The deadline is demanding, but you need to calm down and take a deep breath, as well as me.",
+    "sentenceTranslation": "O prazo está apertado, mas você precisa se acalmar e respirar fundo, assim como eu.",
+    "whyCorrect": "'As well as me' une os dois colegas no mesmo sentimento de autocuidado.",
+    "whyOthersFail": "'Rather than' expressaria que você não precisa se acalmar. 'Because of' exigiria causa sem paralelismo pessoal. 'Unless' condicionaria a respiração.",
+    "proTip": "Frase inspirada no seu material ('You need to come down and take a breath, as well as me'). Mostra empatia entre colegas de squad!"
+  },
+  {
+    "id": "q-at-all-need-job",
+    "prompt": "The economy is tough and living costs are rising. I really need this software engineering position, _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "at all"
+      },
+      {
+        "id": "c",
+        "text": "in order to"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "at all",
+    "family": "emphasis",
+    "translation": "mesmo / de verdade",
+    "explanation": "'At all' no fim da afirmação enfatiza a urgência e a convicção absoluta da necessidade.",
+    "fullSentence": "The economy is tough and living costs are rising. I really need this software engineering position, at all.",
+    "sentenceTranslation": "A economia está difícil e o custo de vida subindo. Eu realmente preciso desta vaga de engenharia de software, mesmo.",
+    "whyCorrect": "'At all' posicionado no fim da oração intensifica a declaração com convicção inequívoca.",
+    "whyOthersFail": "'Due to' exige complemento nominal direto. 'In order to' exige infinitivo. 'Unless' abre oração condicional.",
+    "proTip": "Frase do seu material! No seu caderno de anotações, você registrou: 'Mesmo (enfatizar), usar no fim da frase'. Excelente para reforçar uma necessidade vital."
+  },
+  {
+    "id": "q-at-all-need-vacation",
+    "prompt": "My job at the consultancy is getting more stressful every sprint. I need a vacation soon, _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "because"
+      },
+      {
+        "id": "c",
+        "text": "at all"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "at all",
+    "family": "emphasis",
+    "translation": "mesmo / com certeza",
+    "explanation": "'At all' no final reforça o esgotamento e a certeza de que as férias são urgentes.",
+    "fullSentence": "My job at the consultancy is getting more stressful every sprint. I need a vacation soon, at all.",
+    "sentenceTranslation": "Meu trabalho na consultoria está ficando mais estressante a cada sprint. Eu preciso de férias em breve, mesmo.",
+    "whyCorrect": "'At all' fecha a oração dando a ênfase final ao pedido de férias.",
+    "whyOthersFail": "'Rather than' requer segundo termo comparativo. 'Because' exige oração subordinada. 'Instead of' pede termo de troca.",
+    "proTip": "Outra frase autêntica do seu material: 'My job is harder nowadays. I need a vacation soon, at all.' Use para desabafar de forma enfática."
+  },
+  {
+    "id": "q-at-all-london-best-place",
+    "prompt": "I have traveled to many European capitals, but London is the most vibrant city I have ever visited, _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "although"
+      },
+      {
+        "id": "c",
+        "text": "so that"
+      },
+      {
+        "id": "d",
+        "text": "at all"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "at all",
+    "family": "emphasis",
+    "translation": "mesmo / sem dúvida",
+    "explanation": "'At all' sela a opinião entusiasmada sobre Londres no fim da frase.",
+    "fullSentence": "I have traveled to many European capitals, but London is the most vibrant city I have ever visited, at all.",
+    "sentenceTranslation": "Já viajei para muitas capitais europeias, mas Londres é a cidade mais vibrante que já visitei, mesmo.",
+    "whyCorrect": "'At all' atua como intensificador de encerramento da frase categórica.",
+    "whyOthersFail": "'Nor' pede negativa correlativa. 'Although' pede oração concessiva. 'So that' pede oração de finalidade.",
+    "proTip": "Frase inspirada no seu exemplo de Londres: fecha a frase com força expressiva inquestionável."
+  },
+  {
+    "id": "q-at-all-not-understand-legacy",
+    "prompt": "The new hire didn't understand the legacy monolith codebase _____ because there was no documentation.",
+    "options": [
+      {
+        "id": "a",
+        "text": "at all"
+      },
+      {
+        "id": "b",
+        "text": "equally"
+      },
+      {
+        "id": "c",
+        "text": "meanwhile"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "at all",
+    "family": "emphasis",
+    "translation": "de forma alguma / absolutamente nada",
+    "explanation": "'Not ... at all' é a locução enfática padrão para negação total no inglês nativo.",
+    "fullSentence": "The new hire didn't understand the legacy monolith codebase at all because there was no documentation.",
+    "sentenceTranslation": "O novo contratado não entendeu absolutamente nada da base de código do monólito legado porque não havia documentação.",
+    "whyCorrect": "'Didn't understand ... at all' expressa a incompreensão completa e categórica.",
+    "whyOthersFail": "'Equally' expressaria equivalência. 'Meanwhile' expressa tempo decorrido. 'Instead of' pede substantivo.",
+    "proTip": "Dica do Professor: Com negação ('didn't / don't / not'), 'at all' significa 'de jeito nenhum / absolutamente nada' ('I don't mind at all')."
+  },
+  {
+    "id": "q-at-all-not-worried-deployment",
+    "prompt": "With our automated rollback pipeline and extensive unit test suite, the tech lead is not worried _____ about tonight's production release.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "at all"
+      },
+      {
+        "id": "c",
+        "text": "therefore"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "at all",
+    "family": "emphasis",
+    "translation": "nem um pouco / de forma alguma",
+    "explanation": "'Not worried at all' transmite total tranquilidade e confiança na automação.",
+    "fullSentence": "With our automated rollback pipeline and extensive unit test suite, the tech lead is not worried at all about tonight's production release.",
+    "sentenceTranslation": "Com nossa esteira de rollback automatizada e ampla suíte de testes unitários, o líder técnico não está nem um pouco preocupado com o deploy de produção de hoje à noite.",
+    "whyCorrect": "'Not worried at all' comunica ausência total de ansiedade ou preocupação.",
+    "whyOthersFail": "'Unless' pede condição. 'Therefore' pede dedução lógica. 'Rather than' pede alternativa.",
+    "proTip": "Quando alguém te perguntar em inglês 'Are you worried about the deadline?', responda com confiança: 'Not at all!'"
+  },
+  {
+    "id": "q-at-last-bug-fixed-night",
+    "prompt": "After seven exhausting hours of analyzing memory dumps and server logs, the team fixed the critical memory leak _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "at least"
+      },
+      {
+        "id": "b",
+        "text": "in advance"
+      },
+      {
+        "id": "c",
+        "text": "at last"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "at last",
+    "family": "time",
+    "translation": "finalmente / por fim",
+    "explanation": "'At last' celebra o fim de uma longa batalha contra um bug crítico com alívio e satisfação.",
+    "fullSentence": "After seven exhausting hours of analyzing memory dumps and server logs, the team fixed the critical memory leak at last.",
+    "sentenceTranslation": "Após sete exaustivas horas analisando despejos de memória e logs de servidor, a equipe corrigiu o vazamento de memória crítico finalmente.",
+    "whyCorrect": "'At last' expressa a vitória suada e o alívio que coroa horas de esforço técnico.",
+    "whyOthersFail": "'At least' expressaria limite quantitativo mínimo ('pelo menos'). 'In advance' indicaria algo feito antecipadamente. 'Due to' pede causa.",
+    "proTip": "Diferença clássica: 'At last' = Finalmente! (com emoção e alívio). 'Lastly' = Por último numa lista de tópicos."
+  },
+  {
+    "id": "q-at-last-vacation-flight",
+    "prompt": "Cinthia and I had been waiting at the airport gate for over five hours; _____ , the airline announced boarding for our flight.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "furthermore"
+      },
+      {
+        "id": "d",
+        "text": "at last"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "at last",
+    "family": "time",
+    "translation": "finalmente / até que enfim",
+    "explanation": "'At last' acolhe a chamada para o embarque após longa espera angustiante.",
+    "fullSentence": "Cinthia and I had been waiting at the airport gate for over five hours; at last, the airline announced boarding for our flight.",
+    "sentenceTranslation": "A Cinthia e eu estávamos esperando no portão do aeroporto há mais de cinco horas; finalmente, a companhia aérea anunciou o embarque do nosso voo.",
+    "whyCorrect": "'At last' capta perfeitamente a sensação de alívio com o fim do atraso do voo.",
+    "whyOthersFail": "'Instead of' requer gerúndio ou substantivo. 'Unless' introduz condição negativa. 'Furthermore' apenas somaria um fato sem alívio.",
+    "proTip": "Use 'At last!' sozinho como exclamação quando um download demorado ou um deploy infinito finalmente concluem!"
+  },
+  {
+    "id": "q-at-last-contract-signed",
+    "prompt": "The enterprise client approved all security compliance clauses, and we signed the multimillion-dollar contract _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "at last"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "whereas"
+      },
+      {
+        "id": "d",
+        "text": "equally"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "at last",
+    "family": "time",
+    "translation": "finalmente / por fim",
+    "explanation": "'At last' encerra meses de negociação corporativa com sucesso.",
+    "fullSentence": "The enterprise client approved all security compliance clauses, and we signed the multimillion-dollar contract at last.",
+    "sentenceTranslation": "O cliente corporativo aprovou todas as cláusulas de conformidade de segurança, e assinamos o contrato multimilionário finalmente.",
+    "whyCorrect": "'At last' traduz a comemoração pelo fechamento de um negócio longo e burocrático.",
+    "whyOthersFail": "'Because of' exige causa nominal. 'Whereas' opõe duas realidades. 'Equally' expressa paridade.",
+    "proTip": "Lembre-se do exemplo do seu documento: 'Renato Gaúcho signed with Grêmio at last'. A emoção do alívio é a mesma!"
+  },
+  {
+    "id": "q-at-least-unit-tests-coverage",
+    "prompt": "Before merging this pull request into master, our CI/CD pipeline requires _____ 85% automated test coverage.",
+    "options": [
+      {
+        "id": "a",
+        "text": "at last"
+      },
+      {
+        "id": "b",
+        "text": "at least"
+      },
+      {
+        "id": "c",
+        "text": "at all"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "at least",
+    "family": "emphasis",
+    "translation": "pelo menos / no mínimo",
+    "explanation": "'At least' estipula o patamar mínimo inegociável de cobertura de código.",
+    "fullSentence": "Before merging this pull request into master, our CI/CD pipeline requires at least 85% automated test coverage.",
+    "sentenceTranslation": "Antes de fazer o merge deste pull request na master, nossa esteira de CI/CD exige pelo menos 85% de cobertura de testes automatizados.",
+    "whyCorrect": "'At least' delimita o valor mínimo tolerável para a métrica de testes.",
+    "whyOthersFail": "'At last' indicaria alívio temporal ('finalmente'). 'At all' é para ênfase negativa. 'Unless' introduz condição subordinada.",
+    "proTip": "Dica do Professor: 'At least' = Pelo menos (quantidade mínima ou consolo: 'at least I studied Math'). Nunca confunda com 'at last'!"
+  },
+  {
+    "id": "q-at-least-draw-match-gremio",
+    "prompt": "Grêmio didn't play their best tactical game away from home, but _____ they managed to secure a crucial draw in the tournament.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "therefore"
+      },
+      {
+        "id": "c",
+        "text": "at least"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "at least",
+    "family": "emphasis",
+    "translation": "pelo menos / ao menos",
+    "explanation": "'At least' funciona como consolo positivo diante de uma atuação abaixo do ideal.",
+    "fullSentence": "Grêmio didn't play their best tactical game away from home, but at least they managed to secure a crucial draw in the tournament.",
+    "sentenceTranslation": "O Grêmio não fez sua melhor partida tática fora de casa, mas pelo menos conseguiu garantir um empate crucial no torneio.",
+    "whyCorrect": "'At least' traz a nota de alívio e consolo pelo ponto conquistado.",
+    "whyOthersFail": "'Instead of' pede objeto de troca. 'Therefore' expressaria consequência matemática. 'Due to' exige substantivo de causa.",
+    "proTip": "Exatamente a mesma estrutura do seu documento ('Although I didn't study enough, at least I studied Math') aplicada ao Grêmio!"
+  },
+  {
+    "id": "q-at-least-three-refinements",
+    "prompt": "Our Scrum team schedules _____ two refinement sessions per sprint to keep the user stories well estimated.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in order to"
+      },
+      {
+        "id": "b",
+        "text": "so that"
+      },
+      {
+        "id": "c",
+        "text": "whereas"
+      },
+      {
+        "id": "d",
+        "text": "at least"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "at least",
+    "family": "emphasis",
+    "translation": "pelo menos / no mínimo",
+    "explanation": "'At least' define a frequência mínima recomendada para manter o backlog saudável.",
+    "fullSentence": "Our Scrum team schedules at least two refinement sessions per sprint to keep the user stories well estimated.",
+    "sentenceTranslation": "Nossa equipe Scrum agenda pelo menos duas sessões de refinamento por sprint para manter as histórias de usuário bem estimadas.",
+    "whyCorrect": "'At least' expressa o piso mínimo de sessões agendadas.",
+    "whyOthersFail": "'In order to' expressa objetivo com verbo. 'So that' expressa finalidade com oração. 'Whereas' conecta contraste.",
+    "proTip": "Use 'at least' sempre que definir SLAs, metas numéricas ou estimativas mínimas de esforço em reuniões de planejamento."
+  },
+  {
+    "id": "q-because-api-throttled",
+    "prompt": "The payment gateway rejected the bulk transaction request _____ our microservice exceeded the rate limit per second.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "although"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "because",
+    "family": "cause",
+    "translation": "porque / já que",
+    "explanation": "'Because' introduz a oração causal completa com sujeito ('our microservice') e verbo ('exceeded').",
+    "fullSentence": "The payment gateway rejected the bulk transaction request because our microservice exceeded the rate limit per second.",
+    "sentenceTranslation": "O gateway de pagamento rejeitou a requisição de transação em lote porque nosso microsserviço ultrapassou o limite de requisições por segundo.",
+    "whyCorrect": "'Because' conecta a rejeição à sua causa técnica explicada por uma oração completa.",
+    "whyOthersFail": "'Because of' exigiria substantivo direto sem verbo ('because of the rate limit'). 'Although' expressaria concessão. 'So that' expressaria objetivo futuro.",
+    "proTip": "A regra de ouro mais importante de inglês para TI: 'Because' + [oração com verbo]; 'Because of' + [apenas substantivo]."
+  },
+  {
+    "id": "q-because-bus-already-left",
+    "prompt": "Yesterday morning I needed to drive my car to the GFT office _____ the commuter bus had already left the terminal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "despite"
+      },
+      {
+        "id": "b",
+        "text": "because"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "because",
+    "family": "cause",
+    "translation": "porque",
+    "explanation": "'Because' explica a causa da necessidade de pegar o carro para ir ao trabalho.",
+    "fullSentence": "Yesterday morning I needed to drive my car to the GFT office because the commuter bus had already left the terminal.",
+    "sentenceTranslation": "Ontem de manhã precisei ir de carro ao escritório da GFT porque o ônibus fretado já havia saído do terminal.",
+    "whyCorrect": "'Because' é a conjunção causal ideal seguida de sujeito e verbo no past perfect ('the commuter bus had already left').",
+    "whyOthersFail": "'Despite' exigiria substantivo sem verbo conjugado. 'Unless' expressa condição negativa ('a não ser que'). 'Instead of' exige gerúndio ou objeto.",
+    "proTip": "Frase do seu material ('Yesterday I needed to go to the office by car, because the bus had already left'). Pura linguagem da vida real!"
+  },
+  {
+    "id": "q-because-cinthia-support",
+    "prompt": "I managed to complete my certification studies on time _____ Cinthia supported me and helped manage our daily tasks.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "because"
+      },
+      {
+        "id": "d",
+        "text": "in contrast"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "because",
+    "family": "cause",
+    "translation": "porque / já que",
+    "explanation": "'Because' reconhece o apoio de Cinthia como a causa direta do sucesso nos estudos.",
+    "fullSentence": "I managed to complete my certification studies on time because Cinthia supported me and helped manage our daily tasks.",
+    "sentenceTranslation": "Consegui concluir meus estudos para a certificação no prazo porque a Cinthia me apoiou e ajudou a cuidar das tarefas do dia a dia.",
+    "whyCorrect": "'Because' introduz a oração explicativa de causa e gratidão.",
+    "whyOthersFail": "'Nor' exige negativa anterior. 'Rather than' expressa troca ou preferência. 'In contrast' opõe dois lados.",
+    "proTip": "Ao agradecer alguém em apresentações ou posts no LinkedIn, 'because [pessoa] supported me' soa caloroso e autêntico."
+  },
+  {
+    "id": "q-because-server-crashed",
+    "prompt": "The QA team couldn't finish the regression testing in the staging environment _____ the backend server unexpectedly crashed.",
+    "options": [
+      {
+        "id": "a",
+        "text": "beforehand"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "summing up"
+      },
+      {
+        "id": "d",
+        "text": "because"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "because",
+    "family": "cause",
+    "translation": "porque",
+    "explanation": "'Because' justifica a interrupção dos testes pela queda do servidor de homologação.",
+    "fullSentence": "The QA team couldn't finish the regression testing in the staging environment because the backend server unexpectedly crashed.",
+    "sentenceTranslation": "A equipe de QA não conseguiu concluir os testes de regressão no ambiente de staging porque o servidor backend travou inesperadamente.",
+    "whyCorrect": "'Because' liga a consequência à falha técnica com precisão sintática.",
+    "whyOthersFail": "'Beforehand' é advérbio de tempo anterior. 'Due to' exigiria substantivo direto ('due to the crash'). 'Summing up' é conector de conclusão.",
+    "proTip": "Em reuniões diárias ou chamados de suporte, use 'because + [sujeito + verbo]' para justificar blockers sem rodeios."
+  },
+  {
+    "id": "q-because-of-network-outage",
+    "prompt": "The production release was postponed until tomorrow morning _____ an unexpected network outage in the AWS US-East region.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "because"
+      },
+      {
+        "id": "c",
+        "text": "although"
+      },
+      {
+        "id": "d",
+        "text": "in order to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "because of",
+    "family": "cause",
+    "translation": "por causa de / devido a",
+    "explanation": "'Because of' é uma preposição composta que antecede diretamente o sintagma nominal causal.",
+    "fullSentence": "The production release was postponed until tomorrow morning because of an unexpected network outage in the AWS US-East region.",
+    "sentenceTranslation": "O deploy em produção foi adiado para amanhã de manhã por causa de uma queda inesperada de rede na região US-East da AWS.",
+    "whyCorrect": "'Because of' rege o substantivo causal 'an unexpected network outage' sem exigir verbo subordinado.",
+    "whyOthersFail": "'Because' exigiria uma oração com verbo conjugado ('because there was an outage'). 'Although' expressa concessão. 'In order to' expressa finalidade com verbo.",
+    "proTip": "Memorize este par: 'Because of the rain' (correto) vs 'Because it was raining' (correto). Nunca diga 'Because of it was raining'!"
+  },
+  {
+    "id": "q-because-of-traffic-jam",
+    "prompt": "We arrived ten minutes late for our dinner reservation with Cinthia _____ the heavy traffic on the highway.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "because of",
+    "family": "cause",
+    "translation": "por causa de",
+    "explanation": "'Because of' explica o atraso apontando o trânsito pesado como a causa física.",
+    "fullSentence": "We arrived ten minutes late for our dinner reservation with Cinthia because of the heavy traffic on the highway.",
+    "sentenceTranslation": "Chegamos dez minutos atrasados para nossa reserva de jantar com a Cinthia por causa do trânsito pesado na rodovia.",
+    "whyCorrect": "'Because of' conecta o atraso ao sintagma nominal 'the heavy traffic'.",
+    "whyOthersFail": "'Instead of' indicaria que você escolheu o trânsito em vez do jantar. 'Unless' é condicional. 'So that' expressa intenção.",
+    "proTip": "Ao justificar atrasos causados por imprevistos externos (chuva, trânsito, voos cancelados), use sempre 'because of + [substantivo]'."
+  },
+  {
+    "id": "q-because-of-mongodb-lock",
+    "prompt": "The query response time skyrocketed _____ an unindexed collection lock on the MongoDB replica set.",
+    "options": [
+      {
+        "id": "a",
+        "text": "since"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "nor"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "because of",
+    "family": "cause",
+    "translation": "por causa de / em razão de",
+    "explanation": "'Because of' aponta o bloqueio da coleção no MongoDB como o causador do aumento de tempo de resposta.",
+    "fullSentence": "The query response time skyrocketed because of an unindexed collection lock on the MongoDB replica set.",
+    "sentenceTranslation": "O tempo de resposta da consulta disparou por causa de um bloqueio de coleção sem índice no conjunto de réplicas do MongoDB.",
+    "whyCorrect": "'Because of' rege diretamente o termo técnico 'an unindexed collection lock'.",
+    "whyOthersFail": "'Since' exigiria oração com verbo. 'Rather than' expressa opção preferencial. 'Nor' exige correlação negativa.",
+    "proTip": "Em relatórios de observabilidade e performance de banco de dados, 'because of + [gargalo]' soa extremamente conciso e profissional."
+  },
+  {
+    "id": "q-beforehand-review-pr",
+    "prompt": "If you want the architecture meeting to run efficiently, make sure to read the RFC document _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "afterwards"
+      },
+      {
+        "id": "b",
+        "text": "at all"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "beforehand"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "beforehand",
+    "family": "time",
+    "translation": "previamente / com antecedência",
+    "explanation": "'Beforehand' indica que a leitura deve ocorrer antes da realização da reunião.",
+    "fullSentence": "If you want the architecture meeting to run efficiently, make sure to read the RFC document beforehand.",
+    "sentenceTranslation": "Se você quer que a reunião de arquitetura transcorra com eficiência, certifique-se de ler o documento de RFC com antecedência.",
+    "whyCorrect": "'Beforehand' situa a ação preparatória no tempo anterior ao evento.",
+    "whyOthersFail": "'Afterwards' indicaria leitura após a reunião (tarde demais). 'At all' é ênfase negativa. 'Unless' introduz oração condicional.",
+    "proTip": "'Beforehand' = 'in advance' ou 'ahead of time'. Posicionado no fim da frase, soa muito polido e natural!"
+  },
+  {
+    "id": "q-beforehand-clean-code-deploy",
+    "prompt": "The DevOps engineer reminded everyone that all secrets must be configured in HashiCorp Vault _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "beforehand"
+      },
+      {
+        "id": "b",
+        "text": "instead of"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "whereas"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "beforehand",
+    "family": "time",
+    "translation": "com antecedência / previamente",
+    "explanation": "'Beforehand' ressalta a obrigatoriedade de preparar as credenciais antes do deploy.",
+    "fullSentence": "The DevOps engineer reminded everyone that all secrets must be configured in HashiCorp Vault beforehand.",
+    "sentenceTranslation": "O engenheiro de DevOps lembrou a todos que todas as credenciais devem ser configuradas no HashiCorp Vault previamente.",
+    "whyCorrect": "'Beforehand' atua como advérbio temporal marcando o pré-requisito indispensável.",
+    "whyOthersFail": "'Instead of' pede termo alternativo. 'Due to' pede causa nominal. 'Whereas' conecta orações de contraste.",
+    "proTip": "No checklist de deploy, 'Do this beforehand' é a frase de ouro para evitar interrupções de serviço."
+  },
+  {
+    "id": "q-beforehand-cinthia-reservation",
+    "prompt": "Valentine's Day restaurants get fully booked in Porto Alegre, so I reserved our favorite table _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "beforehand"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "even though"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "beforehand",
+    "family": "time",
+    "translation": "com antecedência / previamente",
+    "explanation": "'Beforehand' indica a reserva antecipada para garantir a noite especial com a Cinthia.",
+    "fullSentence": "Valentine's Day restaurants get fully booked in Porto Alegre, so I reserved our favorite table beforehand.",
+    "sentenceTranslation": "Os restaurantes no Dia dos Namorados lotam em Porto Alegre, então reservei nossa mesa favorita com antecedência.",
+    "whyCorrect": "'Beforehand' coroa a precaução de reservar a mesa com antecedência.",
+    "whyOthersFail": "'Nor' exige negativa correlativa. 'Because of' exige substantivo causal seguinte. 'Even though' exige oração subordinada.",
+    "proTip": "Use 'beforehand' para destacar planejamento e carinho em ações do dia a dia!"
+  },
+  {
+    "id": "q-besides-docker-kubernetes",
+    "prompt": "_____ mastering Docker and container orchestration, our cloud architects are proficient in Terraform and AWS automation.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Instead of"
+      },
+      {
+        "id": "b",
+        "text": "Due to"
+      },
+      {
+        "id": "c",
+        "text": "Besides"
+      },
+      {
+        "id": "d",
+        "text": "Unless"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "Besides",
+    "family": "addition",
+    "translation": "Além de",
+    "explanation": "'Besides' acrescenta o domínio de Terraform e AWS à proficiência já comprovada em Docker.",
+    "fullSentence": "Besides mastering Docker and container orchestration, our cloud architects are proficient in Terraform and AWS automation.",
+    "sentenceTranslation": "Além de dominarem o Docker e a orquestração de contêineres, nossos arquitetos de nuvem são proficientes em Terraform e automação AWS.",
+    "whyCorrect": "'Besides' encabeça a oração com gerúndio ('mastering') somando uma competência técnica a outra.",
+    "whyOthersFail": "'Instead of' implicaria que trocaram Docker por Terraform. 'Due to' indicaria causa. 'Unless' impõe condição negativa.",
+    "proTip": "Atenção crucial: 'Beside' (sem 's') = ao lado de fisicamente ('sit beside me'). 'Besides' (com 's') = além de ('besides that'). Nunca confunda!"
+  },
+  {
+    "id": "q-besides-gremio-fan",
+    "prompt": "_____ being a passionate Grêmio supporter, he enjoys analyzing European football tactics and watching the Champions League.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rather than"
+      },
+      {
+        "id": "b",
+        "text": "In case"
+      },
+      {
+        "id": "c",
+        "text": "Therefore"
+      },
+      {
+        "id": "d",
+        "text": "Besides"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "Besides",
+    "family": "addition",
+    "translation": "Além de",
+    "explanation": "'Besides' adiciona o interesse por futebol europeu à paixão fervorosa pelo Grêmio.",
+    "fullSentence": "Besides being a passionate Grêmio supporter, he enjoys analyzing European football tactics and watching the Champions League.",
+    "sentenceTranslation": "Além de ser um torcedor apaixonado pelo Grêmio, ele gosta de analisar táticas do futebol europeu e assistir à Champions League.",
+    "whyCorrect": "'Besides' introduz a qualidade adicional com fluidez e naturalidade.",
+    "whyOthersFail": "'Rather than' expressaria preferência excludente. 'In case' expressa hipótese preventiva. 'Therefore' expressa dedução.",
+    "proTip": "Use 'Besides [fazer algo]' para enriquecer apresentações pessoais sobre hobbies e interesses."
+  },
+  {
+    "id": "q-besides-salary-benefits",
+    "prompt": "The job offer at the tech consulting firm was very attractive; _____ , they offer full remote flexibility and an annual learning budget.",
+    "options": [
+      {
+        "id": "a",
+        "text": "besides"
+      },
+      {
+        "id": "b",
+        "text": "otherwise"
+      },
+      {
+        "id": "c",
+        "text": "even though"
+      },
+      {
+        "id": "d",
+        "text": "summing up"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "besides",
+    "family": "addition",
+    "translation": "além disso",
+    "explanation": "'Besides' adiciona os benefícios de home office e orçamento de estudos à proposta salarial atraente.",
+    "fullSentence": "The job offer at the tech consulting firm was very attractive; besides, they offer full remote flexibility and an annual learning budget.",
+    "sentenceTranslation": "A proposta de trabalho na empresa de consultoria de tecnologia era muito atraente; além disso, eles oferecem flexibilidade de trabalho 100% remoto e um orçamento anual para estudos.",
+    "whyCorrect": "'Besides' funciona como conector de acréscimo argumentativo em apoio à decisão profissional.",
+    "whyOthersFail": "'Otherwise' indicaria advertência. 'Even though' exige oração concessiva. 'Summing up' anteciparia o fechamento sem listar os bônus.",
+    "proTip": "'Besides' usado entre ponto e vírgula e vírgula ('; besides, ...') funciona com força máxima de persuasão."
+  },
+  {
+    "id": "q-but-tight-deadline-delivered",
+    "prompt": "The release deadline was extremely tight, _____ the development squad worked together and delivered all user stories on time.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "but"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "nor"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "but",
+    "family": "contrast",
+    "translation": "mas / porém",
+    "explanation": "'But' é a conjunção coordenativa adversativa fundamental que une as duas orações independentes em contraste.",
+    "fullSentence": "The release deadline was extremely tight, but the development squad worked together and delivered all user stories on time.",
+    "sentenceTranslation": "O prazo do release estava extremamente apertado, mas a equipe de desenvolvimento trabalhou unida e entregou todas as histórias de usuário no prazo.",
+    "whyCorrect": "'But' estabelece a transição imediata entre a dificuldade do prazo e o sucesso da entrega.",
+    "whyOthersFail": "'So that' expressaria propósito futuro. 'Due to' exige substantivo direto. 'Nor' exige frase negativa anterior com neither.",
+    "proTip": "'But' é uma das 7 conjunções coordenativas do inglês (conhecidas pelo mnemônico FANBOYS: For, And, Nor, But, Or, Yet, So). Use vírgula antes dele ao ligar orações independentes!"
+  },
+  {
+    "id": "q-but-cinthia-spicy-food",
+    "prompt": "I love authentic Mexican food with jalapeños and spicy salsa, _____ Cinthia prefers milder dishes with fresh guacamole.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "but"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "but",
+    "family": "contrast",
+    "translation": "mas",
+    "explanation": "'But' expressa o contraste direto entre as preferências culinárias do casal com leveza.",
+    "fullSentence": "I love authentic Mexican food with jalapeños and spicy salsa, but Cinthia prefers milder dishes with fresh guacamole.",
+    "sentenceTranslation": "Eu adoro comida mexicana autêntica com jalapeños e molho apimentado, mas a Cinthia prefere pratos mais suaves com guacamole fresco.",
+    "whyCorrect": "'But' contrapõe os dois gostos alimentares de forma simples e natural.",
+    "whyOthersFail": "'Unless' estabeleceria uma condição sem sentido. 'Because of' exige substantivo de causa. 'Instead of' pede gerúndio ou substituição direta.",
+    "proTip": "Frases do dia a dia ganham ritmo quando você usa 'but' para harmonizar diferenças de gosto entre você e seu parceiro!"
+  },
+  {
+    "id": "q-but-gremio-dominated-drew",
+    "prompt": "Grêmio completely dominated ball possession throughout the second half, _____ they couldn't score the winning goal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "therefore"
+      },
+      {
+        "id": "b",
+        "text": "in order to"
+      },
+      {
+        "id": "c",
+        "text": "as well as"
+      },
+      {
+        "id": "d",
+        "text": "but"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "but",
+    "family": "contrast",
+    "translation": "mas / porém",
+    "explanation": "'But' traduz a frustração entre o volume de jogo em campo e o placar inalterado.",
+    "fullSentence": "Grêmio completely dominated ball possession throughout the second half, but they couldn't score the winning goal.",
+    "sentenceTranslation": "O Grêmio dominou completamente a posse de bola durante todo o segundo tempo, mas não conseguiu marcar o gol da vitória.",
+    "whyCorrect": "'But' expressa o contraste clássico do futebol entre jogar melhor e não conseguir o gol.",
+    "whyOthersFail": "'Therefore' indicaria que dominar causa a falta de gols (ilogismo). 'In order to' pede verbo no infinitivo. 'As well as' adicionaria sem contraste.",
+    "proTip": "Excelente conector para crônicas esportivas: contrasta o esforço com o resultado não alcançado."
+  },
+  {
+    "id": "q-but-mongodb-fast-indexing",
+    "prompt": "MongoDB allows schema flexibility and fast initial prototypes, _____ you still must design your indexing strategy carefully for production scale.",
+    "options": [
+      {
+        "id": "a",
+        "text": "but"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "summing up"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "but",
+    "family": "contrast",
+    "translation": "mas / porém",
+    "explanation": "'But' contrapõe a facilidade de desenvolvimento inicial à necessidade de rigor técnico na criação de índices.",
+    "fullSentence": "MongoDB allows schema flexibility and fast initial prototypes, but you still must design your indexing strategy carefully for production scale.",
+    "sentenceTranslation": "O MongoDB permite flexibilidade de esquema e protótipos iniciais rápidos, mas você ainda deve planejar cuidadosamente a sua estratégia de indexação para a escala de produção.",
+    "whyCorrect": "'But' faz a ressalva necessária para conscientizar o time sobre escalabilidade.",
+    "whyOthersFail": "'Nor' exige negação correlativa. 'Because of' exige sintagma nominal causal. 'Summing up' é marcador de encerramento.",
+    "proTip": "Em discussões de arquitetura, 'but' é o instrumento perfeito para ponderar prós e contras de qualquer ferramenta NoSQL."
+  },
+  {
+    "id": "q-consequently-cloud-costs",
+    "prompt": "The squad left several unoptimized GPU instances running over the entire weekend. _____ , our AWS monthly bill exceeded the budget by 30%.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nevertheless"
+      },
+      {
+        "id": "b",
+        "text": "Consequently"
+      },
+      {
+        "id": "c",
+        "text": "Unless"
+      },
+      {
+        "id": "d",
+        "text": "Rather than"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Consequently",
+    "family": "cause",
+    "translation": "Por conseguinte / Consequentemente",
+    "explanation": "'Consequently' expressa a dedução e o efeito formal e financeiro resultante do descuido com a infraestrutura.",
+    "fullSentence": "The squad left several unoptimized GPU instances running over the entire weekend. Consequently, our AWS monthly bill exceeded the budget by 30%.",
+    "sentenceTranslation": "A squad deixou várias instâncias de GPU não otimizadas rodando durante todo o fim de semana. Consequentemente, nossa fatura mensal da AWS ultrapassou o orçamento em 30%.",
+    "whyCorrect": "'Consequently' é o conector formal de causa e efeito ideal para relatórios financeiros e de custos em nuvem.",
+    "whyOthersFail": "'Nevertheless' expressaria concessão. 'Unless' introduziria condição. 'Rather than' expressa preferência.",
+    "proTip": "Em reuniões de FinOps (gestão de custos em nuvem), use 'Consequently' para demonstrar a relação direta de causa e efeito nos gastos."
+  },
+  {
+    "id": "q-consequently-cinthia-trip",
+    "prompt": "We finished all sprint deliverables two days ahead of schedule; _____ , we were able to take Friday off and travel with Cinthia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "even though"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "consequently"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "consequently",
+    "family": "cause",
+    "translation": "por conseguinte / consequentemente",
+    "explanation": "'Consequently' liga o adiantamento das entregas à folga conquistada para a viagem.",
+    "fullSentence": "We finished all sprint deliverables two days ahead of schedule; consequently, we were able to take Friday off and travel with Cinthia.",
+    "sentenceTranslation": "Concluímos todos os entregáveis da sprint dois dias antes do prazo; consequentemente, pudemos tirar a sexta-feira de folga e viajar com a Cinthia.",
+    "whyCorrect": "'Consequently' expressa a recompensa direta gerada pela eficiência técnica da equipe.",
+    "whyOthersFail": "'Even though' exigiria contraste. 'Nor' exige negativa. 'Instead of' exige substantivo ou gerúndio.",
+    "proTip": "Use ponto e vírgula seguido de 'consequently,' para criar conexões maduras e sofisticadas na escrita em inglês."
+  },
+  {
+    "id": "q-consequently-gremio-win-final",
+    "prompt": "The striker scored two decisive goals in the first half; _____ , Grêmio advanced to the grand final of the state championship.",
+    "options": [
+      {
+        "id": "a",
+        "text": "despite"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "otherwise"
+      },
+      {
+        "id": "d",
+        "text": "consequently"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "consequently",
+    "family": "cause",
+    "translation": "por conseguinte / como resultado",
+    "explanation": "'Consequently' atesta a classificação do Grêmio como decorrência lógica dos gols marcados.",
+    "fullSentence": "The striker scored two decisive goals in the first half; consequently, Grêmio advanced to the grand final of the state championship.",
+    "sentenceTranslation": "O atacante marcou dois gols decisivos no primeiro tempo; consequentemente, o Grêmio avançou para a grande final do campeonato estadual.",
+    "whyCorrect": "'Consequently' liga a façanha dos gols à consagração da vaga na final.",
+    "whyOthersFail": "'Despite' exigiria concessão nominal. 'Due to' exige substantivo causal. 'Otherwise' alerta para condição negativa.",
+    "proTip": "'Consequently' eleva o nível do seu vocabulário profissional muito além do básico 'so'."
+  },
+  {
+    "id": "q-currently-not-coding-pm",
+    "prompt": "_____ , I am working as a project coordinator rather than writing raw code every day.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Currently"
+      },
+      {
+        "id": "b",
+        "text": "Actually"
+      },
+      {
+        "id": "c",
+        "text": "Afterwards"
+      },
+      {
+        "id": "d",
+        "text": "Summing up"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "Currently",
+    "family": "time",
+    "translation": "Atualmente",
+    "explanation": "'Currently' indica o estado profissional presente no momento da fala.",
+    "fullSentence": "Currently, I am working as a project coordinator rather than writing raw code every day.",
+    "sentenceTranslation": "Atualmente, estou trabalhando como coordenador de projetos em vez de escrever código bruto todos os dias.",
+    "whyCorrect": "'Currently' situa a ocupação atual na linha do tempo.",
+    "whyOthersFail": "'Actually' significa 'na verdade' (falso cognato perigoso!). 'Afterwards' indica tempo futuro. 'Summing up' indica resumo.",
+    "proTip": "Cuidado clássico do Professor: 'Currently' = Atualmente. 'Actually' = Na verdade. Esse é um dos erros mais comuns de brasileiros!"
+  },
+  {
+    "id": "q-currently-migrating-microservices",
+    "prompt": "Our engineering squad is _____ refactoring our monolith into containerized Spring Boot and Node.js microservices.",
+    "options": [
+      {
+        "id": "a",
+        "text": "at all"
+      },
+      {
+        "id": "b",
+        "text": "currently"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "currently",
+    "family": "time",
+    "translation": "atualmente / no momento",
+    "explanation": "'Currently' inserido entre o verbo auxiliar 'is' e o gerúndio 'refactoring' marca o processo em andamento.",
+    "fullSentence": "Our engineering squad is currently refactoring our monolith into containerized Spring Boot and Node.js microservices.",
+    "sentenceTranslation": "Nossa squad de engenharia está atualmente refatorando nosso monólito em microsserviços conteinerizados em Spring Boot e Node.js.",
+    "whyCorrect": "'Currently' se posiciona perfeitamente no meio do present continuous para destacar o trabalho atual da equipe.",
+    "whyOthersFail": "'At all' é usado para ênfase negativa. 'Unless' pede oração condicional. 'Rather than' estabelece escolha comparativa.",
+    "proTip": "No Daily Standup: 'We are currently working on story #412' é a estrutura padrão mais usada no mundo corporativo internacional."
+  },
+  {
+    "id": "q-currently-gremio-table",
+    "prompt": "Grêmio is _____ occupying third place in the league table, fighting for a spot in next year's Copa Libertadores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "beforehand"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "currently"
+      },
+      {
+        "id": "d",
+        "text": "nor"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "currently",
+    "family": "time",
+    "translation": "atualmente / no momento",
+    "explanation": "'Currently' situa a posição do Grêmio na tabela no instante presente da competição.",
+    "fullSentence": "Grêmio is currently occupying third place in the league table, fighting for a spot in next year's Copa Libertadores.",
+    "sentenceTranslation": "O Grêmio está atualmente ocupando a terceira colocação na tabela do campeonato, lutando por uma vaga na Copa Libertadores do próximo ano.",
+    "whyCorrect": "'Currently' marca com precisão o momento da classificação esportiva.",
+    "whyOthersFail": "'Beforehand' indica tempo passado/prévio. 'Because of' exige causa nominal. 'Nor' exige negativa correlativa.",
+    "proTip": "Use 'currently' sempre que apresentar relatórios periódicos de ranking ou status que mudam com o tempo."
+  },
+  {
+    "id": "q-definitely-best-restaurant-cinthia",
+    "prompt": "This authentic Italian trattoria in the city center is _____ the best restaurant Cinthia and I have discovered this year.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "in spite of"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "definitely"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "definitely",
+    "family": "emphasis",
+    "translation": "definitivamente / sem dúvida",
+    "explanation": "'Definitely' expressa certeza inquestionável e entusiasmo genuíno.",
+    "fullSentence": "This authentic Italian trattoria in the city center is definitely the best restaurant Cinthia and I have discovered this year.",
+    "sentenceTranslation": "Esta autêntica trattoria italiana no centro da cidade é definitivamente o melhor restaurante que a Cinthia e eu descobrimos este ano.",
+    "whyCorrect": "'Definitely' qualifica o adjetivo no superlativo ('the best') com ênfase categórica.",
+    "whyOthersFail": "'Rather than' expressa preferência. 'In spite of' expressa concessão. 'Unless' estabelece condição negativa.",
+    "proTip": "Quer concordar com alguém com entusiasmo em uma reunião de trabalho? Diga: 'Definitely!'"
+  },
+  {
+    "id": "q-definitely-adopt-typescript",
+    "prompt": "After evaluating the reduction in runtime errors, our engineering team will _____ adopt TypeScript for all upcoming frontend projects.",
+    "options": [
+      {
+        "id": "a",
+        "text": "definitely"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "meanwhile"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "definitely",
+    "family": "emphasis",
+    "translation": "definitivamente / com certeza",
+    "explanation": "'Definitely' sela a decisão técnica irrevogável tomada pela equipe.",
+    "fullSentence": "After evaluating the reduction in runtime errors, our engineering team will definitely adopt TypeScript for all upcoming frontend projects.",
+    "sentenceTranslation": "Após avaliar a redução de erros em tempo de execução, nossa equipe de engenharia definitivamente adotará TypeScript para todos os próximos projetos de frontend.",
+    "whyCorrect": "'Definitely' colocado antes do verbo principal reforça o compromisso da decisão tecnológica.",
+    "whyOthersFail": "'Nor' exige estrutura negativa. 'Because of' pede substantivo causal. 'Meanwhile' indica tempo simultâneo.",
+    "proTip": "Ao assumir compromissos com clientes em reuniões de Sprint Planning, 'We will definitely deliver this' transmite confiança absoluta."
+  },
+  {
+    "id": "q-definitely-worth-reading",
+    "prompt": "The new engineering documentation on microservice design patterns is _____ worth reading before the sprint starts.",
+    "options": [
+      {
+        "id": "a",
+        "text": "otherwise"
+      },
+      {
+        "id": "b",
+        "text": "definitely"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "even if"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "definitely",
+    "family": "emphasis",
+    "translation": "definitivamente / certamente",
+    "explanation": "'Definitely' recomenda com vigor a leitura técnica da documentação.",
+    "fullSentence": "The new engineering documentation on microservice design patterns is definitely worth reading before the sprint starts.",
+    "sentenceTranslation": "A nova documentação de engenharia sobre padrões de projeto de microsserviços definitivamente vale a pena ser lida antes do início da sprint.",
+    "whyCorrect": "'Definitely' intensifica a expressão idiomática 'worth reading' (vale a pena ler).",
+    "whyOthersFail": "'Otherwise' traz alerta condicional. 'Due to' pede substantivo causal. 'Even if' é concessivo.",
+    "proTip": "'It is definitely worth it' (vale definitivamente a pena) é uma expressão essencial para o dia a dia!"
+  },
+  {
+    "id": "q-despite-heavy-rain-stadium",
+    "prompt": "_____ the torrential rain in Porto Alegre, fifty thousand passionate Grêmio fans packed the Arena to support the team.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Although"
+      },
+      {
+        "id": "b",
+        "text": "Because of"
+      },
+      {
+        "id": "c",
+        "text": "Despite"
+      },
+      {
+        "id": "d",
+        "text": "So that"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "Despite",
+    "family": "contrast",
+    "translation": "Apesar de",
+    "explanation": "'Despite' é uma preposição concessiva que precede diretamente o substantivo 'the torrential rain'.",
+    "fullSentence": "Despite the torrential rain in Porto Alegre, fifty thousand passionate Grêmio fans packed the Arena to support the team.",
+    "sentenceTranslation": "Apesar da chuva torrencial em Porto Alegre, cinquenta mil apaixonados torcedores do Grêmio lotaram a Arena para apoiar o time.",
+    "whyCorrect": "'Despite' rege o substantivo sem a preposição 'of' (nunca use 'despite of').",
+    "whyOthersFail": "'Although' exigiria oração com verbo ('Although it was raining'). 'Because of' faria a chuva ser o motivo de irem. 'So that' expressa finalidade.",
+    "proTip": "Erro clássico de vestibular e entrevistas: NUNCA diga 'despite of'. O correto é 'despite + substantivo' ou 'in spite of + substantivo'!"
+  },
+  {
+    "id": "q-despite-tight-deadline-gft",
+    "prompt": "_____ the tight deadline imposed by the banking client, the GFT consultancy delivered the payment module without any production defects.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Even though"
+      },
+      {
+        "id": "b",
+        "text": "Unless"
+      },
+      {
+        "id": "c",
+        "text": "Instead of"
+      },
+      {
+        "id": "d",
+        "text": "Despite"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "Despite",
+    "family": "contrast",
+    "translation": "Apesar de",
+    "explanation": "'Despite' introduz a pressão de tempo como obstáculo superado com excelência.",
+    "fullSentence": "Despite the tight deadline imposed by the banking client, the GFT consultancy delivered the payment module without any production defects.",
+    "sentenceTranslation": "Apesar do prazo apertado imposto pelo cliente bancário, a consultoria GFT entregou o módulo de pagamentos sem nenhum defeito em produção.",
+    "whyCorrect": "'Despite' encabeça o sintagma nominal 'the tight deadline' de forma gramaticalmente impecável.",
+    "whyOthersFail": "'Even though' exige sujeito e verbo conjugado. 'Unless' impõe condição restritiva. 'Instead of' pede troca de elemento.",
+    "proTip": "Em relatórios de entregas de TI: 'Despite the challenges...' é a frase clássica para abrir o sumário executivo com tom de superação."
+  },
+  {
+    "id": "q-despite-lack-of-sleep",
+    "prompt": "_____ the lack of sleep due to overnight system monitoring, the lead architect led an energetic and inspiring Sprint Planning meeting.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Despite"
+      },
+      {
+        "id": "b",
+        "text": "Whereas"
+      },
+      {
+        "id": "c",
+        "text": "Therefore"
+      },
+      {
+        "id": "d",
+        "text": "Nor"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "Despite",
+    "family": "contrast",
+    "translation": "Apesar de",
+    "explanation": "'Despite' contrasta o cansaço físico com a energia demonstrada na condução da cerimônia.",
+    "fullSentence": "Despite the lack of sleep due to overnight system monitoring, the lead architect led an energetic and inspiring Sprint Planning meeting.",
+    "sentenceTranslation": "Apesar da falta de sono decorrente do monitoramento noturno do sistema, o arquiteto líder conduziu uma reunião de Planejamento de Sprint enérgica e inspiradora.",
+    "whyCorrect": "'Despite' rege 'the lack of sleep' perfeitamente.",
+    "whyOthersFail": "'Whereas' conecta orações de comparação contrastante. 'Therefore' expressa dedução. 'Nor' exige negativa anterior.",
+    "proTip": "Lembre-se: 'Despite + substantivo' é conciso, refinado e demonstra alto domínio da língua inglesa."
+  },
+  {
+    "id": "q-despite-high-prices-cinthia",
+    "prompt": "_____ the high prices during peak holiday season, Cinthia and I decided to book the romantic hotel by the beach.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In order to"
+      },
+      {
+        "id": "b",
+        "text": "Despite"
+      },
+      {
+        "id": "c",
+        "text": "Because"
+      },
+      {
+        "id": "d",
+        "text": "In contrast"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Despite",
+    "family": "contrast",
+    "translation": "Apesar de",
+    "explanation": "'Despite' estabelece a decisão de compra consciente mesmo diante dos preços elevados.",
+    "fullSentence": "Despite the high prices during peak holiday season, Cinthia and I decided to book the romantic hotel by the beach.",
+    "sentenceTranslation": "Apesar dos preços altos durante a alta temporada de férias, a Cinthia e eu decidimos reservar o hotel romântico na beira da praia.",
+    "whyCorrect": "'Despite' rege 'the high prices' sem vícios gramaticais.",
+    "whyOthersFail": "'In order to' expressa finalidade com infinitivo. 'Because' exigiria oração explicativa. 'In contrast' pede segundo elemento comparado.",
+    "proTip": "Dica de pronúncia: 'Despite' se pronuncia /dɪˈspaɪt/. O som inicial é suave e curto."
+  },
+  {
+    "id": "q-due-to-database-maintenance",
+    "prompt": "The customer portal will be temporarily unavailable tonight from 2 AM to 4 AM _____ scheduled database maintenance on MongoDB.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "although"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "due to",
+    "family": "cause",
+    "translation": "devido a / em virtude de",
+    "explanation": "'Due to' conecta a indisponibilidade temporária à manutenção preventiva programada.",
+    "fullSentence": "The customer portal will be temporarily unavailable tonight from 2 AM to 4 AM due to scheduled database maintenance on MongoDB.",
+    "sentenceTranslation": "O portal do cliente ficará temporariamente indisponível hoje à noite, das 2h às 4h, devido a uma manutenção agendada no banco de dados MongoDB.",
+    "whyCorrect": "'Due to' funciona como preposição causal associada diretamente ao substantivo 'scheduled database maintenance'.",
+    "whyOthersFail": "'Because' exigiria verbo subordinado ('because there will be maintenance'). 'Unless' expressa condição negativa. 'Although' expressa concessão.",
+    "proTip": "Frase essencial de avisos de TI e status page: 'System is down due to scheduled maintenance.'"
+  },
+  {
+    "id": "q-due-to-illness-standup",
+    "prompt": "The Scrum Master was absent from today's Daily Standup _____ a sudden fever and flu symptoms.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "so that"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "due to",
+    "family": "cause",
+    "translation": "devido a / por motivo de",
+    "explanation": "'Due to' justifica a ausência do Scrum Master apontando os sintomas de febre como motivo de saúde.",
+    "fullSentence": "The Scrum Master was absent from today's Daily Standup due to a sudden fever and flu symptoms.",
+    "sentenceTranslation": "O Scrum Master esteve ausente da Daily Standup de hoje devido a uma febre repentina e sintomas de gripe.",
+    "whyCorrect": "'Due to' rege o substantivo composto que descreve a enfermidade.",
+    "whyOthersFail": "'Instead of' indicaria substituição. 'So that' expressa objetivo. 'Rather than' expressa preferência.",
+    "proTip": "Em comunicações de ausência ou justificativas profissionais de equipe, 'due to personal reasons' ou 'due to illness' é o formato corporativo padrão."
+  },
+  {
+    "id": "q-due-to-cinthia-effort",
+    "prompt": "Our house renovation was completed two weeks ahead of schedule, largely _____ Cinthia's dedication and management of the contractors.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "even if"
+      },
+      {
+        "id": "d",
+        "text": "in contrast"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "due to",
+    "family": "cause",
+    "translation": "devido a / graças a",
+    "explanation": "'Due to' atribui o mérito da conclusão antecipada ao gerenciamento de Cinthia.",
+    "fullSentence": "Our house renovation was completed two weeks ahead of schedule, largely due to Cinthia's dedication and management of the contractors.",
+    "sentenceTranslation": "A reforma da nossa casa foi concluída duas semanas antes do prazo, em grande parte devido à dedicação da Cinthia e ao seu gerenciamento dos empreiteiros.",
+    "whyCorrect": "'Due to' introduz o fator determinante da conquista positiva.",
+    "whyOthersFail": "'Nor' exige estrutura negativa. 'Even if' é condicional. 'In contrast' estabelece oposição.",
+    "proTip": "'Largely due to...' (em grande parte devido a...) é uma combinação idiomática muito elegante em inglês!"
+  },
+  {
+    "id": "q-equally-backend-frontend-quality",
+    "prompt": "In modern web development, intuitive user interface design is vital; _____ , a scalable and secure backend architecture is indispensable.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "equally"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "equally",
+    "family": "addition",
+    "translation": "igualmente / da mesma forma",
+    "explanation": "'Equally' atribui o mesmo nível de importância ao backend seguro e ao design de interface.",
+    "fullSentence": "In modern web development, intuitive user interface design is vital; equally, a scalable and secure backend architecture is indispensable.",
+    "sentenceTranslation": "No desenvolvimento web moderno, o design de interface de usuário intuitivo é vital; igualmente, uma arquitetura de backend escalável e segura é indispensável.",
+    "whyCorrect": "'Equally' estabelece paridade de relevância entre os dois pilares da engenharia de software.",
+    "whyOthersFail": "'Unless' introduz condição negativa. 'Because of' pede substantivo causal. 'Instead of' anularia um dos lados.",
+    "proTip": "Use 'equally' para equilibrar prioridades em debates técnicos: 'Frontend matters, but equally, backend performance is critical.'"
+  },
+  {
+    "id": "q-equally-gremio-defense-attack",
+    "prompt": "To win the cup, Renato Gaúcho emphasized that scoring goals is crucial, but maintaining a disciplined defensive line is _____ important.",
+    "options": [
+      {
+        "id": "a",
+        "text": "at all"
+      },
+      {
+        "id": "b",
+        "text": "therefore"
+      },
+      {
+        "id": "c",
+        "text": "equally"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "equally",
+    "family": "addition",
+    "translation": "igualmente / tanto quanto",
+    "explanation": "'Equally' modifica o adjetivo 'important', reforçando o valor paritário da defesa e do ataque.",
+    "fullSentence": "To win the cup, Renato Gaúcho emphasized that scoring goals is crucial, but maintaining a disciplined defensive line is equally important.",
+    "sentenceTranslation": "Para conquistar a taça, o Renato Gaúcho enfatizou que marcar gols é crucial, mas manter uma linha defensiva disciplinada é igualmente importante.",
+    "whyCorrect": "'Equally important' é uma locução consolidada que equipara dois fatores de sucesso.",
+    "whyOthersFail": "'At all' é para ênfase negativa. 'Therefore' expressa conclusão de causa. 'Rather than' expressa exclusão.",
+    "proTip": "'Equally important' é uma das expressões mais úteis para apresentações e defesas de projetos!"
+  },
+  {
+    "id": "q-equally-shared-responsibilities-cinthia",
+    "prompt": "Cinthia and I agreed that financial planning and household chores should be _____ divided between both of us.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "in spite of"
+      },
+      {
+        "id": "d",
+        "text": "equally"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "equally",
+    "family": "addition",
+    "translation": "igualmente / de forma equilibrada",
+    "explanation": "'Equally' modifica o particípio 'divided', garantindo justiça e parceria no relacionamento.",
+    "fullSentence": "Cinthia and I agreed that financial planning and household chores should be equally divided between both of us.",
+    "sentenceTranslation": "A Cinthia e eu concordamos que o planejamento financeiro e as tarefas domésticas devem ser igualmente divididos entre nós dois.",
+    "whyCorrect": "'Equally divided' expressa divisão paritária e colaborativa.",
+    "whyOthersFail": "'Nor' exige estrutura de negação correlativa. 'Due to' pede causa. 'In spite of' expressa concessão.",
+    "proTip": "No vocabulário de trabalho em equipe e vida pessoal, 'equally divided' expressa senso de justiça impecável."
+  },
+  {
+    "id": "q-equally-qa-dev-collaboration",
+    "prompt": "Code quality is not solely the responsibility of software developers; QAs and product managers are _____ accountable for delivering value.",
+    "options": [
+      {
+        "id": "a",
+        "text": "equally"
+      },
+      {
+        "id": "b",
+        "text": "otherwise"
+      },
+      {
+        "id": "c",
+        "text": "instead of"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "equally",
+    "family": "addition",
+    "translation": "igualmente",
+    "explanation": "'Equally' divide a responsabilidade pela qualidade do produto entre todos os papéis do time.",
+    "fullSentence": "Code quality is not solely the responsibility of software developers; QAs and product managers are equally accountable for delivering value.",
+    "sentenceTranslation": "A qualidade do código não é responsabilidade exclusiva dos desenvolvedores de software; QAs e gerentes de produto são igualmente responsáveis pela entrega de valor.",
+    "whyCorrect": "'Equally accountable' expressa o princípio ágil de responsabilidade compartilhada.",
+    "whyOthersFail": "'Otherwise' traz ameaça/alerta. 'Instead of' substituiria um pelo outro. 'So that' expressa objetivo.",
+    "proTip": "Manifesto Ágil na veia: 'Devs and QAs are equally responsible for quality.' Use essa frase em retrospectivas!"
+  },
+  {
+    "id": "q-even-junior-debugged-race-condition",
+    "prompt": "The concurrency bug was so bizarre that _____ our principal architect struggled to reproduce it on local machines.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "even"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "even",
+    "family": "emphasis",
+    "translation": "até mesmo / inclusive",
+    "explanation": "'Even' destaca o fato extraordinário de que até o arquiteto mais sênior teve dificuldades.",
+    "fullSentence": "The concurrency bug was so bizarre that even our principal architect struggled to reproduce it on local machines.",
+    "sentenceTranslation": "O bug de concorrência era tão bizarro que até mesmo nosso arquiteto principal teve dificuldades para reproduzi-lo em máquinas locais.",
+    "whyCorrect": "'Even' enfatiza o extremo da surpresa, mostrando a complexidade anômala do problema.",
+    "whyOthersFail": "'Rather than' expressa preferência. 'Due to' pede substantivo causal. 'Unless' impõe condição negativa.",
+    "proTip": "Use 'even' antes de um substantivo ('even our principal architect') para enfatizar algo que surpreende a todos."
+  },
+  {
+    "id": "q-even-on-rainy-days-gremio",
+    "prompt": "True fans never abandon the club; _____ when temperatures drop near freezing, the Grêmio supporters sing proudly at the Arena.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "in order to"
+      },
+      {
+        "id": "c",
+        "text": "even"
+      },
+      {
+        "id": "d",
+        "text": "nor"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "even",
+    "family": "emphasis",
+    "translation": "mesmo / até",
+    "explanation": "'Even' intensifica a lealdade da torcida nas condições climáticas mais adversas.",
+    "fullSentence": "True fans never abandon the club; even when temperatures drop near freezing, the Grêmio supporters sing proudly at the Arena.",
+    "sentenceTranslation": "Torcedores de verdade nunca abandonam o clube; mesmo quando as temperaturas caem perto de zero, os gremistas cantam com orgulho na Arena.",
+    "whyCorrect": "'Even when' é a locução enfática por excelência para demonstrar constância inabalável.",
+    "whyOthersFail": "'Instead of' exigiria substituição. 'In order to' exige infinitivo de objetivo. 'Nor' exige negativa anterior.",
+    "proTip": "'Even when...' (mesmo quando...) demonstra determinação tanto no futebol quanto em projetos sob pressão."
+  },
+  {
+    "id": "q-even-cinthia-knows-git",
+    "prompt": "I talk about programming and technology so frequently at home that _____ Cinthia knows the difference between a branch and a pull request!",
+    "options": [
+      {
+        "id": "a",
+        "text": "otherwise"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "whereas"
+      },
+      {
+        "id": "d",
+        "text": "even"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "even",
+    "family": "emphasis",
+    "translation": "até mesmo / inclusive",
+    "explanation": "'Even' ressalta com humor e afeto como os termos de TI foram absorvidos pela companheira.",
+    "fullSentence": "I talk about programming and technology so frequently at home that even Cinthia knows the difference between a branch and a pull request!",
+    "sentenceTranslation": "Falo sobre programação e tecnologia com tanta frequência em casa que até mesmo a Cinthia sabe a diferença entre uma branch e um pull request!",
+    "whyCorrect": "'Even' dá o tom bem-humorado de ênfase surpreendente.",
+    "whyOthersFail": "'Otherwise' traz alerta. 'Because of' pede substantivo direto causal. 'Whereas' conecta contraste entre duas orações.",
+    "proTip": "Use 'even' para criar tiradas divertidas no ambiente de trabalho sobre a onipresença da tecnologia na sua vida."
+  },
+  {
+    "id": "q-even-faster-than-expected",
+    "prompt": "With our new database indexing strategy on MongoDB, query execution became _____ faster than we initially benchmarked.",
+    "options": [
+      {
+        "id": "a",
+        "text": "even"
+      },
+      {
+        "id": "b",
+        "text": "at all"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "even",
+    "family": "emphasis",
+    "translation": "ainda / até mais",
+    "explanation": "'Even' modifica o adjetivo comparativo 'faster', amplificando o ganho de velocidade.",
+    "fullSentence": "With our new database indexing strategy on MongoDB, query execution became even faster than we initially benchmarked.",
+    "sentenceTranslation": "Com nossa nova estratégia de indexação de banco de dados no MongoDB, a execução de consultas ficou ainda mais rápida do que tínhamos medido inicialmente.",
+    "whyCorrect": "'Even' intensifica comparativos de superioridade ('even faster', 'even better', 'even harder').",
+    "whyOthersFail": "'At all' se usa em frases negativas no final. 'Unless' é condicional. 'Due to' pede causa nominal.",
+    "proTip": "Dica de ouro: 'Even better' (ainda melhor), 'Even faster' (ainda mais rápido). Combinação diária indispensável em TI!"
+  },
+  {
+    "id": "q-even-if-server-fails-failover",
+    "prompt": "Our financial transaction engine will remain operational _____ the primary cloud database node completely goes down.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "even if"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "in order to"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "even if",
+    "family": "condition",
+    "translation": "mesmo se / mesmo que",
+    "explanation": "'Even if' expressa que a alta disponibilidade persistirá mesmo no pior cenário hipotético de falha.",
+    "fullSentence": "Our financial transaction engine will remain operational even if the primary cloud database node completely goes down.",
+    "sentenceTranslation": "Nosso motor de transações financeiras continuará operacional mesmo se o nó primário do banco de dados na nuvem cair completamente.",
+    "whyCorrect": "'Even if' introduz a condição extrema hipotética que não abalará o sistema.",
+    "whyOthersFail": "'Unless' inverteria o sentido ('a não ser que caia, continuará no ar'). 'Because of' pede substantivo direto sem verbo. 'In order to' exige infinitivo.",
+    "proTip": "Em arquitetura resiliente, 'System stays up even if X fails' é a declaração definitiva de tolerância a falhas."
+  },
+  {
+    "id": "q-even-if-rain-cinthia-dinner",
+    "prompt": "Cinthia and I will celebrate our anniversary at the rooftop bistro _____ it rains heavily all evening.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "even if"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "even if",
+    "family": "condition",
+    "translation": "mesmo que / mesmo se",
+    "explanation": "'Even if' afirma que a comemoração acontecerá independentemente do tempo chuvoso.",
+    "fullSentence": "Cinthia and I will celebrate our anniversary at the rooftop bistro even if it rains heavily all evening.",
+    "sentenceTranslation": "A Cinthia e eu vamos comemorar nosso aniversário no bistrô com cobertura panorâmica mesmo que chova forte a noite inteira.",
+    "whyCorrect": "'Even if' expressa determinação romântica diante de qualquer adversidade climática.",
+    "whyOthersFail": "'Instead of' pede termo alternativo. 'Nor' exige estrutura de negação. 'Due to' exige substantivo de causa.",
+    "proTip": "'Even if' lida com hipóteses futuras extremas ('mesmo que aconteça X, faremos Y')."
+  },
+  {
+    "id": "q-even-if-gremio-concedes-first",
+    "prompt": "The coach reassured the fans that the squad will fight for victory _____ the opponent scores an early goal in the first half.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because"
+      },
+      {
+        "id": "b",
+        "text": "therefore"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "even if"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "even if",
+    "family": "condition",
+    "translation": "mesmo se / ainda que",
+    "explanation": "'Even if' prevê a hipótese de sofrer um gol sem desanimar a equipe.",
+    "fullSentence": "The coach reassured the fans that the squad will fight for victory even if the opponent scores an early goal in the first half.",
+    "sentenceTranslation": "O treinador tranquilizou os torcedores de que o time lutará pela vitória mesmo se o adversário marcar um gol logo no início do primeiro tempo.",
+    "whyCorrect": "'Even if' introduz o teste de resiliência psicológica do time em campo.",
+    "whyOthersFail": "'Because' transformaria o gol sofrido na razão da luta. 'Therefore' expressaria dedução lógica. 'Rather than' expressa preferência.",
+    "proTip": "Diferença sutil: 'Even if' = mesmo se (hipótese); 'Even though' = embora (fato real consumado)."
+  },
+  {
+    "id": "q-even-though-exhausted-deployment",
+    "prompt": "_____ the DevOps team was utterly exhausted after the migration, they stayed online to monitor the morning transaction peak.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Even though"
+      },
+      {
+        "id": "b",
+        "text": "Despite"
+      },
+      {
+        "id": "c",
+        "text": "Because of"
+      },
+      {
+        "id": "d",
+        "text": "Unless"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "Even though",
+    "family": "contrast",
+    "translation": "Embora / Muito embora",
+    "explanation": "'Even though' enfatiza um fato real consumado (estavam exaustos) superado pelo compromisso profissional.",
+    "fullSentence": "Even though the DevOps team was utterly exhausted after the migration, they stayed online to monitor the morning transaction peak.",
+    "sentenceTranslation": "Muito embora a equipe de DevOps estivesse completamente exausta após a migração, eles continuaram online para monitorar o pico de transações da manhã.",
+    "whyCorrect": "'Even though' é uma conjunção subordinativa concessiva mais enfática que 'although', seguida de oração com fato consumado.",
+    "whyOthersFail": "'Despite' exigiria substantivo ou gerúndio ('Despite being exhausted'). 'Because of' transformaria o cansaço em causa de ficarem acordados. 'Unless' impõe condição negativa.",
+    "proTip": "'Even though' tem mais carga dramática e intensidade que 'Although'. Ambas pedem oração completa com sujeito e verbo!"
+  },
+  {
+    "id": "q-even-though-expensive-iphone",
+    "prompt": "_____ the newest flagship smartphone was quite expensive and didn't include a wall charger, Carlos decided to purchase it.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In order to"
+      },
+      {
+        "id": "b",
+        "text": "Even though"
+      },
+      {
+        "id": "c",
+        "text": "So that"
+      },
+      {
+        "id": "d",
+        "text": "In contrast"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Even though",
+    "family": "contrast",
+    "translation": "Embora / Apesar de que",
+    "explanation": "'Even though' relata a decisão de compra consciente do preço alto e da falta de carregador.",
+    "fullSentence": "Even though the newest flagship smartphone was quite expensive and didn't include a wall charger, Carlos decided to purchase it.",
+    "sentenceTranslation": "Embora o mais novo smartphone topo de linha fosse bastante caro e não incluísse um carregador de tomada, o Carlos decidiu comprá-lo.",
+    "whyCorrect": "'Even though' introduz os dois fatos reais negativos superados pela vontade de compra.",
+    "whyOthersFail": "'In order to' expressa finalidade com infinitivo. 'So that' pede oração de intenção. 'In contrast' opõe dois sujeitos distintos.",
+    "proTip": "Frase inspirada no diálogo do iPhone do seu material! Mostra a concessão real com perfeição."
+  },
+  {
+    "id": "q-even-though-gremio-missed-chances",
+    "prompt": "_____ Grêmio missed several clear opportunities in the first half, they maintained composure and won the match 2-1.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Due to"
+      },
+      {
+        "id": "b",
+        "text": "Unless"
+      },
+      {
+        "id": "c",
+        "text": "Even though"
+      },
+      {
+        "id": "d",
+        "text": "Rather than"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "Even though",
+    "family": "contrast",
+    "translation": "Embora / Muito embora",
+    "explanation": "'Even though' reconhece as chances perdidas sem anular a vitória conquistada.",
+    "fullSentence": "Even though Grêmio missed several clear opportunities in the first half, they maintained composure and won the match 2-1.",
+    "sentenceTranslation": "Muito embora o Grêmio tenha perdido várias chances claras no primeiro tempo, eles mantiveram a compostura e venceram a partida por 2 a 1.",
+    "whyCorrect": "'Even though' introduz o fato histórico consumado das oportunidades desperdiçadas.",
+    "whyOthersFail": "'Due to' atribuiria a vitória aos gols perdidos (absurdo). 'Unless' impõe condição restritiva. 'Rather than' expressa preferência.",
+    "proTip": "Use 'Even though' para valorizar vitórias suadas em projetos ou esportes diante de dificuldades comprovadas."
+  },
+  {
+    "id": "q-for-server-overloaded-halt",
+    "prompt": "The test automation script halted execution immediately, _____ the primary database cluster had reached 100% CPU capacity.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in order to"
+      },
+      {
+        "id": "b",
+        "text": "despite"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "for"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "for",
+    "family": "cause",
+    "translation": "pois / visto que",
+    "explanation": "'For' atua aqui como uma conjunção coordenativa formal de causa (FANBOYS), explicando o motivo da interrupção.",
+    "fullSentence": "The test automation script halted execution immediately, for the primary database cluster had reached 100% CPU capacity.",
+    "sentenceTranslation": "O script de automação de testes interrompeu a execução imediatamente, pois o cluster principal de banco de dados havia atingido 100% de capacidade de CPU.",
+    "whyCorrect": "'For' antecedido de vírgula é a clássica conjunção explicativa que conecta duas orações independentes.",
+    "whyOthersFail": "'In order to' exigiria infinitivo de finalidade. 'Despite' exigiria substantivo de concessão. 'Nor' exige negativa anterior com neither.",
+    "proTip": "Dica culta do Professor: No seu material você destacou 'For' como conectivo. Ele faz parte do acrônimo FANBOYS e significa 'pois / porque' em linguagem formal e escrita!"
+  },
+  {
+    "id": "q-for-trusted-cinthia-judgment",
+    "prompt": "I agreed to relocate our apartment without hesitation, _____ I trusted Cinthia's sharp intuition and careful market research completely.",
+    "options": [
+      {
+        "id": "a",
+        "text": "for"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "instead of"
+      },
+      {
+        "id": "d",
+        "text": "meanwhile"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "for",
+    "family": "cause",
+    "translation": "pois / porque",
+    "explanation": "'For' justifica a decisão tranquila apontando a confiança inabalável no julgamento de Cinthia.",
+    "fullSentence": "I agreed to relocate our apartment without hesitation, for I trusted Cinthia's sharp intuition and careful market research completely.",
+    "sentenceTranslation": "Concordei em mudar de apartamento sem hesitação, pois confiava completamente na intuição apurada e na pesquisa de mercado cuidadosa da Cinthia.",
+    "whyCorrect": "'For' funciona com nobreza e solenidade ao justificar a decisão de vida.",
+    "whyOthersFail": "'Unless' criaria uma condição negativa sem sentido. 'Instead of' exige gerúndio ou substantivo. 'Meanwhile' indica tempo simultâneo.",
+    "proTip": "Na literatura e em discursos formais, 'for' no lugar de 'because' acrescenta um tom solene e comovente à narrativa."
+  },
+  {
+    "id": "q-for-gremio-fans-faithful",
+    "prompt": "The stadium erupted in unified chants long before kickoff, _____ the supporters knew that history was about to be made.",
+    "options": [
+      {
+        "id": "a",
+        "text": "therefore"
+      },
+      {
+        "id": "b",
+        "text": "for"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "for",
+    "family": "cause",
+    "translation": "pois / visto que",
+    "explanation": "'For' introduz a razão poética que moveu a torcida gremista a cantar antes do jogo.",
+    "fullSentence": "The stadium erupted in unified chants long before kickoff, for the supporters knew that history was about to be made.",
+    "sentenceTranslation": "O estádio explodiu em cantos unificados muito antes do apito inicial, pois os torcedores sabiam que a história estava prestes a ser escrita.",
+    "whyCorrect": "'For' expressa a causa íntima que impulsionava a emoção coletiva da torcida.",
+    "whyOthersFail": "'Therefore' inverteria a causalidade. 'Rather than' expressa troca. 'So that' expressa meta futura.",
+    "proTip": "Use 'for' para dar elegância a textos descritivos e artigos opinativos de alta qualidade."
+  },
+  {
+    "id": "q-for-consultancy-invested-training",
+    "prompt": "GFT continued to expand its technical leadership in cloud solutions, _____ the company consistently invested in employee certifications and mentoring.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "for"
+      },
+      {
+        "id": "d",
+        "text": "equally"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "for",
+    "family": "cause",
+    "translation": "pois / visto que",
+    "explanation": "'For' liga a liderança de mercado ao investimento contínuo nas pessoas.",
+    "fullSentence": "GFT continued to expand its technical leadership in cloud solutions, for the company consistently invested in employee certifications and mentoring.",
+    "sentenceTranslation": "A GFT continuou a expandir sua liderança técnica em soluções de nuvem, pois a empresa investiu consistentemente em certificações e mentoria para os colaboradores.",
+    "whyCorrect": "'For' explica a causa fundamental do sucesso institucional.",
+    "whyOthersFail": "'Because of' exigiria sintagma nominal sem oração com verbo. 'Unless' impõe condição restritiva. 'Equally' expressa equivalência sem causa.",
+    "proTip": "Excelente para relatórios institucionais e casos de sucesso corporativos!"
+  },
+  {
+    "id": "q-for-instance-agile-frameworks",
+    "prompt": "Our engineering organization utilizes several modern delivery frameworks; _____ , our payments squad relies on Scrum while the operations team uses Kanban.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in contrast"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "for instance"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "for instance",
+    "family": "example",
+    "translation": "por exemplo",
+    "explanation": "'For instance' introduz um caso prático real para ilustrar a declaração genérica anterior.",
+    "fullSentence": "Our engineering organization utilizes several modern delivery frameworks; for instance, our payments squad relies on Scrum while the operations team uses Kanban.",
+    "sentenceTranslation": "Nossa organização de engenharia utiliza vários frameworks modernos de entrega; por exemplo, nossa squad de pagamentos conta com o Scrum enquanto a equipe de operações usa o Kanban.",
+    "whyCorrect": "'For instance' introduz a exemplificação detalhada com total fluência.",
+    "whyOthersFail": "'In contrast' oporia sem exemplificar a lista. 'Due to' exige substantivo de causa. 'Unless' estabelece condição negativa.",
+    "proTip": "'For instance' é sinônimo direto de 'for example'. Em apresentações de projetos, alternar entre os dois evita repetição monótona!"
+  },
+  {
+    "id": "q-for-instance-cinthia-travel-destinations",
+    "prompt": "Cinthia and I love exploring historic European cities; _____ , we spent our last holiday admiring the architecture of Florence and Rome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "for instance"
+      },
+      {
+        "id": "b",
+        "text": "therefore"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "nor"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "for instance",
+    "family": "example",
+    "translation": "por exemplo",
+    "explanation": "'For instance' traz Florença e Roma como exemplos concretos das cidades históricas mencionadas.",
+    "fullSentence": "Cinthia and I love exploring historic European cities; for instance, we spent our last holiday admiring the architecture of Florence and Rome.",
+    "sentenceTranslation": "A Cinthia e eu adoramos explorar cidades históricas europeias; por exemplo, passamos nossas últimas férias admirando a arquitetura de Florença e Roma.",
+    "whyCorrect": "'For instance' conecta a afirmação geral ao exemplo específico da viagem.",
+    "whyOthersFail": "'Therefore' expressaria dedução lógica. 'Rather than' expressa exclusão comparativa. 'Nor' exige negativa anterior.",
+    "proTip": "Use 'for instance' entre vírgulas ou após ponto e vírgula para ancorar relatos pessoais."
+  },
+  {
+    "id": "q-for-instance-nosql-databases",
+    "prompt": "There are multiple high-performance NoSQL document stores available; _____ , MongoDB allows flexible schemas while Couchbase offers integrated caching.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in order to"
+      },
+      {
+        "id": "b",
+        "text": "for instance"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "because of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "for instance",
+    "family": "example",
+    "translation": "por exemplo",
+    "explanation": "'For instance' exemplifica a categoria de bancos de dados NoSQL com MongoDB e Couchbase.",
+    "fullSentence": "There are multiple high-performance NoSQL document stores available; for instance, MongoDB allows flexible schemas while Couchbase offers integrated caching.",
+    "sentenceTranslation": "Existem vários armazenamentos de documentos NoSQL de alto desempenho disponíveis; por exemplo, o MongoDB permite esquemas flexíveis enquanto o Couchbase oferece cache integrado.",
+    "whyCorrect": "'For instance' inicia a enumeração explicativa dos sistemas NoSQL.",
+    "whyOthersFail": "'In order to' expressa finalidade com infinitivo. 'Unless' estabelece condição restritiva. 'Because of' pede causa substantiva.",
+    "proTip": "Em reuniões de arquitetura e tech talks, 'for instance' confere autoridade e riqueza técnica aos seus exemplos."
+  },
+  {
+    "id": "q-for-instance-gremio-legends",
+    "prompt": "Grêmio has produced numerous legendary players and coaches throughout its history; _____ , Renato Gaúcho won titles as both a striker and a manager.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "instead of"
+      },
+      {
+        "id": "c",
+        "text": "for instance"
+      },
+      {
+        "id": "d",
+        "text": "equally"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "for instance",
+    "family": "example",
+    "translation": "por exemplo",
+    "explanation": "'For instance' apresenta Renato Gaúcho como a personificação exemplar das lendas gremistas.",
+    "fullSentence": "Grêmio has produced numerous legendary players and coaches throughout its history; for instance, Renato Gaúcho won titles as both a striker and a manager.",
+    "sentenceTranslation": "O Grêmio produziu inúmeros jogadores e treinadores lendários ao longo de sua história; por exemplo, Renato Gaúcho conquistou títulos tanto como atacante quanto como técnico.",
+    "whyCorrect": "'For instance' ilustra a glória histórica do clube com um exemplo incontestável.",
+    "whyOthersFail": "'So that' expressa objetivo futuro. 'Instead of' pede substituição. 'Equally' expressa equivalência sem exemplificar.",
+    "proTip": "Ao defender a grandeza do Grêmio em conversas em inglês com estrangeiros, 'for instance, Renato Gaúcho...' é argumento imbatível!"
+  },
+  {
+    "id": "q-furthermore-microservices-benefits",
+    "prompt": "Breaking the monolith reduced our deployment cycle from weeks to hours. _____ , it allowed independent teams to choose the optimal tech stack for each domain.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In contrast"
+      },
+      {
+        "id": "b",
+        "text": "Due to"
+      },
+      {
+        "id": "c",
+        "text": "Unless"
+      },
+      {
+        "id": "d",
+        "text": "Furthermore"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "Furthermore",
+    "family": "addition",
+    "translation": "Além disso / Ademais",
+    "explanation": "'Furthermore' adiciona um segundo benefício de grande peso técnico à arquitetura de microsserviços.",
+    "fullSentence": "Breaking the monolith reduced our deployment cycle from weeks to hours. Furthermore, it allowed independent teams to choose the optimal tech stack for each domain.",
+    "sentenceTranslation": "A quebra do monólito reduziu nosso ciclo de deploy de semanas para horas. Além disso, permitiu que equipes independentes escolhessem a melhor stack tecnológica para cada domínio.",
+    "whyCorrect": "'Furthermore' é o conector formal de adição por excelência para construir argumentações técnicas sólidas.",
+    "whyOthersFail": "'In contrast' oporia os dois benefícios. 'Due to' exige substantivo de causa. 'Unless' impõe condição restritiva.",
+    "proTip": "'Furthermore' = 'Moreover'. É o conector perfeito para defesas de teses arquiteturais e propostas comerciais corporativas."
+  },
+  {
+    "id": "q-furthermore-gft-client-satisfaction",
+    "prompt": "The engineering squad delivered the core banking features on time. _____ , our post-launch defect rate dropped by 40% compared to the previous quarter.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Furthermore"
+      },
+      {
+        "id": "b",
+        "text": "Rather than"
+      },
+      {
+        "id": "c",
+        "text": "Nor"
+      },
+      {
+        "id": "d",
+        "text": "Even if"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "Furthermore",
+    "family": "addition",
+    "translation": "Além disso / Ademais",
+    "explanation": "'Furthermore' acrescenta a métrica de qualidade à pontualidade da entrega.",
+    "fullSentence": "The engineering squad delivered the core banking features on time. Furthermore, our post-launch defect rate dropped by 40% compared to the previous quarter.",
+    "sentenceTranslation": "A squad de engenharia entregou as funcionalidades centrais de banco no prazo. Além disso, nossa taxa de defeitos pós-lançamento caiu 40% em comparação ao trimestre anterior.",
+    "whyCorrect": "'Furthermore' empilha evidências de alta performance na reunião executiva.",
+    "whyOthersFail": "'Rather than' expressa opção comparativa. 'Nor' exige negativa anterior. 'Even if' é concessivo condicional.",
+    "proTip": "Apresentando resultados para clientes ou diretores? Use 'Furthermore,' para introduzir o seu segundo melhor indicador!"
+  },
+  {
+    "id": "q-furthermore-cinthia-apartment-amenities",
+    "prompt": "The new apartment has a spacious home office with natural light; _____ , it is located just three blocks away from Cinthia's favorite park.",
+    "options": [
+      {
+        "id": "a",
+        "text": "otherwise"
+      },
+      {
+        "id": "b",
+        "text": "furthermore"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "summing up"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "furthermore",
+    "family": "addition",
+    "translation": "além do mais / ademais",
+    "explanation": "'Furthermore' acrescenta a localização conveniente às qualidades do imóvel.",
+    "fullSentence": "The new apartment has a spacious home office with natural light; furthermore, it is located just three blocks away from Cinthia's favorite park.",
+    "sentenceTranslation": "O novo apartamento tem um escritório espaçoso para home office com luz natural; além do mais, fica localizado a apenas três quadras do parque favorito da Cinthia.",
+    "whyCorrect": "'Furthermore' reforça o valor da escolha do apartamento com mais uma vantagem incontestável.",
+    "whyOthersFail": "'Otherwise' traria consequência negativa. 'Because of' exige causa nominal. 'Summing up' fecharia prematuramente sem somar.",
+    "proTip": "'Furthermore' enriquece suas histórias pessoais, dando um ritmo maduro e envolvente à narrativa."
+  },
+  {
+    "id": "q-hence-token-expired-unauthorized",
+    "prompt": "The JWT authentication token had exceeded its 15-minute lifespan; _____ , the gateway rejected the API request with a 401 Unauthorized status.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nevertheless"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "hence"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "hence",
+    "family": "cause",
+    "translation": "daí / portanto / por isso",
+    "explanation": "'Hence' expressa a dedução técnica imediata e inevitável decorrente da expiração do token.",
+    "fullSentence": "The JWT authentication token had exceeded its 15-minute lifespan; hence, the gateway rejected the API request with a 401 Unauthorized status.",
+    "sentenceTranslation": "O token de autenticação JWT havia ultrapassado sua vida útil de 15 minutos; portanto, o gateway rejeitou a requisição da API com status 401 Não Autorizado.",
+    "whyCorrect": "'Hence' conecta a expiração do token à rejeição com rigor matemático e técnico.",
+    "whyOthersFail": "'Nevertheless' expressaria oposição. 'Unless' impõe condição restritiva. 'Instead of' pede substituição direta.",
+    "proTip": "'Hence' é muito comum em documentações de APIs, especificações RFC e discussões de lógica de programação."
+  },
+  {
+    "id": "q-hence-traffic-late-airport",
+    "prompt": "A sudden accident blocked both lanes of the highway leading to the airport; _____ our flight delay and rushed arrival at the gate.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because"
+      },
+      {
+        "id": "b",
+        "text": "although"
+      },
+      {
+        "id": "c",
+        "text": "so that"
+      },
+      {
+        "id": "d",
+        "text": "hence"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "hence",
+    "family": "cause",
+    "translation": "daí / daí a razão de",
+    "explanation": "'Hence' pode preceder diretamente um substantivo ('hence our flight delay'), significando 'daí a razão de'.",
+    "fullSentence": "A sudden accident blocked both lanes of the highway leading to the airport; hence our flight delay and rushed arrival at the gate.",
+    "sentenceTranslation": "Um acidente repentino bloqueou as duas pistas da rodovia que leva ao aeroporto; daí a razão do nosso atraso no voo e da chegada apressada ao portão.",
+    "whyCorrect": "'Hence' rege com precisão a expressão nominal que explica o desfecho da viagem.",
+    "whyOthersFail": "'Because' exigiria oração subordinada com verbo. 'Although' expressaria concessão. 'So that' expressaria objetivo.",
+    "proTip": "Uso culto: 'Hence + substantivo' ('Hence the confusion', 'Hence the delay'). Soa extremamente refinado em inglês formal!"
+  },
+  {
+    "id": "q-hence-gremio-tactical-discipline",
+    "prompt": "The defenders maintained compact lines throughout ninety minutes; _____ their clean sheet against one of the strongest attacks in the league.",
+    "options": [
+      {
+        "id": "a",
+        "text": "hence"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "hence",
+    "family": "cause",
+    "translation": "daí / por conseguinte",
+    "explanation": "'Hence' atribui o jogo sem sofrer gols (clean sheet) à disciplina tática dos defensores do Grêmio.",
+    "fullSentence": "The defenders maintained compact lines throughout ninety minutes; hence their clean sheet against one of the strongest attacks in the league.",
+    "sentenceTranslation": "Os defensores mantiveram linhas compactas durante noventa minutos; daí a razão de não terem sofrido gols contra um dos ataques mais fortes do campeonato.",
+    "whyCorrect": "'Hence' justifica o resultado com extrema concisão sintática.",
+    "whyOthersFail": "'Rather than' expressa exclusão comparativa. 'Nor' exige negativa correlativa. 'Due to' exigiria ordem inversa ('clean sheet due to compact lines').",
+    "proTip": "Em análises esportivas ou de desempenho, 'hence + [consequência]' sintetiza a causa com precisão cirúrgica."
+  },
+  {
+    "id": "q-however-experienced-architect-advice",
+    "prompt": "The junior developer was confident that MongoDB didn't need secondary indexes; _____ , the senior architect advised benchmarking query performance under load.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "however"
+      },
+      {
+        "id": "c",
+        "text": "in order to"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "however",
+    "family": "contrast",
+    "translation": "no entanto / contudo",
+    "explanation": "'However' inicia a ponderação cautelosa do arquiteto sênior em contraste com o otimismo do júnior.",
+    "fullSentence": "The junior developer was confident that MongoDB didn't need secondary indexes; however, the senior architect advised benchmarking query performance under load.",
+    "sentenceTranslation": "O desenvolvedor júnior estava confiante de que o MongoDB não precisava de índices secundários; no entanto, o arquiteto sênior aconselhou testar o desempenho das consultas sob carga.",
+    "whyCorrect": "'However' antecedido de ponto e vírgula e seguido de vírgula é o padrão de ouro para introduzir contraste formal.",
+    "whyOthersFail": "'Because of' exige causa substantiva. 'In order to' exige infinitivo de objetivo. 'Unless' impõe condição restritiva.",
+    "proTip": "A pontuação clássica de 'However' no meio de períodos é: '; however, ' ou abrindo frase nova: '. However, '. Nunca coloque apenas uma vírgula antes!"
+  },
+  {
+    "id": "q-however-cinthia-busy-time-dinner",
+    "prompt": "Cinthia had an intense schedule of client meetings all afternoon; _____ , she still found time to join me for a delightful coffee break.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "however"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "however",
+    "family": "contrast",
+    "translation": "no entanto / contudo",
+    "explanation": "'However' contrapõe a rotina agitada com o gesto carinhoso de tirar um tempo para o café.",
+    "fullSentence": "Cinthia had an intense schedule of client meetings all afternoon; however, she still found time to join me for a delightful coffee break.",
+    "sentenceTranslation": "A Cinthia teve uma agenda intensa de reuniões com clientes a tarde toda; no entanto, ela ainda encontrou tempo para tomar um café agradável comigo.",
+    "whyCorrect": "'However' articula a oposição de ideias com leveza e precisão gramatical.",
+    "whyOthersFail": "'Nor' pede negativa anterior. 'Due to' exige substantivo de causa. 'Instead of' pede substituição direta.",
+    "proTip": "Use 'however' em narrativas de dia a dia para demonstrar consideração mútua que supera obstáculos de tempo."
+  },
+  {
+    "id": "q-however-gremio-conceded-draw",
+    "prompt": "Grêmio attacked with relentless pressure and hit the goalpost twice; _____ , the opponent's goalkeeper made miraculous saves to preserve the draw.",
+    "options": [
+      {
+        "id": "a",
+        "text": "therefore"
+      },
+      {
+        "id": "b",
+        "text": "so that"
+      },
+      {
+        "id": "c",
+        "text": "equally"
+      },
+      {
+        "id": "d",
+        "text": "however"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "however",
+    "family": "contrast",
+    "translation": "no entanto / todavia",
+    "explanation": "'However' contrasta as tentativas brilhantes de gol com as defesas milagrosas do goleiro adversário.",
+    "fullSentence": "Grêmio attacked with relentless pressure and hit the goalpost twice; however, the opponent's goalkeeper made miraculous saves to preserve the draw.",
+    "sentenceTranslation": "O Grêmio atacou com pressão implacável e acertou a trave duas vezes; todavia, o goleiro adversário fez defesas milagrosas para preservar o empate.",
+    "whyCorrect": "'However' faz o contraponto perfeito entre o ataque gremista e a resistência rival.",
+    "whyOthersFail": "'Therefore' indicaria dedução de causa. 'So that' expressa finalidade. 'Equally' expressa equivalência sem adversidade.",
+    "proTip": "Em relatos de partidas de futebol, 'however' dá o tom dramático de equilíbrio entre as duas forças em campo."
+  },
+  {
+    "id": "q-however-cloud-migration-worth-it",
+    "prompt": "Migrating fifty legacy services to AWS required three months of intensive re-engineering; _____ , the operational cost savings made the effort fully worthwhile.",
+    "options": [
+      {
+        "id": "a",
+        "text": "however"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "in spite of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "however",
+    "family": "contrast",
+    "translation": "contudo / no entanto",
+    "explanation": "'However' equilibra o esforço dispendioso da migração com a economia substancial alcançada.",
+    "fullSentence": "Migrating fifty legacy services to AWS required three months of intensive re-engineering; however, the operational cost savings made the effort fully worthwhile.",
+    "sentenceTranslation": "Migrar cinquenta serviços legados para a AWS exigiu três meses de engenharia intensiva; contudo, a economia de custos operacionais fez o esforço valer totalmente a pena.",
+    "whyCorrect": "'However' estabelece o contraste positivo entre o investimento árduo e o retorno do projeto.",
+    "whyOthersFail": "'Unless' impõe condição. 'Rather than' expressa preferência. 'In spite of' exige substantivo sem oração independente.",
+    "proTip": "Conectivo indispensável para fechar estudos de caso de TI: [Desafio difícil]; however, [Retorno espetacular]."
+  },
+  {
+    "id": "q-if-all-tests-pass-deploy",
+    "prompt": "_____ all automated unit and integration tests pass successfully in Jenkins, our pipeline will automatically deploy the code to production.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unless"
+      },
+      {
+        "id": "b",
+        "text": "If"
+      },
+      {
+        "id": "c",
+        "text": "Although"
+      },
+      {
+        "id": "d",
+        "text": "Because of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "If",
+    "family": "condition",
+    "translation": "Se",
+    "explanation": "'If' introduz a condição primária indispensável para o acionamento do deploy automatizado.",
+    "fullSentence": "If all automated unit and integration tests pass successfully in Jenkins, our pipeline will automatically deploy the code to production.",
+    "sentenceTranslation": "Se todos os testes unitários e de integração automatizados passarem com sucesso no Jenkins, nossa esteira fará o deploy automático do código em produção.",
+    "whyCorrect": "'If' é a conjunção condicional clássica (First Conditional) que conecta o gatilho dos testes à ação no futuro simples ('will deploy').",
+    "whyOthersFail": "'Unless' inverteria a regra ('a não ser que passem, faremos deploy'). 'Although' expressa concessão. 'Because of' exige substantivo de causa.",
+    "proTip": "A regra da First Conditional: 'If + Simple Present, ... will + verbo'. Padrão essencial em lógica de programação e automação de CI/CD!"
+  },
+  {
+    "id": "q-if-gremio-wins-top-four",
+    "prompt": "_____ Grêmio wins Saturday's classic derby at the Arena, they will climb straight into the top four of the national championship.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Instead of"
+      },
+      {
+        "id": "b",
+        "text": "Due to"
+      },
+      {
+        "id": "c",
+        "text": "If"
+      },
+      {
+        "id": "d",
+        "text": "Nor"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "If",
+    "family": "condition",
+    "translation": "Se",
+    "explanation": "'If' estabelece a vitória no clássico como a condição necessária para entrar no G4.",
+    "fullSentence": "If Grêmio wins Saturday's classic derby at the Arena, they will climb straight into the top four of the national championship.",
+    "sentenceTranslation": "Se o Grêmio vencer o clássico de sábado na Arena, subirá direto para o G4 do campeonato nacional.",
+    "whyCorrect": "'If' introduz a condição esportiva associada ao verbo no presente ('wins') e resultado futuro ('will climb').",
+    "whyOthersFail": "'Instead of' exige gerúndio ou substantivo de substituição. 'Due to' exige substantivo. 'Nor' exige negativa correlativa.",
+    "proTip": "Toda rodada decisiva de campeonato gira em torno de 'If': 'If they win, they will qualify!'"
+  },
+  {
+    "id": "q-if-cinthia-finishes-early-cinema",
+    "prompt": "_____ Cinthia finishes her client presentation early this evening, we will catch the late-night movie at the cinema.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whereas"
+      },
+      {
+        "id": "b",
+        "text": "Therefore"
+      },
+      {
+        "id": "c",
+        "text": "Rather than"
+      },
+      {
+        "id": "d",
+        "text": "If"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "If",
+    "family": "condition",
+    "translation": "Se",
+    "explanation": "'If' condiciona o programa de cinema ao término antecipado do expediente de Cinthia.",
+    "fullSentence": "If Cinthia finishes her client presentation early this evening, we will catch the late-night movie at the cinema.",
+    "sentenceTranslation": "Se a Cinthia terminar sua apresentação para o cliente mais cedo hoje à noite, pegaremos a sessão das dez no cinema.",
+    "whyCorrect": "'If' expressa a possibilidade real e animadora de um programa a dois após o trabalho.",
+    "whyOthersFail": "'Whereas' conecta orações de contraste. 'Therefore' expressa dedução lógica. 'Rather than' expressa preferência.",
+    "proTip": "Use 'If + presente, we will + verbo' para planejar encontros e compromissos com quem você ama com flexibilidade."
+  },
+  {
+    "id": "q-if-you-need-help-mongodb",
+    "prompt": "_____ you encounter any syntax issues while writing the aggregation pipeline on MongoDB, feel free to reach out to me on Slack.",
+    "options": [
+      {
+        "id": "a",
+        "text": "If"
+      },
+      {
+        "id": "b",
+        "text": "Unless"
+      },
+      {
+        "id": "c",
+        "text": "In order to"
+      },
+      {
+        "id": "d",
+        "text": "Because of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "If",
+    "family": "condition",
+    "translation": "Se / Caso",
+    "explanation": "'If' introduz a oferta generosa e acolhedora de mentoria técnica para um colega de squad.",
+    "fullSentence": "If you encounter any syntax issues while writing the aggregation pipeline on MongoDB, feel free to reach out to me on Slack.",
+    "sentenceTranslation": "Se você encontrar algum problema de sintaxe ao escrever o pipeline de agregação no MongoDB, sinta-se à vontade para me chamar no Slack.",
+    "whyCorrect": "'If' abre a oração condicional de suporte entre pares ('Zero Conditional / Imperativo').",
+    "whyOthersFail": "'Unless' criaria um sentido hostil ('a menos que tenha problemas, não fale comigo'). 'In order to' exige infinitivo. 'Because of' exige substantivo.",
+    "proTip": "'If you need any help, feel free to reach out' é a frase mais simpática e profissional que você pode dizer aos seus colegas no Slack!"
+  },
+  {
+    "id": "q-in-advance-book-flight-vacation",
+    "prompt": "Cinthia and I managed to secure affordable airline tickets because we purchased them three months _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "at last"
+      },
+      {
+        "id": "b",
+        "text": "in advance"
+      },
+      {
+        "id": "c",
+        "text": "at all"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "in advance",
+    "family": "time",
+    "translation": "com antecedência",
+    "explanation": "'In advance' indica que a compra dos bilhetes aéreos ocorreu com meses de antecipação.",
+    "fullSentence": "Cinthia and I managed to secure affordable airline tickets because we purchased them three months in advance.",
+    "sentenceTranslation": "A Cinthia e eu conseguimos garantir passagens aéreas econômicas porque as compramos com três meses de antecedência.",
+    "whyCorrect": "'In advance' é a locução temporal padrão usada após intervalos de tempo ('three months in advance').",
+    "whyOthersFail": "'At last' expressaria alívio após espera. 'At all' é para ênfase negativa. 'Unless' é condicional.",
+    "proTip": "Fórmula de ouro: [Período de tempo] + 'in advance' ('two weeks in advance', 'three days in advance'). Memorize!"
+  },
+  {
+    "id": "q-in-advance-notify-downtime-clients",
+    "prompt": "Corporate governance requires our IT team to notify enterprise banking clients at least 48 hours _____ of any maintenance downtime.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "in advance"
+      },
+      {
+        "id": "d",
+        "text": "even though"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "in advance",
+    "family": "time",
+    "translation": "com antecedência / de antemão",
+    "explanation": "'In advance' define o prazo legal obrigatório de aviso prévio aos clientes.",
+    "fullSentence": "Corporate governance requires our IT team to notify enterprise banking clients at least 48 hours in advance of any maintenance downtime.",
+    "sentenceTranslation": "A governança corporativa exige que nossa equipe de TI notifique os clientes bancários corporativos com pelo menos 48 horas de antecedência em relação a qualquer indisponibilidade de manutenção.",
+    "whyCorrect": "'In advance of' expressa antecedência temporal antes de um marco ou evento programado.",
+    "whyOthersFail": "'Instead of' indicaria cancelamento da manutenção. 'Due to' indicaria causa. 'Even though' exige oração subordinada.",
+    "proTip": "'48 hours in advance' é requisito padrão em SLAs de grandes empresas. Use com total segurança em e-mails executivos."
+  },
+  {
+    "id": "q-in-advance-thank-review-pr",
+    "prompt": "I sent the architectural RFC document to the tech leads and wrote: 'Thank you _____ for your thoughtful feedback.'",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "whereas"
+      },
+      {
+        "id": "d",
+        "text": "in advance"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "in advance",
+    "family": "time",
+    "translation": "antecipadamente / desde já",
+    "explanation": "'Thank you in advance' é a fórmula consagrada de cortesia profissional por uma ajuda futura.",
+    "fullSentence": "I sent the architectural RFC document to the tech leads and wrote: 'Thank you in advance for your thoughtful feedback.'",
+    "sentenceTranslation": "Enviei o documento de RFC arquitetural aos líderes técnicos e escrevi: 'Agradeço antecipadamente pelo feedback construtivo de vocês.'",
+    "whyCorrect": "'Thank you in advance' expressa gentileza e expectativa positiva de colaboração.",
+    "whyOthersFail": "'Nor' pede negativa. 'Rather than' expressa escolha. 'Whereas' conecta orações de contraste.",
+    "proTip": "'Thank you in advance' (agradeço desde já) é uma das saudações finais de e-mail corporativo mais utilizadas em todo o planeta!"
+  },
+  {
+    "id": "q-in-case-network-fails-cache",
+    "prompt": "Our mobile client app caches the latest user data locally on the device _____ the user temporarily loses internet connectivity.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in case"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "in case",
+    "family": "condition",
+    "translation": "caso / para o caso de",
+    "explanation": "'In case' introduz a medida preventiva adotada para proteger o usuário de uma possível queda de conexão.",
+    "fullSentence": "Our mobile client app caches the latest user data locally on the device in case the user temporarily loses internet connectivity.",
+    "sentenceTranslation": "Nosso aplicativo móvel salva os dados mais recentes do usuário em cache local no dispositivo para o caso de o usuário perder temporariamente a conexão com a internet.",
+    "whyCorrect": "'In case' expressa precaução contra uma possibilidade indesejada futura.",
+    "whyOthersFail": "'Unless' significaria 'a não ser que perca' (inversão absurda da lógica de cache). 'Due to' pede substantivo causal. 'So that' expressaria que queríamos que ele perdesse a conexão.",
+    "proTip": "Diferença vital: 'If' = se acontecer, farei algo. 'In case' = faço algo agora por precaução, para estar pronto se acontecer!"
+  },
+  {
+    "id": "q-in-case-rain-arena-gremio",
+    "prompt": "Take your waterproof Grêmio windbreaker jacket _____ the weather forecast turns rainy during the derby at the Arena.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "in case"
+      },
+      {
+        "id": "c",
+        "text": "instead of"
+      },
+      {
+        "id": "d",
+        "text": "therefore"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "in case",
+    "family": "condition",
+    "translation": "caso / por precaução se",
+    "explanation": "'In case' aconselha levar o casaco preventivamente contra a probabilidade de chuva.",
+    "fullSentence": "Take your waterproof Grêmio windbreaker jacket in case the weather forecast turns rainy during the derby at the Arena.",
+    "sentenceTranslation": "Leve seu casaco corta-vento impermeável do Grêmio caso a previsão do tempo vire para chuva durante o clássico na Arena.",
+    "whyCorrect": "'In case' expressa a atitude preventiva de se proteger do frio e da chuva.",
+    "whyOthersFail": "'Rather than' expressaria preferência entre coisas. 'Instead of' pediria troca. 'Therefore' expressa conclusão lógica.",
+    "proTip": "'Take an umbrella in case it rains' é o exemplo de livro-texto mais famoso de 'in case'. Aqui adaptado com estilo para o Grêmio!"
+  },
+  {
+    "id": "q-in-case-cinthia-hungry-late",
+    "prompt": "I bought some artisanal cheese and fresh fruit on the way home _____ Cinthia feels hungry after her late shift.",
+    "options": [
+      {
+        "id": "a",
+        "text": "although"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "in case"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "in case",
+    "family": "condition",
+    "translation": "caso / para o caso de",
+    "explanation": "'In case' reflete o cuidado carinhoso de deixar comida pronta prevendo o cansaço do parceiro.",
+    "fullSentence": "I bought some artisanal cheese and fresh fruit on the way home in case Cinthia feels hungry after her late shift.",
+    "sentenceTranslation": "Comprei queijo artesanal e frutas frescas no caminho de casa caso a Cinthia sinta fome após o seu plantão até mais tarde.",
+    "whyCorrect": "'In case' expressa a ação de carinho e precaução antecipada.",
+    "whyOthersFail": "'Although' expressa concessão incompatível. 'Because of' exige causa sem oração com verbo conjugado. 'Unless' inverteria a lógica.",
+    "proTip": "Demonstre consideração em conversas do dia a dia: 'I did X in case you need it.'"
+  },
+  {
+    "id": "q-in-contrast-nosql-sql-scaling",
+    "prompt": "Legacy relational databases often require vertical hardware scaling; _____ , distributed document stores scale horizontally across commodity clusters.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "in order to"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "in contrast"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "in contrast",
+    "family": "contrast",
+    "translation": "em contraste / ao contrário",
+    "explanation": "'In contrast' contrapõe a arquitetura de escala vertical do SQL tradicional com a horizontal do NoSQL.",
+    "fullSentence": "Legacy relational databases often require vertical hardware scaling; in contrast, distributed document stores scale horizontally across commodity clusters.",
+    "sentenceTranslation": "Bancos de dados relacionais legados frequentemente exigem escalabilidade vertical de hardware; em contraste, armazenamentos de documentos distribuídos escalam horizontalmente em clusters comuns.",
+    "whyCorrect": "'In contrast' é o conector formal perfeito para traçar distinções técnicas marcantes entre duas arquiteturas.",
+    "whyOthersFail": "'Due to' exige substantivo de causa. 'In order to' expressa finalidade com infinitivo. 'Unless' introduz condição negativa.",
+    "proTip": "Em reuniões de design de sistemas: '; in contrast, ...' destaca vantagens competitivas de uma nova tecnologia sobre o legado."
+  },
+  {
+    "id": "q-in-contrast-scrum-kanban-iterations",
+    "prompt": "Scrum organizes development into fixed time-boxed sprints; _____ , Kanban emphasizes continuous delivery and strict work-in-progress limits.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in contrast"
+      },
+      {
+        "id": "b",
+        "text": "because"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "nor"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "in contrast",
+    "family": "contrast",
+    "translation": "em contraste / ao contrário",
+    "explanation": "'In contrast' contrapõe os dois modelos ágeis de gestão de fluxo de trabalho.",
+    "fullSentence": "Scrum organizes development into fixed time-boxed sprints; in contrast, Kanban emphasizes continuous delivery and strict work-in-progress limits.",
+    "sentenceTranslation": "O Scrum organiza o desenvolvimento em sprints com caixas de tempo fixas; em contraste, o Kanban enfatiza a entrega contínua e limites rigorosos de trabalho em andamento.",
+    "whyCorrect": "'In contrast' articula a comparação metodológica direta entre Scrum e Kanban.",
+    "whyOthersFail": "'Because' transformaria a metodologia de um na causa do outro. 'Rather than' exigiria reestruturação comparativa. 'Nor' exige negativa.",
+    "proTip": "Perfeita para entrevistas de emprego de liderança técnica: contraste frameworks ágeis usando 'in contrast' para mostrar maturidade."
+  },
+  {
+    "id": "q-in-contrast-cinthia-morning-evening",
+    "prompt": "I feel most energized and write my cleanest code early in the morning; _____ , Cinthia is a night owl who does her most creative work late at night.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "in contrast"
+      },
+      {
+        "id": "c",
+        "text": "therefore"
+      },
+      {
+        "id": "d",
+        "text": "in spite of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "in contrast",
+    "family": "contrast",
+    "translation": "ao contrário / em contraste",
+    "explanation": "'In contrast' contrasta os cronotipos e hábitos de trabalho produtivos do casal.",
+    "fullSentence": "I feel most energized and write my cleanest code early in the morning; in contrast, Cinthia is a night owl who does her most creative work late at night.",
+    "sentenceTranslation": "Sinto-me com mais energia e escrevo meu código mais limpo logo cedo pela manhã; em contraste, a Cinthia é uma pessoa noturna que realiza seu trabalho mais criativo tarde da noite.",
+    "whyCorrect": "'In contrast' coloca lado a lado duas rotinas opostas de forma harmoniosa.",
+    "whyOthersFail": "'So that' expressa objetivo. 'Therefore' expressa dedução causal. 'In spite of' pede sintagma nominal.",
+    "proTip": "Use 'in contrast' para contar com bom humor sobre como diferenças de hábitos tornam o relacionamento rico e equilibrado."
+  },
+  {
+    "id": "q-in-contrast-gremio-first-second-half",
+    "prompt": "Grêmio struggled with tactical sluggishness during the opening thirty minutes; _____ , their second-half performance was electrifying and relentless.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "in contrast"
+      },
+      {
+        "id": "d",
+        "text": "equally"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "in contrast",
+    "family": "contrast",
+    "translation": "em contrapartida / em contraste",
+    "explanation": "'In contrast' marca a transformação espetacular de postura do Grêmio entre os dois tempos da partida.",
+    "fullSentence": "Grêmio struggled with tactical sluggishness during the opening thirty minutes; in contrast, their second-half performance was electrifying and relentless.",
+    "sentenceTranslation": "O Grêmio sofreu com lentidão tática durante os primeiros trinta minutos; em contrapartida, sua atuação no segundo tempo foi eletrizante e implacável.",
+    "whyCorrect": "'In contrast' dramatiza a virada de postura do time em campo.",
+    "whyOthersFail": "'Unless' é condicional. 'Due to' exige substantivo de causa. 'Equally' indicaria que os dois tempos foram idênticos.",
+    "proTip": "Ao narrar jogos ou retrospectivas de projetos, 'in contrast' ressalta a melhora nítida de desempenho."
+  },
+  {
+    "id": "q-in-fact-paola-bracho-villain",
+    "prompt": "Many soap operas have memorable antagonists, but Paola Bracho in 'A Usurpadora' is, _____ , the most iconic villain in television history.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "in fact"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "in fact",
+    "family": "emphasis",
+    "translation": "de fato / na verdade",
+    "explanation": "'In fact' enfatiza com autoridade cultural a consagração incontestável da icônica vilã.",
+    "fullSentence": "Many soap operas have memorable antagonists, but Paola Bracho in 'A Usurpadora' is, in fact, the most iconic villain in television history.",
+    "sentenceTranslation": "Muitas novelas têm antagonistas memoráveis, mas Paola Bracho em 'A Usurpadora' é, de fato, a vilã mais icônica da história da televisão.",
+    "whyCorrect": "'In fact' confirma e reforça o status lendário da personagem citado expressamente no seu documento.",
+    "whyOthersFail": "'Instead of' exigiria substituição. 'Due to' pede causa nominal. 'Unless' impõe condição restritiva.",
+    "proTip": "Frase autêntica do seu material! 'In fact' colocado entre vírgulas ('is, in fact, the most...') confere elegância ímpar à afirmação."
+  },
+  {
+    "id": "q-in-fact-brazil-five-titles",
+    "prompt": "European teams have dominated recent tournaments, but Brazil is, _____ , the only national team that has won the FIFA World Cup five times.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in fact"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "whereas"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "in fact",
+    "family": "emphasis",
+    "translation": "de fato / na verdade",
+    "explanation": "'In fact' crava o dado histórico irrevogável do pentacampeonato mundial.",
+    "fullSentence": "European teams have dominated recent tournaments, but Brazil is, in fact, the only national team that has won the FIFA World Cup five times.",
+    "sentenceTranslation": "As seleções europeias dominaram os torneios recentes, mas o Brasil é, de fato, a única seleção nacional que conquistou a Copa do Mundo da FIFA cinco vezes.",
+    "whyCorrect": "'In fact' sela o dado estatístico com segurança máxima.",
+    "whyOthersFail": "'Nor' exige negativa correlativa. 'Rather than' expressa preferência. 'Whereas' conecta duas orações completas.",
+    "proTip": "Frase do seu material! Use 'in fact' para destacar recordes absolutos e verdades históricas inegáveis."
+  },
+  {
+    "id": "q-in-fact-cloud-faster-expected",
+    "prompt": "The stakeholders expected modest latency gains after the migration; _____ , the microservice architecture improved response times by over 60%.",
+    "options": [
+      {
+        "id": "a",
+        "text": "otherwise"
+      },
+      {
+        "id": "b",
+        "text": "in fact"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "summing up"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "in fact",
+    "family": "emphasis",
+    "translation": "na realidade / de fato",
+    "explanation": "'In fact' introduz o resultado real surpreendente que superou com folga as previsões moderadas.",
+    "fullSentence": "The stakeholders expected modest latency gains after the migration; in fact, the microservice architecture improved response times by over 60%.",
+    "sentenceTranslation": "Os stakeholders esperavam ganhos modestos de latência após a migração; na realidade, a arquitetura de microsserviços melhorou os tempos de resposta em mais de 60%.",
+    "whyCorrect": "'In fact' valida e eleva o impacto positivo da solução de TI entregue.",
+    "whyOthersFail": "'Otherwise' traz alerta condicional. 'Unless' impõe condição. 'Summing up' fecharia sem enfatizar o salto de métrica.",
+    "proTip": "Em relatórios de ROI e benchmarking: '; in fact, [métrica surpreendente]' impressiona qualquer diretoria."
+  },
+  {
+    "id": "q-in-order-to-prevent-sql-injection",
+    "prompt": "Developers must sanitize all incoming query parameters and use prepared statements _____ prevent SQL injection attacks.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "in order to"
+      },
+      {
+        "id": "d",
+        "text": "although"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "in order to",
+    "family": "purpose",
+    "translation": "a fim de / para",
+    "explanation": "'In order to' expressa a finalidade explícita regida por verbo no infinitivo ('prevent').",
+    "fullSentence": "Developers must sanitize all incoming query parameters and use prepared statements in order to prevent SQL injection attacks.",
+    "sentenceTranslation": "Os desenvolvedores devem sanitizar todos os parâmetros de consulta recebidos e usar prepared statements a fim de prevenir ataques de injeção de SQL.",
+    "whyCorrect": "'In order to' é a locução de finalidade formal por excelência que antecede o verbo no infinitivo.",
+    "whyOthersFail": "'So that' exigiria oração com sujeito e verbo modal ('so that they can prevent'). 'Because of' exige substantivo. 'Although' expressa concessão.",
+    "proTip": "Regra mestra de concurso e certificação: 'In order to' + [verbo no infinitivo]; 'So that' + [sujeito + can/could/may + verbo]. Nunca confunda!"
+  },
+  {
+    "id": "q-in-order-to-surprise-cinthia",
+    "prompt": "I arrived home thirty minutes early and lit scented candles _____ surprise Cinthia on our anniversary dinner.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "in order to"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "in order to",
+    "family": "purpose",
+    "translation": "para / com o propósito de",
+    "explanation": "'In order to' expressa a intenção carinhosa que motivou os preparativos antecipados.",
+    "fullSentence": "I arrived home thirty minutes early and lit scented candles in order to surprise Cinthia on our anniversary dinner.",
+    "sentenceTranslation": "Cheguei em casa trinta minutos mais cedo e acendi velas aromáticas a fim de surpreender a Cinthia no nosso jantar de aniversário.",
+    "whyCorrect": "'In order to' precede o infinitivo 'surprise' com intenção deliberada.",
+    "whyOthersFail": "'Instead of' indicaria que não quis surpreendê-la. 'Unless' estabelece condição restritiva. 'Due to' pede substantivo causal.",
+    "proTip": "Use 'in order to' para destacar que você realizou uma série de ações com um propósito nobre e intencional."
+  },
+  {
+    "id": "q-in-order-to-win-gremio-intensified",
+    "prompt": "_____ win the decisive match at the Arena, Renato Gaúcho intensified tactical transition drills throughout the entire week.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In order to"
+      },
+      {
+        "id": "b",
+        "text": "Because of"
+      },
+      {
+        "id": "c",
+        "text": "In spite of"
+      },
+      {
+        "id": "d",
+        "text": "Whereas"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "In order to",
+    "family": "purpose",
+    "translation": "A fim de / Para",
+    "explanation": "'In order to' no início da oração define a meta esportiva que norteou toda a semana de treinamentos.",
+    "fullSentence": "In order to win the decisive match at the Arena, Renato Gaúcho intensified tactical transition drills throughout the entire week.",
+    "sentenceTranslation": "A fim de vencer a partida decisiva na Arena, o Renato Gaúcho intensificou os treinos táticos de transição durante a semana inteira.",
+    "whyCorrect": "'In order to' abre a frase estabelecendo o objetivo estratégico que justifica a intensidade dos treinos.",
+    "whyOthersFail": "'Because of' exigiria substantivo ('Because of the victory'). 'In spite of' expressaria concessão. 'Whereas' conecta duas orações completas.",
+    "proTip": "Abrir uma frase em inglês com 'In order to [verbo]...' demonstra autoridade e clareza de metas!"
+  },
+  {
+    "id": "q-in-short-release-status",
+    "prompt": "All regression tests passed, security compliance was signed off, and monitoring dashboards are green. _____ , the platform is ready for production.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In contrast"
+      },
+      {
+        "id": "b",
+        "text": "In short"
+      },
+      {
+        "id": "c",
+        "text": "Unless"
+      },
+      {
+        "id": "d",
+        "text": "Due to"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "In short",
+    "family": "summary",
+    "translation": "Em resumo / Em suma",
+    "explanation": "'In short' resume todas as validações técnicas em uma conclusão direta e executiva.",
+    "fullSentence": "All regression tests passed, security compliance was signed off, and monitoring dashboards are green. In short, the platform is ready for production.",
+    "sentenceTranslation": "Todos os testes de regressão passaram, a conformidade de segurança foi aprovada e os painéis de monitoramento estão verdes. Em resumo, a plataforma está pronta para produção.",
+    "whyCorrect": "'In short' sintetiza o status com brevidade e contundência executiva.",
+    "whyOthersFail": "'In contrast' exigiria oposição. 'Unless' impõe condição negativa. 'Due to' exige causa nominal.",
+    "proTip": "Use 'In short' no último parágrafo de e-mails para diretores ou clientes: resume a mensagem central em uma linha."
+  },
+  {
+    "id": "q-in-short-gremio-champion-performance",
+    "prompt": "Solid defense, disciplined midfield, and clinical finishing in front of goal. _____ , Grêmio played like true champions tonight.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rather than"
+      },
+      {
+        "id": "b",
+        "text": "Nor"
+      },
+      {
+        "id": "c",
+        "text": "In short"
+      },
+      {
+        "id": "d",
+        "text": "Even if"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "In short",
+    "family": "summary",
+    "translation": "Em resumo / Em síntese",
+    "explanation": "'In short' condensa os méritos táticos do Grêmio na definição de campeão.",
+    "fullSentence": "Solid defense, disciplined midfield, and clinical finishing in front of goal. In short, Grêmio played like true champions tonight.",
+    "sentenceTranslation": "Defesa sólida, meio-campo disciplinado e finalizações cirúrgicas diante do gol. Em resumo, o Grêmio jogou como verdadeiro campeão hoje à noite.",
+    "whyCorrect": "'In short' coroa o resumo esportivo dos três setores do time.",
+    "whyOthersFail": "'Rather than' expressa opção comparativa. 'Nor' exige negativa. 'Even if' é condicional.",
+    "proTip": "'In short' funciona como um carimbo de autoridade ao final de listas de atributos positivos."
+  },
+  {
+    "id": "q-in-short-cinthia-relationship",
+    "prompt": "We share values, support each other's career ambitions, and laugh together every single day. _____ , living with Cinthia is pure joy.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Otherwise"
+      },
+      {
+        "id": "b",
+        "text": "Because of"
+      },
+      {
+        "id": "c",
+        "text": "Instead of"
+      },
+      {
+        "id": "d",
+        "text": "In short"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "In short",
+    "family": "summary",
+    "translation": "Em suma / Resumindo",
+    "explanation": "'In short' expressa com simplicidade e carinho o resumo da vida compartilhada.",
+    "fullSentence": "We share values, support each other's career ambitions, and laugh together every single day. In short, living with Cinthia is pure joy.",
+    "sentenceTranslation": "Compartilhamos valores, apoiamos as ambições de carreira um do outro e rimos juntos todo santo dia. Em suma, viver com a Cinthia é pura alegria.",
+    "whyCorrect": "'In short' amarra a relação harmoniosa em uma frase cheia de afeto.",
+    "whyOthersFail": "'Otherwise' traria alerta adverso. 'Because of' exige substantivo. 'Instead of' pede substituição.",
+    "proTip": "Ao resumir um período ou momento feliz da vida, 'In short, it was amazing' fecha com chave de ouro."
+  },
+  {
+    "id": "q-in-short-cloud-advantages",
+    "prompt": "Elastic scaling, pay-as-you-go pricing, and automated high availability across global zones. _____ , cloud infrastructure revolutionizou o mercado de TI.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In short"
+      },
+      {
+        "id": "b",
+        "text": "So that"
+      },
+      {
+        "id": "c",
+        "text": "Whereas"
+      },
+      {
+        "id": "d",
+        "text": "In order to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "In short",
+    "family": "summary",
+    "translation": "Em resumo",
+    "explanation": "'In short' resume os pilares da computação em nuvem de forma elegante.",
+    "fullSentence": "Elastic scaling, pay-as-you-go pricing, and automated high availability across global zones. In short, cloud infrastructure revolutionized the IT market.",
+    "sentenceTranslation": "Escalabilidade elástica, cobrança conforme o uso e alta disponibilidade automatizada em zonas globais. Em resumo, a infraestrutura em nuvem revolucionou o mercado de TI.",
+    "whyCorrect": "'In short' sintetiza os benefícios apresentados.",
+    "whyOthersFail": "'So that' expressa finalidade. 'Whereas' conecta contraste. 'In order to' exige infinitivo.",
+    "proTip": "'In short' = 'To sum up'. Excelente para apresentações e defesas de arquitetura."
+  },
+  {
+    "id": "q-in-spite-of-cloud-outage-gft",
+    "prompt": "_____ the severe regional cloud outage, the GFT engineers successfully rerouted traffic and maintained zero customer data loss.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Although"
+      },
+      {
+        "id": "b",
+        "text": "In spite of"
+      },
+      {
+        "id": "c",
+        "text": "Because of"
+      },
+      {
+        "id": "d",
+        "text": "Unless"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "In spite of",
+    "family": "contrast",
+    "translation": "Apesar de",
+    "explanation": "'In spite of' é uma locução prepositiva de concessão que rege o substantivo causal 'the severe regional cloud outage'.",
+    "fullSentence": "In spite of the severe regional cloud outage, the GFT engineers successfully rerouted traffic and maintained zero customer data loss.",
+    "sentenceTranslation": "Apesar da grave queda regional da nuvem, os engenheiros da GFT redirecionaram o tráfego com sucesso e mantiveram perda zero de dados dos clientes.",
+    "whyCorrect": "'In spite of' precede o sintagma nominal indicando o obstáculo superado com brilhantismo técnico.",
+    "whyOthersFail": "'Although' exigiria oração completa ('Although there was an outage'). 'Because of' atribuiria o redirecionamento como causa do desastre. 'Unless' é condicional.",
+    "proTip": "Lembre-se: 'In spite of' tem exatamente 3 palavras: 'in' + 'spite' + 'of'. Tem o mesmo significado de 'despite'!"
+  },
+  {
+    "id": "q-in-spite-of-exhaustion-gym",
+    "prompt": "_____ feeling exhausted after a challenging sprint deployment, I went to the gym with Cinthia to work out and decompress.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Even though"
+      },
+      {
+        "id": "b",
+        "text": "Rather than"
+      },
+      {
+        "id": "c",
+        "text": "In spite of"
+      },
+      {
+        "id": "d",
+        "text": "Due to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "In spite of",
+    "family": "contrast",
+    "translation": "Apesar de",
+    "explanation": "'In spite of' rege o gerúndio 'feeling exhausted' com precisão gramatical.",
+    "fullSentence": "In spite of feeling exhausted after a challenging sprint deployment, I went to the gym with Cinthia to work out and decompress.",
+    "sentenceTranslation": "Apesar de me sentir exausto após um deploy de sprint desafiador, fui à academia com a Cinthia para treinar e desestressar.",
+    "whyCorrect": "'In spite of' é a preposição concessiva ideal para reger verbo terminado em '-ing'.",
+    "whyOthersFail": "'Even though' exigiria oração completa conjugada ('Even though I felt exhausted'). 'Rather than' expressa preferência. 'Due to' atribuiria o treino ao cansaço.",
+    "proTip": "Guarde a estrutura: 'In spite of + [verbo com -ing]' ('In spite of raining', 'In spite of feeling tired'). Muito comum em provas e na conversação!"
+  },
+  {
+    "id": "q-in-spite-of-heavy-snow-flight",
+    "prompt": "_____ the freezing blizzard and delays at the airport, our international flight landed safely in London.",
+    "options": [
+      {
+        "id": "a",
+        "text": "So that"
+      },
+      {
+        "id": "b",
+        "text": "Therefore"
+      },
+      {
+        "id": "c",
+        "text": "Nor"
+      },
+      {
+        "id": "d",
+        "text": "In spite of"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "In spite of",
+    "family": "contrast",
+    "translation": "Apesar de",
+    "explanation": "'In spite of' rege a tempestade de neve e os atrasos como barreiras superadas pelo voo.",
+    "fullSentence": "In spite of the freezing blizzard and delays at the airport, our international flight landed safely in London.",
+    "sentenceTranslation": "Apesar da nevasca congelante e dos atrasos no aeroporto, nosso voo internacional pousou com segurança em Londres.",
+    "whyCorrect": "'In spite of' antecede os substantivos climáticos com fluência nativa.",
+    "whyOthersFail": "'So that' expressa meta. 'Therefore' expressa conclusão de causa. 'Nor' exige negativa anterior.",
+    "proTip": "Em histórias de viagem, 'in spite of the bad weather' é uma fórmula clássica e elegante."
+  },
+  {
+    "id": "q-in-spite-of-referee-mistakes-gremio",
+    "prompt": "_____ several questionable decisions by the referee, Grêmio stayed focused and secured an epic 3-2 victory at the Arena.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In spite of"
+      },
+      {
+        "id": "b",
+        "text": "Unless"
+      },
+      {
+        "id": "c",
+        "text": "Instead of"
+      },
+      {
+        "id": "d",
+        "text": "Equally"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "In spite of",
+    "family": "contrast",
+    "translation": "Apesar de",
+    "explanation": "'In spite of' destaca a superação das adversidades da arbitragem pelo time do Grêmio.",
+    "fullSentence": "In spite of several questionable decisions by the referee, Grêmio stayed focused and secured an epic 3-2 victory at the Arena.",
+    "sentenceTranslation": "Apesar de várias decisões questionáveis da arbitragem, o Grêmio manteve o foco e garantiu uma vitória épica por 3 a 2 na Arena.",
+    "whyCorrect": "'In spite of' rege o substantivo 'several questionable decisions'.",
+    "whyOthersFail": "'Unless' impõe condição restritiva. 'Instead of' pede substituição. 'Equally' expressa paridade sem concessão.",
+    "proTip": "No futebol: 'In spite of the referee's bias, we won!' Frase imbatível para torcedores apaixonados."
+  },
+  {
+    "id": "q-indeed-microservices-complex",
+    "prompt": "Microservices introduce significant architectural flexibility; _____ , managing distributed tracing and observability requires disciplined tooling.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "indeed"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "indeed",
+    "family": "emphasis",
+    "translation": "de fato / realmente",
+    "explanation": "'Indeed' confirma e corrobora a exigência real de governança e ferramentas na nuvem.",
+    "fullSentence": "Microservices introduce significant architectural flexibility; indeed, managing distributed tracing and observability requires disciplined tooling.",
+    "sentenceTranslation": "Microsserviços introduzem flexibilidade arquitetural significativa; de fato, gerenciar rastreamento distribuído e observabilidade exige ferramental disciplinado.",
+    "whyCorrect": "'Indeed' atua como conector enfático de confirmação formal entre duas verdades técnicas.",
+    "whyOthersFail": "'Unless' impõe condição negativa. 'Due to' exige substantivo de causa. 'Rather than' expressa opção comparativa.",
+    "proTip": "'Indeed' é muito usado em literatura técnica e debates acadêmicos de computação para ratificar uma constatação profunda."
+  },
+  {
+    "id": "q-indeed-cinthia-talented-leader",
+    "prompt": "Her colleagues praised her strategic vision during the reorganization; she is, _____ , one of the most talented leaders in the business unit.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "indeed"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "indeed",
+    "family": "emphasis",
+    "translation": "de fato / realmente",
+    "explanation": "'Indeed' colocado entre vírgulas confirma com elegância o reconhecimento profissional.",
+    "fullSentence": "Her colleagues praised her strategic vision during the reorganization; she is, indeed, one of the most talented leaders in the business unit.",
+    "sentenceTranslation": "Seus colegas elogiaram sua visão estratégica durante a reorganização; ela é, de fato, uma das líderes mais talentosas da unidade de negócios.",
+    "whyCorrect": "'Indeed' intensifica a constatação com admiração e autoridade.",
+    "whyOthersFail": "'Nor' pede negativa correlativa. 'Because of' exige causa nominal. 'Instead of' pede substituição.",
+    "proTip": "Em recomendações do LinkedIn e feedbacks: 'He is, indeed, an exceptional engineer' soa sofisticado e poderoso."
+  },
+  {
+    "id": "q-indeed-gremio-tricolor-tradition",
+    "prompt": "With three Copa Libertadores titles and an Intercontinental Cup, Grêmio has, _____ , written some of the most glorious chapters in South American football.",
+    "options": [
+      {
+        "id": "a",
+        "text": "otherwise"
+      },
+      {
+        "id": "b",
+        "text": "so that"
+      },
+      {
+        "id": "c",
+        "text": "even if"
+      },
+      {
+        "id": "d",
+        "text": "indeed"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "indeed",
+    "family": "emphasis",
+    "translation": "de fato / verdadeiramente",
+    "explanation": "'Indeed' autentica o peso histórico das conquistas internacionais do Grêmio.",
+    "fullSentence": "With three Copa Libertadores titles and an Intercontinental Cup, Grêmio has, indeed, written some of the most glorious chapters in South American football.",
+    "sentenceTranslation": "Com três títulos da Copa Libertadores e uma Copa Intercontinental, o Grêmio escreveu, de fato, alguns dos capítulos mais gloriosos do futebol sul-americano.",
+    "whyCorrect": "'Indeed' sela a constatação histórica incontestável da grandeza do clube.",
+    "whyOthersFail": "'Otherwise' traz ameaça. 'So that' expressa objetivo. 'Even if' é concessivo condicional.",
+    "proTip": "Use 'indeed' entre vírgulas no meio do tempo verbal ('has, indeed, written...') para dar um tom épico e solene à sua fala."
+  },
+  {
+    "id": "q-indeed-clean-architecture-saves-time",
+    "prompt": "Adopting domain-driven design felt slow during the first two sprints; _____ , refactoring downstream became effortless as business logic grew.",
+    "options": [
+      {
+        "id": "a",
+        "text": "indeed"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "in spite of"
+      },
+      {
+        "id": "d",
+        "text": "summing up"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "indeed",
+    "family": "emphasis",
+    "translation": "de fato / na realidade",
+    "explanation": "'Indeed' ratifica o ganho a longo prazo após a curva de aprendizado inicial da arquitetura limpa.",
+    "fullSentence": "Adopting domain-driven design felt slow during the first two sprints; indeed, refactoring downstream became effortless as business logic grew.",
+    "sentenceTranslation": "Adotar o domain-driven design pareceu lento durante as duas primeiras sprints; de fato, refatorar etapas seguintes tornou-se simples à medida que a lógica de negócios cresceu.",
+    "whyCorrect": "'Indeed' confirma a promessa do DDD com fatos comprovados no código.",
+    "whyOthersFail": "'Unless' é condicional. 'In spite of' exige substantivo. 'Summing up' fecharia o texto prematuramente.",
+    "proTip": "Quando defender refatoração de código com o Product Owner, diga: 'It feels slower now; indeed, it will save us months later!'"
+  },
+  {
+    "id": "q-instead-of-manual-qa-automated",
+    "prompt": "_____ executing manual regression checklists before every sprint release, our team implemented automated Cypress and Jest test suites.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Due to"
+      },
+      {
+        "id": "b",
+        "text": "Instead of"
+      },
+      {
+        "id": "c",
+        "text": "In order to"
+      },
+      {
+        "id": "d",
+        "text": "Unless"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Instead of",
+    "family": "substitution",
+    "translation": "Em vez de / Em lugar de",
+    "explanation": "'Instead of' expressa a substituição deliberada dos testes manuais por testes automatizados modernos.",
+    "fullSentence": "Instead of executing manual regression checklists before every sprint release, our team implemented automated Cypress and Jest test suites.",
+    "sentenceTranslation": "Em vez de executar listas manuais de regressão antes de cada lançamento de sprint, nossa equipe implementou suítes de testes automatizados em Cypress e Jest.",
+    "whyCorrect": "'Instead of' rege o gerúndio 'executing' para indicar o processo substituído.",
+    "whyOthersFail": "'Due to' transformaria o checklist manual em causa da automação. 'In order to' exigiria infinitivo de propósito. 'Unless' é condicional.",
+    "proTip": "Regra mestra: 'Instead of + verbo no -ing' ('Instead of doing X, we did Y'). Essencial para relatórios de modernização de TI!"
+  },
+  {
+    "id": "q-instead-of-eating-out-cinthia",
+    "prompt": "_____ eating out at a noisy restaurant on Friday night, Cinthia and I cooked homemade pasta and enjoyed a quiet evening together.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because of"
+      },
+      {
+        "id": "b",
+        "text": "Although"
+      },
+      {
+        "id": "c",
+        "text": "Instead of"
+      },
+      {
+        "id": "d",
+        "text": "Rather"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "Instead of",
+    "family": "substitution",
+    "translation": "Em vez de / No lugar de",
+    "explanation": "'Instead of' relata a escolha prazerosa de cozinhar em casa em substituição ao restaurante barulhento.",
+    "fullSentence": "Instead of eating out at a noisy restaurant on Friday night, Cinthia and I cooked homemade pasta and enjoyed a quiet evening together.",
+    "sentenceTranslation": "Em vez de comer fora em um restaurante barulhento na sexta-feira à noite, a Cinthia e eu cozinhamos massa caseira e aproveitamos uma noite tranquila juntos.",
+    "whyCorrect": "'Instead of' rege 'eating out' marcando a alternativa descartada com afeto e bom senso.",
+    "whyOthersFail": "'Because of' transformaria comer fora na causa de terem ficado em casa. 'Although' exige oração completa com verbo. 'Rather' sozinho sem than não encaixa.",
+    "proTip": "Use 'Instead of [verbo com -ing]' para contar decisões do dia a dia com seu parceiro de forma muito natural."
+  },
+  {
+    "id": "q-instead-of-direct-http-queues",
+    "prompt": "We decided to decouple our ordering and invoicing microservices using Kafka message queues _____ synchronous HTTP REST coupling.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "in contrast"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "instead of",
+    "family": "substitution",
+    "translation": "em vez de / em lugar de",
+    "explanation": "'Instead of' estabelece o desacoplamento por mensageria em substituição às chamadas HTTP síncronas.",
+    "fullSentence": "We decided to decouple our ordering and invoicing microservices using Kafka message queues instead of synchronous HTTP REST coupling.",
+    "sentenceTranslation": "Decidimos desacoplar nossos microsserviços de pedidos e faturamento usando filas de mensageria do Kafka em vez de acoplamento REST HTTP síncrono.",
+    "whyCorrect": "'Instead of' conecta a escolha arquitetural recomendada sobre o acoplamento rejeitado.",
+    "whyOthersFail": "'Due to' indicaria causa. 'Unless' impõe condição subordinada. 'In contrast' exigiria oração independente.",
+    "proTip": "Nas decisões de arquitetura (ADRs): 'We chose X instead of Y because...' é o formato padrão da indústria de software."
+  },
+  {
+    "id": "q-likewise-seniors-juniors-reviews",
+    "prompt": "Senior engineers must submit their code for peer review; _____ , junior developers should participate actively in reviewing architecture PRs.",
+    "options": [
+      {
+        "id": "a",
+        "text": "likewise"
+      },
+      {
+        "id": "b",
+        "text": "in contrast"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "likewise",
+    "family": "addition",
+    "translation": "da mesma forma / igualmente",
+    "explanation": "'Likewise' estende a cultura de code review igualitária dos seniores aos juniores.",
+    "fullSentence": "Senior engineers must submit their code for peer review; likewise, junior developers should participate actively in reviewing architecture PRs.",
+    "sentenceTranslation": "Engenheiros seniores devem submeter seu código para revisão por pares; da mesma forma, desenvolvedores juniores devem participar ativamente da revisão de PRs de arquitetura.",
+    "whyCorrect": "'Likewise' estabelece reciprocidade e paridade comportamental na equipe de engenharia.",
+    "whyOthersFail": "'In contrast' criaria oposição entre seniores e juniores. 'Due to' exige causa nominal. 'Unless' impõe condição restritiva.",
+    "proTip": "Frase inspirada no seu material! 'Likewise' é perfeito para pregar reciprocidade em boas práticas ágeis e de liderança."
+  },
+  {
+    "id": "q-likewise-cinthia-career-growth",
+    "prompt": "I am dedicated to expanding my software leadership skills at GFT; _____ , Cinthia is pursuing advanced professional certifications in her field.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "likewise"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "otherwise"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "likewise",
+    "family": "addition",
+    "translation": "da mesma forma / igualmente",
+    "explanation": "'Likewise' celebra o crescimento profissional mútuo do casal com admiração e harmonia.",
+    "fullSentence": "I am dedicated to expanding my software leadership skills at GFT; likewise, Cinthia is pursuing advanced professional certifications in her field.",
+    "sentenceTranslation": "Estou dedicado a expandir minhas habilidades de liderança de software na GFT; da mesma forma, a Cinthia está buscando certificações profissionais avançadas em sua área.",
+    "whyCorrect": "'Likewise' liga as duas trajetórias profissionais paralelas de evolução constante.",
+    "whyOthersFail": "'Rather than' expressaria exclusão comparativa. 'Nor' exige negativa anterior. 'Otherwise' traria consequência negativa.",
+    "proTip": "Use 'Likewise' para demonstrar admiração mútua por metas de carreira compartilhadas no casal."
+  },
+  {
+    "id": "q-likewise-tests-documentation",
+    "prompt": "High-quality software requires comprehensive automated test suites; _____ , clear and updated API documentation is vital for developer adoption.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "likewise"
+      },
+      {
+        "id": "d",
+        "text": "in order to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "likewise",
+    "family": "addition",
+    "translation": "igualmente / da mesma forma",
+    "explanation": "'Likewise' coloca a documentação no mesmo patamar de relevância que os testes automatizados.",
+    "fullSentence": "High-quality software requires comprehensive automated test suites; likewise, clear and updated API documentation is vital for developer adoption.",
+    "sentenceTranslation": "Software de alta qualidade requer suítes abrangentes de testes automatizados; igualmente, uma documentação de API clara e atualizada é vital para a adoção pelos desenvolvedores.",
+    "whyCorrect": "'Likewise' conecta os dois requisitos essenciais da boa engenharia de software.",
+    "whyOthersFail": "'Because of' exige substantivo causal direto. 'Unless' é condicional negativa. 'In order to' exige infinitivo.",
+    "proTip": "Quer concordar com alguém em uma conversa informal? Responda simplesmente: 'Likewise!' (O mesmo para você / Igualmente!)."
+  },
+  {
+    "id": "q-meanwhile-frontend-backend-parallel",
+    "prompt": "The backend engineers were designing the MongoDB database schemas and authentication endpoints; _____ , the frontend team built responsive Figma prototypes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "afterwards"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "meanwhile"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "meanwhile",
+    "family": "time",
+    "translation": "enquanto isso / ao mesmo tempo",
+    "explanation": "'Meanwhile' marca o trabalho paralelo e simultâneo entre backend e frontend durante a sprint.",
+    "fullSentence": "The backend engineers were designing the MongoDB database schemas and authentication endpoints; meanwhile, the frontend team built responsive Figma prototypes.",
+    "sentenceTranslation": "Os engenheiros de backend estavam modelando os esquemas do banco MongoDB e os endpoints de autenticação; enquanto isso, a equipe de frontend construía protótipos responsivos no Figma.",
+    "whyCorrect": "'Meanwhile' é o advérbio por excelência para conectar duas frentes de trabalho ocorrendo no mesmo intervalo de tempo.",
+    "whyOthersFail": "'Afterwards' indicaria que o frontend esperou o backend terminar. 'Due to' pede causa. 'Unless' impõe condição.",
+    "proTip": "Frase do seu documento! No Daily Standup: 'I was testing feature X; meanwhile, colleague Y refactored the pipeline.' Demonstra sincronia de squad!"
+  },
+  {
+    "id": "q-meanwhile-gremio-renato-press",
+    "prompt": "The Grêmio squad conducted rigorous tactical drills at the training ground; _____ , Renato Gaúcho addressed the media in a high-stakes press conference.",
+    "options": [
+      {
+        "id": "a",
+        "text": "meanwhile"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "therefore"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "meanwhile",
+    "family": "time",
+    "translation": "enquanto isso / ao mesmo tempo",
+    "explanation": "'Meanwhile' coordena as duas ações simultâneas: treino do elenco e coletiva do treinador.",
+    "fullSentence": "The Grêmio squad conducted rigorous tactical drills at the training ground; meanwhile, Renato Gaúcho addressed the media in a high-stakes press conference.",
+    "sentenceTranslation": "O elenco do Grêmio realizava treinos táticos rigorosos no CT; enquanto isso, o Renato Gaúcho atendia a imprensa em uma concorrida entrevista coletiva.",
+    "whyCorrect": "'Meanwhile' situa os dois acontecimentos esportivos no mesmo recorte temporal.",
+    "whyOthersFail": "'Rather than' expressa opção. 'Nor' exige negativa. 'Therefore' expressa causa e efeito.",
+    "proTip": "Inspirada no seu material! 'Meanwhile' dá um ar cinematográfico à narrativa de eventos esportivos e de projetos."
+  },
+  {
+    "id": "q-mostly-remote-work-consultancy",
+    "prompt": "Our consulting team operates _____ remotely, visiting the client's corporate office only once a month for executive steering meetings.",
+    "options": [
+      {
+        "id": "a",
+        "text": "at all"
+      },
+      {
+        "id": "b",
+        "text": "mostly"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "mostly",
+    "family": "emphasis",
+    "translation": "na maior parte / principalmente",
+    "explanation": "'Mostly' indica que a rotina predominante de trabalho é remota.",
+    "fullSentence": "Our consulting team operates mostly remotely, visiting the client's corporate office only once a month for executive steering meetings.",
+    "sentenceTranslation": "Nossa equipe de consultoria opera na maior parte remotamente, visitando o escritório corporativo do cliente apenas uma vez por mês para reuniões executivas de diretoria.",
+    "whyCorrect": "'Mostly' qualifica o advérbio 'remotely', denotando preponderância quase total.",
+    "whyOthersFail": "'At all' é usado para ênfase negativa. 'Unless' impõe condição. 'Instead of' pede termo alternativo com substantivo.",
+    "proTip": "'Mostly' = 'mainly' ou 'for the most part'. Útil para descrever rotinas híbridas e hábitos habituais."
+  },
+  {
+    "id": "q-mostly-junior-team-support",
+    "prompt": "The new microservices squad is composed _____ of ambitious junior developers eager to learn cloud and DevOps practices.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "mostly"
+      },
+      {
+        "id": "d",
+        "text": "beforehand"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "mostly",
+    "family": "emphasis",
+    "translation": "principalmente / em sua maioria",
+    "explanation": "'Mostly' denota a formação predominante dos integrantes da equipe.",
+    "fullSentence": "The new microservices squad is composed mostly of ambitious junior developers eager to learn cloud and DevOps practices.",
+    "sentenceTranslation": "A nova squad de microsserviços é composta em sua maioria por desenvolvedores juniores ambiciosos, ansiosos para aprender práticas de nuvem e DevOps.",
+    "whyCorrect": "'Mostly' expressa a composição majoritária da squad com clareza.",
+    "whyOthersFail": "'Due to' pede causa nominal. 'Nor' exige negação correlativa. 'Beforehand' indica tempo anterior.",
+    "proTip": "'Composed mostly of...' (composto principalmente de...) é uma estrutura muito comum em apresentações de times e squads."
+  },
+  {
+    "id": "q-mostly-cinthia-travel-preferences",
+    "prompt": "When selecting holiday destinations, Cinthia and I look _____ for charming coastal towns with scenic walking trails and fresh seafood.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "mostly"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "mostly",
+    "family": "emphasis",
+    "translation": "principalmente / na maior parte",
+    "explanation": "'Mostly' aponta o critério primordial na escolha dos destinos de viagem do casal.",
+    "fullSentence": "When selecting holiday destinations, Cinthia and I look mostly for charming coastal towns with scenic walking trails and fresh seafood.",
+    "sentenceTranslation": "Ao escolher destinos de férias, a Cinthia e eu buscamos principalmente cidades litorâneas charmosas com trilhas panorâmicas e frutos do mar frescos.",
+    "whyCorrect": "'Mostly' indica o foco principal das preferências do casal.",
+    "whyOthersFail": "'Rather than' exigiria outro elemento em contraste direto. 'Because of' pede causa. 'Unless' impõe condição.",
+    "proTip": "Use 'look mostly for' para falar dos seus gostos e prioridades de forma direta e fluente."
+  },
+  {
+    "id": "q-mostly-cloud-infrastructure-spend",
+    "prompt": "Our monthly cloud infrastructure budget is spent _____ on multi-region MongoDB database clusters and Kafka streaming brokers.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mostly"
+      },
+      {
+        "id": "b",
+        "text": "otherwise"
+      },
+      {
+        "id": "c",
+        "text": "even though"
+      },
+      {
+        "id": "d",
+        "text": "summing up"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "mostly",
+    "family": "emphasis",
+    "translation": "principalmente / em sua maior parte",
+    "explanation": "'Mostly' aponta onde se concentra a maior fatia dos investimentos em nuvem.",
+    "fullSentence": "Our monthly cloud infrastructure budget is spent mostly on multi-region MongoDB database clusters and Kafka streaming brokers.",
+    "sentenceTranslation": "Nosso orçamento mensal de infraestrutura na nuvem é gasto em sua maior parte em clusters de banco de dados MongoDB multirregião e corretores de streaming Kafka.",
+    "whyCorrect": "'Mostly' qualifica a distribuição orçamentária demonstrando a prioridade dos gastos técnicos.",
+    "whyOthersFail": "'Otherwise' traria alerta adverso. 'Even though' exige oração subordinada. 'Summing up' é conector de encerramento.",
+    "proTip": "Em reuniões de orçamento com executivos: 'Our budget goes mostly to X' comunica onde está a prioridade financeira."
+  },
+  {
+    "id": "q-mostly-gremio-fans-arena",
+    "prompt": "During the derby in Porto Alegre, the southern stand was occupied _____ by roaring Grêmio fans singing the club's anthems.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "mostly"
+      },
+      {
+        "id": "c",
+        "text": "in order to"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "mostly",
+    "family": "emphasis",
+    "translation": "em sua maioria / predominantemente",
+    "explanation": "'Mostly' descreve a predominância esmagadora dos torcedores tricolores na arquibancada.",
+    "fullSentence": "During the derby in Porto Alegre, the southern stand was occupied mostly by roaring Grêmio fans singing the club's anthems.",
+    "sentenceTranslation": "Durante o clássico em Porto Alegre, a arquibancada sul foi ocupada em sua maioria por apaixonados torcedores do Grêmio cantando os hinos do clube.",
+    "whyCorrect": "'Mostly' qualifica o particípio 'occupied' marcando a presença maciça da torcida.",
+    "whyOthersFail": "'Nor' exige negativa anterior. 'In order to' exige infinitivo de objetivo. 'Rather than' expressa opção comparativa.",
+    "proTip": "'Mostly' é um advérbio versátil que traz precisão e naturalidade tanto em temas profissionais quanto pessoais."
+  },
+  {
+    "id": "q-nevertheless-legacy-code-refactored",
+    "prompt": "The legacy codebase was notoriously undocumented and fragile; _____ , the squad refactored the core calculation engine without causing any regression bugs.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "nevertheless"
+      },
+      {
+        "id": "d",
+        "text": "in order to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "nevertheless",
+    "family": "contrast",
+    "translation": "não obstante / mesmo assim",
+    "explanation": "'Nevertheless' expressa a vitória técnica incontestável alcançada a despeito da fragilidade do código antigo.",
+    "fullSentence": "The legacy codebase was notoriously undocumented and fragile; nevertheless, the squad refactored the core calculation engine without causing any regression bugs.",
+    "sentenceTranslation": "A base de código legada era notoriamente não documentada e frágil; mesmo assim, a squad refatorou o motor central de cálculos sem causar nenhum bug de regressão.",
+    "whyCorrect": "'Nevertheless' é o conector formal de contraste mais prestigiado para relatar conquistas difíceis em projetos complexos.",
+    "whyOthersFail": "'Due to' transformaria a fragilidade em causa do sucesso. 'Unless' impõe condição restritiva. 'In order to' exige infinitivo.",
+    "proTip": "'Nevertheless' = 'Nonetheless'. Use após ponto e vírgula seguido de vírgula ('; nevertheless, ') para dar peso acadêmico e corporativo ao seu texto."
+  },
+  {
+    "id": "q-nevertheless-cinthia-tired-walk",
+    "prompt": "Cinthia was exhausted after preparing the annual strategy report; _____ , she put on her running shoes and joined me for our evening stroll in the park.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "nevertheless"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "nevertheless",
+    "family": "contrast",
+    "translation": "mesmo assim / ainda assim",
+    "explanation": "'Nevertheless' valoriza o esforço amoroso de Cinthia em manter o hábito saudável do casal a despeito do cansaço.",
+    "fullSentence": "Cinthia was exhausted after preparing the annual strategy report; nevertheless, she put on her running shoes and joined me for our evening stroll in the park.",
+    "sentenceTranslation": "A Cinthia estava exausta após preparar o relatório anual de estratégia; mesmo assim, calçou os tênis de corrida e me acompanhou na nossa caminhada noturna no parque.",
+    "whyCorrect": "'Nevertheless' articula o contraste entre o esgotamento do trabalho e a dedicação ao relacionamento.",
+    "whyOthersFail": "'Rather than' expressa escolha excludente. 'Nor' exige negativa correlativa. 'Because of' exige causa nominal.",
+    "proTip": "Use 'nevertheless' para celebrar a força de vontade de pessoas queridas diante do cansaço."
+  },
+  {
+    "id": "q-nevertheless-gremio-red-card-held",
+    "prompt": "Grêmio had their primary central defender sent off in the 60th minute; _____ , the remaining ten players defended heroically and secured the 1-0 victory.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nevertheless"
+      },
+      {
+        "id": "b",
+        "text": "therefore"
+      },
+      {
+        "id": "c",
+        "text": "so that"
+      },
+      {
+        "id": "d",
+        "text": "equally"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "nevertheless",
+    "family": "contrast",
+    "translation": "não obstante / contudo / mesmo assim",
+    "explanation": "'Nevertheless' glorifica a resistência heróica com um jogador a menos em campo.",
+    "fullSentence": "Grêmio had their primary central defender sent off in the 60th minute; nevertheless, the remaining ten players defended heroically and secured the 1-0 victory.",
+    "sentenceTranslation": "O Grêmio teve seu zagueiro titular expulso aos 15 minutos do segundo tempo; mesmo assim, os dez jogadores restantes defenderam heroicamente e garantiram a vitória por 1 a 0.",
+    "whyCorrect": "'Nevertheless' coroa a superação tática diante da expulsão adversa.",
+    "whyOthersFail": "'Therefore' indicaria que a expulsão causa vitórias. 'So that' expressaria propósito. 'Equally' expressa equivalência sem adversidade.",
+    "proTip": "Em crônicas de vitórias épicas com expulsão no futebol, 'nevertheless' é a palavra mais potente para descrever o triunfo contra as adversidades."
+  },
+  {
+    "id": "q-nevertheless-cloud-costs-investment",
+    "prompt": "Initial cloud infrastructure migration expenses exceeded our quarterly forecast; _____ , the long-term scalability and operational elasticity justified the investment.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "nevertheless"
+      },
+      {
+        "id": "c",
+        "text": "instead of"
+      },
+      {
+        "id": "d",
+        "text": "because of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "nevertheless",
+    "family": "contrast",
+    "translation": "não obstante / mesmo assim",
+    "explanation": "'Nevertheless' defende a rentabilidade do investimento na nuvem apesar do custo inicial acima da meta.",
+    "fullSentence": "Initial cloud infrastructure migration expenses exceeded our quarterly forecast; nevertheless, the long-term scalability and operational elasticity justified the investment.",
+    "sentenceTranslation": "As despesas iniciais de migração de infraestrutura para a nuvem superaram nossa previsão trimestral; não obstante, a escalabilidade a longo prazo e a elasticidade operacional justificaram o investimento.",
+    "whyCorrect": "'Nevertheless' pondera o custo inicial com o retorno de longo prazo com elegância corporativa.",
+    "whyOthersFail": "'Unless' impõe condição. 'Instead of' pede troca substantiva. 'Because of' pede causa nominal.",
+    "proTip": "Apresentações para CFOs e diretores financeiros exigem 'nevertheless' para demonstrar equilíbrio e maturidade estratégica."
+  },
+  {
+    "id": "q-no-longer-legacy-soap-apis",
+    "prompt": "Our engineering squad has migrated all payment workflows to event-driven architectures, so we _____ maintain the legacy SOAP endpoints.",
+    "options": [
+      {
+        "id": "a",
+        "text": "at all"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "no longer"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "no longer",
+    "family": "time",
+    "translation": "não mais / já não",
+    "explanation": "'No longer' indica a descontinuação definitiva da manutenção dos antigos endpoints SOAP.",
+    "fullSentence": "Our engineering squad has migrated all payment workflows to event-driven architectures, so we no longer maintain the legacy SOAP endpoints.",
+    "sentenceTranslation": "Nossa equipe de engenharia migrou todos os fluxos de pagamento para arquiteturas orientadas a eventos, de modo que não mantemos mais os endpoints SOAP legados.",
+    "whyCorrect": "'No longer' se posiciona entre o sujeito ('we') e o verbo principal ('maintain'), marcando o encerramento da atividade.",
+    "whyOthersFail": "'At all' se posicionaria no fim da frase e requer negação 'not'. 'Unless' impõe condição subordinada. 'Rather than' expressa preferência.",
+    "proTip": "Frase inspirada no seu material! 'We no longer support/maintain X' é a declaração padrão de descontinuação (deprecation) em tecnologia."
+  },
+  {
+    "id": "q-no-longer-gft-consultant-contract",
+    "prompt": "He _____ works as a contractor at the consultancy because he accepted an executive engineering position at an international fintech.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "instead of"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "no longer"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "no longer",
+    "family": "time",
+    "translation": "já não / não mais",
+    "explanation": "'No longer' relata a mudança de vínculo empregatício e transição de carreira.",
+    "fullSentence": "He no longer works as a contractor at the consultancy because he accepted an executive engineering position at an international fintech.",
+    "sentenceTranslation": "Ele já não trabalha como prestador de serviços na consultoria porque aceitou um cargo de liderança em engenharia em uma fintech internacional.",
+    "whyCorrect": "'No longer' expressa com respeito e clareza a conclusão de um ciclo profissional.",
+    "whyOthersFail": "'Due to' exige substantivo de causa. 'Instead of' exige gerúndio ou substantivo. 'Nor' exige correlação negativa com neither.",
+    "proTip": "Frase autêntica do seu material: 'He no longer works at the consultancy'. Estrutura limpa, direta e profissional."
+  },
+  {
+    "id": "q-no-longer-commute-remote",
+    "prompt": "Since switching to a full-time remote role at GFT, I _____ lose two hours every day stuck in highway traffic.",
+    "options": [
+      {
+        "id": "a",
+        "text": "no longer"
+      },
+      {
+        "id": "b",
+        "text": "otherwise"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "whereas"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "no longer",
+    "family": "time",
+    "translation": "não mais / já não",
+    "explanation": "'No longer' celebra o fim do estresse de perder horas no trânsito graças ao home office.",
+    "fullSentence": "Since switching to a full-time remote role at GFT, I no longer lose two hours every day stuck in highway traffic.",
+    "sentenceTranslation": "Desde que mudei para uma função 100% remota na GFT, não perco mais duas horas todos os dias preso no trânsito da rodovia.",
+    "whyCorrect": "'No longer' expressa alívio e qualidade de vida conquistada com o trabalho remoto.",
+    "whyOthersFail": "'Otherwise' traria alerta adverso. 'Because of' exige causa nominal. 'Whereas' conecta contraste entre duas orações.",
+    "proTip": "Compartilhe conquistas de qualidade de vida em inglês: 'I no longer waste time commuting; now I have breakfast with Cinthia!'"
+  },
+  {
+    "id": "q-nonetheless-complex-specs-delivered",
+    "prompt": "The client's regulatory compliance specifications were extraordinarily convoluted; _____ , the engineering team delivered the solution within the designated sprint.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "nonetheless"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "in order to"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "nonetheless",
+    "family": "contrast",
+    "translation": "ainda assim / não obstante",
+    "explanation": "'Nonetheless' expressa a superação impecável das exigências regulatórias complexas pelo time.",
+    "fullSentence": "The client's regulatory compliance specifications were extraordinarily convoluted; nonetheless, the engineering team delivered the solution within the designated sprint.",
+    "sentenceTranslation": "As especificações de conformidade regulatória do cliente eram extraordinariamente complicadas; ainda assim, a equipe de engenharia entregou a solução dentro da sprint designada.",
+    "whyCorrect": "'Nonetheless' funciona como sinônimo refinado de 'nevertheless', conectando a alta dificuldade ao cumprimento do prazo.",
+    "whyOthersFail": "'Because of' exige causa nominal. 'Unless' impõe condição restritiva. 'In order to' exige infinitivo de finalidade.",
+    "proTip": "'Nonetheless' e 'Nevertheless' são 100% intercambiáveis. Ambos transmitem alto grau de formalidade e sofisticação na escrita!"
+  },
+  {
+    "id": "q-nonetheless-tired-cinthia-dinner",
+    "prompt": "Cinthia spent ten hours facilitating client workshops today; _____ , she had a bright smile on her face when we met for dinner.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "nonetheless"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "nonetheless",
+    "family": "contrast",
+    "translation": "ainda assim / mesmo assim",
+    "explanation": "'Nonetheless' contrasta a exaustão dos workshops com o sorriso radiante e o afeto no jantar.",
+    "fullSentence": "Cinthia spent ten hours facilitating client workshops today; nonetheless, she had a bright smile on her face when we met for dinner.",
+    "sentenceTranslation": "A Cinthia passou dez horas facilitando workshops para clientes hoje; ainda assim, ela tinha um sorriso radiante no rosto quando nos encontramos para jantar.",
+    "whyCorrect": "'Nonetheless' valoriza a energia positiva e o carinho mútuo sobre a rotina exaustiva.",
+    "whyOthersFail": "'Rather than' expressa exclusão comparativa. 'Nor' exige negativa correlativa. 'Due to' atribuiria o sorriso ao cansaço.",
+    "proTip": "Use 'nonetheless' para valorizar o companheirismo do parceiro que traz leveza ao fim do dia."
+  },
+  {
+    "id": "q-nonetheless-gremio-injuries-competed",
+    "prompt": "Grêmio had three key midfielders sidelined with muscle injuries; _____ , the squad displayed immense grit and controlled the midfield tempo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "therefore"
+      },
+      {
+        "id": "b",
+        "text": "so that"
+      },
+      {
+        "id": "c",
+        "text": "equally"
+      },
+      {
+        "id": "d",
+        "text": "nonetheless"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "nonetheless",
+    "family": "contrast",
+    "translation": "ainda assim / contudo",
+    "explanation": "'Nonetheless' celebra a garra dos jogadores que supriram os desfalques titulares.",
+    "fullSentence": "Grêmio had three key midfielders sidelined with muscle injuries; nonetheless, the squad displayed immense grit and controlled the midfield tempo.",
+    "sentenceTranslation": "O Grêmio teve três meio-campistas titulares afastados por lesões musculares; ainda assim, o elenco demonstrou imensa raça e controlou o ritmo do meio-campo.",
+    "whyCorrect": "'Nonetheless' dramatiza a superação diante do departamento médico lotado.",
+    "whyOthersFail": "'Therefore' deduziria que lesões causam controle de jogo. 'So that' expressa objetivo. 'Equally' expressa equivalência sem concessão.",
+    "proTip": "Em análises esportivas: 'Injuries plagued the team; nonetheless, they persevered.' Linguagem digna dos melhores comentaristas da BBC!"
+  },
+  {
+    "id": "q-nonetheless-high-licensing-costs",
+    "prompt": "Enterprise database tooling licenses were undeniably steep; _____ , the 24/7 mission-critical support SLA gave the board absolute peace of mind.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nonetheless"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "instead of"
+      },
+      {
+        "id": "d",
+        "text": "in spite of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "nonetheless",
+    "family": "contrast",
+    "translation": "ainda assim / mesmo assim",
+    "explanation": "'Nonetheless' defende o custo alto com base na tranquilidade do suporte 24/7.",
+    "fullSentence": "Enterprise database tooling licenses were undeniably steep; nonetheless, the 24/7 mission-critical support SLA gave the board absolute peace of mind.",
+    "sentenceTranslation": "As licenças de ferramentas de banco de dados corporativo eram inegavelmente caras; ainda assim, o SLA de suporte 24/7 para missão crítica deu total tranquilidade à diretoria.",
+    "whyCorrect": "'Nonetheless' equilibra investimento financeiro e mitigação de riscos com maturidade executiva.",
+    "whyOthersFail": "'Unless' é condicional. 'Instead of' pede substituição direta. 'In spite of' exige substantivo sem oração independente.",
+    "proTip": "Perfeito para defesas de compras de softwares e contratos de nuvem em comitês executivos."
+  },
+  {
+    "id": "q-nor-neither-coffee-tea",
+    "prompt": "A: Would you like an espresso or a cup of English tea? B: Actually, I drink neither coffee _____ tea; I strongly prefer cold sparkling water.",
+    "options": [
+      {
+        "id": "a",
+        "text": "or"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "and"
+      },
+      {
+        "id": "d",
+        "text": "but"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "nor",
+    "family": "contrast",
+    "translation": "nem",
+    "explanation": "'Nor' é a conjunção correlativa obrigatória que acompanha 'neither' para negar ambas as opções.",
+    "fullSentence": "A: Would you like an espresso or a cup of English tea? B: Actually, I drink neither coffee nor tea; I strongly prefer cold sparkling water.",
+    "sentenceTranslation": "A: Você gostaria de um café expresso ou de uma xícara de chá inglês? B: Na verdade, não bebo nem café nem chá; prefiro bastante água com gás gelada.",
+    "whyCorrect": "'Neither ... nor' é a estrutura correlativa canônica e inegociável da língua inglesa para ligar duas negações.",
+    "whyOthersFail": "'Or' seria usado com 'either' ('either coffee or tea'). 'And' violaria o paralelismo negativo. 'But' expressaria oposição sem correlação.",
+    "proTip": "Regra sagrada de ouro: 'Neither ... nor' (nem um, nem outro); 'Either ... or' (ou um, ou outro). Nunca misture 'neither' com 'or'!"
+  },
+  {
+    "id": "q-nor-neither-java-spring",
+    "prompt": "For this lightweight serverless function, our cloud architects want neither heavyweight Java runtimes _____ complex Spring boot configurations.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "nor",
+    "family": "contrast",
+    "translation": "nem",
+    "explanation": "'Nor' completa o par correlativo rejeitando Java e Spring para uma função serverless enxuta.",
+    "fullSentence": "For this lightweight serverless function, our cloud architects want neither heavyweight Java runtimes nor complex Spring boot configurations.",
+    "sentenceTranslation": "Para esta função serverless leve, nossos arquitetos de nuvem não querem nem runtimes pesados de Java nem configurações complexas de Spring Boot.",
+    "whyCorrect": "'Nor' fecha a correlação negativa iniciada por 'neither' com perfeição sintática.",
+    "whyOthersFail": "'Due to' exige causa nominal. 'Unless' impõe condição restritiva. 'Rather than' quebra a estrutura correlativa de 'neither'.",
+    "proTip": "Frase inspirada no seu material! Em debates de microsserviços: 'We want neither monolithic complexity nor unmanaged microservices chaos.'"
+  },
+  {
+    "id": "q-nor-did-the-server-restart",
+    "prompt": "The primary load balancer didn't redirect traffic during the failover drill, _____ did the automated recovery script launch backup containers.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because"
+      },
+      {
+        "id": "b",
+        "text": "so that"
+      },
+      {
+        "id": "c",
+        "text": "whereas"
+      },
+      {
+        "id": "d",
+        "text": "nor"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "nor",
+    "family": "contrast",
+    "translation": "e tampouco / nem",
+    "explanation": "'Nor' encabeça a segunda oração negativa provocando a inversão sujeito-verbo auxiliar ('nor did the script launch').",
+    "fullSentence": "The primary load balancer didn't redirect traffic during the failover drill, nor did the automated recovery script launch backup containers.",
+    "sentenceTranslation": "O balanceador de carga primário não redirecionou o tráfego durante o simulado de failover, e tampouco o script de recuperação automatizado inicializou os contêineres de backup.",
+    "whyCorrect": "'Nor' iniciando oração independente exige inversão: 'nor + verbo auxiliar + sujeito' ('nor did the script launch').",
+    "whyOthersFail": "'Because' transformaria uma falha na causa da outra. 'So that' expressaria finalidade. 'Whereas' conecta contraste entre estados opostos.",
+    "proTip": "Uso avançado de inglês: Quando 'Nor' inicia uma oração, ele inverte a ordem: 'nor did he...', 'nor could we...'. Soa extremamente culto!"
+  },
+  {
+    "id": "q-on-the-other-hand-monolith-vs-microservices",
+    "prompt": "Monolithic architectures simplify local debugging and deployment pipelines; _____ , microservices provide unparalleled independent scaling for large squads.",
+    "options": [
+      {
+        "id": "a",
+        "text": "on the other hand"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "in order to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "on the other hand",
+    "family": "contrast",
+    "translation": "por outro lado",
+    "explanation": "'On the other hand' apresenta a perspectiva complementar e contrastante sobre microsserviços.",
+    "fullSentence": "Monolithic architectures simplify local debugging and deployment pipelines; on the other hand, microservices provide unparalleled independent scaling for large squads.",
+    "sentenceTranslation": "Arquiteturas monolíticas simplificam a depuração local e as esteiras de deploy; por outro lado, microsserviços proporcionam escalabilidade independente sem precedentes para squads grandes.",
+    "whyCorrect": "'On the other hand' é o conector por excelência para ponderar dois pontos de vista legítimos em decisões de engenharia.",
+    "whyOthersFail": "'Due to' pede causa nominal. 'Unless' impõe condição. 'In order to' exige infinitivo de propósito.",
+    "proTip": "Pares conceituais perfeitos: 'On the one hand, [vantagem A]... On the other hand, [vantagem B]...'. Um clássico dos debates de TI!"
+  },
+  {
+    "id": "q-on-the-other-hand-cinthia-apartment-options",
+    "prompt": "The downtown loft is closer to our favorite restaurants and cultural events; _____ , the suburban house offers a quiet garden and much more space for Cinthia and me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "on the other hand"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "because of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "on the other hand",
+    "family": "contrast",
+    "translation": "por outro lado",
+    "explanation": "'On the other hand' balanceia os atrativos da vida urbana com a tranquilidade da casa com jardim.",
+    "fullSentence": "The downtown loft is closer to our favorite restaurants and cultural events; on the other hand, the suburban house offers a quiet garden and much more space for Cinthia and me.",
+    "sentenceTranslation": "O loft no centro fica mais perto dos nossos restaurantes favoritos e eventos culturais; por outro lado, a casa no subúrbio oferece um jardim tranquilo e muito mais espaço para a Cinthia e para mim.",
+    "whyCorrect": "'On the other hand' contrapõe as duas escolhas de moradia de forma equilibrada e madura.",
+    "whyOthersFail": "'Rather than' exigiria exclusão direta. 'Nor' exige negação. 'Because of' exige causa nominal.",
+    "proTip": "Ao pesar decisões de vida com quem você ama, 'on the other hand' demonstra empatia e análise ponderada."
+  },
+  {
+    "id": "q-on-the-other-hand-gremio-veteran-youth",
+    "prompt": "Experienced veterans bring composure and tactical intelligence during high-pressure finals; _____ , young academy players inject relentless stamina and fearless pace.",
+    "options": [
+      {
+        "id": "a",
+        "text": "therefore"
+      },
+      {
+        "id": "b",
+        "text": "so that"
+      },
+      {
+        "id": "c",
+        "text": "on the other hand"
+      },
+      {
+        "id": "d",
+        "text": "equally"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "on the other hand",
+    "family": "contrast",
+    "translation": "por outro lado",
+    "explanation": "'On the other hand' valoriza o contraste saudável entre a experiência dos veteranos e a velocidade dos jovens da base do Grêmio.",
+    "fullSentence": "Experienced veterans bring composure and tactical intelligence during high-pressure finals; on the other hand, young academy players inject relentless stamina and fearless pace.",
+    "sentenceTranslation": "Veteranos experientes trazem compostura e inteligência tática durante finais de alta pressão; por outro lado, jovens revelações da base injetam vigor incansável e velocidade destemida.",
+    "whyCorrect": "'On the other hand' equilibra as duas forças complementares do elenco esportivo.",
+    "whyOthersFail": "'Therefore' deduziria consequência lógica. 'So that' expressa objetivo. 'Equally' expressaria que os dois são idênticos em estilo.",
+    "proTip": "Use 'on the other hand' em análises esportivas para demonstrar como estilos diferentes completam um elenco campeão."
+  },
+  {
+    "id": "q-on-the-whole-agile-transformation",
+    "prompt": "While there were initial communication frictions during sprint retrospectives, _____ , our agile transformation has dramatically improved team morale and delivery velocity.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in case"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "instead of"
+      },
+      {
+        "id": "d",
+        "text": "on the whole"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "on the whole",
+    "family": "summary",
+    "translation": "de modo geral / no conjunto",
+    "explanation": "'On the whole' resume a avaliação global da transformação ágil como amplamente positiva.",
+    "fullSentence": "While there were initial communication frictions during sprint retrospectives, on the whole, our agile transformation has dramatically improved team morale and delivery velocity.",
+    "sentenceTranslation": "Embora tenha havido atritos iniciais de comunicação durante as retrospectivas de sprint, de modo geral, nossa transformação ágil melhorou dramaticamente o moral da equipe e a velocidade de entrega.",
+    "whyCorrect": "'On the whole' faz o balanço macro consolidado considerando prós e contras.",
+    "whyOthersFail": "'In case' expressa precaução condicional. 'Unless' impõe condição restritiva. 'Instead of' pede termo de substituição.",
+    "proTip": "'On the whole' = 'Generally speaking' ou 'All in all'. Perfeito para concluir relatórios gerenciais e avaliações anuais de desempenho."
+  },
+  {
+    "id": "q-on-the-whole-cinthia-vacation-italy",
+    "prompt": "Despite two minor train delays between Milan and Venice, _____ , our romantic vacation in Italy was one of the happiest experiences Cinthia and I have ever shared.",
+    "options": [
+      {
+        "id": "a",
+        "text": "on the whole"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "nor"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "on the whole",
+    "family": "summary",
+    "translation": "no geral / de modo geral",
+    "explanation": "'On the whole' expressa a lembrança positiva e calorosa da viagem como um todo sobre os pequenos imprevistos.",
+    "fullSentence": "Despite two minor train delays between Milan and Venice, on the whole, our romantic vacation in Italy was one of the happiest experiences Cinthia and I have ever shared.",
+    "sentenceTranslation": "Apesar de dois pequenos atrasos de trem entre Milão e Veneza, no geral, nossas férias românticas na Itália foram uma das experiências mais felizes que a Cinthia e eu já compartilhamos.",
+    "whyCorrect": "'On the whole' sintetiza o saldo positivo da experiência de férias.",
+    "whyOthersFail": "'Due to' atribuiria a felicidade aos atrasos do trem. 'Rather than' expressa preferência. 'Nor' exige negativa anterior.",
+    "proTip": "Conclua histórias de viagens e passeios com 'on the whole' para transmitir uma lembrança afetiva duradoura."
+  },
+  {
+    "id": "q-on-the-whole-gremio-season-review",
+    "prompt": "Although Grêmio narrowly missed out on winning the national cup final, _____ , the tactical evolution under Renato Gaúcho restored our championship pride.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "on the whole"
+      },
+      {
+        "id": "c",
+        "text": "otherwise"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "on the whole",
+    "family": "summary",
+    "translation": "de modo geral / no cômputo geral",
+    "explanation": "'On the whole' valoriza o resgate do orgulho e a evolução tática do Grêmio ao longo de todo o ano.",
+    "fullSentence": "Although Grêmio narrowly missed out on winning the national cup final, on the whole, the tactical evolution under Renato Gaúcho restored our championship pride.",
+    "sentenceTranslation": "Embora o Grêmio tenha ficado por pouco sem o título da final da copa nacional, no cômputo geral, a evolução tática sob o comando de Renato Gaúcho resgatou nosso orgulho campeão.",
+    "whyCorrect": "'On the whole' faz o fechamento positivo e apaixonado da temporada futebolística.",
+    "whyOthersFail": "'Because of' pede causa nominal direta. 'Otherwise' alerta para ameaça. 'So that' expressa objetivo.",
+    "proTip": "Use 'on the whole' para fazer análises de maturidade e evolução esportiva em mesas redondas com amigos."
+  },
+  {
+    "id": "q-on-the-whole-mongodb-cluster-health",
+    "prompt": "Minor query latency spikes occurred during black Friday traffic peaks, but _____ , the MongoDB replica cluster maintained 99.99% availability throughout the event.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "in order to"
+      },
+      {
+        "id": "c",
+        "text": "on the whole"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "on the whole",
+    "family": "summary",
+    "translation": "no geral / de modo geral",
+    "explanation": "'On the whole' confirma a estabilidade geral da infraestrutura NoSQL sob estresse extremo.",
+    "fullSentence": "Minor query latency spikes occurred during black Friday traffic peaks, but on the whole, the MongoDB replica cluster maintained 99.99% availability throughout the event.",
+    "sentenceTranslation": "Pequenos picos de latência de consulta ocorreram durante os momentos de tráfego intenso da Black Friday, mas no geral, o cluster de réplicas do MongoDB manteve 99,99% de disponibilidade durante todo o evento.",
+    "whyCorrect": "'On the whole' coroa o relatório de observabilidade com o atestado de estabilidade global.",
+    "whyOthersFail": "'Unless' é condicional. 'In order to' exige infinitivo. 'Rather than' pede escolha comparativa.",
+    "proTip": "Em relatórios de SLA pós-Black Friday, 'on the whole' é a locução padrão para tranquilizar executivos."
+  },
+  {
+    "id": "q-only-if-production-deploy-passed-tests",
+    "prompt": "The lead DevOps engineer will trigger the production deployment pipeline _____ the security scanning suite reports zero critical vulnerabilities.",
+    "options": [
+      {
+        "id": "a",
+        "text": "although"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "only if"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "only if",
+    "family": "condition",
+    "translation": "apenas se / somente se",
+    "explanation": "'Only if' impõe a ausência total de vulnerabilidades críticas como condição prévia estrita e inegociável.",
+    "fullSentence": "The lead DevOps engineer will trigger the production deployment pipeline only if the security scanning suite reports zero critical vulnerabilities.",
+    "sentenceTranslation": "O engenheiro líder de DevOps disparará a esteira de deploy em produção apenas se a suíte de varredura de segurança reportar zero vulnerabilidades críticas.",
+    "whyCorrect": "'Only if' estabelece a restrição categórica e de conformidade que autoriza o deploy.",
+    "whyOthersFail": "'Although' expressaria concessão. 'Because of' exige substantivo causal sem oração com verbo. 'Rather than' expressa preferência.",
+    "proTip": "Diferença do Professor: 'If' = se (aberto a possibilidades). 'Only if' = apenas se (condição obrigatória, exclusiva e rigorosa)."
+  },
+  {
+    "id": "q-only-if-cinthia-goes-party",
+    "prompt": "My colleagues invited me to the tech consultancy rooftop cocktail, but I told them I will attend _____ Cinthia can come along with me.",
+    "options": [
+      {
+        "id": "a",
+        "text": "only if"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "only if",
+    "family": "condition",
+    "translation": "somente se / apenas se",
+    "explanation": "'Only if' condiciona a presença na confraternização à companhia de Cinthia.",
+    "fullSentence": "My colleagues invited me to the tech consultancy rooftop cocktail, but I told them I will attend only if Cinthia can come along with me.",
+    "sentenceTranslation": "Meus colegas me convidaram para o coquetel da consultoria de tecnologia no terraço, mas eu disse a eles que só comparecerei se a Cinthia puder ir comigo.",
+    "whyCorrect": "'Only if' estabelece a condição afetiva exclusiva e carinhosa inspirada diretamente no seu material.",
+    "whyOthersFail": "'Unless' significaria 'a não ser que ela vá' (inversão da lógica). 'Due to' pede substantivo causal. 'So that' expressa meta.",
+    "proTip": "Frase autêntica do seu material: 'I'm going to the party, only if Cinthia goes too.' Demonstra lealdade e carinho pelo seu par!"
+  },
+  {
+    "id": "q-or-commit-changes-lose-work",
+    "prompt": "Make sure to push your local git branches to GitHub before leaving the office, _____ you risk losing your uncommitted work if your machine restarts.",
+    "options": [
+      {
+        "id": "a",
+        "text": "and"
+      },
+      {
+        "id": "b",
+        "text": "or"
+      },
+      {
+        "id": "c",
+        "text": "because"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "or",
+    "family": "condition",
+    "translation": "ou / do contrário",
+    "explanation": "'Or' introduz a alternativa adversa e indesejável decorrente da falta de commit no Git.",
+    "fullSentence": "Make sure to push your local git branches to GitHub before leaving the office, or you risk losing your uncommitted work if your machine restarts.",
+    "sentenceTranslation": "Certifique-se de enviar suas branches locais do Git para o GitHub antes de sair do escritório, ou você corre o risco de perder seu trabalho não salvo se sua máquina reiniciar.",
+    "whyCorrect": "'Or' atua como conjunção de aviso e alternativa (equivalente a 'or else').",
+    "whyOthersFail": "'And' ignoraria o risco adverso. 'Because' transformaria o risco na causa de enviar. 'So that' expressaria que queríamos perder o trabalho.",
+    "proTip": "No terminal: 'Commit your changes or stash them before pulling master.' Regra de sobrevivência de todo desenvolvedor!"
+  },
+  {
+    "id": "q-or-tea-coffee-cinthia-morning",
+    "prompt": "In the morning, Cinthia usually asks: 'Would you prefer freshly brewed drip coffee _____ a warm cup of green tea?'",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "or"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "or",
+    "family": "condition",
+    "translation": "ou",
+    "explanation": "'Or' oferece a escolha clássica entre duas opções agradáveis no café da manhã.",
+    "fullSentence": "In the morning, Cinthia usually asks: 'Would you prefer freshly brewed drip coffee or a warm cup of green tea?'",
+    "sentenceTranslation": "Pela manhã, a Cinthia geralmente pergunta: 'Você prefere café coado feito na hora ou uma xícara quente de chá verde?'",
+    "whyCorrect": "'Or' é a conjunção de alternância natural para escolhas diretas.",
+    "whyOthersFail": "'Nor' exige negação correlativa prévia com neither. 'Unless' impõe condição restritiva. 'Due to' pede causa nominal.",
+    "proTip": "'Or' é uma das conjunções mais simples e vitais da língua inglesa (FANBOYS: For, And, Nor, But, Or, Yet, So)."
+  },
+  {
+    "id": "q-or-scrum-kanban-choice",
+    "prompt": "A software engineering team can adopt time-boxed sprints with Scrum, _____ they can opt for continuous flow management with Kanban.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "in spite of"
+      },
+      {
+        "id": "d",
+        "text": "or"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "or",
+    "family": "condition",
+    "translation": "ou",
+    "explanation": "'Or' apresenta os dois caminhos metodológicos ágeis possíveis para a squad.",
+    "fullSentence": "A software engineering team can adopt time-boxed sprints with Scrum, or they can opt for continuous flow management with Kanban.",
+    "sentenceTranslation": "Uma equipe de engenharia de software pode adotar sprints com caixas de tempo com Scrum, ou pode optar pelo gerenciamento de fluxo contínuo com Kanban.",
+    "whyCorrect": "'Or' liga as duas alternativas metodológicas com clareza.",
+    "whyOthersFail": "'Instead of' exigiria gerúndio e reestruturação. 'Because of' pede causa. 'In spite of' expressa concessão.",
+    "proTip": "Em consultorias ágeis como a GFT: 'We tailor the process to your team: Scrum or Kanban based on workflow needs.'"
+  },
+  {
+    "id": "q-or-win-draw-gremio-qualification",
+    "prompt": "To secure a spot in the Copa Libertadores knockout phase, Grêmio must win tonight's match _____ secure at least a score draw away from home.",
+    "options": [
+      {
+        "id": "a",
+        "text": "or"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "or",
+    "family": "condition",
+    "translation": "ou",
+    "explanation": "'Or' define as duas combinações matemáticas de resultados esportivos que garantem a vaga.",
+    "fullSentence": "To secure a spot in the Copa Libertadores knockout phase, Grêmio must win tonight's match or secure at least a score draw away from home.",
+    "sentenceTranslation": "Para garantir uma vaga na fase mata-mata da Copa Libertadores, o Grêmio deve vencer a partida de hoje à noite ou garantir pelo menos um empate com gols fora de casa.",
+    "whyCorrect": "'Or' conecta as duas possibilidades de resultado positivo na tabela.",
+    "whyOthersFail": "'Rather than' expressaria preferência excludente. 'Nor' exige negação. 'Due to' pede causa nominal.",
+    "proTip": "Toda rodada final de torneio continental se resume a 'Win or draw': use 'or' para expressar opções matemáticas!"
+  },
+  {
+    "id": "q-or-upgrade-server-crash",
+    "prompt": "We must scale up our MongoDB database cluster before the flash sale begins, _____ our payment checkout will crash under sudden load.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "or"
+      },
+      {
+        "id": "c",
+        "text": "although"
+      },
+      {
+        "id": "d",
+        "text": "therefore"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "or",
+    "family": "condition",
+    "translation": "ou / senão",
+    "explanation": "'Or' adverte sobre o colapso do sistema caso o upgrade de banco não seja executado a tempo.",
+    "fullSentence": "We must scale up our MongoDB database cluster before the flash sale begins, or our payment checkout will crash under sudden load.",
+    "sentenceTranslation": "Devemos aumentar a escala do nosso cluster de banco de dados MongoDB antes do início da liquidação relâmpago, ou nosso checkout de pagamentos cairá sob a carga repentina.",
+    "whyCorrect": "'Or' introduz a consequência desastrosa de não realizar a ação preventiva.",
+    "whyOthersFail": "'So that' expressaria que queríamos que o sistema caísse. 'Although' expressa concessão. 'Therefore' deduziria consequência lógica já consumada.",
+    "proTip": "'Do X or Y will happen' é a estrutura padrão de alertas críticos de engenharia de confiabilidade (SRE)."
+  },
+  {
+    "id": "q-otherwise-airplane-call-attendant",
+    "prompt": "First, I'll politely call the flight attendant; _____ , I will call 911 and let them handle the unruly passenger!",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "in order to"
+      },
+      {
+        "id": "c",
+        "text": "otherwise"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "otherwise",
+    "family": "condition",
+    "translation": "caso contrário / do contrário",
+    "explanation": "'Otherwise' introduz a alternativa cômica e extrema de chamar a polícia em pleno voo.",
+    "fullSentence": "First, I'll politely call the flight attendant; otherwise, I will call 911 and let them handle the unruly passenger!",
+    "sentenceTranslation": "Primeiro, chamarei educadamente a comissária de bordo; caso contrário, ligarei para o 911 e deixarei que eles resolvam com o passageiro indisciplinado!",
+    "whyCorrect": "'Otherwise' é o conector de advertência e alternativa condicional por excelência.",
+    "whyOthersFail": "'Due to' exige substantivo de causa. 'In order to' exige infinitivo de propósito. 'Unless' impõe oração condicional subordinada.",
+    "proTip": "Piada do avião clássica do seu caderno de anotações! 'Otherwise' alerta para o plano B com tom bem-humorado."
+  },
+  {
+    "id": "q-otherwise-renew-ssl-certs",
+    "prompt": "Our infrastructure team must renew the expiring SSL certificates today; _____ , web browsers will flag our banking portal as unsecure.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "instead of"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "otherwise"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "otherwise",
+    "family": "condition",
+    "translation": "caso contrário / do contrário",
+    "explanation": "'Otherwise' alerta sobre os alertas de segurança que os navegadores exibirão se os certificados não forem renovados.",
+    "fullSentence": "Our infrastructure team must renew the expiring SSL certificates today; otherwise, web browsers will flag our banking portal as unsecure.",
+    "sentenceTranslation": "Nossa equipe de infraestrutura deve renovar os certificados SSL que estão vencendo hoje; caso contrário, os navegadores web sinalizarão nosso portal bancário como inseguro.",
+    "whyCorrect": "'Otherwise' antecedido de ponto e vírgula introduz a consequência adversa inevitável.",
+    "whyOthersFail": "'Because of' exige substantivo de causa. 'Instead of' exige gerúndio de substituição. 'Rather than' expressa opção.",
+    "proTip": "Use '; otherwise, ' para formalizar alertas críticos em chamados de infraestrutura de TI."
+  },
+  {
+    "id": "q-particularly-nosql-mongodb-aggregations",
+    "prompt": "I enjoy designing scalable database solutions, _____ when crafting complex aggregation pipelines in MongoDB.",
+    "options": [
+      {
+        "id": "a",
+        "text": "particularly"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "instead of"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "particularly",
+    "family": "emphasis",
+    "translation": "particularmente / especialmente",
+    "explanation": "'Particularly' destaca o gosto específico por criar agregações no MongoDB entre todas as tarefas de banco de dados.",
+    "fullSentence": "I enjoy designing scalable database solutions, particularly when crafting complex aggregation pipelines in MongoDB.",
+    "sentenceTranslation": "Gosto de planejar soluções escaláveis de banco de dados, particularmente ao construir pipelines complexos de agregação no MongoDB.",
+    "whyCorrect": "'Particularly' afunila o foco para a atividade mais estimulante e gratificante.",
+    "whyOthersFail": "'Unless' é condicional negativa. 'Instead of' pediria substituição. 'Due to' pede causa nominal.",
+    "proTip": "'Particularly' = 'especially'. Excelente para destacar especialidades no seu currículo e perfil técnico!"
+  },
+  {
+    "id": "q-particularly-gremio-derby-passion",
+    "prompt": "Passionate football supporters in Rio Grande do Sul live for classic derby matches, _____ the fierce rivalry between Grêmio and Internacional.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "particularly"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "therefore"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "particularly",
+    "family": "emphasis",
+    "translation": "particularmente / especialmente",
+    "explanation": "'Particularly' eleva o clássico Gre-Nal ao posto de maior expressão da rivalidade gaúcha.",
+    "fullSentence": "Passionate football supporters in Rio Grande do Sul live for classic derby matches, particularly the fierce rivalry between Grêmio and Internacional.",
+    "sentenceTranslation": "Torcedores de futebol apaixonados no Rio Grande do Sul vivem para os clássicos, particularmente a intensa rivalidade entre Grêmio e Internacional.",
+    "whyCorrect": "'Particularly' especifica o clássico mais emblemático com ênfase apaixonada.",
+    "whyOthersFail": "'Rather than' expressaria exclusão comparativa. 'Nor' exige negação correlativa. 'Therefore' expressa dedução.",
+    "proTip": "Ao explicar a cultura do futebol do Sul do Brasil para estrangeiros, use 'particularly the Gre-Nal derby'!"
+  },
+  {
+    "id": "q-particularly-cinthia-culinary-skills",
+    "prompt": "Cinthia is an accomplished home chef, _____ renowned among our friends for her authentic homemade risottos and fresh pastas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "otherwise"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "particularly"
+      },
+      {
+        "id": "d",
+        "text": "summing up"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "particularly",
+    "family": "emphasis",
+    "translation": "particularmente / especialmente",
+    "explanation": "'Particularly' destaca os risotos e massas caseiras como os pratos de maior renome da Cinthia.",
+    "fullSentence": "Cinthia is an accomplished home chef, particularly renowned among our friends for her authentic homemade risottos and fresh pastas.",
+    "sentenceTranslation": "A Cinthia é uma cozinheira talentosa, particularmente renomada entre nossos amigos por seus risotos caseiros autênticos e massas frescas.",
+    "whyCorrect": "'Particularly' qualifica o adjetivo 'renowned' com afeto e orgulho.",
+    "whyOthersFail": "'Otherwise' traria alerta adverso. 'Because of' pede causa nominal. 'Summing up' fecharia prematuramente.",
+    "proTip": "Elogie talentos de quem você admira: 'She is particularly skilled at X.' Soa fluente e carinhoso."
+  },
+  {
+    "id": "q-particularly-microservices-observability",
+    "prompt": "Distributed architectures require robust tooling, _____ centralized logging and distributed tracing to troubleshoot latency bottlenecks.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "in contrast"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "particularly"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "particularly",
+    "family": "emphasis",
+    "translation": "particularmente / em especial",
+    "explanation": "'Particularly' destaca o rastreamento distribuído e logs como as ferramentas mais críticas de microsserviços.",
+    "fullSentence": "Distributed architectures require robust tooling, particularly centralized logging and distributed tracing to troubleshoot latency bottlenecks.",
+    "sentenceTranslation": "Arquiteturas distribuídas requerem ferramental robusto, particularmente logs centralizados e rastreamento distribuído para solucionar gargalos de latência.",
+    "whyCorrect": "'Particularly' introduz os dois componentes de observabilidade de maior destaque técnico.",
+    "whyOthersFail": "'So that' expressa finalidade com oração subordinada. 'In contrast' opõe dois lados. 'Unless' impõe condição restritiva.",
+    "proTip": "Em reuniões de engenharia: 'We need good tools, particularly tool X.' Direto ao ponto!"
+  },
+  {
+    "id": "q-rather-than-play-soccer-hide-seek",
+    "prompt": "When I was younger in Porto Alegre, I preferred to play soccer _____ hide and seek with the neighborhood kids.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "instead"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "rather than",
+    "family": "substitution",
+    "translation": "em vez de / do que",
+    "explanation": "'Rather than' expressa a escolha convicta pelo futebol sobre a brincadeira de esconde-esconde.",
+    "fullSentence": "When I was younger in Porto Alegre, I preferred to play soccer rather than hide and seek with the neighborhood kids.",
+    "sentenceTranslation": "Quando eu era mais jovem em Porto Alegre, preferia jogar futebol em vez de esconde-esconde com as crianças da vizinhança.",
+    "whyCorrect": "'Rather than' é a locução de preferência comparativa natural inspirada no seu material original.",
+    "whyOthersFail": "'Instead' sozinho sem of estaria incompleto. 'Due to' exige causa nominal. 'Unless' impõe condição restritiva.",
+    "proTip": "Frase autêntica do seu material: 'When I was younger, I preferred to play soccer rather than hide and seek.' Pura recordação de infância!"
+  },
+  {
+    "id": "q-rather-than-cleaning-office-kitchen",
+    "prompt": "Friday is my favorite day for deep cleaning our home; I always prefer to start in the home office _____ the kitchen.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "therefore"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "rather than",
+    "family": "substitution",
+    "translation": "em vez de / do que",
+    "explanation": "'Rather than' marca a ordem de prioridade preferida na faxina da casa.",
+    "fullSentence": "Friday is my favorite day for deep cleaning our home; I always prefer to start in the home office rather than the kitchen.",
+    "sentenceTranslation": "Sexta-feira é meu dia favorito para a faxina completa da nossa casa; prefiro sempre começar pelo escritório em vez da cozinha.",
+    "whyCorrect": "'Rather than' articula a preferência prática registrada diretamente no seu documento.",
+    "whyOthersFail": "'Because of' transformaria a cozinha em causa do escritório. 'Nor' exige negativa. 'Therefore' expressa dedução.",
+    "proTip": "Frase do seu material: 'Friday is a day that I like cleaning at home. I prefer to start in the office rather than the kitchen.' Muito autêntica!"
+  },
+  {
+    "id": "q-rather-than-coffee-tea-preference",
+    "prompt": "On warm sunny afternoons, I prefer to drink fresh iced tea _____ hot coffee, although I enjoy both beverages.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "in order to"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "rather than",
+    "family": "substitution",
+    "translation": "em vez de / do que",
+    "explanation": "'Rather than' expressa a preferência saborosa por chá gelado em dias quentes.",
+    "fullSentence": "On warm sunny afternoons, I prefer to drink fresh iced tea rather than hot coffee, although I enjoy both beverages.",
+    "sentenceTranslation": "Em tardes quentes e ensolaradas, prefiro tomar chá gelado fresco em vez de café quente, embora aprecie ambas as bebidas.",
+    "whyCorrect": "'Rather than' conecta a opção favorita à alternativa preterida.",
+    "whyOthersFail": "'So that' expressa meta. 'In order to' exige infinitivo. 'Unless' impõe condição.",
+    "proTip": "Frase do seu material: 'I prefer coffee rather than tea.' Pratique com 'I prefer X rather than Y' no dia a dia!"
+  },
+  {
+    "id": "q-rather-than-async-queues-sync-coupling",
+    "prompt": "Our architects decided to implement asynchronous Kafka queues _____ tight synchronous REST coupling between microservices.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "in spite of"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "rather than",
+    "family": "substitution",
+    "translation": "em vez de / ao invés de",
+    "explanation": "'Rather than' fundamenta a decisão arquitetural por mensageria assíncrona sobre o acoplamento síncrono.",
+    "fullSentence": "Our architects decided to implement asynchronous Kafka queues rather than tight synchronous REST coupling between microservices.",
+    "sentenceTranslation": "Nossos arquitetos decidiram implementar filas assíncronas do Kafka em vez de acoplamento REST síncrono rígido entre microsserviços.",
+    "whyCorrect": "'Rather than' expressa a escolha técnica refinada entre duas abordagens de design de sistemas.",
+    "whyOthersFail": "'Due to' pede causa nominal. 'Unless' é condicional. 'In spite of' expressa concessão.",
+    "proTip": "Em documentações de decisões de arquitetura (ADR): 'We chose pattern A rather than pattern B because...' é a linguagem dos grandes especialistas."
+  },
+  {
+    "id": "q-since-cinthia-known-2024",
+    "prompt": "My life has become so much more joyful and grounded _____ I have known Cinthia since 2024.",
+    "options": [
+      {
+        "id": "a",
+        "text": "since"
+      },
+      {
+        "id": "b",
+        "text": "although"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "instead of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "since",
+    "family": "cause",
+    "translation": "desde que / já que",
+    "explanation": "'Since' marca tanto o início do relacionamento no tempo quanto o motivo de tanta felicidade.",
+    "fullSentence": "My life has become so much more joyful and grounded since I have known Cinthia since 2024.",
+    "sentenceTranslation": "Minha vida se tornou muito mais alegre e equilibrada desde que conheci a Cinthia em 2024.",
+    "whyCorrect": "'Since' conecta a linha do tempo afetiva com perfeição gramatical.",
+    "whyOthersFail": "'Although' expressaria concessão incompatível com a felicidade. 'Unless' impõe condição negativa. 'Instead of' pede substituição.",
+    "proTip": "Frase autêntica do seu material: 'I have known Cinthia since 2024.' O present perfect com 'since' é a fórmula clássica para marcar o início de algo que continua até hoje!"
+  },
+  {
+    "id": "q-since-gft-working-2022",
+    "prompt": "I have expanded my international consulting expertise significantly _____ I have been working at GFT since 2022.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "since"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "since",
+    "family": "cause",
+    "translation": "desde que / já que",
+    "explanation": "'Since' contextualiza a trajetória contínua de crescimento profissional na consultoria de tecnologia.",
+    "fullSentence": "I have expanded my international consulting expertise significantly since I have been working at GFT since 2022.",
+    "sentenceTranslation": "Expandir significativamente minha expertise em consultoria internacional desde que comecei a trabalhar na GFT em 2022.",
+    "whyCorrect": "'Since' rege a cláusula com present perfect continuous ('have been working').",
+    "whyOthersFail": "'Due to' exigiria substantivo direto sem verbo ('due to my job at GFT'). 'Nor' exige negação. 'Rather than' expressa preferência.",
+    "proTip": "Frase autêntica do seu material: 'I have been working at GFT since 2022.' Em entrevistas de emprego: 'I have been doing X since [ano]' demonstra solidez e estabilidade!"
+  },
+  {
+    "id": "q-since-daily-canceled-slack",
+    "prompt": "_____ the Scrum Master was facilitating an urgent executive escalation, the morning Daily Standup was conducted asynchronously on Slack.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because of"
+      },
+      {
+        "id": "b",
+        "text": "In spite of"
+      },
+      {
+        "id": "c",
+        "text": "Since"
+      },
+      {
+        "id": "d",
+        "text": "Unless"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "Since",
+    "family": "cause",
+    "translation": "Já que / Visto que",
+    "explanation": "'Since' atua como conjunção causal formal explicando o motivo da Daily ter sido assíncrona.",
+    "fullSentence": "Since the Scrum Master was facilitating an urgent executive escalation, the morning Daily Standup was conducted asynchronously on Slack.",
+    "sentenceTranslation": "Já que o Scrum Master estava facilitando uma escalada executiva urgente, a Daily Standup da manhã foi realizada de forma assíncrona no Slack.",
+    "whyCorrect": "'Since' no início da frase expressa a causa conhecida e aceita por todos da squad.",
+    "whyOthersFail": "'Because of' exigiria substantivo sem verbo ('Because of the escalation'). 'In spite of' expressaria concessão. 'Unless' impõe condição.",
+    "proTip": "Dica de ouro do Professor: 'Since' tem dois significados vitais no inglês: 1) Temporal ('desde 2024'); 2) Causal ('já que / visto que'). Ambos são indispensáveis!"
+  },
+  {
+    "id": "q-so-not-dev-anymore",
+    "prompt": "Actually, I'm not working as a hands-on software developer right now, _____ I don't code in Python or Java on a daily basis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "although"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "so"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "so",
+    "family": "cause",
+    "translation": "então / por isso",
+    "explanation": "'So' é a conjunção coordenativa causal (FANBOYS) que conecta a transição de papel à rotina sem codificação diária.",
+    "fullSentence": "Actually, I'm not working as a hands-on software developer right now, so I don't code in Python or Java on a daily basis.",
+    "sentenceTranslation": "Na verdade, não estou trabalhando como desenvolvedor de software 'mão na massa' no momento, então não programo em Python ou Java no dia a dia.",
+    "whyCorrect": "'So' antecedido de vírgula expressa a consequência lógica e natural na fala do dia a dia.",
+    "whyOthersFail": "'Although' expressaria concessão. 'Because of' exige substantivo direto sem verbo. 'Unless' impõe condição.",
+    "proTip": "Frase autêntica do seu material: 'Actually, I'm not working as a software developer, so I don't code anymore.' Essencial para explicar transições de carreira!"
+  },
+  {
+    "id": "q-so-messi-joke",
+    "prompt": "Leo Messi has dribbled past defenders and won eight Ballon d'Or trophies, _____ it is impossible not to consider him one of the greatest athletes in history.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so"
+      },
+      {
+        "id": "b",
+        "text": "instead of"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "so",
+    "family": "cause",
+    "translation": "por isso / de modo que",
+    "explanation": "'So' conecta o histórico genial de Messi à conclusão indiscutível sobre sua grandeza.",
+    "fullSentence": "Leo Messi has dribbled past defenders and won eight Ballon d'Or trophies, so it is impossible not to consider him one of the greatest athletes in history.",
+    "sentenceTranslation": "O Leo Messi driblou defensores e ganhou oito troféus da Bola de Ouro, por isso é impossível não considerá-lo um dos maiores atletas da história.",
+    "whyCorrect": "'So' fecha a argumentação esportiva inspirada nas tiradas sobre futebol do seu caderno.",
+    "whyOthersFail": "'Instead of' pede termo alternativo. 'Nor' exige negação. 'Due to' exige substantivo de causa.",
+    "proTip": "Em conversas informais e discussões de futebol, 'so' é a ponte mais dinâmica e fluida para cravar uma opinião."
+  },
+  {
+    "id": "q-so-gremio-champion-celebration",
+    "prompt": "Grêmio clinched the championship trophy with a spectacular free kick in the 90th minute, _____ the entire city of Porto Alegre celebrated until dawn.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in order to"
+      },
+      {
+        "id": "b",
+        "text": "so"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "so",
+    "family": "cause",
+    "translation": "então / por isso",
+    "explanation": "'So' liga o gol do título à festa generalizada da torcida tricolor.",
+    "fullSentence": "Grêmio clinched the championship trophy with a spectacular free kick in the 90th minute, so the entire city of Porto Alegre celebrated until dawn.",
+    "sentenceTranslation": "O Grêmio conquistou o troféu de campeão com uma falta espetacular aos 45 do segundo tempo, por isso a cidade inteira de Porto Alegre comemorou até o amanhecer.",
+    "whyCorrect": "'So' expressa o resultado triunfal imediato e a comemoração coletiva.",
+    "whyOthersFail": "'Therefore' seria excessivamente formal para a fala coloquial esportiva. 'In order to' exige infinitivo. 'Unless' é condicional.",
+    "proTip": "'So' faz parte do FANBOYS (For, And, Nor, But, Or, Yet, So). Quando unir duas orações completas, coloque vírgula antes!"
+  },
+  {
+    "id": "q-so-that-ci-cd-automate-fast",
+    "prompt": "We configured comprehensive automated test pipelines in Jenkins and GitHub Actions _____ developers can merge pull requests with high confidence.",
+    "options": [
+      {
+        "id": "a",
+        "text": "in order to"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "so that"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "so that",
+    "family": "purpose",
+    "translation": "de modo que / para que",
+    "explanation": "'So that' introduz a oração subordinada de finalidade com sujeito ('developers') e verbo modal ('can merge').",
+    "fullSentence": "We configured comprehensive automated test pipelines in Jenkins and GitHub Actions so that developers can merge pull requests with high confidence.",
+    "sentenceTranslation": "Configuramos esteiras abrangentes de testes automatizados no Jenkins e GitHub Actions de modo que os desenvolvedores possam fazer merge de pull requests com alta confiança.",
+    "whyCorrect": "'So that' é a conjunção subordinativa de propósito que rege a oração com 'can / could / may'.",
+    "whyOthersFail": "'In order to' exigiria infinitivo direto ('in order to merge') sem o sujeito 'developers can'. 'Because of' exige substantivo. 'Unless' é condicional negativa.",
+    "proTip": "A regra de ouro da gramática de TI: 'In order to + verbo infinitivo' vs 'So that + sujeito + can/could + verbo'. Decore essa diferença!"
+  },
+  {
+    "id": "q-so-that-cinthia-relax-weekend",
+    "prompt": "I finished all household chores and meal preparations on Friday evening _____ Cinthia and I could enjoy a completely peaceful and relaxing weekend.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "so that",
+    "family": "purpose",
+    "translation": "para que / a fim de que",
+    "explanation": "'So that' expressa o objetivo amoroso de antecipar as tarefas para liberar o fim de semana a dois.",
+    "fullSentence": "I finished all household chores and meal preparations on Friday evening so that Cinthia and I could enjoy a completely peaceful and relaxing weekend.",
+    "sentenceTranslation": "Concluí todas as tarefas domésticas e o preparo das refeições na sexta-feira à noite para que a Cinthia e eu pudéssemos desfrutar de um fim de semana totalmente tranquilo e relaxante.",
+    "whyCorrect": "'So that' conecta a ação prévia ao propósito no passado ('could enjoy').",
+    "whyOthersFail": "'Instead of' pede substituição. 'Rather than' expressa preferência. 'Due to' exige causa nominal.",
+    "proTip": "No passado, a estrutura clássica é: '...so that we could [verbo]'. Demonstra planejamento e consideração!"
+  },
+  {
+    "id": "q-so-that-mongodb-shard-scale",
+    "prompt": "The database administrators configured shard keys across multiple geographic zones _____ our MongoDB cluster could handle millions of concurrent queries.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "although"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "in contrast"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "so that",
+    "family": "purpose",
+    "translation": "para que / de modo que",
+    "explanation": "'So that' define a finalidade de escala de tráfego que justificou a configuração de sharding.",
+    "fullSentence": "The database administrators configured shard keys across multiple geographic zones so that our MongoDB cluster could handle millions of concurrent queries.",
+    "sentenceTranslation": "Os administradores de banco de dados configuraram chaves de partição (shard keys) em múltiplas zonas geográficas para que nosso cluster MongoDB pudesse processar milhões de consultas simultâneas.",
+    "whyCorrect": "'So that' introduz o propósito arquitetural de alta capacidade com 'could handle'.",
+    "whyOthersFail": "'Although' expressa concessão. 'Nor' exige negativa anterior. 'In contrast' pede comparação oposta.",
+    "proTip": "Em defesas de arquitetura de software: 'We designed X so that the system could scale to Y.' Fórmula infalível!"
+  },
+  {
+    "id": "q-such-a-complex-architecture",
+    "prompt": "Designing a financial core engine with zero-downtime failover is _____ a challenging architectural task that only senior engineers are assigned to it.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so"
+      },
+      {
+        "id": "b",
+        "text": "such"
+      },
+      {
+        "id": "c",
+        "text": "rather"
+      },
+      {
+        "id": "d",
+        "text": "due"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "such",
+    "family": "emphasis",
+    "translation": "tão / tal",
+    "explanation": "'Such a + adjetivo + substantivo' é a estrutura enfática de grau que antecede 'that'.",
+    "fullSentence": "Designing a financial core engine with zero-downtime failover is such a challenging architectural task that only senior engineers are assigned to it.",
+    "sentenceTranslation": "Projetar um motor central financeiro com failover sem tempo de inatividade é uma tarefa arquitetural tão desafiadora que apenas engenheiros seniores são escalados para ela.",
+    "whyCorrect": "'Such a + adjetivo + substantivo + that' expressa intensidade ligada a uma consequência.",
+    "whyOthersFail": "'So' exigiria apenas o adjetivo sem o artigo e substantivo ('is so challenging that'). 'Rather' expressa preferência. 'Due' pede preposição to.",
+    "proTip": "Dica clássica de gramática: 'So + adjetivo' ('so challenging') vs 'Such a + adjetivo + substantivo' ('such a challenging task'). Nunca erre isso!"
+  },
+  {
+    "id": "q-such-a-passionate-derby-gremio",
+    "prompt": "The Gre-Nal match at the Arena do Grêmio generates _____ an intense emotional atmosphere that football analysts worldwide praise its unique rivalry.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "instead"
+      },
+      {
+        "id": "c",
+        "text": "such"
+      },
+      {
+        "id": "d",
+        "text": "because"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "such",
+    "family": "emphasis",
+    "translation": "tão / tamanho(a)",
+    "explanation": "'Such an' qualifica 'intense emotional atmosphere' com ênfase apaixonada.",
+    "fullSentence": "The Gre-Nal match at the Arena do Grêmio generates such an intense emotional atmosphere that football analysts worldwide praise its unique rivalry.",
+    "sentenceTranslation": "A partida Gre-Nal na Arena do Grêmio gera uma atmosfera emocional tão intensa que analistas de futebol no mundo inteiro elogiam sua rivalidade singular.",
+    "whyCorrect": "'Such an' antecede perfeitamente o substantivo modificado por adjetivo com som de vogal ('intense').",
+    "whyOthersFail": "'Unless' impõe condição negativa. 'Instead' pede of. 'Because' exigiria oração causal.",
+    "proTip": "Ao falar do clássico gaúcho em inglês: 'It was such an incredible game!' transmite toda a vibração do torcedor."
+  },
+  {
+    "id": "q-such-a-wonderful-partner-cinthia",
+    "prompt": "Cinthia is _____ an inspiring, supportive, and generous partner that every day together feels like an uplifting blessing.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "such"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "such",
+    "family": "emphasis",
+    "translation": "uma ... tão / tão",
+    "explanation": "'Such an' enfatiza as virtudes e o amor na vida compartilhada do casal.",
+    "fullSentence": "Cinthia is such an inspiring, supportive, and generous partner that every day together feels like an uplifting blessing.",
+    "sentenceTranslation": "A Cinthia é uma companheira tão inspiradora, acolhedora e generosa que cada dia juntos parece uma bênção renovadora.",
+    "whyCorrect": "'Such an' antecede a lista de adjetivos e o substantivo 'partner' com carinho sincero.",
+    "whyOthersFail": "'Nor' exige negação correlativa. 'Rather than' expressa opção comparativa. 'Due to' exige causa nominal.",
+    "proTip": "Elogie com grandeza em inglês: 'You are such a wonderful person!' (Você é uma pessoa tão maravilhosa!)."
+  },
+  {
+    "id": "q-such-great-mentorship-gft",
+    "prompt": "The senior consultants at GFT provide _____ valuable guidance to junior developers that technical skills accelerate within months.",
+    "options": [
+      {
+        "id": "a",
+        "text": "such"
+      },
+      {
+        "id": "b",
+        "text": "so"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "in spite of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "such",
+    "family": "emphasis",
+    "translation": "uma ... tão / tamanho(a)",
+    "explanation": "'Such' antecede o substantivo incontável 'guidance' (sem artigo 'a').",
+    "fullSentence": "The senior consultants at GFT provide such valuable guidance to junior developers that technical skills accelerate within months.",
+    "sentenceTranslation": "Os consultores seniores da GFT fornecem uma orientação tão valiosa aos desenvolvedores juniores que as habilidades técnicas se aceleram em questão de meses.",
+    "whyCorrect": "'Such + adjetivo + substantivo incontável' dispensa o artigo 'a/an', funcionando com precisão formal.",
+    "whyOthersFail": "'So' não pode anteceder diretamente 'adjetivo + substantivo'. 'Unless' é condicional. 'In spite of' expressa concessão.",
+    "proTip": "Atenção: Com substantivos plurais ou incontáveis ('guidance', 'advice', 'help'), use 'such + substantivo' (sem 'a/an'). Ex: 'such good advice'!"
+  },
+  {
+    "id": "q-such-resilience-under-pressure",
+    "prompt": "During the four-hour banking outage, the incident response squad demonstrated _____ composure that all critical databases were restored safely.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather"
+      },
+      {
+        "id": "b",
+        "text": "such"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "nor"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "such",
+    "family": "emphasis",
+    "translation": "tamanha / tanta",
+    "explanation": "'Such' qualifica o substantivo abstrato 'composure' (compostura) para denotar intensidade heróica.",
+    "fullSentence": "During the four-hour banking outage, the incident response squad demonstrated such composure that all critical databases were restored safely.",
+    "sentenceTranslation": "Durante a interrupção bancária de quatro horas, a equipe de resposta a incidentes demonstrou tamanha compostura que todos os bancos de dados críticos foram restaurados com segurança.",
+    "whyCorrect": "'Such' destaca o grau supremo de tranquilidade técnica exibida pelo time sob estresse.",
+    "whyOthersFail": "'Rather' expressa preferência. 'Due to' pede causa nominal com preposição. 'Nor' exige negativa.",
+    "proTip": "Em reconhecimentos e elogios formais após incidentes de TI: 'The team showed such professionalism under fire!'"
+  },
+  {
+    "id": "q-such-as-agile-frameworks-scrum-safe",
+    "prompt": "Modern enterprise IT consultancies adopt proven delivery methodologies, _____ Scrum, Kanban, and SAFe, to coordinate cross-functional teams.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instead of"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "such as"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "such as",
+    "family": "example",
+    "translation": "tais como / como",
+    "explanation": "'Such as' é a locução padrão para introduzir exemplos específicos de uma categoria geral (metodologias ágeis).",
+    "fullSentence": "Modern enterprise IT consultancies adopt proven delivery methodologies, such as Scrum, Kanban, and SAFe, to coordinate cross-functional teams.",
+    "sentenceTranslation": "Consultorias modernas de TI corporativa adotam metodologias comprovadas de entrega, tais como Scrum, Kanban e SAFe, para coordenar equipes multidisciplinares.",
+    "whyCorrect": "'Such as' exemplifica a lista diretamente sem desviar da função adjetiva.",
+    "whyOthersFail": "'Like' é mais informal; 'for example' exigiria pontuação com oração completa; 'instead of' excluiria as metodologias.",
+    "proTip": "Frase do seu documento: 'frameworks such as Scrum and SAFe'. Em redações técnicas em inglês, prefira 'such as' a 'like' para listar exemplos!"
+  },
+  {
+    "id": "q-such-as-wild-animals-tigers-lions",
+    "prompt": "During our safari documentary marathon, Cinthia and I learned fascinating facts about predatory wild animals, _____ tigers, lions, and leopards.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "therefore"
+      },
+      {
+        "id": "d",
+        "text": "such as"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "such as",
+    "family": "example",
+    "translation": "tais como / como",
+    "explanation": "'Such as' lista os animais selvagens específicos mencionados no seu documento original.",
+    "fullSentence": "During our safari documentary marathon, Cinthia and I learned fascinating facts about predatory wild animals, such as tigers, lions, and leopards.",
+    "sentenceTranslation": "Durante nossa maratona de documentários de safári, a Cinthia e eu aprendemos fatos fascinantes sobre animais selvagens predadores, tais como tigres, leões e leopardos.",
+    "whyCorrect": "'Such as' introduz a série de substantivos exemplificativos com total naturalidade.",
+    "whyOthersFail": "'Rather than' expressaria preferência excludente. 'Nor' exige negativa. 'Therefore' expressa dedução.",
+    "proTip": "Frase autêntica do seu material: 'wild animals such as Tigers, Lions and Snakes'. Uso perfeito e clássico de 'such as'!"
+  },
+  {
+    "id": "q-summing-up-sprint-retro-wins",
+    "prompt": "We completed 42 story points, resolved three long-standing tech debts, and onboarded two junior engineers. _____ , this sprint was our most impactful one this quarter.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Summing up"
+      },
+      {
+        "id": "b",
+        "text": "In contrast"
+      },
+      {
+        "id": "c",
+        "text": "Unless"
+      },
+      {
+        "id": "d",
+        "text": "Due to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "Summing up",
+    "family": "summary",
+    "translation": "Resumindo / Em síntese",
+    "explanation": "'Summing up' sintetiza as conquistas quantitativas da sprint na conclusão motivadora.",
+    "fullSentence": "We completed 42 story points, resolved three long-standing tech debts, and onboarded two junior engineers. Summing up, this sprint was our most impactful one this quarter.",
+    "sentenceTranslation": "Concluímos 42 story points, resolvemos três dívidas técnicas antigas e integramos dois engenheiros juniores. Resumindo, esta sprint foi a mais impactante deste trimestre.",
+    "whyCorrect": "'Summing up' funciona como marcador discursivo conclusivo ideal para retrospectivas ágeis.",
+    "whyOthersFail": "'In contrast' exigiria oposição. 'Unless' impõe condição restritiva. 'Due to' exige causa nominal.",
+    "proTip": "'Summing up,' (com -ing) é dinâmico e enérgico para reuniões ágeis. Use na transição para o slide de conclusões!"
+  },
+  {
+    "id": "q-summing-up-cinthia-trip-memories",
+    "prompt": "Warm sunny beaches, historic architecture, mouthwatering local cuisine, and unforgettable conversations with Cinthia. _____ , it was the best holiday of our lives.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rather than"
+      },
+      {
+        "id": "b",
+        "text": "Summing up"
+      },
+      {
+        "id": "c",
+        "text": "Nor"
+      },
+      {
+        "id": "d",
+        "text": "Because of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Summing up",
+    "family": "summary",
+    "translation": "Em resumo / Resumindo",
+    "explanation": "'Summing up' consolida a coleção de momentos memoráveis na frase final de afeto e gratidão.",
+    "fullSentence": "Warm sunny beaches, historic architecture, mouthwatering local cuisine, and unforgettable conversations with Cinthia. Summing up, it was the best holiday of our lives.",
+    "sentenceTranslation": "Praias ensolaradas e quentes, arquitetura histórica, culinária local de dar água na boca e conversas inesquecíveis com a Cinthia. Resumindo, foram as melhores férias de nossas vidas.",
+    "whyCorrect": "'Summing up' amarra o relato de viagens com emoção e concisão.",
+    "whyOthersFail": "'Rather than' expressa exclusão comparativa. 'Nor' exige negativa correlativa. 'Because of' pede causa nominal.",
+    "proTip": "Feche diários de viagem ou posts comemorativos com 'Summing up, it was unforgettable!'"
+  },
+  {
+    "id": "q-summing-up-gremio-season-verdict",
+    "prompt": "A resilient defense, an inspired tactical shift under Renato Portalupi, and unwavering support from fifty thousand fans at the Arena. _____ , Grêmio is back at the elite level.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Otherwise"
+      },
+      {
+        "id": "b",
+        "text": "So that"
+      },
+      {
+        "id": "c",
+        "text": "Summing up"
+      },
+      {
+        "id": "d",
+        "text": "Equally"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "Summing up",
+    "family": "summary",
+    "translation": "Em suma / Resumindo",
+    "explanation": "'Summing up' fecha o balanço esportivo com a celebração da volta do Grêmio à elite.",
+    "fullSentence": "A resilient defense, an inspired tactical shift under Renato Portalupi, and unwavering support from fifty thousand fans at the Arena. Summing up, Grêmio is back at the elite level.",
+    "sentenceTranslation": "Uma defesa resiliente, uma guinada tática inspirada sob o comando de Renato Portalupi e o apoio inabalável de cinquenta mil torcedores na Arena. Resumindo, o Grêmio está de volta ao nível de elite.",
+    "whyCorrect": "'Summing up' coroa a retrospectiva do campeonato com orgulho e energia.",
+    "whyOthersFail": "'Otherwise' traria advertência adversa. 'So that' expressa objetivo. 'Equally' expressa paridade sem resumir.",
+    "proTip": "Use 'Summing up' para sintetizar o balanço de temporadas ou grandes eventos esportivos."
+  },
+  {
+    "id": "q-summing-up-cloud-migration-audit",
+    "prompt": "Zero downtime during DNS cutover, zero data corruption in MongoDB, and latency dropped by 35%. _____ , the cloud migration surpassed all SLA targets.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unless"
+      },
+      {
+        "id": "b",
+        "text": "In order to"
+      },
+      {
+        "id": "c",
+        "text": "Rather than"
+      },
+      {
+        "id": "d",
+        "text": "Summing up"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "Summing up",
+    "family": "summary",
+    "translation": "Em síntese / Resumindo",
+    "explanation": "'Summing up' atesta o sucesso incontestável da migração de nuvem diante do comitê de auditoria.",
+    "fullSentence": "Zero downtime during DNS cutover, zero data corruption in MongoDB, and latency dropped by 35%. Summing up, the cloud migration surpassed all SLA targets.",
+    "sentenceTranslation": "Zero tempo de inatividade durante a virada do DNS, zero corrupção de dados no MongoDB e latência reduzida em 35%. Em síntese, a migração para a nuvem superou todas as metas de SLA.",
+    "whyCorrect": "'Summing up' conclui o relatório técnico com autoridade e precisão matemática.",
+    "whyOthersFail": "'Unless' é condicional. 'In order to' exige infinitivo. 'Rather than' pede escolha comparativa.",
+    "proTip": "Em relatórios de auditoria de TI: 'Summing up, all criteria were met' é o carimbo final de aprovação."
+  },
+  {
+    "id": "q-thats-why-gremio-lost-drank",
+    "prompt": "Yesterday was a terrible day for football fans; Grêmio conceded in the last minute and lost the match. _____ I felt so disappointed and had a cold beer with friends.",
+    "options": [
+      {
+        "id": "a",
+        "text": "That's why"
+      },
+      {
+        "id": "b",
+        "text": "Although"
+      },
+      {
+        "id": "c",
+        "text": "Because of"
+      },
+      {
+        "id": "d",
+        "text": "Unless"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "That's why",
+    "family": "cause",
+    "translation": "É por isso que / Por essa razão",
+    "explanation": "'That's why' conecta a dor da derrota do Grêmio à reação de desabafar e tomar uma cerveja com amigos.",
+    "fullSentence": "Yesterday was a terrible day for football fans; Grêmio conceded in the last minute and lost the match. That's why I felt so disappointed and had a cold beer with friends.",
+    "sentenceTranslation": "Ontem foi um dia terrível para os torcedores de futebol; o Grêmio sofreu um gol no último minuto e perdeu a partida. É por isso que me senti tão desapontado e tomei uma cerveja gelada com amigos.",
+    "whyCorrect": "'That's why' introduz a consequência emocional compreensível inspirada na frase do seu documento original.",
+    "whyOthersFail": "'Although' expressaria concessão. 'Because of' exige substantivo causal direto sem oração independente. 'Unless' impõe condição.",
+    "proTip": "Frase autêntica do seu material: 'Yesterday was a bad day, Grêmio lost the match. That's why I drank a lot.' Mostra a paixão pura pelo clube!"
+  },
+  {
+    "id": "q-thats-why-mongodb-table-collection",
+    "prompt": "You didn't create the appropriate index on the collection in MongoDB. _____ the dashboard queries were running so slowly and timing out.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Instead of"
+      },
+      {
+        "id": "b",
+        "text": "That's why"
+      },
+      {
+        "id": "c",
+        "text": "Nor"
+      },
+      {
+        "id": "d",
+        "text": "Due to"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "That's why",
+    "family": "cause",
+    "translation": "É por isso que / Por essa razão",
+    "explanation": "'That's why' aponta a falta de índice como o motivo direto e claro da lentidão das consultas no banco.",
+    "fullSentence": "You didn't create the appropriate index on the collection in MongoDB. That's why the dashboard queries were running so slowly and timing out.",
+    "sentenceTranslation": "Você não criou o índice apropriado na coleção do MongoDB. É por isso que as consultas do painel estavam rodando tão lentamente e dando tempo limite.",
+    "whyCorrect": "'That's why' liga a causa técnica ao efeito de lentidão observado pelos usuários.",
+    "whyOthersFail": "'Instead of' pede termo alternativo. 'Nor' exige negação correlativa. 'Due to' exige substantivo de causa.",
+    "proTip": "Frase inspirada no seu material: 'You didn't fix the table on MongoDB. That's why the problem wasn't solved.' Perfeito para feedback técnico de code review!"
+  },
+  {
+    "id": "q-thats-why-cinthia-surprised-flowers",
+    "prompt": "Cinthia successfully defended her master's dissertation with honors today; _____ I arrived home early with a bouquet of fresh sunflowers to celebrate.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "that's why"
+      },
+      {
+        "id": "d",
+        "text": "in spite of"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "that's why",
+    "family": "cause",
+    "translation": "por isso / é por essa razão que",
+    "explanation": "'That's why' explica o motivo das flores como comemoração pela grande conquista acadêmica de Cinthia.",
+    "fullSentence": "Cinthia successfully defended her master's dissertation with honors today; that's why I arrived home early with a bouquet of fresh sunflowers to celebrate.",
+    "sentenceTranslation": "A Cinthia defendeu sua dissertação de mestrado com louvor hoje; por isso cheguei cedo em casa com um buquê de girassóis frescos para comemorar.",
+    "whyCorrect": "'That's why' conecta a conquista ao gesto carinhoso de celebração.",
+    "whyOthersFail": "'Rather than' expressaria exclusão comparativa. 'Unless' impõe condição restritiva. 'In spite of' expressaria concessão.",
+    "proTip": "Use 'That's why...' para contar o porquê de atitudes nobres e carinhosas na sua vida pessoal."
+  },
+  {
+    "id": "q-then-sprint-planning-stories",
+    "prompt": "The Product Owner defined the Sprint Goal and presented the refined backlog stories; _____ , the developers estimated the story points and committed to delivery.",
+    "options": [
+      {
+        "id": "a",
+        "text": "beforehand"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "then"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "then",
+    "family": "time",
+    "translation": "então / em seguida",
+    "explanation": "'Then' marca o passo seguinte e cronológico na dinâmica da reunião de Sprint Planning.",
+    "fullSentence": "The Product Owner defined the Sprint Goal and presented the refined backlog stories; then, the developers estimated the story points and committed to delivery.",
+    "sentenceTranslation": "O Product Owner definiu o Objetivo da Sprint e apresentou as histórias refinadas do backlog; em seguida, os desenvolvedores estimaram os story points e se comprometeram com a entrega.",
+    "whyCorrect": "'Then' estabelece a sequência temporal canônica dos eventos de planejamento ágil.",
+    "whyOthersFail": "'Beforehand' inverteria a ordem cronológica. 'Due to' pede causa nominal. 'Unless' impõe condição restritiva.",
+    "proTip": "Em reuniões ágeis: 'First we do X, then we do Y.' A forma mais direta e universal de ordenar tarefas!"
+  },
+  {
+    "id": "q-then-finish-gym-cook-cinthia",
+    "prompt": "We will finish our workout session at the gym, stop by the organic market to pick up fresh ingredients, and _____ cook a delicious dinner together.",
+    "options": [
+      {
+        "id": "a",
+        "text": "then"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "because of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "then",
+    "family": "time",
+    "translation": "então / depois",
+    "explanation": "'Then' encerra a sequência harmoniosa de atividades saudáveis do casal no fim de tarde.",
+    "fullSentence": "We will finish our workout session at the gym, stop by the organic market to pick up fresh ingredients, and then cook a delicious dinner together.",
+    "sentenceTranslation": "Vamos terminar nossa sessão de treino na academia, passar no mercado orgânico para comprar ingredientes frescos e então cozinhar um jantar delicioso juntos.",
+    "whyCorrect": "'And then' é a expressão de encadeamento sequencial mais natural e utilizada no inglês falado.",
+    "whyOthersFail": "'Nor' exige negação correlativa. 'Rather than' expressa preferência. 'Because of' exige causa nominal.",
+    "proTip": "'First..., next..., and then...' é o trio infalível para dar ritmo e fluência a qualquer relato de rotina."
+  },
+  {
+    "id": "q-then-merge-pr-deploy",
+    "prompt": "Ensure that peer code review approvals are received, run the final integration tests locally, and _____ merge the branch into master.",
+    "options": [
+      {
+        "id": "a",
+        "text": "otherwise"
+      },
+      {
+        "id": "b",
+        "text": "then"
+      },
+      {
+        "id": "c",
+        "text": "so that"
+      },
+      {
+        "id": "d",
+        "text": "in contrast"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "then",
+    "family": "time",
+    "translation": "então / em seguida",
+    "explanation": "'Then' comanda a ação final de merge após os pré-requisitos de qualidade terem sido cumpridos.",
+    "fullSentence": "Ensure that peer code review approvals are received, run the final integration tests locally, and then merge the branch into master.",
+    "sentenceTranslation": "Certifique-se de que as aprovações de revisão de código por pares foram recebidas, execute os testes finais de integração localmente e então faça o merge da branch na master.",
+    "whyCorrect": "'Then' guia o passo a passo procedural no fluxo de trabalho de engenharia de software.",
+    "whyOthersFail": "'Otherwise' traria alerta adverso. 'So that' expressa objetivo com oração. 'In contrast' opõe dois lados.",
+    "proTip": "No README e manuais de onboarding de desenvolvedores, 'and then [comando]' orienta o passo a passo com precisão."
+  },
+  {
+    "id": "q-therefore-pipeline-failed-rolled-back",
+    "prompt": "The smoke test suite detected an unhandled NullPointerException in the authentication service; _____ , the pipeline aborted deployment and initiated an automated rollback.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nevertheless"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "therefore"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "therefore",
+    "family": "cause",
+    "translation": "portanto / por conseguinte",
+    "explanation": "'Therefore' deduz a decisão automatizada de abortar o deploy diante do erro crítico encontrado.",
+    "fullSentence": "The smoke test suite detected an unhandled NullPointerException in the authentication service; therefore, the pipeline aborted deployment and initiated an automated rollback.",
+    "sentenceTranslation": "A suíte de testes de fumaça detectou uma NullPointerException não tratada no serviço de autenticação; portanto, a esteira abortou o deploy e iniciou um rollback automatizado.",
+    "whyCorrect": "'Therefore' é o conector formal por excelência para relatar conclusões de causa e efeito em engenharia de sistemas.",
+    "whyOthersFail": "'Nevertheless' expressaria oposição (como se devesse continuar com o erro). 'Unless' impõe condição. 'Rather than' expressa preferência.",
+    "proTip": "A pontuação clássica de 'Therefore': '; therefore, [consequência]'. Demonstra altíssimo rigor na escrita técnica em inglês."
+  },
+  {
+    "id": "q-therefore-cinthia-promoted-celebration",
+    "prompt": "Cinthia exceeded all corporate revenue targets for three consecutive quarters; _____ , the executive leadership promoted her to senior director.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "instead of"
+      },
+      {
+        "id": "d",
+        "text": "therefore"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "therefore",
+    "family": "cause",
+    "translation": "portanto / por conseguinte",
+    "explanation": "'Therefore' formaliza a promoção corporativa como reconhecimento direto pelos resultados consistentes.",
+    "fullSentence": "Cinthia exceeded all corporate revenue targets for three consecutive quarters; therefore, the executive leadership promoted her to senior director.",
+    "sentenceTranslation": "A Cinthia superou todas as metas de receita corporativa por três trimestres consecutivos; portanto, a liderança executiva a promoveu a diretora sênior.",
+    "whyCorrect": "'Therefore' expressa a relação de mérito e recompensa corporativa com solenidade.",
+    "whyOthersFail": "'Due to' exige substantivo sem oração independente. 'Nor' exige negação correlativa. 'Instead of' pede substituição.",
+    "proTip": "Use 'therefore' para destacar o mérito inegável de promoções e reconhecimentos profissionais."
+  },
+  {
+    "id": "q-therefore-gremio-clean-sheet-qualified",
+    "prompt": "Grêmio conceded zero goals across the two legs of the semifinal tie; _____ , they rightfully claimed their place in the Copa Libertadores grand final.",
+    "options": [
+      {
+        "id": "a",
+        "text": "therefore"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "in spite of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "therefore",
+    "family": "cause",
+    "translation": "portanto / por conseguinte",
+    "explanation": "'Therefore' coroa a vaga na final da Libertadores como consequência lógica e merecida da defesa invicta.",
+    "fullSentence": "Grêmio conceded zero goals across the two legs of the semifinal tie; therefore, they rightfully claimed their place in the Copa Libertadores grand final.",
+    "sentenceTranslation": "O Grêmio não sofreu gols nos dois jogos da semifinal; portanto, garantiu por mérito próprio seu lugar na grande final da Copa Libertadores.",
+    "whyCorrect": "'Therefore' deduz a classificação como fruto da consistência defensiva.",
+    "whyOthersFail": "'Unless' impõe condição restritiva. 'Rather than' expressa preferência. 'In spite of' expressa concessão.",
+    "proTip": "Em debates esportivos maduros, 'therefore' confere autoridade analítica à sua argumentação tática."
+  },
+  {
+    "id": "q-therefore-mongodb-schema-migration",
+    "prompt": "The new compliance mandate requires immediate encryption of all customer tax IDs at rest; _____ , our squad must execute a schema migration on MongoDB tonight.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "therefore"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "equally"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "therefore",
+    "family": "cause",
+    "translation": "portanto / por isso",
+    "explanation": "'Therefore' deduz a obrigatoriedade da migração de banco de dados para cumprir a nova lei.",
+    "fullSentence": "The new compliance mandate requires immediate encryption of all customer tax IDs at rest; therefore, our squad must execute a schema migration on MongoDB tonight.",
+    "sentenceTranslation": "A nova exigência regulatória requer criptografia imediata de todos os CPFs de clientes em repouso; portanto, nossa squad deve executar uma migração de esquema no MongoDB hoje à noite.",
+    "whyCorrect": "'Therefore' justifica a tarefa técnica urgente a partir da exigência legal.",
+    "whyOthersFail": "'So that' expressaria finalidade sem dedução. 'Because of' exige substantivo de causa direto. 'Equally' expressaria equivalência.",
+    "proTip": "Ao priorizar itens de segurança na sprint com o PO: 'Compliance requires X; therefore, we must do Y first.' Argumento irrefutável!"
+  },
+  {
+    "id": "q-though-hard-day-did-everything",
+    "prompt": "It was a very tough and demanding day at the consultancy. I managed to deliver everything that I needed to, _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "although"
+      },
+      {
+        "id": "b",
+        "text": "because"
+      },
+      {
+        "id": "c",
+        "text": "though"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "though",
+    "family": "contrast",
+    "translation": "no entanto / contudo / porém",
+    "explanation": "'Though' posicionado no final da frase atua como advérbio coloquial de contraste suave.",
+    "fullSentence": "It was a very tough and demanding day at the consultancy. I managed to deliver everything that I needed to, though.",
+    "sentenceTranslation": "Foi um dia muito duro e exigente na consultoria. Consegui entregar tudo o que precisava, no entanto.",
+    "whyCorrect": "'Though' no fim da oração é a forma mais natural e expressiva do inglês nativo para suavizar uma adversidade anterior.",
+    "whyOthersFail": "'Although' raramente é usado no final de sentenças no inglês moderno. 'Because' exige oração causal seguinte. 'Unless' é condicional.",
+    "proTip": "Frase autêntica do seu material: 'It was a very tough day. I did everything that I needed to, though.' Usar 'though' no final da frase soa 100% nativo!"
+  },
+  {
+    "id": "q-though-palmeiras-gremio-match",
+    "prompt": "Palmeiras played with high pressing and created dangerous counterattacks; Grêmio walked away with the three points in São Paulo, _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "nor"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "though"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "though",
+    "family": "contrast",
+    "translation": "contudo / no entanto",
+    "explanation": "'Though' no fim da frase ressalta a vitória épica do Grêmio fora de casa apesar da pressão do adversário.",
+    "fullSentence": "Palmeiras played with high pressing and created dangerous counterattacks; Grêmio walked away with the three points in São Paulo, though.",
+    "sentenceTranslation": "O Palmeiras jogou com marcação alta e criou contra-ataques perigosos; o Grêmio saiu com os três pontos em São Paulo, contudo.",
+    "whyCorrect": "'Though' arremata a narrativa esportiva inspirada nas discussões do seu material sobre Grêmio e Palmeiras.",
+    "whyOthersFail": "'Nor' exige negação correlativa. 'Due to' pede causa nominal. 'Rather than' expressa opção comparativa.",
+    "proTip": "Frase inspirada no seu material! 'Grêmio won, though' fecha qualquer debate com amigos com elegância e satisfação."
+  },
+  {
+    "id": "q-though-cinthia-tired-dinner",
+    "prompt": "The restaurant was completely packed and we had to wait twenty minutes for our table; the homemade pasta was absolutely delicious, _____ .",
+    "options": [
+      {
+        "id": "a",
+        "text": "though"
+      },
+      {
+        "id": "b",
+        "text": "otherwise"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "summing up"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "though",
+    "family": "contrast",
+    "translation": "no entanto / contudo",
+    "explanation": "'Though' compensa a espera pela comida excelente saboreada pelo casal.",
+    "fullSentence": "The restaurant was completely packed and we had to wait twenty minutes for our table; the homemade pasta was absolutely delicious, though.",
+    "sentenceTranslation": "O restaurante estava completamente lotado e tivemos que esperar vinte minutos por nossa mesa; a massa caseira estava absolutamente deliciosa, contudo.",
+    "whyCorrect": "'Though' no fim da frase fecha o relato valorizando a qualidade da comida sobre o tempo de espera.",
+    "whyOthersFail": "'Otherwise' traria alerta adverso. 'Because of' exige causa nominal. 'Summing up' fecharia com resumo.",
+    "proTip": "'The wait was long; the food was great, though!' Pratique essa estrutura em avaliações de viagens e restaurantes."
+  },
+  {
+    "id": "q-thus-automation-reduced-manual-effort",
+    "prompt": "The squad increased automated test coverage across all microservice repositories to 92%; _____ , manual regression QA effort was dramatically reduced.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nevertheless"
+      },
+      {
+        "id": "b",
+        "text": "thus"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "thus",
+    "family": "cause",
+    "translation": "assim / deste modo / portanto",
+    "explanation": "'Thus' formaliza a consequência técnica direta entre a cobertura de testes e a queda do esforço manual.",
+    "fullSentence": "The squad increased automated test coverage across all microservice repositories to 92%; thus, manual regression QA effort was dramatically reduced.",
+    "sentenceTranslation": "A squad aumentou a cobertura de testes automatizados em todos os repositórios de microsserviços para 92%; assim, o esforço manual de regressão de QA foi reduzido dramaticamente.",
+    "whyCorrect": "'Thus' é o conector formal de dedução clássico do seu documento, ideal para relatórios executivos.",
+    "whyOthersFail": "'Nevertheless' expressaria oposição. 'Unless' impõe condição restritiva. 'Rather than' expressa preferência.",
+    "proTip": "Frase autêntica do seu material: 'The squad increased automation coverage. Thus, manual effort was reduced.' Simples, precisa e executiva!"
+  },
+  {
+    "id": "q-thus-indexed-mongodb-speed",
+    "prompt": "The database architect added compound indexes covering customerId and transactionDate; _____ , query execution latency dropped from 800ms to 12ms.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "thus"
+      },
+      {
+        "id": "d",
+        "text": "although"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "thus",
+    "family": "cause",
+    "translation": "assim / por conseguinte",
+    "explanation": "'Thus' conecta a criação dos índices compostos no MongoDB à queda espetacular de latência.",
+    "fullSentence": "The database architect added compound indexes covering customerId and transactionDate; thus, query execution latency dropped from 800ms to 12ms.",
+    "sentenceTranslation": "O arquiteto de banco de dados adicionou índices compostos cobrindo customerId e transactionDate; assim, a latência de execução de consultas caiu de 800ms para 12ms.",
+    "whyCorrect": "'Thus' introduz o ganho numérico de performance com elegância científica.",
+    "whyOthersFail": "'Due to' exigiria ordem inversa ('latency dropped due to indexes'). 'Nor' exige negativa. 'Although' expressa concessão.",
+    "proTip": "Em apresentações de performance: 'We optimized X; thus, metric Y improved by Z%.' Linguagem de engenheiro sênior!"
+  },
+  {
+    "id": "q-thus-cinthia-investment-growth",
+    "prompt": "Cinthia and I systematically automated our monthly savings into diversified global index funds; _____ , our long-term financial security grew steadily.",
+    "options": [
+      {
+        "id": "a",
+        "text": "otherwise"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "in order to"
+      },
+      {
+        "id": "d",
+        "text": "thus"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "thus",
+    "family": "cause",
+    "translation": "assim / deste modo",
+    "explanation": "'Thus' atesta a solidez financeira como fruto da disciplina constante de poupança do casal.",
+    "fullSentence": "Cinthia and I systematically automated our monthly savings into diversified global index funds; thus, our long-term financial security grew steadily.",
+    "sentenceTranslation": "A Cinthia e eu automatizamos sistematicamente nossas economias mensais em fundos de índice globais diversificados; assim, nossa segurança financeira de longo prazo cresceu de forma constante.",
+    "whyCorrect": "'Thus' expressa a evolução patrimonial como efeito direto do planejamento disciplinado.",
+    "whyOthersFail": "'Otherwise' traria alerta adverso. 'Because of' exige causa nominal sem oração independente. 'In order to' exige infinitivo.",
+    "proTip": "'Thus' pode significar 'desta forma / desse modo' (in this way) ou 'portanto'. Ambas as nuances são elegantes!"
+  },
+  {
+    "id": "q-to-sum-up-production-deployment-success",
+    "prompt": "All fifty microservices were migrated to Kubernetes, database replications remained in sync, and user traffic flowed without interruptions. _____ , the cloud transition was a triumph.",
+    "options": [
+      {
+        "id": "a",
+        "text": "To sum up"
+      },
+      {
+        "id": "b",
+        "text": "In contrast"
+      },
+      {
+        "id": "c",
+        "text": "Unless"
+      },
+      {
+        "id": "d",
+        "text": "Due to"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "To sum up",
+    "family": "summary",
+    "translation": "Para resumir / Concluindo",
+    "explanation": "'To sum up' abre o encerramento do relatório celebrando o triunfo da migração.",
+    "fullSentence": "All fifty microservices were migrated to Kubernetes, database replications remained in sync, and user traffic flowed without interruptions. To sum up, the cloud transition was a triumph.",
+    "sentenceTranslation": "Todos os cinquenta microsserviços foram migrados para o Kubernetes, as replicações de banco de dados permaneceram sincronizadas e o tráfego dos usuários fluiu sem interrupções. Para resumir, a transição para a nuvem foi um triunfo.",
+    "whyCorrect": "'To sum up' é a locução infinitiva consagrada para inaugurar o sumário de conclusões.",
+    "whyOthersFail": "'In contrast' exigiria oposição. 'Unless' impõe condição restritiva. 'Due to' exige causa nominal.",
+    "proTip": "Frase inspirada no seu material! 'To sum up,' é perfeita para o último slide de qualquer apresentação executiva."
+  },
+  {
+    "id": "q-to-sum-up-cinthia-florence-trip",
+    "prompt": "Breathtaking Tuscan landscapes, warm sunny weather, exquisite Italian cuisine, and great laughter with Cinthia. _____ , it was an unforgettable vacation.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rather than"
+      },
+      {
+        "id": "b",
+        "text": "To sum up"
+      },
+      {
+        "id": "c",
+        "text": "Nor"
+      },
+      {
+        "id": "d",
+        "text": "Because of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "To sum up",
+    "family": "summary",
+    "translation": "Em resumo / Para resumir",
+    "explanation": "'To sum up' condensa a viagem inesquecível do casal com carinho e concisão.",
+    "fullSentence": "Breathtaking Tuscan landscapes, warm sunny weather, exquisite Italian cuisine, and great laughter with Cinthia. To sum up, it was an unforgettable vacation.",
+    "sentenceTranslation": "Paisagens toscanas de tirar o fôlego, clima quente e ensolarado, culinária italiana refinada e muitas risadas com a Cinthia. Para resumir, foram férias inesquecíveis.",
+    "whyCorrect": "'To sum up' fecha a narrativa de viagens valorizando os melhores momentos.",
+    "whyOthersFail": "'Rather than' expressa exclusão comparativa. 'Nor' exige negativa correlativa. 'Because of' exige causa nominal.",
+    "proTip": "'To sum up, it was an unforgettable experience' é uma frase de fechamento impecável para conversas sociais em inglês!"
+  },
+  {
+    "id": "q-to-sum-up-gremio-derby-tactics",
+    "prompt": "A resilient defensive shape, clinical counterattacks down the wings, and heroic saves by our goalkeeper. _____ , Grêmio earned a masterclass derby victory.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Otherwise"
+      },
+      {
+        "id": "b",
+        "text": "So that"
+      },
+      {
+        "id": "c",
+        "text": "To sum up"
+      },
+      {
+        "id": "d",
+        "text": "Equally"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "To sum up",
+    "family": "summary",
+    "translation": "Para resumir / Em suma",
+    "explanation": "'To sum up' coroa a atuação tática perfeita do Grêmio no clássico Gre-Nal.",
+    "fullSentence": "A resilient defensive shape, clinical counterattacks down the wings, and heroic saves by our goalkeeper. To sum up, Grêmio earned a masterclass derby victory.",
+    "sentenceTranslation": "Uma postura defensiva resiliente, contra-ataques cirúrgicos pelas alas e defesas heroicas do nosso goleiro. Para resumir, o Grêmio conquistou uma vitória magistral no clássico.",
+    "whyCorrect": "'To sum up' amarra os três fatores do sucesso esportivo na conclusão definitiva.",
+    "whyOthersFail": "'Otherwise' traria alerta adverso. 'So that' expressa objetivo. 'Equally' expressa equivalência sem resumir.",
+    "proTip": "Use 'To sum up' para resumir análises esportivas, debates técnicos e apresentações profissionais com autoridade."
+  },
+  {
+    "id": "q-towards-sprint-goal-progress",
+    "prompt": "Every daily standup commitment made by the engineering team is a deliberate step _____ achieving our overarching quarterly Sprint Goal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "instead of"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "towards"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "towards",
+    "family": "purpose",
+    "translation": "em direção a / para",
+    "explanation": "'Towards' expressa o movimento contínuo e intencional em direção à meta da sprint.",
+    "fullSentence": "Every daily standup commitment made by the engineering team is a deliberate step towards achieving our overarching quarterly Sprint Goal.",
+    "sentenceTranslation": "Cada compromisso assumido pela equipe de engenharia na daily standup é um passo deliberado em direção ao alcance do nosso Objetivo de Sprint trimestral.",
+    "whyCorrect": "'Towards + gerúndio' ('towards achieving') expressa avanço e direcionamento com clareza.",
+    "whyOthersFail": "'Unless' impõe condição restritiva. 'Instead of' indicaria abandono da meta. 'Due to' exige causa nominal.",
+    "proTip": "Frase ágil clássica: 'A major step towards our goal.' Use 'towards' para falar de progresso e alinhamento de metas!"
+  },
+  {
+    "id": "q-towards-cinthia-future-home",
+    "prompt": "Cinthia and I deposit a fixed portion of our monthly consulting bonuses into a designated savings fund _____ buying our dream home.",
+    "options": [
+      {
+        "id": "a",
+        "text": "towards"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "because of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "towards",
+    "family": "purpose",
+    "translation": "para / em direção a",
+    "explanation": "'Towards' direciona os recursos financeiros economizados para a conquista da casa dos sonhos.",
+    "fullSentence": "Cinthia and I deposit a fixed portion of our monthly consulting bonuses into a designated savings fund towards buying our dream home.",
+    "sentenceTranslation": "A Cinthia e eu depositamos uma fatia fixa dos nossos bônus mensais de consultoria em um fundo de reserva voltado para a compra da casa dos nossos sonhos.",
+    "whyCorrect": "'Towards + gerúndio' rege a destinação de recursos e energia para um propósito nobre.",
+    "whyOthersFail": "'Rather than' expressaria exclusão comparativa. 'Nor' exige negativa correlativa. 'Because of' exige causa consumada.",
+    "proTip": "'Saving money towards a goal' (economizar para uma meta) é uma das combinações mais naturais da língua inglesa."
+  },
+  {
+    "id": "q-towards-championship-title-gremio",
+    "prompt": "Winning three consecutive away matches gave Grêmio immense momentum _____ securing the national league championship title.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "towards"
+      },
+      {
+        "id": "c",
+        "text": "in spite of"
+      },
+      {
+        "id": "d",
+        "text": "therefore"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "towards",
+    "family": "purpose",
+    "translation": "em direção a / rumo a",
+    "explanation": "'Towards' expressa o impulso esportivo rumo à taça de campeão.",
+    "fullSentence": "Winning three consecutive away matches gave Grêmio immense momentum towards securing the national league championship title.",
+    "sentenceTranslation": "Vencer três partidas consecutivas fora de casa deu ao Grêmio um impulso imenso rumo à conquista do título do campeonato nacional.",
+    "whyCorrect": "'Towards' rege 'securing the title' marcando a trajetória vitoriosa da equipe.",
+    "whyOthersFail": "'Unless' é condicional negativa. 'In spite of' expressa concessão. 'Therefore' expressa dedução.",
+    "proTip": "No esporte e na carreira: 'Momentum towards victory' (impulso rumo à vitória) transmite determinação e foco!"
+  },
+  {
+    "id": "q-unless-ci-tests-pass-no-merge",
+    "prompt": "Our branch protection rules will prevent any developer from merging code into master _____ all unit, integration, and security scans pass with 100% success.",
+    "options": [
+      {
+        "id": "a",
+        "text": "if"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "unless"
+      },
+      {
+        "id": "d",
+        "text": "although"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "unless",
+    "family": "condition",
+    "translation": "a não ser que / a menos que",
+    "explanation": "'Unless' estabelece a condição negativa rigorosa ('if not'): o merge é bloqueado a menos que todos os testes passem.",
+    "fullSentence": "Our branch protection rules will prevent any developer from merging code into master unless all unit, integration, and security scans pass with 100% success.",
+    "sentenceTranslation": "Nossas regras de proteção de branch impedirão qualquer desenvolvedor de fazer merge na master a menos que todas as varreduras unitárias, de integração e de segurança passem com 100% de sucesso.",
+    "whyCorrect": "'Unless' equivale a 'if ... not', funcionando perfeitamente para expressar regras de conformidade e travas de segurança.",
+    "whyOthersFail": "'If' exigiria negação na oração ('if they don't pass'). 'Because of' exige substantivo causal direto. 'Although' expressa concessão.",
+    "proTip": "Dica fundamental do Professor: 'Unless' = 'If not'. Nunca use 'unless' com verbo na negativa ('unless you don't do' é errado; o certo é 'unless you do')!"
+  },
+  {
+    "id": "q-unless-gremio-scores-eliminated",
+    "prompt": "In the knockout stage of the tournament, Grêmio will be eliminated on aggregate score _____ they score at least two goals in the second half.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "due to"
+      },
+      {
+        "id": "d",
+        "text": "unless"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "unless",
+    "family": "condition",
+    "translation": "a não ser que / a menos que",
+    "explanation": "'Unless' impõe a obrigação urgente de marcar dois gols para escapar da desclassificação.",
+    "fullSentence": "In the knockout stage of the tournament, Grêmio will be eliminated on aggregate score unless they score at least two goals in the second half.",
+    "sentenceTranslation": "Na fase mata-mata do torneio, o Grêmio será eliminado no placar agregado a menos que marque pelo menos dois gols no segundo tempo.",
+    "whyCorrect": "'Unless' articula a condição de salvação esportiva diante da eliminação iminente.",
+    "whyOthersFail": "'Rather than' expressa preferência de escolha. 'Nor' exige negativa correlativa. 'Due to' exige causa nominal.",
+    "proTip": "Em transmissões e decisões de futebol: 'They will be knocked out unless they score!' Tensão pura!"
+  },
+  {
+    "id": "q-unless-cinthia-feels-better-stay-home",
+    "prompt": "We are scheduled to attend our friends' wedding banquet tomorrow, but we will stay home and rest _____ Cinthia feels completely recovered from her cold.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "instead of"
+      },
+      {
+        "id": "c",
+        "text": "because of"
+      },
+      {
+        "id": "d",
+        "text": "so that"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "unless",
+    "family": "condition",
+    "translation": "a não ser que / a menos que",
+    "explanation": "'Unless' prioriza a saúde de Cinthia sobre qualquer compromisso social externo.",
+    "fullSentence": "We are scheduled to attend our friends' wedding banquet tomorrow, but we will stay home and rest unless Cinthia feels completely recovered from her cold.",
+    "sentenceTranslation": "Estamos programados para ir ao banquete de casamento de nossos amigos amanhã, mas ficaremos em casa descansando a não ser que a Cinthia se sinta totalmente recuperada do resfriado.",
+    "whyCorrect": "'Unless' condiciona a ida à festa à recuperação plena da saúde da parceira.",
+    "whyOthersFail": "'Instead of' exige gerúndio ou substantivo. 'Because of' exige substantivo. 'So that' expressaria propósito.",
+    "proTip": "Mostre empatia e consideração em inglês: 'We will cancel the trip unless you feel 100% better.'"
+  },
+  {
+    "id": "q-unlike-monolith-microservices-isolated",
+    "prompt": "_____ monolithic architectures where a single memory leak can crash the entire system, microservices isolate failures within individual containers.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whereas"
+      },
+      {
+        "id": "b",
+        "text": "Unlike"
+      },
+      {
+        "id": "c",
+        "text": "Because of"
+      },
+      {
+        "id": "d",
+        "text": "Unless"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Unlike",
+    "family": "contrast",
+    "translation": "Ao contrário de / Diferente de",
+    "explanation": "'Unlike' estabelece a distinção frontal entre a fragilidade do monólito e a resiliência dos microsserviços.",
+    "fullSentence": "Unlike monolithic architectures where a single memory leak can crash the entire system, microservices isolate failures within individual containers.",
+    "sentenceTranslation": "Ao contrário de arquiteturas monolíticas, onde um único vazamento de memória pode derrubar o sistema inteiro, microsserviços isolam falhas dentro de contêineres individuais.",
+    "whyCorrect": "'Unlike' rege o substantivo comparado 'monolithic architectures' estabelecendo distinção nítida.",
+    "whyOthersFail": "'Whereas' exigiria oração completa com verbo logo após. 'Because of' indicaria causa. 'Unless' impõe condição restritiva.",
+    "proTip": "Frase inspirada no seu material! 'Unlike X, Y does Z' é o formato perfeito para destacar inovações em propostas técnicas."
+  },
+  {
+    "id": "q-unlike-previous-job-remote-gft",
+    "prompt": "_____ my previous on-site job where I commuted two hours every day, my current consulting position at GFT is fully flexible and remote.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rather than"
+      },
+      {
+        "id": "b",
+        "text": "Nor"
+      },
+      {
+        "id": "c",
+        "text": "Unlike"
+      },
+      {
+        "id": "d",
+        "text": "Due to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "Unlike",
+    "family": "contrast",
+    "translation": "Ao contrário de / Diferente de",
+    "explanation": "'Unlike' contrasta o desgaste do antigo trabalho presencial com a liberdade do home office atual.",
+    "fullSentence": "Unlike my previous on-site job where I commuted two hours every day, my current consulting position at GFT is fully flexible and remote.",
+    "sentenceTranslation": "Ao contrário do meu trabalho presencial anterior, onde eu enfrentava duas horas de trânsito todos os dias, meu cargo atual de consultoria na GFT é totalmente flexível e remoto.",
+    "whyCorrect": "'Unlike' abre a frase com comparação biográfica direta inspirada no seu material.",
+    "whyOthersFail": "'Rather than' expressaria preferência em vez de distinção factual. 'Nor' exige negativa. 'Due to' exige causa nominal.",
+    "proTip": "Frase do seu material: 'Unlike my previous job, my current job is fully remote.' Guarde para entrevistas!"
+  },
+  {
+    "id": "q-whatever-hurdles-gft-delivers",
+    "prompt": "_____ unforeseen architectural hurdles emerge during the cloud migration, our senior GFT squad has the expertise to solve them rapidly.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unless"
+      },
+      {
+        "id": "b",
+        "text": "Instead of"
+      },
+      {
+        "id": "c",
+        "text": "Due to"
+      },
+      {
+        "id": "d",
+        "text": "Whatever"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "Whatever",
+    "family": "emphasis",
+    "translation": "Quaisquer que sejam / Seja qual for",
+    "explanation": "'Whatever' expressa determinação inabalável diante de qualquer imprevisto técnico que possa surgir.",
+    "fullSentence": "Whatever unforeseen architectural hurdles emerge during the cloud migration, our senior GFT squad has the expertise to solve them rapidly.",
+    "sentenceTranslation": "Quaisquer que sejam os obstáculos arquiteturais imprevistos que surjam durante a migração para a nuvem, nossa squad sênior da GFT tem a expertise para resolvê-los rapidamente.",
+    "whyCorrect": "'Whatever' antecede o substantivo 'unforeseen architectural hurdles' com abrangência total.",
+    "whyOthersFail": "'Unless' impõe condição restritiva. 'Instead of' exige substituição. 'Due to' exige causa nominal.",
+    "proTip": "'Whatever challenges arise, we will overcome them' transmite liderança firme e confiança em apresentações corporativas."
+  },
+  {
+    "id": "q-whatever-cinthia-chooses-menu",
+    "prompt": "I trust her culinary taste completely, so _____ dish Cinthia selects from the Italian menu tonight, I will happily share it with her.",
+    "options": [
+      {
+        "id": "a",
+        "text": "whatever"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "therefore"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "whatever",
+    "family": "emphasis",
+    "translation": "qualquer que seja o / seja qual for o",
+    "explanation": "'Whatever' expressa abertura e cumplicidade com a escolha gastronômica de Cinthia.",
+    "fullSentence": "I trust her culinary taste completely, so whatever dish Cinthia selects from the Italian menu tonight, I will happily share it with her.",
+    "sentenceTranslation": "Confio totalmente no gosto culinário dela, então qualquer que seja o prato que a Cinthia escolher do cardápio italiano hoje à noite, vou compartilhar alegremente com ela.",
+    "whyCorrect": "'Whatever' qualifica 'dish' com flexibilidade e carinho.",
+    "whyOthersFail": "'Rather than' expressaria exclusão comparativa. 'Nor' exige negativa. 'Therefore' expressa dedução.",
+    "proTip": "'Whatever you prefer' (o que você preferir) é uma das frases mais simpáticas para concordar com seu par no dia a dia."
+  },
+  {
+    "id": "q-whatever-weather-gremio-arena",
+    "prompt": "_____ the weather brings to Porto Alegre on derby Sunday—heavy rain, bitter cold, or scorching heat—the Grêmio supporters will pack the Arena.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Otherwise"
+      },
+      {
+        "id": "b",
+        "text": "Whatever"
+      },
+      {
+        "id": "c",
+        "text": "Because of"
+      },
+      {
+        "id": "d",
+        "text": "So that"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Whatever",
+    "family": "emphasis",
+    "translation": "Seja qual for / O que quer que",
+    "explanation": "'Whatever' atesta a lealdade incondicional da torcida tricolor em qualquer condição meteorológica.",
+    "fullSentence": "Whatever the weather brings to Porto Alegre on derby Sunday—heavy rain, bitter cold, or scorching heat—the Grêmio supporters will pack the Arena.",
+    "sentenceTranslation": "Seja qual for o clima que chegue a Porto Alegre no domingo de clássico — chuva pesada, frio cortante ou calor escaldante —, os torcedores do Grêmio lotarão a Arena.",
+    "whyCorrect": "'Whatever' encabeça a oração concessiva universal com força poética e esportiva.",
+    "whyOthersFail": "'Otherwise' traria alerta adverso. 'Because of' exige causa nominal simples. 'So that' expressa objetivo.",
+    "proTip": "Mostre a paixão inabalável pelo Grêmio usando 'Whatever the weather, Grêmio comes first!'"
+  },
+  {
+    "id": "q-whatever-database-mongodb-fast",
+    "prompt": "_____ collection structure you define in MongoDB, remember that creating proper compound indexes is what ensures lightning-fast queries.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unless"
+      },
+      {
+        "id": "b",
+        "text": "In order to"
+      },
+      {
+        "id": "c",
+        "text": "Whatever"
+      },
+      {
+        "id": "d",
+        "text": "Rather than"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "Whatever",
+    "family": "emphasis",
+    "translation": "Qualquer que seja a / Seja qual for a",
+    "explanation": "'Whatever' enfatiza que o princípio da indexação correta independe do esquema adotado no NoSQL.",
+    "fullSentence": "Whatever collection structure you define in MongoDB, remember that creating proper compound indexes is what ensures lightning-fast queries.",
+    "sentenceTranslation": "Qualquer que seja a estrutura de coleção que você defina no MongoDB, lembre-se de que criar índices compostos adequados é o que garante consultas ultrarrápidas.",
+    "whyCorrect": "'Whatever' qualifica 'collection structure' demonstrando regra universal de engenharia de dados.",
+    "whyOthersFail": "'Unless' é condicional restritiva. 'In order to' exige infinitivo. 'Rather than' pede opção comparativa.",
+    "proTip": "Em workshops técnicos: 'Whatever technology you choose, fundamentals matter most.'"
+  },
+  {
+    "id": "q-whenever-incident-pagerduty-alert",
+    "prompt": "_____ a critical microservice outage occurs in production, PagerDuty automatically triggers alert notifications to the on-call engineer's phone.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unless"
+      },
+      {
+        "id": "b",
+        "text": "Due to"
+      },
+      {
+        "id": "c",
+        "text": "Although"
+      },
+      {
+        "id": "d",
+        "text": "Whenever"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "Whenever",
+    "family": "time",
+    "translation": "Sempre que / Toda vez que",
+    "explanation": "'Whenever' indica a repetição sistemática e automática do acionamento de alertas diante de incidentes.",
+    "fullSentence": "Whenever a critical microservice outage occurs in production, PagerDuty automatically triggers alert notifications to the on-call engineer's phone.",
+    "sentenceTranslation": "Sempre que ocorre uma queda crítica de microsserviço em produção, o PagerDuty dispara automaticamente notificações de alerta para o celular do engenheiro de plantão.",
+    "whyCorrect": "'Whenever' é a conjunção subordinativa temporal por excelência para expressar recorrência ou condição repetida.",
+    "whyOthersFail": "'Unless' significaria 'a menos que ocorra' (inversão absurda do propósito do plantão). 'Due to' exige substantivo. 'Although' expressa concessão.",
+    "proTip": "'Whenever' = 'Every time that'. Essencial para descrever automações, triggers, webhooks e alertas em TI!"
+  },
+  {
+    "id": "q-whenever-gremio-scores-arena-erupts",
+    "prompt": "_____ Grêmio scores a decisive goal at the Arena, fifty thousand fans leap from their seats, waving flags and singing the club's battle anthem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whenever"
+      },
+      {
+        "id": "b",
+        "text": "Rather than"
+      },
+      {
+        "id": "c",
+        "text": "Nor"
+      },
+      {
+        "id": "d",
+        "text": "Therefore"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "Whenever",
+    "family": "time",
+    "translation": "Toda vez que / Sempre que",
+    "explanation": "'Whenever' capta a explosão unânime de alegria da torcida a cada gol marcado pelo Tricolor.",
+    "fullSentence": "Whenever Grêmio scores a decisive goal at the Arena, fifty thousand fans leap from their seats, waving flags and singing the club's battle anthem.",
+    "sentenceTranslation": "Toda vez que o Grêmio marca um gol decisivo na Arena, cinquenta mil torcedores pulam de suas cadeiras, tremulando bandeiras e cantando o hino de batalha do clube.",
+    "whyCorrect": "'Whenever' conecta o momento do gol à vibração coletiva imediata.",
+    "whyOthersFail": "'Rather than' expressa opção comparativa. 'Nor' exige negativa correlativa. 'Therefore' expressa dedução.",
+    "proTip": "Use 'Whenever' para narrar rituais e costumes emocionantes do estádio de futebol!"
+  },
+  {
+    "id": "q-whenever-cinthia-smiles-day-brightens",
+    "prompt": "_____ Cinthia smiles and shares a warm hug after a long day of consulting meetings, all my workplace stress instantly melts away.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Otherwise"
+      },
+      {
+        "id": "b",
+        "text": "Whenever"
+      },
+      {
+        "id": "c",
+        "text": "Because of"
+      },
+      {
+        "id": "d",
+        "text": "Instead of"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "Whenever",
+    "family": "time",
+    "translation": "Sempre que / Toda vez que",
+    "explanation": "'Whenever' expressa o efeito reconfortante e constante do carinho de Cinthia sobre o estresse cotidiano.",
+    "fullSentence": "Whenever Cinthia smiles and shares a warm hug after a long day of consulting meetings, all my workplace stress instantly melts away.",
+    "sentenceTranslation": "Sempre que a Cinthia sorri e me dá um abraço caloroso após um longo dia de reuniões de consultoria, todo o meu estresse de trabalho se desfaz instantaneamente.",
+    "whyCorrect": "'Whenever' expressa a repetição afetuosa que traz paz e bem-estar à rotina.",
+    "whyOthersFail": "'Otherwise' traria advertência adversa. 'Because of' exige causa nominal direta. 'Instead of' pede substituição.",
+    "proTip": "'Whenever I see you...' é uma declaração clássica e emocionante em qualquer idioma!"
+  },
+  {
+    "id": "q-whereas-scrum-sprints-kanban-flow",
+    "prompt": "Scrum organizes software delivery into fixed, time-boxed sprints, _____ Kanban focuses on continuous flow and strict work-in-progress limits.",
+    "options": [
+      {
+        "id": "a",
+        "text": "due to"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "whereas"
+      },
+      {
+        "id": "d",
+        "text": "in order to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "whereas",
+    "family": "contrast",
+    "translation": "ao passo que / enquanto que",
+    "explanation": "'Whereas' conecta as duas abordagens ágeis contrastantes em uma mesma sentença comparativa elegante.",
+    "fullSentence": "Scrum organizes software delivery into fixed, time-boxed sprints, whereas Kanban focuses on continuous flow and strict work-in-progress limits.",
+    "sentenceTranslation": "O Scrum organiza a entrega de software em sprints com caixas de tempo fixas, ao passo que o Kanban foca no fluxo contínuo e em limites rigorosos de trabalho em andamento.",
+    "whyCorrect": "'Whereas' é a conjunção subordinativa por excelência para traçar contrastes analíticos diretos entre duas realidades.",
+    "whyOthersFail": "'Due to' exige substantivo de causa. 'Unless' impõe condição restritiva. 'In order to' exige infinitivo de propósito.",
+    "proTip": "Frase autêntica do seu material: 'Scrum focuses on short iterations, whereas Kanban focuses on continuous flow.' Domínio puro de metodologia ágil!"
+  },
+  {
+    "id": "q-whereas-sql-acid-mongodb-flexibility",
+    "prompt": "Traditional SQL relational databases strictly prioritize ACID transaction guarantees, _____ document stores like MongoDB optimize for horizontal scaling and schema flexibility.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because"
+      },
+      {
+        "id": "b",
+        "text": "rather than"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "whereas"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "whereas",
+    "family": "contrast",
+    "translation": "enquanto que / ao passo que",
+    "explanation": "'Whereas' contrapõe os princípios arquiteturais dos bancos relacionais tradicionais e do MongoDB.",
+    "fullSentence": "Traditional SQL relational databases strictly prioritize ACID transaction guarantees, whereas document stores like MongoDB optimize for horizontal scaling and schema flexibility.",
+    "sentenceTranslation": "Bancos de dados relacionais SQL tradicionais priorizam rigorosamente garantias de transação ACID, ao passo que armazenamentos de documentos como o MongoDB otimizam para escalabilidade horizontal e flexibilidade de esquema.",
+    "whyCorrect": "'Whereas' articula com maestria a comparação entre os paradigmas de persistência de dados.",
+    "whyOthersFail": "'Because' transformaria um paradigma na causa do outro. 'Rather than' exigiria reformulação. 'Nor' exige negativa.",
+    "proTip": "Em avaliações técnicas e certificações em nuvem, 'whereas' é a conjunção favorita dos examinadores para comparar tecnologias!"
+  },
+  {
+    "id": "q-whereas-cinthia-morning-planner-spontaneous",
+    "prompt": "I like to outline our weekend activities and prepare detailed itineraries, _____ Cinthia prefers spontaneous road trips with room for serendipity.",
+    "options": [
+      {
+        "id": "a",
+        "text": "whereas"
+      },
+      {
+        "id": "b",
+        "text": "so that"
+      },
+      {
+        "id": "c",
+        "text": "therefore"
+      },
+      {
+        "id": "d",
+        "text": "in spite of"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "whereas",
+    "family": "contrast",
+    "translation": "ao passo que / enquanto",
+    "explanation": "'Whereas' harmoniza os estilos complementares de planejamento do casal com leveza e afeto.",
+    "fullSentence": "I like to outline our weekend activities and prepare detailed itineraries, whereas Cinthia prefers spontaneous road trips with room for serendipity.",
+    "sentenceTranslation": "Gosto de esboçar nossas atividades de fim de semana e preparar itinerários detalhados, ao passo que a Cinthia prefere viagens espontâneas com espaço para surpresas agradáveis.",
+    "whyCorrect": "'Whereas' coloca os dois temperamentos lado a lado ressaltando a beleza das diferenças.",
+    "whyOthersFail": "'So that' expressa objetivo. 'Therefore' expressa dedução causal. 'In spite of' pede sintagma nominal.",
+    "proTip": "'Whereas' funciona como 'while', mas carrega um tom muito mais refinado e analítico na escrita."
+  },
+  {
+    "id": "q-wherever-cloud-consulting-gft",
+    "prompt": "Modern cloud technologies allow our GFT consulting squad to deliver mission-critical banking software _____ we are located in the world.",
+    "options": [
+      {
+        "id": "a",
+        "text": "unless"
+      },
+      {
+        "id": "b",
+        "text": "wherever"
+      },
+      {
+        "id": "c",
+        "text": "instead of"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "wherever",
+    "family": "emphasis",
+    "translation": "onde quer que / em qualquer lugar que",
+    "explanation": "'Wherever' enfatiza a liberdade geográfica e a flexibilidade global do trabalho em nuvem.",
+    "fullSentence": "Modern cloud technologies allow our GFT consulting squad to deliver mission-critical banking software wherever we are located in the world.",
+    "sentenceTranslation": "Tecnologias modernas em nuvem permitem que nossa squad de consultoria da GFT entregue software bancário de missão crítica onde quer que estejamos localizados no mundo.",
+    "whyCorrect": "'Wherever' expressa universalidade de localização física com fluência nativa.",
+    "whyOthersFail": "'Unless' é condicional restritiva. 'Instead of' pede substituição. 'Due to' exige causa nominal.",
+    "proTip": "'Wherever you are' (onde quer que você esteja) é um conectivo chave para o trabalho remoto global contemporâneo."
+  },
+  {
+    "id": "q-wherever-gremio-plays-fans-travel",
+    "prompt": "The Grêmio supporters are famous for their devotion; _____ the team travels across South America for the Libertadores, blue and black banners fill the away stands.",
+    "options": [
+      {
+        "id": "a",
+        "text": "rather than"
+      },
+      {
+        "id": "b",
+        "text": "nor"
+      },
+      {
+        "id": "c",
+        "text": "wherever"
+      },
+      {
+        "id": "d",
+        "text": "therefore"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "wherever",
+    "family": "emphasis",
+    "translation": "onde quer que / para onde quer que",
+    "explanation": "'Wherever' exalta a fidelidade dos torcedores gremistas que acompanham o clube em qualquer país ou estádio.",
+    "fullSentence": "The Grêmio supporters are famous for their devotion; wherever the team travels across South America for the Libertadores, blue and black banners fill the away stands.",
+    "sentenceTranslation": "Os torcedores do Grêmio são famosos por sua devoção; onde quer que o time viaje pela América do Sul pela Libertadores, faixas azuis e pretas lotam o setor visitante.",
+    "whyCorrect": "'Wherever' introduz o alcance continental incondicional da torcida tricolor.",
+    "whyOthersFail": "'Rather than' expressa opção comparativa. 'Nor' exige negativa. 'Therefore' expressa dedução.",
+    "proTip": "Lema gremista traduzido para o inglês: 'Wherever Grêmio goes, we will follow!'"
+  },
+  {
+    "id": "q-wherever-cinthia-travels-home",
+    "prompt": "Home is not merely a geographic address; _____ Cinthia and I are together, that place feels warm, joyful, and completely secure.",
+    "options": [
+      {
+        "id": "a",
+        "text": "otherwise"
+      },
+      {
+        "id": "b",
+        "text": "because of"
+      },
+      {
+        "id": "c",
+        "text": "so that"
+      },
+      {
+        "id": "d",
+        "text": "wherever"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "wherever",
+    "family": "emphasis",
+    "translation": "onde quer que",
+    "explanation": "'Wherever' expressa com poesia que o verdadeiro lar reside na presença e na companhia de Cinthia.",
+    "fullSentence": "Home is not merely a geographic address; wherever Cinthia and I are together, that place feels warm, joyful, and completely secure.",
+    "sentenceTranslation": "O lar não é apenas um endereço geográfico; onde quer que a Cinthia e eu estejamos juntos, aquele lugar parece acolhedor, alegre e completamente seguro.",
+    "whyCorrect": "'Wherever' abre a oração subordinada com profundo sentimento de cumplicidade.",
+    "whyOthersFail": "'Otherwise' traria advertência adversa. 'Because of' exige causa nominal sem oração. 'So that' expressa objetivo.",
+    "proTip": "Declaração afetuosa clássica: 'Wherever you go, I go.' Encha suas frases em inglês de verdade humana!"
+  },
+  {
+    "id": "q-wherever-mongodb-deployed-replicated",
+    "prompt": "Our distributed enterprise architecture ensures that _____ our MongoDB clusters are deployed—AWS, Azure, or GCP—data is synchronized in near real time.",
+    "options": [
+      {
+        "id": "a",
+        "text": "wherever"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "in order to"
+      },
+      {
+        "id": "d",
+        "text": "rather than"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "wherever",
+    "family": "emphasis",
+    "translation": "onde quer que / seja onde for que",
+    "explanation": "'Wherever' garante a consistência multinuvem da persistência de dados independentemente do provedor escolhido.",
+    "fullSentence": "Our distributed enterprise architecture ensures that wherever our MongoDB clusters are deployed—AWS, Azure, or GCP—data is synchronized in near real time.",
+    "sentenceTranslation": "Nossa arquitetura corporativa distribuída garante que, onde quer que nossos clusters MongoDB estejam implantados — AWS, Azure ou GCP —, os dados sejam sincronizados em tempo quase real.",
+    "whyCorrect": "'Wherever' abrange os múltiplos provedores de nuvem de forma inclusiva.",
+    "whyOthersFail": "'Unless' impõe condição restritiva. 'In order to' exige infinitivo. 'Rather than' pede escolha comparativa.",
+    "proTip": "Em arquiteturas multicloud: 'Data stays secure wherever it is hosted.' Direto e confiável!"
+  },
+  {
+    "id": "q-wherever-you-find-passion-tech",
+    "prompt": "In software engineering communities, _____ you find developers passionate about clean code, you will discover great collaboration and continuous learning.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because of"
+      },
+      {
+        "id": "b",
+        "text": "wherever"
+      },
+      {
+        "id": "c",
+        "text": "nor"
+      },
+      {
+        "id": "d",
+        "text": "due to"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "wherever",
+    "family": "emphasis",
+    "translation": "onde quer que / em qualquer lugar que",
+    "explanation": "'Wherever' celebra o espírito de comunidade dos programadores pelo mundo.",
+    "fullSentence": "In software engineering communities, wherever you find developers passionate about clean code, you will discover great collaboration and continuous learning.",
+    "sentenceTranslation": "Em comunidades de engenharia de software, onde quer que você encontre desenvolvedores apaixonados por código limpo, descobrirá grande colaboração e aprendizado contínuo.",
+    "whyCorrect": "'Wherever' formula o princípio comunitário universal com elegância.",
+    "whyOthersFail": "'Because of' exige causa nominal. 'Nor' exige negativa. 'Due to' exige preposição com substantivo.",
+    "proTip": "Use 'wherever' para abrir reflexões sobre cultura e boas práticas de tecnologia."
+  },
+  {
+    "id": "q-whether-scrum-or-kanban-agile",
+    "prompt": "_____ your engineering squad chooses Scrum with fixed iterations or Kanban with continuous delivery, establishing psychological safety is paramount.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unless"
+      },
+      {
+        "id": "b",
+        "text": "Because of"
+      },
+      {
+        "id": "c",
+        "text": "Whether"
+      },
+      {
+        "id": "d",
+        "text": "In order to"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "Whether",
+    "family": "condition",
+    "translation": "Quer ... quer / Seja ... ou",
+    "explanation": "'Whether ... or' introduz as duas opções metodológicas alternativas com equivalência de relevância.",
+    "fullSentence": "Whether your engineering squad chooses Scrum with fixed iterations or Kanban with continuous delivery, establishing psychological safety is paramount.",
+    "sentenceTranslation": "Quer sua squad de engenharia escolha o Scrum com iterações fixas ou o Kanban com entrega contínua, estabelecer segurança psicológica é primordial.",
+    "whyCorrect": "'Whether ... or' é a locução correlativa padrão para subordinar duas alternativas sob um princípio maior.",
+    "whyOthersFail": "'Unless' significaria 'a não ser que' sem o paralelismo de 'or'. 'Because of' exige causa nominal. 'In order to' exige infinitivo de propósito.",
+    "proTip": "'Whether X or Y, [conclusão importante]' é a estrutura favorita de palestrantes e líderes para mostrar maturidade que vai além de preferências pontuais!"
+  },
+  {
+    "id": "q-whether-rain-or-shine-cinthia",
+    "prompt": "_____ it turns out to be sunny or rainy this weekend in Porto Alegre, Cinthia and I have planned fun activities to celebrate our anniversary.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rather than"
+      },
+      {
+        "id": "b",
+        "text": "Nor"
+      },
+      {
+        "id": "c",
+        "text": "Due to"
+      },
+      {
+        "id": "d",
+        "text": "Whether"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "Whether",
+    "family": "condition",
+    "translation": "Quer ... ou / Seja com ... ou",
+    "explanation": "'Whether' estabelece que os planos festivos do casal independem do clima.",
+    "fullSentence": "Whether it turns out to be sunny or rainy this weekend in Porto Alegre, Cinthia and I have planned fun activities to celebrate our anniversary.",
+    "sentenceTranslation": "Quer faça sol ou chuva este fim de semana em Porto Alegre, a Cinthia e eu planejamos atividades divertidas para comemorar nosso aniversário.",
+    "whyCorrect": "'Whether' comanda as duas possibilidades climáticas ligadas por 'or'.",
+    "whyOthersFail": "'Rather than' expressaria preferência excludente. 'Nor' exige negação correlativa. 'Due to' exige causa nominal.",
+    "proTip": "Expressão idiomática clássica em inglês: 'Whether rain or shine...' (faça chuva ou faça sol). Pura determinação!"
+  },
+  {
+    "id": "q-while-frontend-develops-backend-apis",
+    "prompt": "_____ the backend engineers implemented the MongoDB aggregation queries, the frontend squad built responsive UI components in React.",
+    "options": [
+      {
+        "id": "a",
+        "text": "While"
+      },
+      {
+        "id": "b",
+        "text": "Afterwards"
+      },
+      {
+        "id": "c",
+        "text": "Due to"
+      },
+      {
+        "id": "d",
+        "text": "Unless"
+      }
+    ],
+    "correctOptionId": "a",
+    "connector": "While",
+    "family": "time",
+    "translation": "Enquanto",
+    "explanation": "'While' expressa a concomitância temporal entre o trabalho de backend e o de frontend.",
+    "fullSentence": "While the backend engineers implemented the MongoDB aggregation queries, the frontend squad built responsive UI components in React.",
+    "sentenceTranslation": "Enquanto os engenheiros de backend implementavam as consultas de agregação do MongoDB, a squad de frontend construía componentes de interface responsivos em React.",
+    "whyCorrect": "'While' é a conjunção temporal por excelência para conectar duas orações que ocorrem simultaneamente no mesmo período.",
+    "whyOthersFail": "'Afterwards' indicaria que o frontend esperou o backend terminar. 'Due to' pede substantivo causal sem oração completa. 'Unless' impõe condição restritiva.",
+    "proTip": "'While' tem dois usos fundamentais: 1) Tempo simultâneo ('While I was coding, he was testing'); 2) Contraste ('While Python is interpreted, Go compiles to native code')."
+  },
+  {
+    "id": "q-while-gremio-attacked-opponent-countered",
+    "prompt": "_____ Grêmio maintained relentless possession in the offensive half, the opponent stayed defensively organized, looking for counterattacks.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rather than"
+      },
+      {
+        "id": "b",
+        "text": "While"
+      },
+      {
+        "id": "c",
+        "text": "Nor"
+      },
+      {
+        "id": "d",
+        "text": "Therefore"
+      }
+    ],
+    "correctOptionId": "b",
+    "connector": "While",
+    "family": "time",
+    "translation": "Enquanto / Ao passo que",
+    "explanation": "'While' descreve o choque dinâmico das duas propostas de jogo simultâneas no campo.",
+    "fullSentence": "While Grêmio maintained relentless possession in the offensive half, the opponent stayed defensively organized, looking for counterattacks.",
+    "sentenceTranslation": "Enquanto o Grêmio mantinha posse de bola implacável no campo de ataque, o adversário permanecia organizado defensivamente, buscando contra-ataques.",
+    "whyCorrect": "'While' capta a simultaneidade tática dos dois times em campo com perfeição.",
+    "whyOthersFail": "'Rather than' expressaria opção comparativa. 'Nor' exige negativa. 'Therefore' expressa dedução.",
+    "proTip": "Em análises futebolísticas: 'While team A attacks, team B defends.' Simples, dinâmico e fluente!"
+  },
+  {
+    "id": "q-yet-simple-architecture-reliable",
+    "prompt": "The payment microservice codebase is remarkably compact and concise, _____ it reliably processes thousands of financial transactions every second.",
+    "options": [
+      {
+        "id": "a",
+        "text": "so that"
+      },
+      {
+        "id": "b",
+        "text": "due to"
+      },
+      {
+        "id": "c",
+        "text": "yet"
+      },
+      {
+        "id": "d",
+        "text": "nor"
+      }
+    ],
+    "correctOptionId": "c",
+    "connector": "yet",
+    "family": "contrast",
+    "translation": "contudo / e mesmo assim / no entanto",
+    "explanation": "'Yet' é a conjunção coordenativa adversativa (FANBOYS) que conecta a simplicidade do código à sua impressionante robustez.",
+    "fullSentence": "The payment microservice codebase is remarkably compact and concise, yet it reliably processes thousands of financial transactions every second.",
+    "sentenceTranslation": "A base de código do microsserviço de pagamentos é notavelmente compacta e concisa, contudo processa com confiabilidade milhares de transações financeiras a cada segundo.",
+    "whyCorrect": "'Yet' antecedido de vírgula expressa um contraste surpreendente entre a simplicidade aparente e a alta capacidade técnica.",
+    "whyOthersFail": "'So that' expressaria propósito. 'Due to' exige substantivo causal direto. 'Nor' exige negação correlativa prévia com neither.",
+    "proTip": "'Yet' faz parte do FANBOYS! Funciona como um 'but' sofisticado, com nuance de surpresa ('compact, yet powerful')."
+  },
+  {
+    "id": "q-yet-exhausted-gremio-fans-cheered",
+    "prompt": "The supporters had traveled eighteen long hours by bus across the country, _____ their thunderous voices echoed through the stadium until the final whistle.",
+    "options": [
+      {
+        "id": "a",
+        "text": "because"
+      },
+      {
+        "id": "b",
+        "text": "unless"
+      },
+      {
+        "id": "c",
+        "text": "rather than"
+      },
+      {
+        "id": "d",
+        "text": "yet"
+      }
+    ],
+    "correctOptionId": "d",
+    "connector": "yet",
+    "family": "contrast",
+    "translation": "contudo / e mesmo assim",
+    "explanation": "'Yet' contrapõe a viagem exaustiva à energia inesgotável dos torcedores gremistas no estádio.",
+    "fullSentence": "The supporters had traveled eighteen long hours by bus across the country, yet their thunderous voices echoed through the stadium until the final whistle.",
+    "sentenceTranslation": "Os torcedores haviam viajado dezoito longas horas de ônibus pelo país, contudo suas vozes estrondosas ecoaram pelo estádio até o apito final.",
+    "whyCorrect": "'Yet' destaca o amor incondicional que supera o cansaço físico da viagem.",
+    "whyOthersFail": "'Because' transformaria o cansaço na causa da gritaria. 'Unless' impõe condição restritiva. 'Rather than' expressa opção comparativa.",
+    "proTip": "Use 'yet' para contrastar esforço heróico e determinação inabalável tanto em esportes quanto em projetos de TI."
   }
 ];
