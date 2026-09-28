@@ -502,14 +502,14 @@ export const CONNECTORS_CATALOG: ConnectorItem[] = [
     "number": 34,
     "id": "however",
     "connector": "However",
-    "translation": "Contudo / Todavia / Entretanto",
+    "translation": "Contudo / No entanto / Como quer que / Por mais que",
     "family": "contrast",
-    "grammarRule": "Advérbio de transição adversativo. Quando inicia uma oração independente, deve ser seguido de vírgula.",
-    "notes": "Mais formal que 'but'. Frequentemente separado por ponto e vírgula ou ponto final.",
+    "grammarRule": "Possui 2 usos essenciais: 1) Conector adversativo ('contudo/no entanto', seguido de vírgula); 2) Membro da Família -Ever com sentido de modo ou intensidade ('como quer que / por mais que + adjetivo').",
+    "notes": "Membro essencial da Família -Ever ('These are worth learning together: Whatever, Whenever, Wherever, Whoever, However'). Ex: 'However hard it is...' (por mais difícil que seja) e 'However you do it...' (como quer que faça).",
     "examples": [
       "There's heavy traffic ahead; however, I don’t have another way.",
-      "The government updated the delivery date, however we can finish earlier than that.",
-      "Look at that graphic; It’s so bad. We need to do better in the next Sprint. However, we have found the root cause and can be better now.",
+      "However hard the challenge seems, our agile squad finds a way to deliver value.",
+      "You can organize your code however you think is cleanest.",
       "The load test showed high memory usage; however, cpu throttling remained within acceptable thresholds."
     ]
   },
@@ -685,6 +685,21 @@ export const CONNECTORS_CATALOG: ConnectorItem[] = [
       "The Grêmio team are training now, meanwhile the coach Renato Portalupi is in his official presentation in the Training Center.",
       "You are asleep, meanwhile I cleaned the kitchen.",
       "The QA squad ran manual smoke tests. Meanwhile, the DevOps engineer provisioned the staging server."
+    ]
+  },
+  {
+    "number": 47,
+    "id": "whoever",
+    "connector": "Whoever",
+    "translation": "Quem quer que / Qualquer pessoa que",
+    "family": "emphasis",
+    "grammarRule": "Pronome relativo composto com o sufixo '-ever'. Refere-se a qualquer pessoa, sem especificar quem ('any person who' / 'no matter who'). Exerce função de sujeito ou objeto.",
+    "notes": "Membro essencial da Família -Ever ('These are worth learning together: Whatever, Whenever, Wherever, Whoever, However'). Muito comum em regras de equipe, plantões de suporte e governança.",
+    "examples": [
+      "Whoever authored this pull request followed all clean code principles and unit test guidelines.",
+      "Whoever is on call this weekend must monitor the production alerts in PagerDuty.",
+      "Whoever discovers the root cause of the bug should document it in the post-mortem report.",
+      "Send the architecture meeting invite to whoever is leading the squad this sprint."
     ]
   },
   {
@@ -1099,15 +1114,15 @@ export const CONNECTORS_CATALOG: ConnectorItem[] = [
     "number": 75,
     "id": "whatever",
     "connector": "Whatever",
-    "translation": "O que quer que seja / Seja o que for / Tanto faz",
+    "translation": "O que quer que seja / Qualquer coisa que / Tanto faz",
     "family": "emphasis",
-    "grammarRule": "Pronome ou determinante relativo indefinido que expressa indiferença ou amplitude irrestrita de escolhas.",
-    "notes": "Em respostas curtas informais ('Whatever'), denota 'tanto faz / você decide'.",
+    "grammarRule": "Pronome ou determinante relativo indefinido que expressa ausência de restrição para coisas, ações ou eventos ('anything that' / 'no matter what').",
+    "notes": "Membro da Família -Ever ('These are worth learning together: Whatever, Whenever, Wherever, Whoever, However'). Foco: Coisas e ações. Em respostas curtas informais denota 'tanto faz'.",
     "examples": [
-      "Choose whatever you want.",
-      "Whatever happens, I'll be there.",
-      "A: What do you want to eat? B: — Whatever.",
-      "Take whatever book you want.",
+      "Choose whatever tools you need to build the microservice.",
+      "Whatever happens during the demo, keep calm and explain the architectural reasoning.",
+      "A: Which cloud provider do you prefer? B: — Whatever the client selects.",
+      "Take whatever time you need to review the pull request.",
       "Deploy whatever version has been approved by QA."
     ]
   },
@@ -1117,14 +1132,14 @@ export const CONNECTORS_CATALOG: ConnectorItem[] = [
     "connector": "Whenever",
     "translation": "Quando quer que seja / Sempre que",
     "family": "time",
-    "grammarRule": "Conjunção temporal que indica repetição contínua ('every time that') ou qualquer momento temporal arbitrário.",
-    "notes": "Muito comum em regras de automação (webhooks, CI pipelines, gatilhos de eventos).",
+    "grammarRule": "Conjunção temporal que indica repetição contínua ('every time that') ou qualquer momento temporal arbitrário ('at any time').",
+    "notes": "Membro da Família -Ever ('These are worth learning together: Whatever, Whenever, Wherever, Whoever, However'). Foco: Tempo e ocasiões. Muito comum em webhooks e automação de CI/CD.",
     "examples": [
-      "Whenever I drink coffee, I can't sleep.",
-      "Whenever I go to London, I visit the British Museum.",
-      "Call me whenever you need help.",
-      "Whenever I arrive home late, I'm tired.",
-      "Whenever a developer pushes code to GitHub, the automated tests run in the background."
+      "Whenever the continuous integration pipeline fails, an alert is sent to Slack.",
+      "Whenever I drink coffee late at night, I can't sleep.",
+      "Call me whenever you need help with the agile ceremonies.",
+      "Whenever new commits are pushed to main, automated tests run in the background.",
+      "You can trigger the deploy whenever you are ready."
     ]
   },
   {
@@ -1148,17 +1163,16 @@ export const CONNECTORS_CATALOG: ConnectorItem[] = [
     "number": 78,
     "id": "wherever",
     "connector": "Wherever",
-    "translation": "Onde quer que seja / Seja onde for",
+    "translation": "Onde quer que seja / Onde quer que / Em qualquer lugar",
     "family": "emphasis",
-    "grammarRule": "Conjunção ou advérbio que denota ausência total de restrição espacial ou geográfica.",
-    "notes": "Ideal para descrever flexibilidade de trabalho remoto e cloud computing.",
+    "grammarRule": "Conjunção ou advérbio que denota ausência total de restrição espacial ou geográfica ('in or to any place').",
+    "notes": "Membro da Família -Ever ('These are worth learning together: Whatever, Whenever, Wherever, Whoever, However'). Foco: Lugares e localização. Ideal para trabalho remoto e cloud.",
     "examples": [
-      "Wherever you go, I'll be there.",
-      "Wherever he lives, he'll need a car.",
-      "You can sit wherever you want.",
-      "Wherever you go, be careful.",
-      "I'll meet you wherever you are.",
-      "With a cloud workstation, you can code securely from wherever you are in the world."
+      "With a cloud workstation, you can code securely from wherever you are in the world.",
+      "Wherever there is a performance bottleneck in our microservices, we implement Redis caching.",
+      "You can deploy the container wherever the latency is lowest.",
+      "Wherever you go in this clean architecture codebase, dependencies point inwards to domain entities.",
+      "Our database replicas ensure data is accessible wherever users connect."
     ]
   },
   {

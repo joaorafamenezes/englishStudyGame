@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { fetchConnectors, fetchSummary, startSession, submitAnswer } from "./api";
+import { EverStudySection } from "./components/EverStudySection";
 import { FlashcardsDeck } from "./components/FlashcardsDeck";
 import { LeaderboardModal } from "./components/LeaderboardModal";
 import { MatchMode } from "./components/MatchMode";
@@ -36,6 +37,7 @@ const QUESTION_SECONDS = 18;
 
 const FAMILY_LABEL: Record<string, string> = {
   all: "Todas as Categorias",
+  ever_family: "🎯 Especial: Família -Ever (Whatever, Whenever...)",
   contrast: "Contraste (Although, Despite, However...)",
   cause: "Causa / Efeito (Because, As a result, Hence...)",
   condition: "Condição (If, Unless, As long as...)",
@@ -49,7 +51,7 @@ const FAMILY_LABEL: Record<string, string> = {
 };
 
 type Screen = "home" | "play" | "result";
-type ActiveTab = "practice" | "deck" | "match";
+type ActiveTab = "practice" | "ever" | "deck" | "match";
 
 function renderPrompt(prompt: string) {
   const parts = prompt.split("_____");
@@ -73,7 +75,7 @@ export function App() {
   const [gameMode, setGameMode] = useState<GameMode>("zen");
   const [screen, setScreen] = useState<Screen>("home");
   const [questionCount, setQuestionCount] = useState(10);
-  const [selectedFamily, setSelectedFamily] = useState<ConnectorFamily | "all">("all");
+  const [selectedFamily, setSelectedFamily] = useState<ConnectorFamily | "all" | "ever_family">("all");
   const [excludeMastered, setExcludeMastered] = useState(true);
   const [masteredIds, setMasteredIds] = useState<Set<string>>(() => getMasteredIds());
   const [allConnectors, setAllConnectors] = useState<ConnectorItem[]>([]);
@@ -105,6 +107,10 @@ export function App() {
 
   // Estatísticas da categoria atualmente selecionada
   const selectedFamilyConnectors = useMemo(() => {
+    if (selectedFamily === "ever_family") {
+      const everIds = new Set(["whatever", "whenever", "wherever", "whoever", "however"]);
+      return allConnectors.filter((c) => everIds.has(c.id));
+    }
     return allConnectors.filter((c) => selectedFamily === "all" || c.family === selectedFamily);
   }, [allConnectors, selectedFamily]);
 
@@ -149,9 +155,16 @@ export function App() {
     setBusy(true);
     playClickSound();
     try {
+      const isEver = selectedFamily === "ever_family";
       const excludedList =
-        excludeMastered && masteredIds.size > 0 ? Array.from(masteredIds) : undefined;
-      const next = await startSession(questionCount, selectedFamily, gameMode, excludedList);
+        !isEver && excludeMastered && masteredIds.size > 0 ? Array.from(masteredIds) : undefined;
+      const next = await startSession(
+        questionCount,
+        isEver ? undefined : selectedFamily,
+        gameMode,
+        excludedList,
+        isEver ? "ever_family" : undefined,
+      );
       setSession(next);
       setQuestion(next.question);
       setFeedback(null);
@@ -162,6 +175,32 @@ export function App() {
       setScreen("play");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Não foi possível iniciar a prática");
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function beginEverSession(count: number, chosenMode: GameMode) {
+    setError(null);
+    setBusy(true);
+    playClickSound();
+    try {
+      setGameMode(chosenMode);
+      setSelectedFamily("ever_family");
+      const next = await startSession(count, undefined, chosenMode, undefined, "ever_family");
+      setSession(next);
+      setQuestion(next.question);
+      setFeedback(null);
+      setSummary(null);
+      setSavedSessionId(null);
+      setHighlightRecordId(null);
+      setSecondsLeft(QUESTION_SECONDS);
+      setActiveTab("practice");
+      setScreen("play");
+    } catch (err) {
+      setError(
+        err instanceof Error ? err.message : "Não foi possível iniciar o treino da Família -Ever",
+      );
     } finally {
       setBusy(false);
     }
@@ -418,6 +457,15 @@ export function App() {
           📖 Prática Guiada de Frases
         </button>
         <button
+          className={`tab-item ${activeTab === "ever" ? "active" : ""}`}
+          onClick={() => {
+            playClickSound();
+            setActiveTab("ever");
+          }}
+        >
+          🎯 Especial: Família -Ever
+        </button>
+        <button
           className={`tab-item ${activeTab === "deck" ? "active" : ""}`}
           onClick={() => {
             playClickSound();
@@ -448,6 +496,34 @@ export function App() {
               completa da frase em português e pronúncia em inglês. Aprenda o porquê de cada escolha
               sem estresse ou punição.
             </p>
+          </div>
+
+          {/* Banner de Destaque da Família -Ever */}
+          <div
+            className="ever-quick-banner"
+            onClick={() => {
+              playClickSound();
+              setActiveTab("ever");
+            }}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                playClickSound();
+                setActiveTab("ever");
+              }
+            }}
+          >
+            <div className="ever-banner-icon">🎯</div>
+            <div className="ever-banner-content">
+              <strong>Sessão Especial: Whatever, Whenever, Wherever, Whoever e However</strong>
+              <p>
+                Aprenda a regra de ouro do sufixo <em>-ever</em> e treine frases com alternativas
+                exclusivas deste grupo essencial.
+              </p>
+            </div>
+            <span className="ever-banner-cta">Abrir Estudo Comparativo ➔</span>
           </div>
 
           {/* Seleção do Modo de Estudo (Zen vs Arcade) */}
@@ -541,13 +617,17 @@ export function App() {
                 id="family-select"
                 value={selectedFamily}
                 onChange={(event) =>
-                  setSelectedFamily(event.target.value as ConnectorFamily | "all")
+                  setSelectedFamily(event.target.value as ConnectorFamily | "all" | "ever_family")
                 }
               >
-                {(Object.keys(FAMILY_LABEL) as Array<ConnectorFamily | "all">).map((key) => {
-                  const famConnectors = allConnectors.filter(
-                    (c) => key === "all" || c.family === key,
-                  );
+                {(Object.keys(FAMILY_LABEL) as Array<ConnectorFamily | "all" | "ever_family">).map((key) => {
+                  let famConnectors: ConnectorItem[] = [];
+                  if (key === "ever_family") {
+                    const everIds = new Set(["whatever", "whenever", "wherever", "whoever", "however"]);
+                    famConnectors = allConnectors.filter((c) => everIds.has(c.id));
+                  } else {
+                    famConnectors = allConnectors.filter((c) => key === "all" || c.family === key);
+                  }
                   const famMastered = famConnectors.filter((c) => masteredIds.has(c.id)).length;
                   const isAllDominated =
                     famConnectors.length > 0 && famMastered === famConnectors.length;
@@ -884,6 +964,11 @@ export function App() {
             </button>
           </div>
         </section>
+      ) : null}
+
+      {/* MODO ESPECIAL: FAMÍLIA -EVER */}
+      {activeTab === "ever" ? (
+        <EverStudySection onStartPractice={beginEverSession} busy={busy} />
       ) : null}
 
       {/* MODO 2: DECK DOS 81 CONECTIVOS */}

@@ -1,6 +1,7 @@
 import type {
   AnswerResponse,
   ConnectorItem,
+  EverFamilyGuideResponse,
   MatchPair,
   SessionResponse,
   SummaryResponse,
@@ -23,17 +24,26 @@ export function startSession(
   family?: string,
   mode: "zen" | "arcade" = "zen",
   excludeConnectorIds?: string[],
+  specialTopic?: "ever_family",
 ): Promise<SessionResponse> {
+  const isEverFamily = specialTopic === "ever_family" || family === "ever_family";
   return fetch(`${API_BASE}/sessions`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       questionCount,
-      family: family === "all" ? undefined : family,
+      family: isEverFamily ? undefined : family === "all" ? undefined : family,
+      specialTopic: isEverFamily ? "ever_family" : undefined,
       mode,
-      excludeConnectorIds,
+      excludeConnectorIds: isEverFamily ? undefined : excludeConnectorIds,
     }),
   }).then((response) => parseJson<SessionResponse>(response));
+}
+
+export function fetchEverFamilyGuide(): Promise<EverFamilyGuideResponse> {
+  return fetch(`${API_BASE}/special/ever-family`).then((response) =>
+    parseJson<EverFamilyGuideResponse>(response),
+  );
 }
 
 export function submitAnswer(

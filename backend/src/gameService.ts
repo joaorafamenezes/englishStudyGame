@@ -6,6 +6,8 @@ import type {
   AnswerBody,
   ConnectorFamily,
   ConnectorItem,
+  EverFamilyGuideResponse,
+  EverFamilyItem,
   GameMode,
   GameSession,
   MatchPair,
@@ -120,15 +122,89 @@ export function getConnectorIdForQuestion(question: Question): string | undefine
   return CONNECTOR_NORM_TO_ID.get(normalizeConnectorName(question.connector));
 }
 
+export const EVER_FAMILY_ITEMS: EverFamilyItem[] = [
+  {
+    word: "Whatever",
+    meaning: "o que quer que / qualquer coisa",
+    targetRole: "Coisas, ações, eventos ou objetos",
+    mnemonic: "What + ever = qualquer coisa que seja / no matter what",
+    exampleEn: "Whatever happens during the demo, keep calm and explain the architecture.",
+    examplePt: "O que quer que aconteça durante a demonstração, mantenha a calma e explique a arquitetura.",
+    connectorId: "whatever",
+  },
+  {
+    word: "Whenever",
+    meaning: "quando quer que / sempre que",
+    targetRole: "Tempo, momentos, ocasiões ou frequência",
+    mnemonic: "When + ever = qualquer momento que seja / every time that",
+    exampleEn: "Whenever the CI pipeline fails, an alert is sent to our squad Slack channel.",
+    examplePt: "Sempre que a pipeline de CI falha, um alerta é enviado para o canal da nossa squad no Slack.",
+    connectorId: "whenever",
+  },
+  {
+    word: "Wherever",
+    meaning: "onde quer que / onde quer que seja",
+    targetRole: "Lugares, localizações geográficas ou espaciais",
+    mnemonic: "Where + ever = qualquer lugar que seja / in any place where",
+    exampleEn: "With cloud workstations, software engineers can code securely from wherever they are.",
+    examplePt: "Com estações em nuvem, engenheiros de software podem programar com segurança de onde quer que estejam.",
+    connectorId: "wherever",
+  },
+  {
+    word: "Whoever",
+    meaning: "quem quer que / qualquer pessoa que",
+    targetRole: "Pessoas, sujeitos humanos ou agentes",
+    mnemonic: "Who + ever = qualquer pessoa que seja / any person who",
+    exampleEn: "Whoever authored this pull request followed all clean code principles.",
+    examplePt: "Quem quer que tenha criado este pull request seguiu todos os princípios de código limpo.",
+    connectorId: "whoever",
+  },
+  {
+    word: "However",
+    meaning: "como quer que / por mais que (e contudo)",
+    targetRole: "Modo ('como quer que') ou Grau de intensidade ('por mais que + adjetivo')",
+    mnemonic: "How + ever = de qualquer maneira que seja / por mais [adjetivo] que seja",
+    exampleEn: "However difficult the legacy migration seems, breaking it into smaller stories ensures success.",
+    examplePt: "Por mais difícil que a migração do legado pareça, dividi-la em histórias menores garante o sucesso.",
+    connectorId: "however",
+  },
+];
+
+export function getEverFamilyGuide(): EverFamilyGuideResponse {
+  return {
+    title: "These are worth learning together:",
+    ruleOfThumb:
+      "Pergunte a si mesmo o que a lacuna representa: Pessoa (Who -> Whoever), Lugar (Where -> Wherever), Tempo (When -> Whenever), Coisa/Evento (What -> Whatever) ou Modo/Intensidade (How -> However).",
+    items: EVER_FAMILY_ITEMS,
+  };
+}
+
 export function startGame(body: StartGameBody = {}) {
   const requested = body.questionCount ?? DEFAULT_QUESTION_COUNT;
-  const requestedFamily = body.family && body.family !== "all" ? body.family : undefined;
-  let filteredQuestions = requestedFamily
-    ? QUESTIONS.filter((item) => item.family === requestedFamily)
-    : QUESTIONS;
+  const isEverFamily =
+    body.specialTopic === "ever_family" || (body.family as string) === "ever_family";
+  const requestedFamily =
+    !isEverFamily && body.family && body.family !== "all" ? body.family : undefined;
+
+  let filteredQuestions = QUESTIONS;
+
+  if (isEverFamily) {
+    const dedicatedEverQuestions = QUESTIONS.filter((q) => q.id.startsWith("q-ever-"));
+    if (dedicatedEverQuestions.length > 0) {
+      filteredQuestions = dedicatedEverQuestions;
+    } else {
+      const everConnectorIds = new Set(["whatever", "whenever", "wherever", "whoever", "however"]);
+      filteredQuestions = QUESTIONS.filter((q) => {
+        const connId = getConnectorIdForQuestion(q);
+        return connId && everConnectorIds.has(connId);
+      });
+    }
+  } else if (requestedFamily) {
+    filteredQuestions = QUESTIONS.filter((item) => item.family === requestedFamily);
+  }
 
   const excludeSet = new Set(body.excludeConnectorIds || []);
-  if (excludeSet.size > 0) {
+  if (excludeSet.size > 0 && !isEverFamily) {
     const unmasteredQuestions = filteredQuestions.filter((q) => {
       const connId = getConnectorIdForQuestion(q);
       return !connId || !excludeSet.has(connId);

@@ -82,8 +82,25 @@ export type GameSession = {
 export type StartGameBody = {
   questionCount?: number;
   family?: ConnectorFamily | "all";
+  specialTopic?: "ever_family";
   mode?: GameMode;
   excludeConnectorIds?: string[];
+};
+
+export type EverFamilyItem = {
+  word: string;
+  meaning: string;
+  targetRole: string;
+  mnemonic: string;
+  exampleEn: string;
+  examplePt: string;
+  connectorId: string;
+};
+
+export type EverFamilyGuideResponse = {
+  title: string;
+  ruleOfThumb: string;
+  items: EverFamilyItem[];
 };
 
 export type AnswerBody = {

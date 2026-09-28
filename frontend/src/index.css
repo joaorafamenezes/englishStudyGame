@@ -1909,3 +1909,344 @@ select:focus {
 .chip-score {
   color: var(--amber-2);
 }
+
+/* =========================================================
+   SESSÃO ESPECIAL: FAMÍLIA -EVER (Whatever, Whenever, etc.)
+   ========================================================= */
+
+/* BANNER DE ATALHO NA HOME */
+.ever-quick-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.14), rgba(245, 158, 11, 0.1));
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  border-radius: 18px;
+  padding: 16px 20px;
+  margin: 18px 0 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ever-quick-banner:hover {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.22), rgba(245, 158, 11, 0.16));
+  border-color: var(--teal);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.ever-banner-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.ever-banner-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ever-banner-content strong {
+  font-size: 15px;
+  color: var(--teal);
+}
+
+.ever-banner-content p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.ever-banner-cta {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--amber-2);
+  white-space: nowrap;
+  padding: 6px 14px;
+  background: rgba(245, 158, 11, 0.12);
+  border-radius: 999px;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  transition: all 0.2s;
+}
+
+.ever-quick-banner:hover .ever-banner-cta {
+  background: var(--amber);
+  color: #0b1f1d;
+}
+
+/* CONTAINER DA SESSÃO ESPECIAL */
+.ever-study-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ever-hero-card {
+  padding: 28px;
+}
+
+.ever-hero-header {
+  margin-bottom: 24px;
+}
+
+.ever-hero-badge {
+  display: inline-block;
+  background: var(--teal-soft);
+  color: var(--teal);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.ever-hero-header h2 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+}
+
+.ever-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.ever-table-title {
+  font-size: 18px;
+  color: var(--amber-2);
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+
+.ever-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.ever-comparison-table th {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 14px 18px;
+  font-size: 12.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--line);
+}
+
+.ever-comparison-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: middle;
+}
+
+.ever-comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.ever-comparison-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.word-cell {
+  white-space: nowrap;
+}
+
+.ever-word {
+  display: block;
+  font-size: 18px;
+  color: var(--teal);
+  font-family: "Bricolage Grotesque", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.ever-mnemonic-mini {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  font-family: monospace;
+  margin-top: 2px;
+}
+
+.meaning-cell {
+  font-size: 14px;
+  color: var(--ink);
+  font-weight: 500;
+  max-width: 220px;
+}
+
+.role-cell {
+  white-space: nowrap;
+}
+
+.role-tag {
+  display: inline-block;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  color: var(--amber-2);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.example-cell {
+  min-width: 280px;
+}
+
+.example-en {
+  font-size: 13.5px;
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.example-pt {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 3px;
+  font-style: italic;
+}
+
+/* CAIXA MNEMÔNICA DA REGRA DE OURO */
+.ever-rule-box {
+  display: flex;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(20, 184, 166, 0.06));
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.ever-rule-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.ever-rule-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ever-rule-text strong {
+  font-size: 15px;
+  color: var(--amber-2);
+}
+
+.ever-rule-text p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.ever-formula-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.formula-chip {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--line);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.formula-chip strong {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.formula-chip em {
+  color: var(--amber-2);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* LAUNCHER DA PRÁTICA DEDICADA */
+.ever-launcher-card {
+  padding: 26px 28px;
+  border-color: rgba(20, 184, 166, 0.3);
+}
+
+.launcher-header h3 {
+  margin: 0 0 6px;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+.launcher-controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.mode-selector-compact {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mode-btn {
+  flex: 1;
+  min-width: 200px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  padding: 12px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 500;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.mode-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+}
+
+.mode-btn.active {
+  background: var(--teal-soft);
+  border-color: var(--teal);
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.launcher-action-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.ever-start-btn {
+  padding: 14px 30px;
+  font-size: 15px;
+  background: var(--teal);
+  color: #0b1f1d;
+}
+
+.ever-start-btn:hover:not(:disabled) {
+  background: #2dd4bf;
+  transform: translateY(-1px);
+}

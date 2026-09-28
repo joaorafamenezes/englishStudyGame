@@ -3,6 +3,7 @@ import {
   answerQuestion,
   getConnectorById,
   getConnectorsCatalog,
+  getEverFamilyGuide,
   getMatchPairs,
   getSession,
   getSummary,
@@ -16,6 +17,11 @@ function routeId(value: string | string[] | undefined): string {
   const id = Array.isArray(value) ? value[0] : value;
   return id ?? "";
 }
+
+// Guia Especial da Família -Ever (Whatever, Whenever, Wherever, Whoever, However)
+gameRouter.get("/special/ever-family", (_req, res) => {
+  res.json(getEverFamilyGuide());
+});
 
 // Catálogo dos 81 conectivos com busca e filtro por família
 gameRouter.get("/connectors", (req, res) => {

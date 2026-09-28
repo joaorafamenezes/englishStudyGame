@@ -47,6 +47,22 @@ export type PublicQuestion = {
 
 export type GameStatus = "playing" | "won" | "lost";
 
+export type EverFamilyItem = {
+  word: string;
+  meaning: string;
+  targetRole: string;
+  mnemonic: string;
+  exampleEn: string;
+  examplePt: string;
+  connectorId: string;
+};
+
+export type EverFamilyGuideResponse = {
+  title: string;
+  ruleOfThumb: string;
+  items: EverFamilyItem[];
+};
+
 export type Hud = {
   sessionId: string;
   mode?: GameMode;
@@ -58,7 +74,7 @@ export type Hud = {
   status: GameStatus;
   answered: number;
   total: number;
-  familyFilter?: ConnectorFamily | "all";
+  familyFilter?: ConnectorFamily | "all" | "ever_family";
 };
 
 export type SessionResponse = Hud & {
