@@ -13068,7 +13068,7 @@ export const QUESTIONS: Question[] = [
       { "id": "a", "text": "whoever" },
       { "id": "b", "text": "whenever" },
       { "id": "c", "text": "wherever" },
-      { "id": "d", "text": "whatever" }
+      { "id": "d", "text": "whereas" }
     ],
     "correctOptionId": "c",
     "connector": "wherever",
@@ -13078,8 +13078,8 @@ export const QUESTIONS: Question[] = [
     "fullSentence": "With modern cloud workstations, software engineers can code securely from wherever they are located in the world.",
     "sentenceTranslation": "Com estações de trabalho modernas em nuvem, engenheiros de software podem programar com segurança de onde quer que estejam no mundo.",
     "whyCorrect": "'Wherever' expressa ausência de restrição geográfica ou espacial ('de onde quer que estejam').",
-    "whyOthersFail": "'Whoever' refere-se a pessoas ('quem quer que'). 'Whenever' refere-se a tempo ('sempre que'). 'Whatever' refere-se a coisas ('o que quer que').",
-    "proTip": "Dica de ouro: A lacuna é um local ou espaço? Se sim, a resposta é 'Wherever' ('any place where')."
+    "whyOthersFail": "'Whoever' refere-se a pessoas ('quem quer que'). 'Whenever' refere-se a tempo ('sempre que'). 'Whereas' significa 'ao passo que' (contraste) e NÃO indica lugar, apesar de começar com 'Where-'!",
+    "proTip": "Dica de ouro: A lacuna é um local ou espaço? Se sim, a resposta é 'Wherever' ('any place where'). Cuidado para não confundir com 'Whereas' ('ao passo que')!"
   },
   {
     "id": "q-ever-wherever-microservices-bottleneck",
@@ -13360,5 +13360,105 @@ export const QUESTIONS: Question[] = [
     "whyCorrect": "'However' aqui atua como o tradicional conector de transição adversativa ('no entanto/contudo'), conectando duas orações independentes.",
     "whyOthersFail": "'Whatever', 'Whenever' e 'Wherever' não funcionam como conectores adversativos de transição entre ponto e vírgula e vírgula.",
     "proTip": "Note a pontuação clássica: ponto e vírgula antes de '; however,' e vírgula logo após."
+  },
+  {
+    "id": "q-ever-whereas-scrum-kanban",
+    "prompt": "Scrum organizes agile work into fixed two-week sprints, _____ Kanban relies on continuous delivery and work-in-progress limits.",
+    "options": [
+      { "id": "a", "text": "wherever" },
+      { "id": "b", "text": "whereas" },
+      { "id": "c", "text": "whatever" },
+      { "id": "d", "text": "whoever" }
+    ],
+    "correctOptionId": "b",
+    "connector": "whereas",
+    "family": "contrast",
+    "translation": "ao passo que / enquanto que",
+    "explanation": "'Whereas' introduz uma oração subordinada que contrapõe diretamente dois métodos de trabalho (Scrum vs Kanban).",
+    "fullSentence": "Scrum organizes agile work into fixed two-week sprints, whereas Kanban relies on continuous delivery and work-in-progress limits.",
+    "sentenceTranslation": "O Scrum organiza o trabalho ágil em sprints fixas de duas semanas, ao passo que o Kanban depende de entrega contínua e limites de trabalho em progresso.",
+    "whyCorrect": "'Whereas' contrapõe diretamente dois métodos ou características simultâneas na mesma oração ('ao passo que / enquanto que').",
+    "whyOthersFail": "'Wherever' expressa lugar ('onde quer que seja'). 'Whatever' expressa coisas ou fatos ('o que quer que'). 'Whoever' expressa pessoas ('quem quer que').",
+    "proTip": "Cuidado com o falso amigo: 'Whereas' começa com 'Where-', mas NÃO expressa lugar! É um conector de contraste ('ao passo que')."
+  },
+  {
+    "id": "q-ever-whereas-monolith-microservices",
+    "prompt": "Monolithic architectures simplify local debugging and deployment, _____ microservices provide independent scalability and squad autonomy.",
+    "options": [
+      { "id": "a", "text": "however" },
+      { "id": "b", "text": "wherever" },
+      { "id": "c", "text": "whereas" },
+      { "id": "d", "text": "whenever" }
+    ],
+    "correctOptionId": "c",
+    "connector": "whereas",
+    "family": "contrast",
+    "translation": "ao passo que / enquanto que",
+    "explanation": "'Whereas' conecta duas orações com vírgula para contrastar vantagens de arquiteturas distintas.",
+    "fullSentence": "Monolithic architectures simplify local debugging and deployment, whereas microservices provide independent scalability and squad autonomy.",
+    "sentenceTranslation": "Arquiteturas monolíticas simplificam a depuração e o deploy local, ao passo que microsserviços oferecem escalabilidade independente e autonomia para as squads.",
+    "whyCorrect": "'Whereas' é a conjunção subordinativa ideal para unir duas orações contrapostas separadas por vírgula.",
+    "whyOthersFail": "'However' geralmente atua como advérbio de transição (exige ponto/ponto e vírgula antes e vírgula depois). 'Wherever' indicaria lugar e 'Whenever' indicaria tempo.",
+    "proTip": "Estrutura clássica de arquitetura: '[Característica A], whereas [Característica B]'."
+  },
+  {
+    "id": "q-ever-whereas-relational-nosql",
+    "prompt": "Relational databases strictly guarantee ACID transactions, _____ NoSQL document stores prioritize flexible schemas and high write throughput.",
+    "options": [
+      { "id": "a", "text": "whatever" },
+      { "id": "b", "text": "whoever" },
+      { "id": "c", "text": "wherever" },
+      { "id": "d", "text": "whereas" }
+    ],
+    "correctOptionId": "d",
+    "connector": "whereas",
+    "family": "contrast",
+    "translation": "ao passo que / enquanto que",
+    "explanation": "'Whereas' contrapõe as garantias de bancos relacionais com as prioridades do NoSQL.",
+    "fullSentence": "Relational databases strictly guarantee ACID transactions, whereas NoSQL document stores prioritize flexible schemas and high write throughput.",
+    "sentenceTranslation": "Bancos relacionais garantem estritamente transações ACID, ao passo que repositórios NoSQL priorizam esquemas flexíveis e alto rendimento de escrita.",
+    "whyCorrect": "'Whereas' expressa a oposição direta entre as propriedades técnicas de dois modelos de banco de dados.",
+    "whyOthersFail": "'Wherever' confundiria o aluno com lugar na nuvem. 'Whatever' significaria 'o que quer que'. 'Whoever' refere-se a pessoas.",
+    "proTip": "Diferença crucial: 'Wherever' = 'Where + ever' (lugar). 'Whereas' = 'Where + as' (contraste analítico)!"
+  },
+  {
+    "id": "q-ever-whereas-junior-senior",
+    "prompt": "Junior developers often evaluate success solely by lines of code written, _____ senior engineers emphasize code simplicity and domain clarity.",
+    "options": [
+      { "id": "a", "text": "whereas" },
+      { "id": "b", "text": "wherever" },
+      { "id": "c", "text": "whenever" },
+      { "id": "d", "text": "however" }
+    ],
+    "correctOptionId": "a",
+    "connector": "whereas",
+    "family": "contrast",
+    "translation": "ao passo que / enquanto que",
+    "explanation": "'Whereas' compara duas visões de maturidade profissional sobre desenvolvimento de software.",
+    "fullSentence": "Junior developers often evaluate success solely by lines of code written, whereas senior engineers emphasize code simplicity and domain clarity.",
+    "sentenceTranslation": "Desenvolvedores júnior muitas vezes avaliam o sucesso apenas por linhas de código escritas, ao passo que engenheiros seniores enfatizam a simplicidade do código e a clareza de domínio.",
+    "whyCorrect": "'Whereas' faz o contraponto equilibrado entre os critérios dos desenvolvedores júnior e dos engenheiros seniores.",
+    "whyOthersFail": "'Wherever' é lugar, 'Whenever' é tempo. 'However' exigiria pontuação de advérbio conectivo independente (ex: '; however,').",
+    "proTip": "Use 'whereas' em entrevistas para contrastar abordagens com alto nível de sofisticação no inglês."
+  },
+  {
+    "id": "q-ever-whereas-sync-async",
+    "prompt": "Synchronous HTTP calls block the calling thread until a response returns, _____ asynchronous message queues allow non-blocking event processing.",
+    "options": [
+      { "id": "a", "text": "whatever" },
+      { "id": "b", "text": "whereas" },
+      { "id": "c", "text": "wherever" },
+      { "id": "d", "text": "whoever" }
+    ],
+    "correctOptionId": "b",
+    "connector": "whereas",
+    "family": "contrast",
+    "translation": "ao passo que / enquanto que",
+    "explanation": "'Whereas' contrapõe a natureza bloqueante do HTTP síncrono com a mensageria assíncrona.",
+    "fullSentence": "Synchronous HTTP calls block the calling thread until a response returns, whereas asynchronous message queues allow non-blocking event processing.",
+    "sentenceTranslation": "Chamadas HTTP síncronas bloqueiam a thread de execução até que a resposta retorne, ao passo que filas de mensageria assíncronas permitem processamento não bloqueante de eventos.",
+    "whyCorrect": "'Whereas' conecta e contrapõe os dois paradigmas de integração com precisão técnica.",
+    "whyOthersFail": "'Wherever' é espacial/nuvem ('onde quer que'). 'Whatever' é substantivo indeterminado. 'Whoever' é para agentes humanos.",
+    "proTip": "Lembrete definitivo: 'Whereas' = 'While / In contrast to the fact that'."
   }
 ];

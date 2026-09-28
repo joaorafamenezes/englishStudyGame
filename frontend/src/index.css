@@ -2099,6 +2099,12 @@ select:focus {
   font-weight: 500;
 }
 
+.role-tag.role-tag-contrast {
+  background: rgba(239, 68, 68, 0.14);
+  border-color: rgba(239, 68, 68, 0.35);
+  color: #f87171;
+}
+
 .example-cell {
   min-width: 280px;
 }
@@ -2178,6 +2184,19 @@ select:focus {
   color: var(--amber-2);
   font-style: normal;
   font-weight: 600;
+}
+
+.formula-chip.formula-chip-contrast {
+  border-color: rgba(239, 68, 68, 0.4);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.formula-chip.formula-chip-contrast strong {
+  color: #f87171;
+}
+
+.formula-chip.formula-chip-contrast em {
+  color: #fca5a5;
 }
 
 /* LAUNCHER DA PRÁTICA DEDICADA */

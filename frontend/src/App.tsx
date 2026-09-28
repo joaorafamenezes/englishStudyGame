@@ -37,7 +37,7 @@ const QUESTION_SECONDS = 18;
 
 const FAMILY_LABEL: Record<string, string> = {
   all: "Todas as Categorias",
-  ever_family: "🎯 Especial: Família -Ever (Whatever, Whenever...)",
+  ever_family: "🎯 Especial: Família -Ever & Whereas (Whatever, Whenever, Whereas...)",
   contrast: "Contraste (Although, Despite, However...)",
   cause: "Causa / Efeito (Because, As a result, Hence...)",
   condition: "Condição (If, Unless, As long as...)",
@@ -463,7 +463,7 @@ export function App() {
             setActiveTab("ever");
           }}
         >
-          🎯 Especial: Família -Ever
+          🎯 Especial: Família -Ever & Whereas
         </button>
         <button
           className={`tab-item ${activeTab === "deck" ? "active" : ""}`}
@@ -517,10 +517,9 @@ export function App() {
           >
             <div className="ever-banner-icon">🎯</div>
             <div className="ever-banner-content">
-              <strong>Sessão Especial: Whatever, Whenever, Wherever, Whoever e However</strong>
+              <strong>Sessão Especial: Whatever, Whenever, Wherever, Whoever, However e Whereas</strong>
               <p>
-                Aprenda a regra de ouro do sufixo <em>-ever</em> e treine frases com alternativas
-                exclusivas deste grupo essencial.
+                Aprenda a regra mental do sufixo <em>-ever</em>, diferencie o falso amigo <em>Whereas</em> (contraste) de <em>Wherever</em> (lugar), e treine frases práticas.
               </p>
             </div>
             <span className="ever-banner-cta">Abrir Estudo Comparativo ➔</span>

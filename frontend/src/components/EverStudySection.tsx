@@ -4,35 +4,90 @@ import { playClickSound } from "../sound";
 import { speakEnglish } from "../tts";
 import type { EverFamilyGuideResponse, GameMode } from "../types";
 
+export const DEFAULT_EVER_GUIDE: EverFamilyGuideResponse = {
+  title: "These are worth learning together:",
+  ruleOfThumb:
+    "Pergunte a si mesmo o que a lacuna representa: Pessoa (Who -> Whoever), Lugar (Where -> Wherever), Tempo (When -> Whenever), Coisa/Evento (What -> Whatever), Modo/Grau (How -> However) ou Contraste Analítico Direto (Where+as -> Whereas).",
+  items: [
+    {
+      word: "Whatever",
+      meaning: "o que quer que / qualquer coisa",
+      targetRole: "Coisas, ações, eventos ou objetos",
+      mnemonic: "What + ever = qualquer coisa que seja / no matter what",
+      exampleEn: "Whatever happens during the demo, keep calm and explain the architecture.",
+      examplePt: "O que quer que aconteça durante a demonstração, mantenha a calma e explique a arquitetura.",
+      connectorId: "whatever",
+    },
+    {
+      word: "Whenever",
+      meaning: "quando quer que / sempre que",
+      targetRole: "Tempo, momentos, ocasiões ou frequência",
+      mnemonic: "When + ever = qualquer momento que seja / every time that",
+      exampleEn: "Whenever the CI pipeline fails, an alert is sent to our squad Slack channel.",
+      examplePt: "Sempre que a pipeline de CI falha, um alerta é enviado para o canal da nossa squad no Slack.",
+      connectorId: "whenever",
+    },
+    {
+      word: "Wherever",
+      meaning: "onde quer que / onde quer que seja",
+      targetRole: "Lugares, localizações geográficas ou espaciais",
+      mnemonic: "Where + ever = qualquer lugar que seja / in any place where",
+      exampleEn: "With cloud workstations, software engineers can code securely from wherever they are.",
+      examplePt: "Com estações em nuvem, engenheiros de software podem programar com segurança de onde quer que estejam.",
+      connectorId: "wherever",
+    },
+    {
+      word: "Whoever",
+      meaning: "quem quer que / qualquer pessoa que",
+      targetRole: "Pessoas, sujeitos humanos ou agentes",
+      mnemonic: "Who + ever = qualquer pessoa que seja / any person who",
+      exampleEn: "Whoever authored this pull request followed all clean code principles.",
+      examplePt: "Quem quer que tenha criado este pull request seguiu todos os princípios de código limpo.",
+      connectorId: "whoever",
+    },
+    {
+      word: "However",
+      meaning: "como quer que / por mais que (e contudo)",
+      targetRole: "Modo ('como quer que') ou Grau de intensidade ('por mais que + adjetivo')",
+      mnemonic: "How + ever = de qualquer maneira que seja / por mais [adjetivo] que seja",
+      exampleEn: "However difficult the legacy migration seems, breaking it into smaller stories ensures success.",
+      examplePt: "Por mais difícil que a migração do legado pareça, dividi-la em histórias menores garante o sucesso.",
+      connectorId: "however",
+    },
+    {
+      word: "Whereas",
+      meaning: "ao passo que / enquanto que",
+      targetRole: "Contraste analítico direto entre dois fatos ou abordagens",
+      mnemonic: "Where + as = ao passo que / enquanto que (CUIDADO: não é lugar! É contraste direto)",
+      exampleEn: "Scrum focuses on short timeboxed iterations, whereas Kanban emphasizes continuous workflow.",
+      examplePt: "O Scrum foca em iterações curtas e com prazo, ao passo que o Kanban enfatiza o fluxo contínuo de trabalho.",
+      connectorId: "whereas",
+    },
+  ],
+};
+
 type EverStudySectionProps = {
   onStartPractice: (questionCount: number, mode: GameMode) => void;
   busy?: boolean;
 };
 
 export function EverStudySection({ onStartPractice, busy = false }: EverStudySectionProps) {
-  const [guide, setGuide] = useState<EverFamilyGuideResponse | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  // Inicialização resiliente imediata: evita 404 e tela em branco mesmo em cold-start ou deploy
+  const [guide, setGuide] = useState<EverFamilyGuideResponse>(DEFAULT_EVER_GUIDE);
   const [questionCount, setQuestionCount] = useState(10);
   const [mode, setMode] = useState<GameMode>("zen");
 
   useEffect(() => {
     let active = true;
-    setLoading(true);
     fetchEverFamilyGuide()
       .then((data) => {
-        if (active) {
+        if (active && data?.items?.length) {
           setGuide(data);
-          setError(null);
         }
       })
       .catch((err) => {
-        if (active) {
-          setError(err instanceof Error ? err.message : "Erro ao carregar guia do -Ever");
-        }
-      })
-      .finally(() => {
-        if (active) setLoading(false);
+        // Fallback gracioso: mantemos o guia padrão incorporado para nunca exibir 'Request failed (404)'
+        console.debug("Remote ever-family guide unavailable, using embedded guide:", err);
       });
 
     return () => {
@@ -51,33 +106,33 @@ export function EverStudySection({ onStartPractice, busy = false }: EverStudySec
       <div className="card ever-hero-card">
         <div className="ever-hero-header">
           <span className="ever-hero-badge">🎯 Estudo Comparativo de Conectivos</span>
-          <h2>Família do Sufixo -Ever</h2>
+          <h2>Família do Sufixo -Ever & Whereas</h2>
           <p className="muted">
-            Estas cinco palavras compartilham a mesma terminação e lógica gramatical. Estudá-las
-            em conjunto elimina a confusão na hora de falar e escrever:
+            Estas palavras compartilham raízes semelhantes e geram muitas dúvidas no dia a dia.
+            Estudá-las em conjunto elimina a confusão entre <strong>Lugar</strong> (<em>Wherever</em>),
+            {" "}<strong>Contraste</strong> (<em>Whereas</em> / <em>However</em>),{" "}
+            <strong>Tempo</strong> (<em>Whenever</em>), <strong>Pessoa</strong> (<em>Whoever</em>) e{" "}
+            <strong>Coisa/Ação</strong> (<em>Whatever</em>):
           </p>
         </div>
 
         {/* Tabela Comparativa (These are worth learning together) */}
-        {loading ? (
-          <div className="deck-loading">Carregando guia da Família -Ever...</div>
-        ) : error ? (
-          <div className="card error">{error}</div>
-        ) : guide ? (
-          <div className="ever-table-wrap">
-            <h3 className="ever-table-title">{guide.title}</h3>
-            <table className="ever-comparison-table">
-              <thead>
-                <tr>
-                  <th>Palavra (-Ever)</th>
-                  <th>Significado</th>
-                  <th>A que se refere?</th>
-                  <th>Exemplo Contextual</th>
-                  <th style={{ width: 80, textAlign: "center" }}>Áudio</th>
-                </tr>
-              </thead>
-              <tbody>
-                {guide.items.map((item) => (
+        <div className="ever-table-wrap">
+          <h3 className="ever-table-title">{guide.title}</h3>
+          <table className="ever-comparison-table">
+            <thead>
+              <tr>
+                <th>Palavra</th>
+                <th>Significado</th>
+                <th>A que se refere?</th>
+                <th>Exemplo Contextual</th>
+                <th style={{ width: 80, textAlign: "center" }}>Áudio</th>
+              </tr>
+            </thead>
+            <tbody>
+              {guide.items.map((item) => {
+                const isWhereas = item.word.toLowerCase() === "whereas";
+                return (
                   <tr key={item.word} className={`row-${item.connectorId}`}>
                     <td className="word-cell">
                       <strong className="ever-word">{item.word}</strong>
@@ -85,7 +140,9 @@ export function EverStudySection({ onStartPractice, busy = false }: EverStudySec
                     </td>
                     <td className="meaning-cell">{item.meaning}</td>
                     <td className="role-cell">
-                      <span className="role-tag">{item.targetRole}</span>
+                      <span className={`role-tag ${isWhereas ? "role-tag-contrast" : ""}`}>
+                        {item.targetRole}
+                      </span>
                     </td>
                     <td className="example-cell">
                       <div className="example-en">"{item.exampleEn}"</div>
@@ -103,47 +160,50 @@ export function EverStudySection({ onStartPractice, busy = false }: EverStudySec
                       </button>
                     </td>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                );
+              })}
+            </tbody>
+          </table>
 
-            {/* Caixa Mnemônica da Regra de Ouro */}
-            <div className="ever-rule-box">
-              <div className="ever-rule-icon">💡</div>
-              <div className="ever-rule-text">
-                <strong>Regra Mental Rápida:</strong>
-                <p>{guide.ruleOfThumb}</p>
-                <div className="ever-formula-chips">
-                  <span className="formula-chip">
-                    <strong>Who</strong> = Pessoa ➔ <em>Whoever</em>
-                  </span>
-                  <span className="formula-chip">
-                    <strong>Where</strong> = Lugar ➔ <em>Wherever</em>
-                  </span>
-                  <span className="formula-chip">
-                    <strong>When</strong> = Tempo ➔ <em>Whenever</em>
-                  </span>
-                  <span className="formula-chip">
-                    <strong>What</strong> = Coisa/Ação ➔ <em>Whatever</em>
-                  </span>
-                  <span className="formula-chip">
-                    <strong>How</strong> = Modo/Grau ➔ <em>However</em>
-                  </span>
-                </div>
+          {/* Caixa Mnemônica da Regra de Ouro */}
+          <div className="ever-rule-box">
+            <div className="ever-rule-icon">💡</div>
+            <div className="ever-rule-text">
+              <strong>Regra Mental Rápida:</strong>
+              <p>{guide.ruleOfThumb}</p>
+              <div className="ever-formula-chips">
+                <span className="formula-chip">
+                  <strong>Who</strong> = Pessoa ➔ <em>Whoever</em>
+                </span>
+                <span className="formula-chip">
+                  <strong>Where</strong> = Lugar ➔ <em>Wherever</em>
+                </span>
+                <span className="formula-chip formula-chip-contrast">
+                  <strong>Where + as</strong> = Contraste ➔ <em>Whereas (Não é lugar!)</em>
+                </span>
+                <span className="formula-chip">
+                  <strong>When</strong> = Tempo ➔ <em>Whenever</em>
+                </span>
+                <span className="formula-chip">
+                  <strong>What</strong> = Coisa/Ação ➔ <em>Whatever</em>
+                </span>
+                <span className="formula-chip">
+                  <strong>How</strong> = Modo/Grau ➔ <em>However</em>
+                </span>
               </div>
             </div>
           </div>
-        ) : null}
+        </div>
       </div>
 
       {/* Launcher da Prática Especial */}
       <div className="card ever-launcher-card">
         <div className="launcher-header">
-          <h3>Prática Exclusiva: Teste seu Domínio no Clã do -Ever</h3>
+          <h3>Prática Exclusiva: Teste seu Domínio na Família -Ever & Whereas</h3>
           <p className="muted">
-            Nesta sessão, <strong>todas as 4 alternativas serão membros da família -Ever</strong>.
+            Nesta sessão, <strong>todas as 4 alternativas serão membros da família -Ever e Whereas</strong>.
             Você precisará analisar cuidadosamente o contexto de cada frase para acertar com
-            confiança.
+            confiança e nunca mais confundir <em>Wherever</em> com <em>Whereas</em>.
           </p>
         </div>
 
@@ -184,7 +244,8 @@ export function EverStudySection({ onStartPractice, busy = false }: EverStudySec
                 <option value={5}>5 frases (Rápido)</option>
                 <option value={10}>10 frases (Recomendado)</option>
                 <option value={15}>15 frases (Imersão)</option>
-                <option value={20}>20 frases (Completo)</option>
+                <option value={20}>20 frases (Desafio)</option>
+                <option value={25}>25 frases (Completo - todas)</option>
               </select>
             </div>
 
@@ -194,7 +255,7 @@ export function EverStudySection({ onStartPractice, busy = false }: EverStudySec
               onClick={handleStart}
               disabled={busy}
             >
-              {busy ? "Preparando Sessão..." : "Iniciar Treino do Clã do -Ever ➔"}
+              {busy ? "Preparando Sessão..." : "Iniciar Treino da Família -Ever & Whereas ➔"}
             </button>
           </div>
         </div>

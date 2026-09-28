@@ -168,13 +168,22 @@ export const EVER_FAMILY_ITEMS: EverFamilyItem[] = [
     examplePt: "Por mais difícil que a migração do legado pareça, dividi-la em histórias menores garante o sucesso.",
     connectorId: "however",
   },
+  {
+    word: "Whereas",
+    meaning: "ao passo que / enquanto que",
+    targetRole: "Contraste analítico direto entre dois fatos ou abordagens",
+    mnemonic: "Where + as = ao passo que / enquanto que (CUIDADO: não é lugar! É contraste direto)",
+    exampleEn: "Scrum focuses on short timeboxed iterations, whereas Kanban emphasizes continuous workflow.",
+    examplePt: "O Scrum foca em iterações curtas e com prazo, ao passo que o Kanban enfatiza o fluxo contínuo de trabalho.",
+    connectorId: "whereas",
+  },
 ];
 
 export function getEverFamilyGuide(): EverFamilyGuideResponse {
   return {
     title: "These are worth learning together:",
     ruleOfThumb:
-      "Pergunte a si mesmo o que a lacuna representa: Pessoa (Who -> Whoever), Lugar (Where -> Wherever), Tempo (When -> Whenever), Coisa/Evento (What -> Whatever) ou Modo/Intensidade (How -> However).",
+      "Pergunte a si mesmo o que a lacuna representa: Pessoa (Who -> Whoever), Lugar (Where -> Wherever), Tempo (When -> Whenever), Coisa/Evento (What -> Whatever), Modo/Grau (How -> However) ou Contraste Direto entre dois fatos (Where+as -> Whereas).",
     items: EVER_FAMILY_ITEMS,
   };
 }
@@ -193,7 +202,7 @@ export function startGame(body: StartGameBody = {}) {
     if (dedicatedEverQuestions.length > 0) {
       filteredQuestions = dedicatedEverQuestions;
     } else {
-      const everConnectorIds = new Set(["whatever", "whenever", "wherever", "whoever", "however"]);
+      const everConnectorIds = new Set(["whatever", "whenever", "wherever", "whoever", "however", "whereas"]);
       filteredQuestions = QUESTIONS.filter((q) => {
         const connId = getConnectorIdForQuestion(q);
         return connId && everConnectorIds.has(connId);

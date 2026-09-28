@@ -1149,14 +1149,14 @@ export const CONNECTORS_CATALOG: ConnectorItem[] = [
     "translation": "Ao passo que / Enquanto que",
     "family": "contrast",
     "grammarRule": "Conjunção subordinativa formal que contrapõe dois fatos, métodos ou características simultâneas na mesma oração.",
-    "notes": "Diferente de 'while' (que pode indicar tempo cronológico), 'whereas' é 100% focado em contraste analítico.",
+    "notes": "Essencial no estudo comparativo com Wherever e However ('These are worth learning together'). CUIDADO: Começa com 'Where-', mas NÃO expressa lugar! É 100% focado em contraste analítico direto entre duas ideias, métodos ou tecnologias ('ao passo que / enquanto que').",
     "examples": [
-      "John likes working from home, whereas Mary prefers working in the office.",
-      "I like coffee, whereas my brother prefers tea.",
-      "Some people like working alone, whereas others prefer teamwork.",
-      "The old system was slow, whereas the new system is much faster.",
-      "Scrum focuses on short iterations, whereas Kanban focuses on continuous flow.",
-      "I prefer British English, whereas my friend prefers American English."
+      "Scrum focuses on short timeboxed iterations, whereas Kanban emphasizes continuous workflow.",
+      "Relational databases guarantee ACID transactions, whereas NoSQL document stores offer flexible horizontal scaling.",
+      "Monolithic architectures simplify initial deployment, whereas microservices provide independent scaling and squad autonomy.",
+      "Junior developers often focus on coding speed, whereas senior engineers prioritize clean architecture, testability, and maintainability.",
+      "Synchronous REST calls block until a response arrives, whereas asynchronous message queues process events decoupled in the background.",
+      "John likes working from home, whereas Mary prefers working in the office."
     ]
   },
   {
