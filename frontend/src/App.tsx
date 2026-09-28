@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { fetchSummary, startSession, submitAnswer } from "./api";
+import { fetchConnectors, fetchSummary, startSession, submitAnswer } from "./api";
 import { FlashcardsDeck } from "./components/FlashcardsDeck";
 import { LeaderboardModal } from "./components/LeaderboardModal";
 import { MatchMode } from "./components/MatchMode";
@@ -11,6 +11,7 @@ import {
   saveScore,
   type LeaderboardEntry,
 } from "./leaderboard";
+import { getMasteredIds, MASTERED_CHANGED_EVENT } from "./mastery";
 import {
   isSoundMuted,
   playClickSound,
@@ -24,6 +25,7 @@ import { speakEnglish } from "./tts";
 import type {
   AnswerResponse,
   ConnectorFamily,
+  ConnectorItem,
   GameMode,
   PublicQuestion,
   SessionResponse,
@@ -72,6 +74,9 @@ export function App() {
   const [screen, setScreen] = useState<Screen>("home");
   const [questionCount, setQuestionCount] = useState(10);
   const [selectedFamily, setSelectedFamily] = useState<ConnectorFamily | "all">("all");
+  const [excludeMastered, setExcludeMastered] = useState(true);
+  const [masteredIds, setMasteredIds] = useState<Set<string>>(() => getMasteredIds());
+  const [allConnectors, setAllConnectors] = useState<ConnectorItem[]>([]);
 
   const [session, setSession] = useState<SessionResponse | null>(null);
   const [question, setQuestion] = useState<PublicQuestion | null>(null);
@@ -81,6 +86,38 @@ export function App() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const answering = useRef(false);
+
+  // Carrega lista completa de conectivos para estatísticas por categoria
+  useEffect(() => {
+    fetchConnectors()
+      .then((data) => setAllConnectors(data.connectors))
+      .catch(() => {});
+  }, []);
+
+  // Sincroniza quando os conectivos dominados mudarem no Deck ou em outra aba
+  useEffect(() => {
+    function handleSync() {
+      setMasteredIds(getMasteredIds());
+    }
+    window.addEventListener(MASTERED_CHANGED_EVENT, handleSync);
+    return () => window.removeEventListener(MASTERED_CHANGED_EVENT, handleSync);
+  }, []);
+
+  // Estatísticas da categoria atualmente selecionada
+  const selectedFamilyConnectors = useMemo(() => {
+    return allConnectors.filter((c) => selectedFamily === "all" || c.family === selectedFamily);
+  }, [allConnectors, selectedFamily]);
+
+  const selectedFamilyMasteredCount = useMemo(() => {
+    return selectedFamilyConnectors.filter((c) => masteredIds.has(c.id)).length;
+  }, [selectedFamilyConnectors, masteredIds]);
+
+  const isSelectedFamilyAllMastered = useMemo(() => {
+    return (
+      selectedFamilyConnectors.length > 0 &&
+      selectedFamilyMasteredCount === selectedFamilyConnectors.length
+    );
+  }, [selectedFamilyConnectors, selectedFamilyMasteredCount]);
 
   // Ranking Local (Top 5)
   const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
@@ -112,7 +149,9 @@ export function App() {
     setBusy(true);
     playClickSound();
     try {
-      const next = await startSession(questionCount, selectedFamily, gameMode);
+      const excludedList =
+        excludeMastered && masteredIds.size > 0 ? Array.from(masteredIds) : undefined;
+      const next = await startSession(questionCount, selectedFamily, gameMode, excludedList);
       setSession(next);
       setQuestion(next.question);
       setFeedback(null);
@@ -160,7 +199,11 @@ export function App() {
     setBusy(true);
     setError(null);
     try {
-      const rawResult = await submitAnswer(session.sessionId, { optionId, timedOut });
+      const rawResult = await submitAnswer(session.sessionId, {
+        optionId,
+        timedOut,
+        secondsLeft: isZen ? undefined : secondsLeft,
+      });
       const fullSentence =
         rawResult.fullSentence ||
         (currentQuestion ? currentQuestion.prompt.replace("_____", rawResult.connector) : undefined);
@@ -172,6 +215,7 @@ export function App() {
 
       const result: AnswerResponse = {
         ...rawResult,
+        secondsLeft: isZen ? undefined : secondsLeft,
         prompt: rawResult.prompt || currentQuestion?.prompt,
         fullSentence: fullSentence || rawResult.fullSentence,
         sentenceTranslation: note?.sentenceTranslation || rawResult.sentenceTranslation,
@@ -449,6 +493,45 @@ export function App() {
             </div>
           </div>
 
+          {/* Filtro inteligente: Ocultar conectivos dominados */}
+          <div className="exclude-mastered-box">
+            <label className="checkbox-row">
+              <input
+                type="checkbox"
+                checked={excludeMastered}
+                onChange={(e) => setExcludeMastered(e.target.checked)}
+              />
+              <div className="checkbox-text">
+                <strong>🎯 Focar apenas nos itens em estudo (Ocultar conectivos dominados)</strong>
+                <span className="muted">
+                  {masteredIds.size > 0
+                    ? `${masteredIds.size} de ${allConnectors.length || 81} conectivos marcados como dominados no Deck serão ignorados nesta sessão.`
+                    : "Nenhum conectivo marcado como dominado ainda. Marque itens no Deck para filtrá-los aqui."}
+                </span>
+              </div>
+            </label>
+          </div>
+
+          {/* Alerta quando a categoria atual estiver 100% dominada */}
+          {excludeMastered && isSelectedFamilyAllMastered ? (
+            <div className="mastery-alert-banner">
+              <div className="mastery-alert-icon">🌟</div>
+              <div className="mastery-alert-content">
+                <strong>Todos os conectivos desta categoria já foram dominados!</strong>
+                <p>
+                  Para praticar estes itens novamente, ative o <strong>Modo Revisão</strong> desmarcando a opção "Ocultar conectivos dominados" acima, ou escolha outra categoria.
+                </p>
+                <button
+                  type="button"
+                  className="btn-review-mode"
+                  onClick={() => setExcludeMastered(false)}
+                >
+                  Ativar Modo Revisão para esta categoria ➔
+                </button>
+              </div>
+            </div>
+          ) : null}
+
           <div className="start-row" style={{ marginTop: 24 }}>
             <div className="form-group">
               <label className="input-label" htmlFor="family-select">
@@ -461,11 +544,25 @@ export function App() {
                   setSelectedFamily(event.target.value as ConnectorFamily | "all")
                 }
               >
-                {(Object.keys(FAMILY_LABEL) as Array<ConnectorFamily | "all">).map((key) => (
-                  <option key={key} value={key}>
-                    {FAMILY_LABEL[key]}
-                  </option>
-                ))}
+                {(Object.keys(FAMILY_LABEL) as Array<ConnectorFamily | "all">).map((key) => {
+                  const famConnectors = allConnectors.filter(
+                    (c) => key === "all" || c.family === key,
+                  );
+                  const famMastered = famConnectors.filter((c) => masteredIds.has(c.id)).length;
+                  const isAllDominated =
+                    famConnectors.length > 0 && famMastered === famConnectors.length;
+                  let statusBadge = "";
+                  if (key !== "all" && famConnectors.length > 0) {
+                    statusBadge = isAllDominated
+                      ? " — [★ Categoria Dominada]"
+                      : ` (${famConnectors.length - famMastered} a estudar)`;
+                  }
+                  return (
+                    <option key={key} value={key}>
+                      {FAMILY_LABEL[key]}{statusBadge}
+                    </option>
+                  );
+                })}
               </select>
             </div>
 
@@ -489,9 +586,18 @@ export function App() {
             <button
               className="btn btn-primary start-btn"
               onClick={() => void begin()}
-              disabled={busy}
+              disabled={busy || (excludeMastered && isSelectedFamilyAllMastered)}
+              title={
+                excludeMastered && isSelectedFamilyAllMastered
+                  ? "Todos os conectivos desta categoria estão dominados. Ative o Modo Revisão para praticar."
+                  : undefined
+              }
             >
-              {busy ? "Preparando..." : "Começar a Praticar ➔"}
+              {busy
+                ? "Preparando..."
+                : excludeMastered && isSelectedFamilyAllMastered
+                  ? "Categoria Dominada (Ative Revisão)"
+                  : "Começar a Praticar ➔"}
             </button>
           </div>
 
@@ -546,6 +652,22 @@ export function App() {
             <span className="family-chip">
               Categoria: {FAMILY_LABEL[question.family] ?? question.family}
             </span>
+
+            {excludeMastered && masteredIds.size > 0 ? (
+              <span
+                className="focus-filter-chip"
+                title="Conectivos dominados estão sendo ignorados nesta sessão"
+              >
+                🎯 Foco em Estudo ({masteredIds.size} dominados ocultos)
+              </span>
+            ) : (
+              <span
+                className="review-filter-chip"
+                title="Modo Revisão: todos os conectivos podem ser exibidos"
+              >
+                🔄 Modo Revisão
+              </span>
+            )}
 
             <button
               type="button"

@@ -1,5 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import { fetchConnectors } from "../api";
+import {
+  getMasteredIds,
+  MASTERED_CHANGED_EVENT,
+  setAreaMastered,
+  toggleMasteredId,
+} from "../mastery";
 import { playClickSound, playSuccessSound } from "../sound";
 import type { ConnectorFamily, ConnectorItem } from "../types";
 
@@ -19,20 +25,30 @@ const FAMILY_LABELS: Record<ConnectorFamily | "all", string> = {
 
 export function FlashcardsDeck() {
   const [connectors, setConnectors] = useState<ConnectorItem[]>([]);
+  const [allConnectors, setAllConnectors] = useState<ConnectorItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [search, setSearch] = useState("");
   const [selectedFamily, setSelectedFamily] = useState<ConnectorFamily | "all">("all");
   const [flippedCards, setFlippedCards] = useState<Record<string, boolean>>({});
-  const [masteredIds, setMasteredIds] = useState<Set<string>>(() => {
-    try {
-      const saved = localStorage.getItem("gap_runner_mastered");
-      return saved ? new Set(JSON.parse(saved)) : new Set();
-    } catch {
-      return new Set();
-    }
-  });
+  const [masteredIds, setMasteredIds] = useState<Set<string>>(() => getMasteredIds());
   const [filterMode, setFilterMode] = useState<"all" | "learning" | "mastered">("all");
+
+  // Carrega todos os conectivos uma vez para calcular progresso global e por área
+  useEffect(() => {
+    fetchConnectors()
+      .then((data) => setAllConnectors(data.connectors))
+      .catch(() => {});
+  }, []);
+
+  // Sincroniza estado se houver alteração em outra aba ou componente
+  useEffect(() => {
+    function handleSync() {
+      setMasteredIds(getMasteredIds());
+    }
+    window.addEventListener(MASTERED_CHANGED_EVENT, handleSync);
+    return () => window.removeEventListener(MASTERED_CHANGED_EVENT, handleSync);
+  }, []);
 
   useEffect(() => {
     let active = true;
@@ -68,20 +84,28 @@ export function FlashcardsDeck() {
 
   function toggleMastered(id: string, e: React.MouseEvent) {
     e.stopPropagation();
-    setMasteredIds((prev) => {
-      const next = new Set(prev);
-      if (next.has(id)) {
-        next.delete(id);
-        playClickSound();
-      } else {
-        next.add(id);
-        playSuccessSound();
-      }
-      try {
-        localStorage.setItem("gap_runner_mastered", JSON.stringify(Array.from(next)));
-      } catch {}
-      return next;
-    });
+    const { next, isNowMastered } = toggleMasteredId(id);
+    setMasteredIds(next);
+    if (isNowMastered) {
+      playSuccessSound();
+    } else {
+      playClickSound();
+    }
+  }
+
+  function handleToggleCurrentArea(targetMastered: boolean) {
+    if (selectedFamily === "all") return;
+    const familyItems = (allConnectors.length > 0 ? allConnectors : connectors).filter(
+      (c) => c.family === selectedFamily,
+    );
+    const ids = familyItems.map((c) => c.id);
+    const next = setAreaMastered(ids, targetMastered);
+    setMasteredIds(next);
+    if (targetMastered) {
+      playSuccessSound();
+    } else {
+      playClickSound();
+    }
   }
 
   const filteredConnectors = useMemo(() => {
@@ -94,8 +118,21 @@ export function FlashcardsDeck() {
   }, [connectors, masteredIds, filterMode]);
 
   const masteredCount = masteredIds.size;
-  const totalCount = connectors.length > 0 ? Math.max(80, connectors.length) : 80;
+  const totalCount = allConnectors.length > 0 ? allConnectors.length : Math.max(81, connectors.length);
   const masteryPercentage = Math.round((masteredCount / totalCount) * 100);
+
+  const selectedFamilyStats = useMemo(() => {
+    if (selectedFamily === "all") return null;
+    const items = (allConnectors.length > 0 ? allConnectors : connectors).filter(
+      (c) => c.family === selectedFamily,
+    );
+    const mastered = items.filter((c) => masteredIds.has(c.id)).length;
+    return {
+      totalCount: items.length,
+      masteredCount: mastered,
+      isFullyMastered: items.length > 0 && mastered === items.length,
+    };
+  }, [selectedFamily, allConnectors, connectors, masteredIds]);
 
   return (
     <section className="deck-container">
@@ -155,16 +192,59 @@ export function FlashcardsDeck() {
           </div>
 
           <div className="family-filter-pills">
-            {(Object.keys(FAMILY_LABELS) as Array<ConnectorFamily | "all">).map((familyKey) => (
-              <button
-                key={familyKey}
-                className={`pill-btn ${selectedFamily === familyKey ? "active" : ""}`}
-                onClick={() => setSelectedFamily(familyKey)}
-              >
-                {FAMILY_LABELS[familyKey]}
-              </button>
-            ))}
+            {(Object.keys(FAMILY_LABELS) as Array<ConnectorFamily | "all">).map((familyKey) => {
+              const familyItems = (allConnectors.length > 0 ? allConnectors : connectors).filter(
+                (c) => familyKey === "all" || c.family === familyKey,
+              );
+              const familyMastered = familyItems.filter((c) => masteredIds.has(c.id)).length;
+              const isFully =
+                familyKey !== "all" && familyItems.length > 0 && familyMastered === familyItems.length;
+
+              return (
+                <button
+                  key={familyKey}
+                  className={`pill-btn ${selectedFamily === familyKey ? "active" : ""} ${
+                    isFully ? "pill-mastered" : ""
+                  }`}
+                  onClick={() => setSelectedFamily(familyKey)}
+                >
+                  {FAMILY_LABELS[familyKey]}
+                  {familyKey !== "all" && familyItems.length > 0 ? (
+                    <span className="pill-badge">
+                      {familyMastered}/{familyItems.length}
+                      {isFully ? " ★" : ""}
+                    </span>
+                  ) : null}
+                </button>
+              );
+            })}
           </div>
+
+          {/* Barra de Ação por Área/Categoria Selecionada */}
+          {selectedFamilyStats && selectedFamily !== "all" ? (
+            <div className="area-mastery-action-bar">
+              <div className="area-mastery-info">
+                <span className="area-title">
+                  Área: <strong>{FAMILY_LABELS[selectedFamily]}</strong>
+                </span>
+                <span className="area-counter">
+                  {selectedFamilyStats.masteredCount} de {selectedFamilyStats.totalCount} dominados
+                  {selectedFamilyStats.isFullyMastered ? " · Categoria 100% Dominada! 🌟" : ""}
+                </span>
+              </div>
+              <button
+                type="button"
+                className={`btn-area-mastery ${
+                  selectedFamilyStats.isFullyMastered ? "is-mastered" : ""
+                }`}
+                onClick={() => handleToggleCurrentArea(!selectedFamilyStats.isFullyMastered)}
+              >
+                {selectedFamilyStats.isFullyMastered
+                  ? "☆ Desmarcar Área Inteira"
+                  : "★ Marcar Área como Dominada"}
+              </button>
+            </div>
+          ) : null}
         </div>
       </div>
 

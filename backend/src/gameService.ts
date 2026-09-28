@@ -102,17 +102,51 @@ function hud(session: GameSession) {
 }
 
 
+function normalizeConnectorName(name: string): string {
+  return (name || "")
+    .toLowerCase()
+    .replace(/[()]/g, "")
+    .replace(/in contrast to/g, "in contrast")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const CONNECTOR_NORM_TO_ID = new Map<string, string>();
+for (const item of CONNECTORS_CATALOG) {
+  CONNECTOR_NORM_TO_ID.set(normalizeConnectorName(item.connector), item.id);
+}
+
+export function getConnectorIdForQuestion(question: Question): string | undefined {
+  return CONNECTOR_NORM_TO_ID.get(normalizeConnectorName(question.connector));
+}
+
 export function startGame(body: StartGameBody = {}) {
   const requested = body.questionCount ?? DEFAULT_QUESTION_COUNT;
   const requestedFamily = body.family && body.family !== "all" ? body.family : undefined;
-  const filteredQuestions = requestedFamily
+  let filteredQuestions = requestedFamily
     ? QUESTIONS.filter((item) => item.family === requestedFamily)
     : QUESTIONS;
-  const pool = filteredQuestions.length >= 4 ? filteredQuestions : QUESTIONS;
+
+  const excludeSet = new Set(body.excludeConnectorIds || []);
+  if (excludeSet.size > 0) {
+    const unmasteredQuestions = filteredQuestions.filter((q) => {
+      const connId = getConnectorIdForQuestion(q);
+      return !connId || !excludeSet.has(connId);
+    });
+    filteredQuestions = unmasteredQuestions;
+  }
+
+  if (filteredQuestions.length === 0) {
+    throw new Error(
+      "Todos os conectivos desta seleção foram marcados como dominados. Desative 'Ocultar dominados' para Modo Revisão ou desmarque conectivos no Deck.",
+    );
+  }
+
+  const pool = filteredQuestions;
 
   const questionCount = Math.min(
     MAX_QUESTION_COUNT,
-    Math.max(5, Number.isFinite(requested) ? requested : DEFAULT_QUESTION_COUNT),
+    Math.max(1, Number.isFinite(requested) ? requested : DEFAULT_QUESTION_COUNT),
   );
 
   const questionIds = shuffle(pool)
@@ -182,11 +216,26 @@ export function answerQuestion(sessionId: string, body: AnswerBody) {
   const correct = !timedOut && selectedOptionId === question.correctOptionId;
   const correctOption = question.options.find((option) => option.id === question.correctOptionId);
 
+  let pointsEarned = 0;
+  let timeBonus = 0;
+  let basePoints = 0;
+  let streakMultiplier = 1;
+
   if (correct) {
     session.streak += 1;
     session.bestStreak = Math.max(session.bestStreak, session.streak);
-    const multiplier = Math.min(session.streak, STREAK_CAP);
-    session.score += BASE_POINTS * multiplier;
+    streakMultiplier = Math.min(session.streak, STREAK_CAP);
+    basePoints = BASE_POINTS * streakMultiplier;
+
+    // No modo Arcade, adiciona bônus de agilidade de 5 pontos por segundo restante (Opção 1)
+    if (session.mode === "arcade") {
+      const rawSeconds = typeof body.secondsLeft === "number" ? body.secondsLeft : 0;
+      const clampedSeconds = Math.max(0, Math.min(18, Math.floor(rawSeconds)));
+      timeBonus = clampedSeconds * 5;
+    }
+
+    pointsEarned = basePoints + timeBonus;
+    session.score += pointsEarned;
   } else {
     session.streak = 0;
     // No modo Arcade, perde vida. No modo Zen, vidas são preservadas para aprendizado sem julgamento!
@@ -235,6 +284,10 @@ export function answerQuestion(sessionId: string, body: AnswerBody) {
       whyCorrect: teacher.whyCorrect,
       whyOthersFail: teacher.whyOthersFail,
       proTip: teacher.proTip,
+      pointsEarned,
+      timeBonus,
+      basePoints,
+      streakMultiplier,
       ...hud(session),
       question: toPublicQuestion(session),
     },

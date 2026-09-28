@@ -41,10 +41,15 @@ gameRouter.get("/match-pairs", (req, res) => {
   res.json({ pairs });
 });
 
-// Gap Runner (Arcade) Sessões
 gameRouter.post("/sessions", (req, res) => {
-  const body = (req.body ?? {}) as StartGameBody;
-  res.status(201).json(startGame(body));
+  try {
+    const body = (req.body ?? {}) as StartGameBody;
+    res.status(201).json(startGame(body));
+  } catch (err) {
+    res.status(400).json({
+      error: err instanceof Error ? err.message : "Não foi possível iniciar a sessão de prática.",
+    });
+  }
 });
 
 gameRouter.get("/sessions/:id", (req, res) => {

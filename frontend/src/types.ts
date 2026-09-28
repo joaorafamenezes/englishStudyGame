@@ -82,6 +82,11 @@ export type AnswerResponse = Hud & {
   whyCorrect?: string;
   whyOthersFail?: string;
   proTip?: string;
+  pointsEarned?: number;
+  timeBonus?: number;
+  basePoints?: number;
+  streakMultiplier?: number;
+  secondsLeft?: number;
   question: PublicQuestion | null;
 };
 

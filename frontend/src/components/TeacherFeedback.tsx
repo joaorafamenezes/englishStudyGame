@@ -74,14 +74,26 @@ export function TeacherFeedback({
         <div className="teacher-avatar-badge">
           {feedback.correct ? "🎉" : "💡"}
         </div>
-        <div>
-          <h3 className="teacher-feedback-title">
-            {feedback.timedOut
-              ? "Tempo esgotado, mas não se preocupe!"
-              : feedback.correct
-                ? "Excelente dedução!"
-                : "Boa tentativa! Veja a diferença na prática"}
-          </h3>
+        <div className="teacher-feedback-titles">
+          <div className="title-score-row">
+            <h3 className="teacher-feedback-title">
+              {feedback.timedOut
+                ? "Tempo esgotado, mas não se preocupe!"
+                : feedback.correct
+                  ? "Excelente dedução!"
+                  : "Boa tentativa! Veja a diferença na prática"}
+            </h3>
+            {feedback.correct && feedback.pointsEarned ? (
+              <div className="points-earned-badge">
+                <span className="points-main">+{feedback.pointsEarned} pts</span>
+                {feedback.timeBonus && feedback.timeBonus > 0 ? (
+                  <span className="points-speed-bonus" title={`+5 pts por segundo economizado (${feedback.secondsLeft ?? Math.round(feedback.timeBonus / 5)}s restantes)`}>
+                    ⚡ +{feedback.timeBonus} agilidade ({feedback.secondsLeft ?? Math.round(feedback.timeBonus / 5)}s)
+                  </span>
+                ) : null}
+              </div>
+            ) : null}
+          </div>
           <p className="teacher-feedback-subtitle">
             {feedback.correct
               ? "Você identificou o papel sintático exato deste conectivo."

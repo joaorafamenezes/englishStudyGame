@@ -83,11 +83,13 @@ export type StartGameBody = {
   questionCount?: number;
   family?: ConnectorFamily | "all";
   mode?: GameMode;
+  excludeConnectorIds?: string[];
 };
 
 export type AnswerBody = {
   optionId?: string | null;
   timedOut?: boolean;
+  secondsLeft?: number;
 };
 
 export type MatchPair = {

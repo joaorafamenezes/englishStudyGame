@@ -22,6 +22,7 @@ export function startSession(
   questionCount = 10,
   family?: string,
   mode: "zen" | "arcade" = "zen",
+  excludeConnectorIds?: string[],
 ): Promise<SessionResponse> {
   return fetch(`${API_BASE}/sessions`, {
     method: "POST",
@@ -30,13 +31,14 @@ export function startSession(
       questionCount,
       family: family === "all" ? undefined : family,
       mode,
+      excludeConnectorIds,
     }),
   }).then((response) => parseJson<SessionResponse>(response));
 }
 
 export function submitAnswer(
   sessionId: string,
-  payload: { optionId?: string | null; timedOut?: boolean },
+  payload: { optionId?: string | null; timedOut?: boolean; secondsLeft?: number },
 ): Promise<AnswerResponse> {
   return fetch(`${API_BASE}/sessions/${sessionId}/answers`, {
     method: "POST",
