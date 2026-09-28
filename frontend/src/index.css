@@ -2269,3 +2269,92 @@ select:focus {
   background: #2dd4bf;
   transform: translateY(-1px);
 }
+
+/* =========================================================
+   ARENA DE JOGO EXCLUSIVA: FAMÍLIA -EVER & WHEREAS
+   ========================================================= */
+.ever-exclusive-arena {
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.ever-exclusive-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.16), rgba(245, 158, 11, 0.12));
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  border-radius: 16px;
+  padding: 14px 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ever-exclusive-badge-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ever-exclusive-chip {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ever-exclusive-subtitle {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.ever-back-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ever-back-btn:hover {
+  background: rgba(20, 184, 166, 0.2);
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.ever-option-btn {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.ever-summary-card {
+  padding: 32px;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.ever-summary-header {
+  margin-bottom: 24px;
+}
+
+.ever-summary-header h2 {
+  margin: 10px 0 8px;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

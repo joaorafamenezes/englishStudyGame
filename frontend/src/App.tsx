@@ -155,15 +155,18 @@ export function App() {
     setBusy(true);
     playClickSound();
     try {
-      const isEver = selectedFamily === "ever_family";
+      if (selectedFamily === "ever_family") {
+        setActiveTab("ever");
+        return;
+      }
+
       const excludedList =
-        !isEver && excludeMastered && masteredIds.size > 0 ? Array.from(masteredIds) : undefined;
+        excludeMastered && masteredIds.size > 0 ? Array.from(masteredIds) : undefined;
       const next = await startSession(
         questionCount,
-        isEver ? undefined : selectedFamily,
+        selectedFamily,
         gameMode,
         excludedList,
-        isEver ? "ever_family" : undefined,
       );
       setSession(next);
       setQuestion(next.question);
@@ -175,32 +178,6 @@ export function App() {
       setScreen("play");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Não foi possível iniciar a prática");
-    } finally {
-      setBusy(false);
-    }
-  }
-
-  async function beginEverSession(count: number, chosenMode: GameMode) {
-    setError(null);
-    setBusy(true);
-    playClickSound();
-    try {
-      setGameMode(chosenMode);
-      setSelectedFamily("ever_family");
-      const next = await startSession(count, undefined, chosenMode, undefined, "ever_family");
-      setSession(next);
-      setQuestion(next.question);
-      setFeedback(null);
-      setSummary(null);
-      setSavedSessionId(null);
-      setHighlightRecordId(null);
-      setSecondsLeft(QUESTION_SECONDS);
-      setActiveTab("practice");
-      setScreen("play");
-    } catch (err) {
-      setError(
-        err instanceof Error ? err.message : "Não foi possível iniciar o treino da Família -Ever",
-      );
     } finally {
       setBusy(false);
     }
@@ -966,9 +943,7 @@ export function App() {
       ) : null}
 
       {/* MODO ESPECIAL: FAMÍLIA -EVER */}
-      {activeTab === "ever" ? (
-        <EverStudySection onStartPractice={beginEverSession} busy={busy} />
-      ) : null}
+      {activeTab === "ever" ? <EverStudySection /> : null}
 
       {/* MODO 2: DECK DOS 81 CONECTIVOS */}
       {activeTab === "deck" ? <FlashcardsDeck /> : null}
