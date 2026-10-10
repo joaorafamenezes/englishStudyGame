@@ -56,7 +56,7 @@ h3,
 }
 
 .app-shell {
-  width: min(960px, calc(100% - 32px));
+  width: min(1440px, calc(100% - 48px));
   margin: 0 auto;
   padding: 24px 0 48px;
 }
@@ -121,26 +121,51 @@ h3,
 }
 
 /* NAVIGATION TABS */
+.workspace-layout {
+  display: grid;
+  grid-template-columns: 244px minmax(0, 1fr);
+  align-items: start;
+  gap: 32px;
+}
+
+.sidebar {
+  min-width: 0;
+  min-height: calc(100vh - 116px);
+  padding: 8px 20px 24px 0;
+  border-right: 1px solid var(--line);
+}
+
+.sidebar-label {
+  display: block;
+  margin: 0 0 14px 12px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-content {
+  min-width: 0;
+}
+
 .main-tabs {
   display: flex;
-  gap: 8px;
-  margin-bottom: 24px;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 12px;
-  overflow-x: auto;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .tab-item {
   background: transparent;
   border: 1px solid transparent;
   color: var(--muted);
-  padding: 10px 18px;
-  border-radius: 999px;
+  padding: 12px;
+  border-radius: 10px;
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
   transition: all 0.2s ease;
-  white-space: nowrap;
+  text-align: left;
+  line-height: 1.4;
 }
 
 .tab-item:hover {
@@ -152,6 +177,292 @@ h3,
   color: #0f1216;
   background: var(--amber);
   border-color: var(--amber);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.16);
+}
+
+/* IDIOMATIC EXPRESSIONS GAME */
+.idiom-game {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+.idiom-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 6px 2px 4px;
+}
+
+.idiom-heading h1 {
+  margin: 10px 0 6px;
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+.idiom-heading p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.idiom-result h2 {
+  margin: 8px 0;
+  font-size: 25px;
+}
+
+.idiom-result p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.idiom-round-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.idiom-round-actions > label {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.idiom-round-actions select {
+  border-radius: 10px;
+}
+
+.idiom-restart {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.idiom-restart:hover {
+  border-color: var(--amber);
+  color: var(--amber-2);
+}
+
+.idiom-play-heading {
+  align-items: center;
+}
+
+.idiom-score {
+  min-width: 82px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  text-align: center;
+}
+
+.idiom-score span,
+.idiom-score strong {
+  display: block;
+}
+
+.idiom-score span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.idiom-score strong {
+  color: var(--amber-2);
+  font-size: 22px;
+}
+
+.idiom-progress {
+  height: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.idiom-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--teal);
+  transition: width 0.25s ease;
+}
+
+.idiom-question-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.idiom-question-card {
+  border-radius: 18px;
+  padding: clamp(20px, 4vw, 36px);
+}
+
+.idiom-question-card > h2 {
+  margin: 10px 0 26px;
+  font-size: clamp(26px, 4vw, 38px);
+  line-height: 1.2;
+}
+
+.idiom-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.idiom-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+  min-height: 70px;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.5;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.idiom-option:hover:not(:disabled) {
+  border-color: var(--amber);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.idiom-option:disabled {
+  cursor: default;
+}
+
+.idiom-option.is-correct,
+.idiom-option.show-correct {
+  border-color: var(--ok);
+  background: var(--ok-soft);
+}
+
+.idiom-option.is-wrong {
+  border-color: var(--rose);
+  background: rgba(244, 63, 94, 0.1);
+}
+
+.idiom-option-key {
+  display: grid;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.idiom-feedback {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  animation: slideUp 0.25s ease-out;
+}
+
+.idiom-feedback-title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.idiom-feedback-title strong {
+  color: var(--ok);
+  font-size: 17px;
+}
+
+.idiom-feedback.is-wrong .idiom-feedback-title strong {
+  color: var(--rose);
+}
+
+.idiom-feedback-title span {
+  font-weight: 600;
+}
+
+.idiom-feedback > p {
+  max-width: 75ch;
+  margin: 8px 0 16px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.idiom-feedback blockquote {
+  position: relative;
+  margin: 0;
+  padding: 12px 52px 12px 16px;
+  border-left: 3px solid var(--teal);
+  border-radius: 0 8px 8px 0;
+  background: var(--teal-soft);
+}
+
+.idiom-feedback blockquote > span {
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.idiom-feedback blockquote p {
+  margin: 5px 0 0;
+  line-height: 1.55;
+}
+
+.idiom-audio-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  transform: translateY(-50%);
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  border-radius: 8px;
+  background: rgba(20, 184, 166, 0.1);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.idiom-next {
+  margin-top: 18px;
+}
+
+.idiom-result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 18px;
+  padding: 36px;
+}
+
+.idiom-result-score {
+  color: var(--amber-2);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.idiom-result-score small {
+  color: var(--muted);
+  font-size: 22px;
+}
+
+.idiom-result .btn {
+  margin-top: 14px;
 }
 
 /* CARDS */
@@ -1487,6 +1798,32 @@ select:focus {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .app-shell {
+    width: min(100% - 24px, 680px);
+    padding-top: 16px;
+  }
+  .workspace-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .sidebar {
+    min-height: 0;
+    padding: 0 0 12px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .sidebar-label {
+    margin-left: 2px;
+  }
+  .main-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .tab-item {
+    flex: 0 0 auto;
+    max-width: 230px;
+  }
   .mode-selector-grid {
     grid-template-columns: 1fr;
   }
@@ -1502,6 +1839,9 @@ select:focus {
   .teacher-insights-grid {
     grid-template-columns: 1fr;
   }
+  .idiom-round-actions {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1515,6 +1855,19 @@ select:focus {
   }
   .start-btn {
     width: 100%;
+  }
+  .idiom-heading h1 {
+    font-size: 29px;
+  }
+  .idiom-options {
+    grid-template-columns: 1fr;
+  }
+  .idiom-round-actions {
+    align-items: stretch;
+    gap: 6px;
+  }
+  .idiom-round-actions > label {
+    display: none;
   }
 }
 
