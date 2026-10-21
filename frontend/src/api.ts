@@ -3,6 +3,9 @@ import type {
   ConnectorItem,
   EverFamilyGuideResponse,
   MatchPair,
+  PhrasalVerbItem,
+  PhrasalVerbMatchPair,
+  PhrasalVerbQuestion,
   SessionResponse,
   SummaryResponse,
 } from "./types";
@@ -81,4 +84,42 @@ export function fetchMatchPairs(count = 6): Promise<{ pairs: MatchPair[] }> {
     parseJson<{ pairs: MatchPair[] }>(response),
   );
 }
+
+export function fetchPhrasalVerbs(
+  level?: string,
+  search?: string,
+): Promise<{ total: number; verbs: PhrasalVerbItem[] }> {
+  const params = new URLSearchParams();
+  if (level && level !== "all") params.set("level", level);
+  if (search && search.trim()) params.set("search", search.trim());
+  const qs = params.toString();
+  return fetch(`${API_BASE}/phrasal-verbs${qs ? `?${qs}` : ""}`).then((response) =>
+    parseJson<{ total: number; verbs: PhrasalVerbItem[] }>(response),
+  );
+}
+
+export function fetchPhrasalVerbMatchPairs(
+  count = 6,
+  level?: string,
+): Promise<{ pairs: PhrasalVerbMatchPair[] }> {
+  const params = new URLSearchParams();
+  params.set("count", String(count));
+  if (level && level !== "all") params.set("level", level);
+  return fetch(`${API_BASE}/phrasal-verbs/match-pairs?${params.toString()}`).then((response) =>
+    parseJson<{ pairs: PhrasalVerbMatchPair[] }>(response),
+  );
+}
+
+export function fetchPhrasalVerbQuiz(
+  count = 10,
+  level?: string,
+): Promise<{ total: number; questions: PhrasalVerbQuestion[] }> {
+  const params = new URLSearchParams();
+  params.set("count", String(count));
+  if (level && level !== "all") params.set("level", level);
+  return fetch(`${API_BASE}/phrasal-verbs/quiz?${params.toString()}`).then((response) =>
+    parseJson<{ total: number; questions: PhrasalVerbQuestion[] }>(response),
+  );
+}
+
 

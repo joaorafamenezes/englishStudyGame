@@ -125,4 +125,43 @@ export type SummaryResponse = Hud & {
   review: ReviewItem[];
 };
 
+export type PhrasalVerbLevel = "A1" | "A2" | "B1" | "B2";
+
+export type PhrasalVerbItem = {
+  id: string;
+  verb: string;
+  particle: string;
+  phrasalVerb: string;
+  level: PhrasalVerbLevel;
+  meaningEn: string;
+  meaningPt: string;
+  category: string;
+  examples: string[];
+  teacherTip?: string;
+};
+
+export type PhrasalVerbQuestion = {
+  id: string;
+  prompt: string;
+  options: Array<{ id: string; text: string }>;
+  correctOptionId: string;
+  phrasalVerb: string;
+  level: PhrasalVerbLevel;
+  meaningEn: string;
+  meaningPt: string;
+  fullSentence: string;
+  sentenceTranslation: string;
+  whyCorrect: string;
+  teacherTip?: string;
+};
+
+export type PhrasalVerbMatchPair = {
+  id: string;
+  phrasalVerb: string;
+  meaningPt: string;
+  meaningEn: string;
+  level: PhrasalVerbLevel;
+};
+
+
 

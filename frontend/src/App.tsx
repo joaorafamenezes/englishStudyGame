@@ -4,6 +4,7 @@ import { EverStudySection } from "./components/EverStudySection";
 import { FlashcardsDeck } from "./components/FlashcardsDeck";
 import { LeaderboardModal } from "./components/LeaderboardModal";
 import { MatchMode } from "./components/MatchMode";
+import { PhrasalVerbsGame } from "./components/PhrasalVerbsGame";
 import { TeacherFeedback } from "./components/TeacherFeedback";
 import { resolveTeacherNote } from "./data/teacherNotes";
 import {
@@ -51,7 +52,7 @@ const FAMILY_LABEL: Record<string, string> = {
 };
 
 type Screen = "home" | "play" | "result";
-type ActiveTab = "practice" | "ever" | "deck" | "match";
+type ActiveTab = "practice" | "phrasal" | "ever" | "deck" | "match";
 
 function renderPrompt(prompt: string) {
   const parts = prompt.split("_____");
@@ -434,6 +435,16 @@ export function App() {
           📖 Prática Guiada de Frases
         </button>
         <button
+          className={`tab-item ${activeTab === "phrasal" ? "active" : ""}`}
+          onClick={() => {
+            playClickSound();
+            setActiveTab("phrasal");
+          }}
+          data-testid="tab-phrasal-verbs"
+        >
+          🚀 Phrasal Verbs
+        </button>
+        <button
           className={`tab-item ${activeTab === "ever" ? "active" : ""}`}
           onClick={() => {
             playClickSound();
@@ -473,6 +484,35 @@ export function App() {
               completa da frase em português e pronúncia em inglês. Aprenda o porquê de cada escolha
               sem estresse ou punição.
             </p>
+          </div>
+
+          {/* Banner de Destaque para Phrasal Verbs */}
+          <div
+            className="phrasal-quick-banner"
+            onClick={() => {
+              playClickSound();
+              setActiveTab("phrasal");
+            }}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                playClickSound();
+                setActiveTab("phrasal");
+              }
+            }}
+            title="Acessar o novo jogo de Phrasal Verbs"
+          >
+            <div className="phrasal-banner-icon">🚀</div>
+            <div className="phrasal-banner-content">
+              <strong>Novo Jogo: Phrasal Verbs Academy & Challenge (A1 a B2)</strong>
+              <p>
+                Treine phrasal verbs reais com preenchimento de lacunas, jogo de match por tempo e
+                dicionário com 108 cards interativos e áudio nativo!
+              </p>
+            </div>
+            <span className="phrasal-banner-cta">Jogar Phrasal Verbs ➔</span>
           </div>
 
           {/* Banner de Destaque da Família -Ever */}
@@ -941,6 +981,9 @@ export function App() {
           </div>
         </section>
       ) : null}
+
+      {/* NOVO MODO: PHRASAL VERBS */}
+      {activeTab === "phrasal" ? <PhrasalVerbsGame /> : null}
 
       {/* MODO ESPECIAL: FAMÍLIA -EVER */}
       {activeTab === "ever" ? <EverStudySection /> : null}
