@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { fetchConnectors, fetchSummary, startSession, submitAnswer } from "./api";
 import { EverStudySection } from "./components/EverStudySection";
 import { FlashcardsDeck } from "./components/FlashcardsDeck";
+import { IdiomaticExpressions } from "./components/IdiomaticExpressions";
 import { LeaderboardModal } from "./components/LeaderboardModal";
 import { MatchMode } from "./components/MatchMode";
 import { PhrasalVerbsGame } from "./components/PhrasalVerbsGame";
@@ -52,7 +53,7 @@ const FAMILY_LABEL: Record<string, string> = {
 };
 
 type Screen = "home" | "play" | "result";
-type ActiveTab = "practice" | "phrasal" | "ever" | "deck" | "match";
+type ActiveTab = "practice" | "phrasal" | "ever" | "deck" | "match" | "idioms";
 
 function renderPrompt(prompt: string) {
   const parts = prompt.split("_____");
@@ -423,10 +424,13 @@ export function App() {
         </div>
       </header>
 
-      {/* Abas de Navegação */}
+      <div className="workspace-layout">
+      <aside className="sidebar">
+        <span className="sidebar-label">Modos de estudo</span>
       <nav className="main-tabs" aria-label="Abas de Estudo">
         <button
           className={`tab-item ${activeTab === "practice" ? "active" : ""}`}
+          aria-current={activeTab === "practice" ? "page" : undefined}
           onClick={() => {
             playClickSound();
             setActiveTab("practice");
@@ -446,6 +450,7 @@ export function App() {
         </button>
         <button
           className={`tab-item ${activeTab === "ever" ? "active" : ""}`}
+          aria-current={activeTab === "ever" ? "page" : undefined}
           onClick={() => {
             playClickSound();
             setActiveTab("ever");
@@ -455,6 +460,7 @@ export function App() {
         </button>
         <button
           className={`tab-item ${activeTab === "deck" ? "active" : ""}`}
+          aria-current={activeTab === "deck" ? "page" : undefined}
           onClick={() => {
             playClickSound();
             setActiveTab("deck");
@@ -464,6 +470,7 @@ export function App() {
         </button>
         <button
           className={`tab-item ${activeTab === "match" ? "active" : ""}`}
+          aria-current={activeTab === "match" ? "page" : undefined}
           onClick={() => {
             playClickSound();
             setActiveTab("match");
@@ -471,8 +478,20 @@ export function App() {
         >
           ⚡ Match Rápido (Associação)
         </button>
+        <button
+          className={`tab-item ${activeTab === "idioms" ? "active" : ""}`}
+          aria-current={activeTab === "idioms" ? "page" : undefined}
+          onClick={() => {
+            playClickSound();
+            setActiveTab("idioms");
+          }}
+        >
+          💬 Idiomatic Expressions
+        </button>
       </nav>
+      </aside>
 
+      <main className="main-content">
       {/* TELA INICIAL DA PRÁTICA */}
       {activeTab === "practice" && screen === "home" ? (
         <section className="card hero-learning">
@@ -993,6 +1012,9 @@ export function App() {
 
       {/* MODO 3: MATCH RÁPIDO */}
       {activeTab === "match" ? <MatchMode /> : null}
+      {activeTab === "idioms" ? <IdiomaticExpressions /> : null}
+      </main>
+      </div>
 
       {/* MODAL DO HALL DA FAMA (RANKING LOCAL) */}
       <LeaderboardModal
