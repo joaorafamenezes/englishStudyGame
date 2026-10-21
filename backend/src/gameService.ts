@@ -1,5 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { CONNECTORS_CATALOG } from "./data/connectorsCatalog.js";
+import { PHRASAL_VERBS_CATALOG, PHRASAL_VERB_QUESTIONS } from "./data/phrasalVerbs.js";
 import { QUESTIONS } from "./data/questions.js";
 import { getTeacherNote } from "./data/teacherNotes.js";
 import type {
@@ -11,6 +12,10 @@ import type {
   GameMode,
   GameSession,
   MatchPair,
+  PhrasalVerbItem,
+  PhrasalVerbLevel,
+  PhrasalVerbMatchPair,
+  PhrasalVerbQuestion,
   PublicQuestion,
   Question,
   ReviewItem,
@@ -450,4 +455,72 @@ export function getMatchPairs(count = 6): MatchPair[] {
     family: item.family,
   }));
 }
+
+export function getPhrasalVerbsCatalog(options?: {
+  level?: string;
+  search?: string;
+  category?: string;
+}): PhrasalVerbItem[] {
+  let list = PHRASAL_VERBS_CATALOG;
+  if (options?.level && options.level !== "all") {
+    list = list.filter((item) => item.level.toLowerCase() === options.level?.toLowerCase());
+  }
+  if (options?.category && options.category !== "all") {
+    list = list.filter((item) => item.category.toLowerCase() === options.category?.toLowerCase());
+  }
+  if (options?.search) {
+    const term = options.search.toLowerCase().trim();
+    list = list.filter(
+      (item) =>
+        item.phrasalVerb.toLowerCase().includes(term) ||
+        item.meaningEn.toLowerCase().includes(term) ||
+        item.meaningPt.toLowerCase().includes(term) ||
+        item.examples.some((ex) => ex.toLowerCase().includes(term)) ||
+        item.teacherTip?.toLowerCase().includes(term),
+    );
+  }
+  return list;
+}
+
+export function getPhrasalVerbById(id: string): PhrasalVerbItem | null {
+  return PHRASAL_VERBS_CATALOG.find((item) => item.id === id) ?? null;
+}
+
+export function getPhrasalVerbMatchPairs(count = 6, level?: string): PhrasalVerbMatchPair[] {
+  const validCount = Math.min(16, Math.max(4, count));
+  let pool = PHRASAL_VERBS_CATALOG;
+  if (level && level !== "all") {
+    pool = pool.filter((item) => item.level.toLowerCase() === level.toLowerCase());
+    if (pool.length < validCount) {
+      pool = PHRASAL_VERBS_CATALOG;
+    }
+  }
+  const selected = shuffle(pool).slice(0, validCount);
+  return selected.map((item) => ({
+    id: item.id,
+    phrasalVerb: item.phrasalVerb,
+    meaningPt: item.meaningPt,
+    meaningEn: item.meaningEn,
+    level: item.level,
+  }));
+}
+
+export function getPhrasalVerbQuiz(count = 10, level?: string): PhrasalVerbQuestion[] {
+  const validCount = Math.min(20, Math.max(5, count));
+  let pool = PHRASAL_VERB_QUESTIONS;
+  if (level && level !== "all") {
+    const filtered = pool.filter((q) => q.level.toLowerCase() === level.toLowerCase());
+    if (filtered.length >= 3) {
+      pool = filtered;
+    }
+  }
+  return shuffle(pool)
+    .slice(0, validCount)
+    .map((q) => ({
+      ...q,
+      options: shuffle(q.options),
+    }));
+}
+
+
 

@@ -5,6 +5,10 @@ import {
   getConnectorsCatalog,
   getEverFamilyGuide,
   getMatchPairs,
+  getPhrasalVerbById,
+  getPhrasalVerbMatchPairs,
+  getPhrasalVerbQuiz,
+  getPhrasalVerbsCatalog,
   getSession,
   getSummary,
   startGame,
@@ -85,4 +89,39 @@ gameRouter.get("/sessions/:id/summary", (req, res) => {
   }
   res.json(summary);
 });
+
+// ==========================================
+// PHRASAL VERBS API ENDPOINTS
+// ==========================================
+gameRouter.get("/phrasal-verbs", (req, res) => {
+  const search = typeof req.query.search === "string" ? req.query.search : undefined;
+  const level = typeof req.query.level === "string" ? req.query.level : undefined;
+  const category = typeof req.query.category === "string" ? req.query.category : undefined;
+  const verbs = getPhrasalVerbsCatalog({ search, level, category });
+  res.json({ total: verbs.length, verbs });
+});
+
+gameRouter.get("/phrasal-verbs/match-pairs", (req, res) => {
+  const count = Number(req.query.count ?? 6);
+  const level = typeof req.query.level === "string" ? req.query.level : undefined;
+  const pairs = getPhrasalVerbMatchPairs(Number.isFinite(count) ? count : 6, level);
+  res.json({ pairs });
+});
+
+gameRouter.get("/phrasal-verbs/quiz", (req, res) => {
+  const count = Number(req.query.count ?? 10);
+  const level = typeof req.query.level === "string" ? req.query.level : undefined;
+  const questions = getPhrasalVerbQuiz(Number.isFinite(count) ? count : 10, level);
+  res.json({ total: questions.length, questions });
+});
+
+gameRouter.get("/phrasal-verbs/:id", (req, res) => {
+  const verb = getPhrasalVerbById(routeId(req.params.id));
+  if (!verb) {
+    res.status(404).json({ error: "Phrasal Verb not found" });
+    return;
+  }
+  res.json(verb);
+});
+
 
